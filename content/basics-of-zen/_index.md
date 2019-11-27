@@ -1,6 +1,5 @@
 +++
 title = "Basics of Zen"
-weight = 5
 chapter = true
 +++
 

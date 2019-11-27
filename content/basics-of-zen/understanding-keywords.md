@@ -14,7 +14,7 @@ The hello world program shown in the beginnig of this chapter use one keyword:
 
 In Zen there are 36 keywords. They are listed below in alphabetical order.
 
-| | | | | |
+| Keywords | | | | |
 |----------|-----------|-----------|-------------|----------|
 | abstract | and       | assert    | break       | catch    |
 | class    | continue  | else      | enum        | extends  | 

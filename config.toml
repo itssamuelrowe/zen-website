@@ -2,3 +2,8 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Zen"
 theme = "grav"
+
+[params]
+    themeVariant = "green"
+    showVisitedLinks = true
+    author = "Samuel Rowe"
