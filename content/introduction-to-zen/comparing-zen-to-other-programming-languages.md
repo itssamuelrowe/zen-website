@@ -1,4 +1,7 @@
-# Comparing Zen to Other Programming Languages
++++
+title = "Comparing Zen to Other Programming Languages"
+weight = 5
++++
 
 In this lecture, we will compare Zen, Java, C and C++.
 

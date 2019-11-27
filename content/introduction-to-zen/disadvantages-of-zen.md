@@ -1,4 +1,7 @@
-# Disadvantages of Zen
++++
+title = "Disadvantages of Zen"
+weight = 5
++++
 
 Like any programming language, Zen is not perfect.
 

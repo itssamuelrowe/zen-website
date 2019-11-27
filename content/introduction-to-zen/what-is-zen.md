@@ -1,4 +1,7 @@
-# What is Zen?
++++
+title = "What is Zen?"
+weight = 5
++++
 
 Java is a general purpose programming language. It was created by Samuel Rowe.
 The initial development began in 2016.

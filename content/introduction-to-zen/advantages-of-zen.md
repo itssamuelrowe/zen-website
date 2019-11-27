@@ -1,4 +1,7 @@
-# Advantages of Zen
++++
+title = "Advantages of Zen"
+weight = 5
++++
 
 ## Zen is Simple
 
