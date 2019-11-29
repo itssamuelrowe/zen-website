@@ -4,7 +4,7 @@ title = "Understanding Variables"
 
 In this section, you will learn to declare variables.
 
-A variable is a place holder. A variable’s value can change when your program
+A variable is a place holder. A variable's value can change when your program
 is running.
 
 For exampe, you can store a value like 100 in a variable. After you store a value,
