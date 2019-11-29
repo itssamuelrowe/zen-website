@@ -30,11 +30,11 @@ a variable and can hold any type of value.
 
 In Zen, a data type is always a reference type, which is divided into two
 categories.
-    * Primitive Wrapper Types
-    * Other Reference Types
+    * Primitive Reference Types
+    * Non-Primitive Reference Types
 
-The *primitive wrapper types* are the most basic data types available. They are
+The *primitive reference types* are the most basic data types available. They are
 **defined by Zen** and receive special treatment from the compiler.
 
-The *other reference types* are the data types that are **defined by classes and
+The *non-primitive reference types* are the data types that are **defined by classes and
 enumerations**. They do not receive any special treatment from the compiler.
