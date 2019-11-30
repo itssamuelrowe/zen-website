@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/introduction-to-zen/advantages-of-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction-to-zen/comparing-zen-to-other-programming-languages/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction-to-zen/disadvantages-of-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction-to-zen/what-is-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics-of-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/declaring-final-variables-or-constants/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/declaring-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/introduction-to-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics-of-zen/the-hello-world-program/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/understanding-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics-of-zen/understanding-identifiers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics-of-zen/understanding-keywords/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/understanding-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics-of-zen/working-with-blocks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics-of-zen/working-with-comments/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/working-with-non-primitive-reference-types/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/working-with-primitive-reference-types/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics-of-zen/working-with-statements/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/variables-values-and-data-types/working-with-strings/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+  </url>
+  
+</urlset>

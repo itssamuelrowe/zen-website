@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Zen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Advantages of Zen</title>
+      <link>http://example.org/introduction-to-zen/advantages-of-zen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/introduction-to-zen/advantages-of-zen/</guid>
+      <description>Zen is Simple Zen is easy to learn and use. It has a clear syntax. With a combination of powerful libraries, it makes tasks such as string manipulation and networking extremely easy. If you know the basics of object oriented programming, you can easily learn Zen.
+Zen provides high-level collections such as lists, maps, sets, bags, queues, stacks, and so on. You do not need external libraries or hours of coding to use these collections.</description>
+    </item>
+    
+    <item>
+      <title>Comparing Zen to Other Programming Languages</title>
+      <link>http://example.org/introduction-to-zen/comparing-zen-to-other-programming-languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/introduction-to-zen/comparing-zen-to-other-programming-languages/</guid>
+      <description>In this lecture, we will compare Zen, Java, C and C++.
+Paradigm Zen, Java and C++ are object-oriented programming languages. Whereas, C is procedural oriented programming (POP) language.
+Memory Management All programming languages let you handle data. When you create a variable, you can assign a portion of the computer’s memory to store the data. The allocation of memory is a detail that you can usually ignore. But you need to know what happens to that memory when you no longer need the data that was stored in it.</description>
+    </item>
+    
+    <item>
+      <title>Disadvantages of Zen</title>
+      <link>http://example.org/introduction-to-zen/disadvantages-of-zen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/introduction-to-zen/disadvantages-of-zen/</guid>
+      <description>Like any programming language, Zen is not perfect.
+Performance Zen programs are converted to bytecodes when compiled. During execution, these byte codes are interpreted by the virtual machine. Thus, Zen programs take longer time to run compared to programs written in C and C++. But this problem will soon be overcome with a Just-in-time Compiler (JIT).
+Consumes More Memory This is one of the biggest problems in Zen. Zen takes more memory space than the other native programming languages like C and C++.</description>
+    </item>
+    
+    <item>
+      <title>What is Zen?</title>
+      <link>http://example.org/introduction-to-zen/what-is-zen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/introduction-to-zen/what-is-zen/</guid>
+      <description>Java is a general purpose programming language. It was created by Samuel Rowe. The initial development began in 2016.
+Zen is similar to Java, Python, and C. So, if you have any experience with these languages, you will find Zen easy to learn. However, Zen is different in many significant ways.
+Zen was designed to develop applications that are capable of running across multiple platforms. As of now, Zen is officially supported on all major platforms, in particular, Linux, Windows, and MacOS.</description>
+    </item>
+    
+    <item>
+      <title>Declaring Final Variables or Constants</title>
+      <link>http://example.org/variables-values-and-data-types/declaring-final-variables-or-constants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/variables-values-and-data-types/declaring-final-variables-or-constants/</guid>
+      <description>In this section, you will learn how to declare final variables or constants.
+A final variable is variable that you cannot change after initializing. The compiler will generate errors if you try to change it. It is also called as a constant.
+The basic form of a constant declaration statement is shown here.
+final name = expression  The primary difference between declaring a variable and a constant is the use of final keyword.</description>
+    </item>
+    
+    <item>
+      <title>Declaring Variables</title>
+      <link>http://example.org/variables-values-and-data-types/declaring-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/variables-values-and-data-types/declaring-variables/</guid>
+      <description>In this lecture, you will learn how to declare variables.
+You must declare a variable before using it. The compiler will display errors otherwise.
+The basic form of a variable declaration statement is shown below.
+var name  A variable name is an identifier. You can refer the value stored in the variable with its name.
+Unlike other statically typed programming languages, you don&amp;rsquo;t have to write the type of values that can be stored in a variable.</description>
+    </item>
+    
+    <item>
+      <title>The Hello World Program</title>
+      <link>http://example.org/basics-of-zen/the-hello-world-program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/basics-of-zen/the-hello-world-program/</guid>
+      <description>In this section, you will learn to write the Hello World program.
+Many programming courses begin with a simple example program that prints the text, &amp;ldquo;Hello, world!&amp;rdquo; on the console.
+function main(...arguments) print(&#39;Hello, world!&#39;)   Copy the source code from here. Paste the source code into a text editor, such as Notepad or Notepad++. Save it in a file named Hello.zen. You need to remember where you save your file.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Data Types</title>
+      <link>http://example.org/variables-values-and-data-types/understanding-data-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/variables-values-and-data-types/understanding-data-types/</guid>
+      <description>Zen is a dynamically typed programming language. What this means is, the compiler does not know the type of every variable. Once you declare a variable, it can hold values of any type. For example, a variable referencing an integer may be updated to reference a string without making the compiler complain.
+The advantage of dynamically typed languages is that programs can be written quickly. On the other hand, the primary disadvantage of a dynamically typed language is that many bugs cannot be caught during compilation.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Identifiers</title>
+      <link>http://example.org/basics-of-zen/understanding-identifiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/basics-of-zen/understanding-identifiers/</guid>
+      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference something.
+The program shown in the hello world example shown in the previous section uses three identifiers. * main * arguments * print
+ Identifiers are case sensitive. For example, ArrayList with uppercase A and arrayList with lowercase a are two different identifiers. Identifiers may contain uppercase or lowercase letters, numerals, underscore characters _, and dollar symbols $.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Keywords</title>
+      <link>http://example.org/basics-of-zen/understanding-keywords/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/basics-of-zen/understanding-keywords/</guid>
+      <description>A keyword is a special word whose meaning is defined by the Zen programming language specification. You cannot use these words as identifiers. All keywords are in lowercase.
+Like everything else in Zen, keywords are case sensitive. For example, if you use For with uppercase F instead of for with lowercase f it is an error.
+The hello world program shown in the beginnig of this chapter use one keyword: function.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Variables</title>
+      <link>http://example.org/variables-values-and-data-types/understanding-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/variables-values-and-data-types/understanding-variables/</guid>
+      <description>In this section, you will learn to declare variables.
+A variable is a place holder. A variable&amp;rsquo;s value can change when your program is running.
+For exampe, you can store a value like 100 in a variable. After you store a value, you can store a different value in the variable whenever you want. When you store a new value in a variable, the old value is no longer there. In other words, the old value is replaced by the new value.</description>
+    </item>
+    
+    <item>
+      <title>Working with Blocks</title>
+      <link>http://example.org/basics-of-zen/working-with-blocks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/basics-of-zen/working-with-blocks/</guid>
+      <description>A block is a group of one or more statements. It is also known as a statement suite. It is a type of statement, a compound statement to be specific. It begins when the indentation of the first statement of the block is greater than the indentation of its containing block. Subsequent statements with the same indentation as that of the first statement are grouped together in the block.
+You can write any number of statements, including block statements, in a block.</description>
+    </item>
+    
+    <item>
+      <title>Working with Comments</title>
+      <link>http://example.org/basics-of-zen/working-with-comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/basics-of-zen/working-with-comments/</guid>
+      <description>Comments are texts that are ignored by the compiler. They help you write information or explanation about your code. You can use comments to hide a part of your code.
+We recommend you to use plenty of comments in your source code.
+Types of Comments There are 3 types of comments in Zen.
+ Single Line Comment Multi-Line Comment Documentation Comment  Single Line Comments A single line comment begins with // and ends at the end of the line.</description>
+    </item>
+    
+    <item>
+      <title>Working with Non-Primitive Reference Types</title>
+      <link>http://example.org/variables-values-and-data-types/working-with-non-primitive-reference-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/variables-values-and-data-types/working-with-non-primitive-reference-types/</guid>
+      <description>In this section, you will learn about the basics of non-primitive reference types. You learn to create variables that work with objects.
+The rules that apply to these types also apply to primitive reference types.
+ You will learn more about classes and objects later in the course.
+ Zen programs are built with classes. You can use classes to create objects. A reference type is a type which references an object.</description>
+    </item>
+    
+    <item>
+      <title>Working with Primitive Reference Types</title>
+      <link>http://example.org/variables-values-and-data-types/working-with-primitive-reference-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/variables-values-and-data-types/working-with-primitive-reference-types/</guid>
+      <description>The primitive types are the most basic data types available in the Zen Virtual Machine.
+There are eight primitive data types defined by the Zen Virtual Machine.
+* boolean
+* char
+* integer8
+* integer16
+* integer32
+* integer64
+* decimal32
+* decimal64
+The primitive types are not reference types. Since the Zen programming language supports only primitive types, it adds wrappers around these primitive types through wrapper classes.</description>
+    </item>
+    
+    <item>
+      <title>Working with Statements</title>
+      <link>http://example.org/basics-of-zen/working-with-statements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/basics-of-zen/working-with-statements/</guid>
+      <description>Statements are similar to sentences in the English language. A statement tells Zen to perform an action. It can include one or more expressions.
+There are two types of statements in Zen: * Simple Statement * Compound Statement
+Understanding Simple Statements Simple statements are the actions your program performs.
+ Assertion Statement Break Statement Continue Statement Empty Statement Expression Statement Return Statement and Throw Statement  A simple statement always ends with a newline.</description>
+    </item>
+    
+    <item>
+      <title>Working with Strings</title>
+      <link>http://example.org/variables-values-and-data-types/working-with-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/variables-values-and-data-types/working-with-strings/</guid>
+      <description>In this section, you will learn the basics of strings.
+A string is a sequence of characters. String literals are enclosed in single quotes (&#39;).
+Here&amp;rsquo;s an example of a string.
+&#39;Hello, world!&#39;  The Zen Virtual Machine does not define string as a primitive type. Further, the Zen programming language treats strings specially and classifies a string as primitive reference type. It is implemented by the zen.core.String class.</description>
+    </item>
+    
+  </channel>
+</rss>
