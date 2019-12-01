@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics of Zen on Zen</title>
-    <link>http://example.org/basics-of-zen/</link>
+    <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/</link>
     <description>Recent content in Basics of Zen on Zen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/basics-of-zen/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://itssamuelrowe.github.io/zen-website/basics-of-zen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Hello World Program</title>
-      <link>http://example.org/basics-of-zen/the-hello-world-program/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/basics-of-zen/the-hello-world-program/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</guid>
       <description>In this section, you will learn to write the Hello World program.
 Many programming courses begin with a simple example program that prints the text, &amp;ldquo;Hello, world!&amp;rdquo; on the console.
 function main(...arguments) print(&#39;Hello, world!&#39;)   Copy the source code from here. Paste the source code into a text editor, such as Notepad or Notepad++. Save it in a file named Hello.zen. You need to remember where you save your file.</description>
@@ -23,10 +23,10 @@ function main(...arguments) print(&#39;Hello, world!&#39;)   Copy the source cod
     
     <item>
       <title>Understanding Identifiers</title>
-      <link>http://example.org/basics-of-zen/understanding-identifiers/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-identifiers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/basics-of-zen/understanding-identifiers/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-identifiers/</guid>
       <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference something.
 The program shown in the hello world example shown in the previous section uses three identifiers. * main * arguments * print
  Identifiers are case sensitive. For example, ArrayList with uppercase A and arrayList with lowercase a are two different identifiers. Identifiers may contain uppercase or lowercase letters, numerals, underscore characters _, and dollar symbols $.</description>
@@ -34,10 +34,10 @@ The program shown in the hello world example shown in the previous section uses 
     
     <item>
       <title>Understanding Keywords</title>
-      <link>http://example.org/basics-of-zen/understanding-keywords/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-keywords/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/basics-of-zen/understanding-keywords/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-keywords/</guid>
       <description>A keyword is a special word whose meaning is defined by the Zen programming language specification. You cannot use these words as identifiers. All keywords are in lowercase.
 Like everything else in Zen, keywords are case sensitive. For example, if you use For with uppercase F instead of for with lowercase f it is an error.
 The hello world program shown in the beginnig of this chapter use one keyword: function.</description>
@@ -45,20 +45,20 @@ The hello world program shown in the beginnig of this chapter use one keyword: f
     
     <item>
       <title>Working with Blocks</title>
-      <link>http://example.org/basics-of-zen/working-with-blocks/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/basics-of-zen/working-with-blocks/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-blocks/</guid>
       <description>A block is a group of one or more statements. It is also known as a statement suite. It is a type of statement, a compound statement to be specific. It begins when the indentation of the first statement of the block is greater than the indentation of its containing block. Subsequent statements with the same indentation as that of the first statement are grouped together in the block.
 You can write any number of statements, including block statements, in a block.</description>
     </item>
     
     <item>
       <title>Working with Comments</title>
-      <link>http://example.org/basics-of-zen/working-with-comments/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/basics-of-zen/working-with-comments/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-comments/</guid>
       <description>Comments are texts that are ignored by the compiler. They help you write information or explanation about your code. You can use comments to hide a part of your code.
 We recommend you to use plenty of comments in your source code.
 Types of Comments There are 3 types of comments in Zen.
@@ -67,10 +67,10 @@ Types of Comments There are 3 types of comments in Zen.
     
     <item>
       <title>Working with Statements</title>
-      <link>http://example.org/basics-of-zen/working-with-statements/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-statements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/basics-of-zen/working-with-statements/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-statements/</guid>
       <description>Statements are similar to sentences in the English language. A statement tells Zen to perform an action. It can include one or more expressions.
 There are two types of statements in Zen: * Simple Statement * Compound Statement
 Understanding Simple Statements Simple statements are the actions your program performs.

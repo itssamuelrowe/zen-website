@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Working with Blocks :: Zen</title>
+    <title>Understanding Unicode :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575183118" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/basics-of-zen/working-with-blocks/">
+  <body class="" data-url="/zen-website/variables-values-and-data-types/understanding-unicode/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -94,7 +94,7 @@
   
     
     <li data-nav-id="/zen-website/basics-of-zen/" title="Basics of Zen" class="dd-item 
-        parent
+        
         
         
         ">
@@ -177,7 +177,7 @@
  
   
     
-      <li data-nav-id="/zen-website/basics-of-zen/working-with-blocks/" title="Working with Blocks" class="dd-item active">
+      <li data-nav-id="/zen-website/basics-of-zen/working-with-blocks/" title="Working with Blocks" class="dd-item ">
         <a href="/zen-website/basics-of-zen/working-with-blocks/">
         Working with Blocks
         <i class="fas fa-check read-icon"></i>
@@ -352,7 +352,7 @@
   
     
     <li data-nav-id="/zen-website/variables-values-and-data-types/" title="Variables, Values, and Data Types" class="dd-item 
-        
+        parent
         
         
         ">
@@ -435,7 +435,7 @@
  
   
     
-      <li data-nav-id="/zen-website/variables-values-and-data-types/understanding-unicode/" title="Understanding Unicode" class="dd-item ">
+      <li data-nav-id="/zen-website/variables-values-and-data-types/understanding-unicode/" title="Understanding Unicode" class="dd-item active">
         <a href="/zen-website/variables-values-and-data-types/understanding-unicode/">
         Understanding Unicode
         <i class="fas fa-check read-icon"></i>
@@ -591,7 +591,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/basics-of-zen/'>Basics of Zen</a> > Working with Blocks
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/variables-values-and-data-types/'>Variables, Values, and Data Types</a> > Understanding Unicode
           
          
           
@@ -604,7 +604,21 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#understanding-characters-repertoire">Understanding Characters Repertoire</a></li>
+<li><a href="#understanding-character-set">Understanding Character Set</a></li>
+<li><a href="#understanding-character-encoding">Understanding Character Encoding</a></li>
+</ul></li>
+<li><a href="#history-of-unicode">History of Unicode</a></li>
+<li><a href="#using-unicode-in-zen">Using Unicode in Zen</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -620,7 +634,7 @@
           
             <h1>
               
-              Working with Blocks
+              Understanding Unicode
             </h1>
           
 
@@ -628,36 +642,97 @@
 
 
 
-<p>A block is a group of one or more statements. It is also known as a statement suite.
-It is a type of statement, a compound statement to be specific. It begins when
-the indentation of the first statement of the block is greater than the indentation
-of its containing block. Subsequent statements with the same indentation as that
-of the first statement are grouped together in the block.</p>
 
-<p>You can write any number of statements, including block statements, in a block.</p>
 
-<p>You cannot write an empty block in Zen. However, you can make use of the empty
-statement to represent a dummy block like this.</p>
+<blockquote>
+<p>This section describes Unicode and how Zen deals with it. It is a difficult
+concept to grasp. You can safely skip this section for now. You can come back
+when you are comfortable with Zen.</p>
+</blockquote>
 
-<pre><code>function main()
-    ; // Dummy block with an empty statement.
+<p>To work with characters in a computer, you need the following:<br />
+ * Character Repertoire<br />
+ * Character Set<br />
+ * Character Encoding</p>
+
+<h3 id="understanding-characters-repertoire">Understanding Characters Repertoire</h3>
+
+<p>A <em>character repertoire</em> is a collection of characters your computer can
+work with. For example, a character repertoire may include letters, digits,
+and symbols from Kannada, English, Tamil, Hindi, and Telugu.</p>
+
+<h3 id="understanding-character-set">Understanding Character Set</h3>
+
+<p>Computers understand only numbers. So they store letters and other characters
+by assigning a number for each one. These numbers are known as <em>codepoints</em>.</p>
+
+<p>When a computer stores a character, it doesn’t really know the difference
+between <code>A</code> and <code>B</code>. However, it knows the difference between <code>65</code> and <code>66</code>.
+Internally, computers use the number <code>65</code> as the <em>codepoint</em> to represent <code>A</code>
+and <code>66</code> for <code>B</code>.</p>
+
+<p>In fact, all letters, digits, and symbols have codepoints. The codepoints given
+to characters are collectively known as <em>character set</em> or <em>charset</em>.</p>
+
+<p>When you store <code>'A'</code> in a <code>char</code> variable, you actually store the value <code>65</code> in
+it. Which means, the <code>char</code> type is really an integer type.</p>
+
+<p>Here&rsquo;s an example which prints the codepoints of A, B, C, D, E, and F.</p>
+
+<pre><code>// CodePointsExample.zen
+
+function main(...arguments)
+    print('A'.getCodepoint(0))
+    print('B'.getCodepoint(0))
+    print('C'.getCodepoint(0))
+    print('D'.getCodepoint(0))
+    print('E'.getCodepoint(0))
+    print('F'.getCodepoint(0))
 </code></pre>
 
-<p>For example, this is a block with four statements.</p>
+<h3 id="understanding-character-encoding">Understanding Character Encoding</h3>
 
-<pre><code>    var i = null
-    var j = null
-    i = 10
-    j = 20
-</code></pre>
+<p>Finally, your computer stores your codepoints in a sequence of 1s and 0s.
+This binary representation is called as <em>character encoding</em>.</p>
 
-<p>Here is an example of block statements.</p>
+<h2 id="history-of-unicode">History of Unicode</h2>
 
-<pre><code>function main(...arguments)
-    print('This is the outer block.')
-    if true
-        print('This is the inner block.')
-        print('This statement belongs to the inner block as well.')
+<p>There were hundreds of different character encodings before Unicode was
+invented. The other character encodings were limited. They did not cover
+all the languages of the world.</p>
+
+<p>The <em>Unicode Standard</em> provides a codepoint for every character, no matter
+what platform, device, application or language. It is used in all modern
+software.</p>
+
+<p>Unicode is a very popular character encoding standard. Many well known companies
+such as Microsoft, Google and Oracle use Unicode. In fact, you are using Unicode
+already.</p>
+
+<p>Unicode was actually designed to <em>encode</em> characters in 2 bytes. This is why
+<code>char</code> defined by the Zen Virtual Machine uses 2 bytes.</p>
+
+<p>Only 65,536 characters can be encoded with 16 bits. You cannot represent all
+the characters in the world with just 16 bits. So Unicode was extended to use
+21 bits. Now over one million characters can be encoded (1,114,111 to be exact).
+You can use the characters outside U+FFFF with <em>supplementary characters</em>.</p>
+
+<h2 id="using-unicode-in-zen">Using Unicode in Zen</h2>
+
+<p>A supplementary character is any character within the range U+10000 and U+10FFFF.
+You need to use a pair of character values to represent them. The pair of codepoints
+which represent a supplementary character are known as surrogates.</p>
+
+<p>The first codepoint is known as the high surrogate. It is in the range of U+D800
+to U+DBFF.</p>
+
+<p>The second codepoint is known as the low surrogate. It is in the range of U+DC00
+to U+DFFF.</p>
+
+<p>For example, the <strong>DESERET CAPITAL LETTER LONG I</strong> (U+10400), is represented with
+U+D801 and U+DC00 surrogate pair.</p>
+
+<pre><code>var letter = '\uD801\uDC00'
 </code></pre>
 
 
@@ -697,20 +772,6 @@ statement to represent a dummy block like this.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -721,9 +782,6 @@ statement to represent a dummy block like this.</p>
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -756,74 +814,6 @@ statement to represent a dummy block like this.</p>
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -969,10 +959,98 @@ statement to represent a dummy block like this.</p>
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1045,10 +1123,10 @@ statement to represent a dummy block like this.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/basics-of-zen/understanding-keywords/" title="Understanding Keywords"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/variables-values-and-data-types/understanding-data-types/" title="Understanding Data Types"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/basics-of-zen/working-with-comments/" title="Working with Comments" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/variables-values-and-data-types/understanding-variables/" title="Understanding Variables" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

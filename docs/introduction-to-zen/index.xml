@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Zen</title>
-    <link>http://example.org/introduction-to-zen/</link>
+    <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/</link>
     <description>Recent content in Introduction on Zen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/introduction-to-zen/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://itssamuelrowe.github.io/zen-website/introduction-to-zen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advantages of Zen</title>
-      <link>http://example.org/introduction-to-zen/advantages-of-zen/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/advantages-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/introduction-to-zen/advantages-of-zen/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/advantages-of-zen/</guid>
       <description>Zen is Simple Zen is easy to learn and use. It has a clear syntax. With a combination of powerful libraries, it makes tasks such as string manipulation and networking extremely easy. If you know the basics of object oriented programming, you can easily learn Zen.
 Zen provides high-level collections such as lists, maps, sets, bags, queues, stacks, and so on. You do not need external libraries or hours of coding to use these collections.</description>
     </item>
     
     <item>
       <title>Comparing Zen to Other Programming Languages</title>
-      <link>http://example.org/introduction-to-zen/comparing-zen-to-other-programming-languages/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/comparing-zen-to-other-programming-languages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/introduction-to-zen/comparing-zen-to-other-programming-languages/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/comparing-zen-to-other-programming-languages/</guid>
       <description>In this lecture, we will compare Zen, Java, C and C++.
 Paradigm Zen, Java and C++ are object-oriented programming languages. Whereas, C is procedural oriented programming (POP) language.
 Memory Management All programming languages let you handle data. When you create a variable, you can assign a portion of the computer’s memory to store the data. The allocation of memory is a detail that you can usually ignore. But you need to know what happens to that memory when you no longer need the data that was stored in it.</description>
@@ -33,10 +33,10 @@ Memory Management All programming languages let you handle data. When you create
     
     <item>
       <title>Disadvantages of Zen</title>
-      <link>http://example.org/introduction-to-zen/disadvantages-of-zen/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/disadvantages-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/introduction-to-zen/disadvantages-of-zen/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/disadvantages-of-zen/</guid>
       <description>Like any programming language, Zen is not perfect.
 Performance Zen programs are converted to bytecodes when compiled. During execution, these byte codes are interpreted by the virtual machine. Thus, Zen programs take longer time to run compared to programs written in C and C++. But this problem will soon be overcome with a Just-in-time Compiler (JIT).
 Consumes More Memory This is one of the biggest problems in Zen. Zen takes more memory space than the other native programming languages like C and C++.</description>
@@ -44,10 +44,10 @@ Consumes More Memory This is one of the biggest problems in Zen. Zen takes more 
     
     <item>
       <title>What is Zen?</title>
-      <link>http://example.org/introduction-to-zen/what-is-zen/</link>
+      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/what-is-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/introduction-to-zen/what-is-zen/</guid>
+      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/what-is-zen/</guid>
       <description>Java is a general purpose programming language. It was created by Samuel Rowe. The initial development began in 2016.
 Zen is similar to Java, Python, and C. So, if you have any experience with these languages, you will find Zen easy to learn. However, Zen is different in many significant ways.
 Zen was designed to develop applications that are capable of running across multiple platforms. As of now, Zen is officially supported on all major platforms, in particular, Linux, Windows, and MacOS.</description>
