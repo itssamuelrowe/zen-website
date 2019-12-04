@@ -10,5 +10,17 @@
 	<atom:link href="http://localhost:1313/zen-website/operators-operands-and-expressions/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Understanding Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/understanding-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/understanding-operators/</guid>
+      <description>In this lecture, you will learn about operators.
+An operator is a special symbol or a keyword that performs a mathemtical operation or a specific operation.
+Generally, an operator expects one, two, or three values known as operands.
+You must always remember, an operator always calculates and returns a result.</description>
+    </item>
+    
   </channel>
 </rss>
