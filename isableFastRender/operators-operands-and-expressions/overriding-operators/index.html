@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Operators, Operands, and Expressions :: Zen</title>
+    <title>Overriding Operators :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575467674" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/overriding-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -353,7 +353,7 @@
     
     <li data-nav-id="/zen-website/operators-operands-and-expressions/" title="Operators, Operands, and Expressions" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/zen-website/operators-operands-and-expressions/">
@@ -378,7 +378,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/overriding-operators/">
         Overriding Operators
         <i class="fas fa-check read-icon"></i>
@@ -666,6 +666,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -676,7 +678,13 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > Operators, Operands, and Expressions
+            
+            
+          
+          
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Overriding Operators
+          
+         
           
          
           
@@ -685,6 +693,13 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -692,48 +707,62 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Overriding Operators
+            </h1>
           
 
         
 
 
 
+<p>Zen allows operator overriding through a combination of functions and
+annotations.</p>
 
-	
+<p>All the operators in Zen are dispatched to a function call.
+The <code>ZenKernel.evaluate(...)</code> function finds a suitable handler for the
+operator defined within the operand object and dispatches it. In other words,
+the compiler translates expressions with operators to equivalent
+<code>ZenKernel.evaluate(...)</code> calls.</p>
 
-<h3 id="chapter-4">Chapter 4</h3>
+<p>For example, in the <code>HashMap</code> class the following annotation
+overrides the subscript operator.</p>
 
-<h1 id="operators-operands-and-expressions">Operators, Operands, and Expressions</h1>
+<pre><code>@Operator symbol='[]'
+function getValue(key)
+    ...
+</code></pre>
 
-<p>In this chapter you will discuss the following topics.
- * Understanding operators<br />
- * Types of operators<br />
- * Working with arithmetic operators<br />
- * Working with equality operators<br />
- * Working with comparison operators<br />
- * Using the unary plus and minus operators<br />
- * Using the increment and decrement operators
- * Using the assignment operators<br />
- * Working with bitwise operators<br />
- * Using the conditional operators<br />
- * Using the logical operators<br />
- * Understanding the difference between logical and bitwise AND<br />
- * Understanding the difference between logical and bitwise OR<br />
- * Understanding the difference between logical and bitwise NOT</p>
+<p>With that information, consider the following snippet of code.</p>
 
+<pre><code>var emailAddresses = {
+    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
+    'Joel E. Rego' : 'joelerego@gmail.com'
+}
+var myEmailAddress = emailAddresses['Samuel Rowe']
+</code></pre>
 
+<p>The above code snippet is equivalent to the following expression statement.</p>
 
+<pre><code>var emailAddresses = {
+    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
+    'Joel E. Rego' : 'joelerego@gmail.com'
+}
+var myEmailAddress = ZenKernel.evaluate(emailAddresses, 'Samuel Rowe', '[]')
+</code></pre>
+
+<p>In fact, when you compile the former code snippet the compiler generates
+instructions as if the code was written in the latter form.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -974,8 +1003,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -992,6 +1019,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1176,10 +1206,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/introduction-to-zen/what-is-zen/" title="What is Zen?"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/" title="Operators, Operands, and Expressions"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1209,3 +1239,4 @@
 
   <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
 </html>
+

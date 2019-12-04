@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>Overriding Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/overriding-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/overriding-operators/</guid>
+      <description>Zen allows operator overriding through a combination of functions and annotations.
+All the operators in Zen are dispatched to a function call. The ZenKernel.evaluate(...) function finds a suitable handler for the operator defined within the operand object and dispatches it. In other words, the compiler translates expressions with operators to equivalent ZenKernel.evaluate(...) calls.
+For example, in the HashMap class the following annotation overrides the subscript operator.
+@Operator symbol=&#39;[]&#39; function getValue(key) .</description>
+    </item>
+    
+    <item>
       <title>Types of Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/types-of-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
