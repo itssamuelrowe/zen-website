@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Variables, Values, and Data Types :: Zen</title>
+    <title>Using the Unary Plus and Minus Operators :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575468404" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/variables-values-and-data-types/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -352,7 +352,7 @@
   
     
     <li data-nav-id="/zen-website/operators-operands-and-expressions/" title="Operators, Operands, and Expressions" class="dd-item 
-        
+        parent
         
         
         ">
@@ -435,7 +435,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/" title="Using the Unary Plus and Minus Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/" title="Using the Unary Plus and Minus Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/">
         Using the Unary Plus and Minus Operators
         <i class="fas fa-check read-icon"></i>
@@ -519,8 +519,8 @@
   
     
     <li data-nav-id="/zen-website/variables-values-and-data-types/" title="Variables, Values, and Data Types" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/zen-website/variables-values-and-data-types/">
@@ -742,6 +742,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -752,7 +754,13 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > Variables, Values, and Data Types
+            
+            
+          
+          
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Using the Unary Plus and Minus Operators
+          
+         
           
          
           
@@ -761,6 +769,13 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -768,39 +783,48 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Using the Unary Plus and Minus Operators
+            </h1>
           
 
         
 
 
 
+<blockquote>
+<p>Please note that the operators described in this section are with respect
+to the <code>Integer8</code>, <code>Integer16</code>, <code>Integer32</code>, <code>Integer64</code>, <code>Decimal32</code> and <code>Decimal64</code>
+data types. For behavior specific to other data types, please refer the documentation.</p>
+</blockquote>
 
-	
+<p>The unary plus and minus operators let you change the sign of an operand.</p>
 
-<h3 id="chapter-4">Chapter 4</h3>
+<p>Note that the symbol used to represent these operators are the same as the
+addition and subtraction operators. The compiler figures out which operation
+you mean by examining the expression.</p>
 
-<h1 id="variables-values-and-data-types">Variables, Values, and Data Types</h1>
+<p>Remember, the unary minus operator does not necessarily make an operand
+negative. Actually, it inverts the sign of the operand. For example, assume
+<code>x = -5</code> then <code>-x</code> will give you <code>5</code>.</p>
 
-<p>In this chapter, you will learn the basics of working with variables in Java.
-Variables are fundamental in making general purpose programs.
-In the Hello World program that we studied in the previous chapter
-always prints &ldquo;Hello, world!&rdquo;. With a variable, you can
-make it more general. For example, you could personalize the greeting to wish
-the user with their name.</p>
+<p>Mathematically, this is equivalent to <code>-x = x * -1</code>.</p>
 
+<p>Interestingly, the unary plus operator does not actually
+do anything. For example, assume <code>x = -5</code> and <code>y = 7</code> then
+<code>+x</code> and <code>+y</code> will give you <code>-5</code> and <code>7</code>, respectively.</p>
 
-
+<p>Mathematically, this is equivalent to <code>+x = x * 1</code>.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -1027,6 +1051,7 @@ the user with their name.</p>
             
                 
                     
+                    
                 
                 
 
@@ -1039,6 +1064,9 @@ the user with their name.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1088,6 +1116,26 @@ the user with their name.</p>
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1131,22 +1179,6 @@ the user with their name.</p>
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1155,7 +1187,6 @@ the user with their name.</p>
             
                 
                     
-                    
                 
                 
 
@@ -1168,9 +1199,6 @@ the user with their name.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1307,10 +1335,10 @@ the user with their name.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/working-with-equality-operators/" title="Working with Equality Operators"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/understanding-operators/" title="Understanding Operators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/" title="Declaring Final Variables or Constants" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/" title="Working with Arithmetic Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1340,3 +1368,4 @@ the user with their name.</p>
 
   <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
 </html>
+

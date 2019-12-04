@@ -186,6 +186,17 @@ For exampe, you can store a value like 100 in a variable. After you store a valu
     </item>
     
     <item>
+      <title>Using the Unary Plus and Minus Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</guid>
+      <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
+ The unary plus and minus operators let you change the sign of an operand.
+Note that the symbol used to represent these operators are the same as the addition and subtraction operators. The compiler figures out which operation you mean by examining the expression.</description>
+    </item>
+    
+    <item>
       <title>Working with Arithmetic Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
