@@ -9,23 +9,23 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Understanding Operators :: Zen</title>
+    <title>Working with Comparison Operators :: Zen</title>
 
     
-    <link href="/zen-website/css/nucleus.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/fontawesome-all.min.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/hybrid.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/featherlight.min.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/perfect-scrollbar.min.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/auto-complete.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/theme.css?1575468287" rel="stylesheet">
-    <link href="/zen-website/css/hugo-theme.css?1575468287" rel="stylesheet">
+    <link href="/zen-website/css/nucleus.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/fontawesome-all.min.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/hybrid.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/featherlight.min.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/perfect-scrollbar.min.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/auto-complete.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/theme.css?1575468288" rel="stylesheet">
+    <link href="/zen-website/css/hugo-theme.css?1575468288" rel="stylesheet">
     
-      <link href="/zen-website/css/theme-green.css?1575468287" rel="stylesheet">
+      <link href="/zen-website/css/theme-green.css?1575468288" rel="stylesheet">
     
 
-    <script src="/zen-website/js/jquery-3.3.1.min.js?1575468287"></script>
+    <script src="/zen-website/js/jquery-3.3.1.min.js?1575468288"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/understanding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/working-with-comparison-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575468287"></script>
-<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575468287"></script>
+<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575468288"></script>
+<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575468288"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/zen-website\/";
     
 </script>
-<script type="text/javascript" src="/zen-website/js/search.js?1575468287"></script>
+<script type="text/javascript" src="/zen-website/js/search.js?1575468288"></script>
 
     
   </div>
@@ -416,7 +416,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/understanding-operators/" title="Understanding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/understanding-operators/" title="Understanding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/understanding-operators/">
         Understanding Operators
         <i class="fas fa-check read-icon"></i>
@@ -454,7 +454,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-comparison-operators/" title="Working with Comparison Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-comparison-operators/" title="Working with Comparison Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/working-with-comparison-operators/">
         Working with Comparison Operators
         <i class="fas fa-check read-icon"></i>
@@ -739,7 +739,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Understanding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Working with Comparison Operators
           
          
           
@@ -752,7 +752,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#lesser">Lesser</a></li>
+<li><a href="#greater">Greater</a></li>
+<li><a href="#lesser-than-or-equal">Lesser Than Or Equal</a></li>
+<li><a href="#greater-than-or-equal">Greater Than Or Equal</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -768,7 +778,7 @@
           
             <h1>
               
-              Understanding Operators
+              Working with Comparison Operators
             </h1>
           
 
@@ -776,14 +786,60 @@
 
 
 
-<p>In this lecture, you will learn about operators.</p>
 
-<p>An operator is a special symbol or a keyword that performs a mathemtical operation
-or a specific operation.</p>
 
-<p>Generally, an operator expects one, two, or three values known as <em>operands</em>.</p>
+<p>In this section, you will learn about the comparison operators in Zen.</p>
 
-<p>You must always remember, an operator always calculates and returns a result.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&lt;</td>
+<td>Lesser than</td>
+</tr>
+
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+</tr>
+
+<tr>
+<td>&lt;=</td>
+<td>Lesser than or equal</td>
+</tr>
+
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="lesser">Lesser</h2>
+
+<p>Returns <code>true</code> if the operand on the left is lesser than the operand on the
+right.</p>
+
+<h2 id="greater">Greater</h2>
+
+<p>Returns <code>true</code> if the operand on the left is greater than the operand on the
+right.</p>
+
+<h2 id="lesser-than-or-equal">Lesser Than Or Equal</h2>
+
+<p>Returns <code>true</code> if the operand on the left is  lesser than or equal to the
+operand on the right.</p>
+
+<h2 id="greater-than-or-equal">Greater Than Or Equal</h2>
+
+<p>Returns <code>true</code> if the operand on the left is  greater than or equal to the
+operand on the right.</p>
 
 
 <footer class=" footline" >
@@ -1066,26 +1122,6 @@ or a specific operation.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1117,6 +1153,26 @@ or a specific operation.</p>
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1285,10 +1341,10 @@ or a specific operation.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/" title="Working with Arithmetic Operators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/" title="Working with Arithmetic Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/working-with-equality-operators/" title="Working with Equality Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1298,19 +1354,19 @@ or a specific operation.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/zen-website/js/clipboard.min.js?1575468287"></script>
-    <script src="/zen-website/js/perfect-scrollbar.min.js?1575468287"></script>
-    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575468287"></script>
-    <script src="/zen-website/js/jquery.sticky.js?1575468287"></script>
-    <script src="/zen-website/js/featherlight.min.js?1575468287"></script>
-    <script src="/zen-website/js/highlight.pack.js?1575468287"></script>
+    <script src="/zen-website/js/clipboard.min.js?1575468288"></script>
+    <script src="/zen-website/js/perfect-scrollbar.min.js?1575468288"></script>
+    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575468288"></script>
+    <script src="/zen-website/js/jquery.sticky.js?1575468288"></script>
+    <script src="/zen-website/js/featherlight.min.js?1575468288"></script>
+    <script src="/zen-website/js/highlight.pack.js?1575468288"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575468287"></script>
-    <script src="/zen-website/js/learn.js?1575468287"></script>
-    <script src="/zen-website/js/hugo-learn.js?1575468287"></script>
+    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575468288"></script>
+    <script src="/zen-website/js/learn.js?1575468288"></script>
+    <script src="/zen-website/js/hugo-learn.js?1575468288"></script>
 
-    <link href="/zen-website/mermaid/mermaid.css?1575468287" rel="stylesheet" />
-    <script src="/zen-website/mermaid/mermaid.js?1575468287"></script>
+    <link href="/zen-website/mermaid/mermaid.css?1575468288" rel="stylesheet" />
+    <script src="/zen-website/mermaid/mermaid.js?1575468288"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
