@@ -186,6 +186,18 @@ For exampe, you can store a value like 100 in a variable. After you store a valu
     </item>
     
     <item>
+      <title>Using the Compound Assignment Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</guid>
+      <description>A compound assignment operator is an operator that performs both an implicit calculation and an assignment.
+Here&amp;rsquo;s a list of all the compound arithmetic assignment operators in Zen.
+ Please note that the operators described in the table below are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
+    Operator Description     += Addition and assignment   -= Subtraction and assignment   *= Multiplication and assignment   /= Division (for quotient) and assignment   %= Division (for remainder) and assignment    For example, the expression a = a + 10 can be written as a += 10.</description>
+    </item>
+    
+    <item>
       <title>Using the Unary Plus and Minus Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

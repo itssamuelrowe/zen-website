@@ -9,23 +9,23 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Understanding Operators :: Zen</title>
+    <title>Using the Compound Assignment Operators :: Zen</title>
 
     
-    <link href="/zen-website/css/nucleus.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/fontawesome-all.min.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/hybrid.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/featherlight.min.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/perfect-scrollbar.min.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/auto-complete.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/theme.css?1575469082" rel="stylesheet">
-    <link href="/zen-website/css/hugo-theme.css?1575469082" rel="stylesheet">
+    <link href="/zen-website/css/nucleus.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/fontawesome-all.min.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/hybrid.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/featherlight.min.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/perfect-scrollbar.min.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/auto-complete.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/theme.css?1575469083" rel="stylesheet">
+    <link href="/zen-website/css/hugo-theme.css?1575469083" rel="stylesheet">
     
-      <link href="/zen-website/css/theme-green.css?1575469082" rel="stylesheet">
+      <link href="/zen-website/css/theme-green.css?1575469083" rel="stylesheet">
     
 
-    <script src="/zen-website/js/jquery-3.3.1.min.js?1575469082"></script>
+    <script src="/zen-website/js/jquery-3.3.1.min.js?1575469083"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/understanding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575469082"></script>
-<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575469082"></script>
+<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575469083"></script>
+<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575469083"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/zen-website\/";
     
 </script>
-<script type="text/javascript" src="/zen-website/js/search.js?1575469082"></script>
+<script type="text/javascript" src="/zen-website/js/search.js?1575469083"></script>
 
     
   </div>
@@ -416,7 +416,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/understanding-operators/" title="Understanding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/understanding-operators/" title="Understanding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/understanding-operators/">
         Understanding Operators
         <i class="fas fa-check read-icon"></i>
@@ -435,7 +435,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/" title="Using the Compound Assignment Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/" title="Using the Compound Assignment Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/">
         Using the Compound Assignment Operators
         <i class="fas fa-check read-icon"></i>
@@ -777,7 +777,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Understanding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Using the Compound Assignment Operators
           
          
           
@@ -806,7 +806,7 @@
           
             <h1>
               
-              Understanding Operators
+              Using the Compound Assignment Operators
             </h1>
           
 
@@ -814,14 +814,108 @@
 
 
 
-<p>In this lecture, you will learn about operators.</p>
+<p>A compound assignment operator is an operator that performs both an implicit
+calculation and an assignment.</p>
 
-<p>An operator is a special symbol or a keyword that performs a mathemtical operation
-or a specific operation.</p>
+<p>Here&rsquo;s a list of all the compound arithmetic assignment operators in Zen.</p>
 
-<p>Generally, an operator expects one, two, or three values known as <em>operands</em>.</p>
+<blockquote>
+<p>Please note that the operators described in the table below are with respect
+to the <code>Integer8</code>, <code>Integer16</code>, <code>Integer32</code>, <code>Integer64</code>, <code>Decimal32</code> and <code>Decimal64</code>
+data types. For behavior specific to other data types, please refer the documentation.</p>
+</blockquote>
 
-<p>You must always remember, an operator always calculates and returns a result.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>+=</td>
+<td>Addition and assignment</td>
+</tr>
+
+<tr>
+<td>-=</td>
+<td>Subtraction and assignment</td>
+</tr>
+
+<tr>
+<td>*=</td>
+<td>Multiplication and assignment</td>
+</tr>
+
+<tr>
+<td>/=</td>
+<td>Division (for quotient) and assignment</td>
+</tr>
+
+<tr>
+<td>%=</td>
+<td>Division (for remainder) and assignment</td>
+</tr>
+</tbody>
+</table>
+
+<p>For example, the expression <code>a = a + 10</code> can be written as <code>a += 10</code>.</p>
+
+<p>Here&rsquo;s another exampe. The expression <code>b = b * 100</code> can be written as <code>b *= 100</code>.</p>
+
+<blockquote>
+<p>Please note that the operators described in the table below are with respect
+to the <code>Integer8</code>, <code>Integer16</code>, <code>Integer32</code>, and <code>Integer64</code> data types.
+For behavior specific to other data types, please refer the documentation.</p>
+</blockquote>
+
+<p>Here&rsquo;s a list of all the compound bitwise assignment operators in Zen.</p>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>|=</td>
+<td>Bitwise OR and assignment</td>
+</tr>
+
+<tr>
+<td>&amp;=</td>
+<td>Bitwise AND and assignment</td>
+</tr>
+
+<tr>
+<td>^=</td>
+<td>Bitwise XOR and assignment</td>
+</tr>
+
+<tr>
+<td>&lt;&lt;=</td>
+<td>Bitwise Left Shift and Assignment</td>
+</tr>
+
+<tr>
+<td>&gt;&gt;=</td>
+<td>Bitwise Right Shift and Assignment</td>
+</tr>
+
+<tr>
+<td>&gt;&gt;&gt;=</td>
+<td>Unsigned Bitwise Right Shift and Assignment</td>
+</tr>
+</tbody>
+</table>
+
+<p>Compound assignment operators can be confusing when used in complex expressions.
+Therefore, we recommend you to always compound assignment operators by themselves.</p>
 
 
 <footer class=" footline" >
@@ -1104,6 +1198,22 @@ or a specific operation.</p>
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1123,22 +1233,6 @@ or a specific operation.</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1355,10 +1449,10 @@ or a specific operation.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/understanding-operators/" title="Understanding Operators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/" title="Using the Compound Assignment Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/" title="Using the Unary Plus and Minus Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1368,19 +1462,19 @@ or a specific operation.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/zen-website/js/clipboard.min.js?1575469082"></script>
-    <script src="/zen-website/js/perfect-scrollbar.min.js?1575469082"></script>
-    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575469082"></script>
-    <script src="/zen-website/js/jquery.sticky.js?1575469082"></script>
-    <script src="/zen-website/js/featherlight.min.js?1575469082"></script>
-    <script src="/zen-website/js/highlight.pack.js?1575469082"></script>
+    <script src="/zen-website/js/clipboard.min.js?1575469083"></script>
+    <script src="/zen-website/js/perfect-scrollbar.min.js?1575469083"></script>
+    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575469083"></script>
+    <script src="/zen-website/js/jquery.sticky.js?1575469083"></script>
+    <script src="/zen-website/js/featherlight.min.js?1575469083"></script>
+    <script src="/zen-website/js/highlight.pack.js?1575469083"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575469082"></script>
-    <script src="/zen-website/js/learn.js?1575469082"></script>
-    <script src="/zen-website/js/hugo-learn.js?1575469082"></script>
+    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575469083"></script>
+    <script src="/zen-website/js/learn.js?1575469083"></script>
+    <script src="/zen-website/js/hugo-learn.js?1575469083"></script>
 
-    <link href="/zen-website/mermaid/mermaid.css?1575469082" rel="stylesheet" />
-    <script src="/zen-website/mermaid/mermaid.js?1575469082"></script>
+    <link href="/zen-website/mermaid/mermaid.css?1575469083" rel="stylesheet" />
+    <script src="/zen-website/mermaid/mermaid.js?1575469083"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
