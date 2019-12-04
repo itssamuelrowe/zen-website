@@ -99,6 +99,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-equality-operators/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/variables-values-and-data-types/working-with-non-primitive-reference-types/</loc>
   </url>
   

@@ -9,23 +9,23 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Overriding Operators :: Zen</title>
+    <title>Working with Equality Operators :: Zen</title>
 
     
-    <link href="/zen-website/css/nucleus.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/fontawesome-all.min.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/hybrid.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/featherlight.min.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/perfect-scrollbar.min.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/auto-complete.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/theme.css?1575468221" rel="stylesheet">
-    <link href="/zen-website/css/hugo-theme.css?1575468221" rel="stylesheet">
+    <link href="/zen-website/css/nucleus.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/fontawesome-all.min.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/hybrid.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/featherlight.min.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/perfect-scrollbar.min.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/auto-complete.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/theme.css?1575468222" rel="stylesheet">
+    <link href="/zen-website/css/hugo-theme.css?1575468222" rel="stylesheet">
     
-      <link href="/zen-website/css/theme-green.css?1575468221" rel="stylesheet">
+      <link href="/zen-website/css/theme-green.css?1575468222" rel="stylesheet">
     
 
-    <script src="/zen-website/js/jquery-3.3.1.min.js?1575468221"></script>
+    <script src="/zen-website/js/jquery-3.3.1.min.js?1575468222"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/overriding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/working-with-equality-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575468221"></script>
-<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575468221"></script>
+<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575468222"></script>
+<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575468222"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/zen-website\/";
     
 </script>
-<script type="text/javascript" src="/zen-website/js/search.js?1575468221"></script>
+<script type="text/javascript" src="/zen-website/js/search.js?1575468222"></script>
 
     
   </div>
@@ -378,7 +378,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/overriding-operators/">
         Overriding Operators
         <i class="fas fa-check read-icon"></i>
@@ -454,7 +454,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-equality-operators/" title="Working with Equality Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-equality-operators/" title="Working with Equality Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/working-with-equality-operators/">
         Working with Equality Operators
         <i class="fas fa-check read-icon"></i>
@@ -720,7 +720,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Overriding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Working with Equality Operators
           
          
           
@@ -733,7 +733,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#equality">Equality</a></li>
+<li><a href="#inequality">Inequality</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -749,7 +757,7 @@
           
             <h1>
               
-              Overriding Operators
+              Working with Equality Operators
             </h1>
           
 
@@ -757,43 +765,42 @@
 
 
 
-<p>Zen allows operator overriding through a combination of functions and
-annotations.</p>
 
-<p>All the operators in Zen are dispatched to a function call.
-The <code>ZenKernel.evaluate(...)</code> function finds a suitable handler for the
-operator defined within the operand object and dispatches it. In other words,
-the compiler translates expressions with operators to equivalent
-<code>ZenKernel.evaluate(...)</code> calls.</p>
 
-<p>For example, in the <code>HashMap</code> class the following annotation
-overrides the subscript operator.</p>
+<p>In this section, you will learn about the equality operators in Zen.</p>
 
-<pre><code>@Operator symbol='[]'
-function getValue(key)
-    ...
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
 
-<p>With that information, consider the following snippet of code.</p>
+<tbody>
+<tr>
+<td>==</td>
+<td>Equality</td>
+</tr>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = emailAddresses['Samuel Rowe']
-</code></pre>
+<tr>
+<td>!=</td>
+<td>Inequality</td>
+</tr>
+</tbody>
+</table>
 
-<p>The above code snippet is equivalent to the following expression statement.</p>
+<h2 id="equality">Equality</h2>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = ZenKernel.evaluate(emailAddresses, 'Samuel Rowe', '[]')
-</code></pre>
+<p>Returns <code>true</code> if the operand on the left is the same as the operand on the
+right. Please note that this operator compares the content of the left
+operand with the content of the right operand, along with the references.</p>
 
-<p>In fact, when you compile the former code snippet the compiler generates
-instructions as if the code was written in the latter form.</p>
+<h2 id="inequality">Inequality</h2>
+
+<p>Returns <code>true</code> if the operand on the left is not the same as the operand on the
+right. Plese note that this operator compares the content of the left operand
+with the content of the right operand, along with the references.</p>
 
 
 <footer class=" footline" >
@@ -1041,23 +1048,6 @@ instructions as if the code was written in the latter form.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1120,6 +1110,23 @@ instructions as if the code was written in the latter form.</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1127,6 +1134,9 @@ instructions as if the code was written in the latter form.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1276,10 +1286,10 @@ instructions as if the code was written in the latter form.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/" title="Operators, Operands, and Expressions"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/" title="Working with Arithmetic Operators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/variables-values-and-data-types/" title="Variables, Values, and Data Types" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1289,19 +1299,19 @@ instructions as if the code was written in the latter form.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/zen-website/js/clipboard.min.js?1575468221"></script>
-    <script src="/zen-website/js/perfect-scrollbar.min.js?1575468221"></script>
-    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575468221"></script>
-    <script src="/zen-website/js/jquery.sticky.js?1575468221"></script>
-    <script src="/zen-website/js/featherlight.min.js?1575468221"></script>
-    <script src="/zen-website/js/highlight.pack.js?1575468221"></script>
+    <script src="/zen-website/js/clipboard.min.js?1575468222"></script>
+    <script src="/zen-website/js/perfect-scrollbar.min.js?1575468222"></script>
+    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575468222"></script>
+    <script src="/zen-website/js/jquery.sticky.js?1575468222"></script>
+    <script src="/zen-website/js/featherlight.min.js?1575468222"></script>
+    <script src="/zen-website/js/highlight.pack.js?1575468222"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575468221"></script>
-    <script src="/zen-website/js/learn.js?1575468221"></script>
-    <script src="/zen-website/js/hugo-learn.js?1575468221"></script>
+    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575468222"></script>
+    <script src="/zen-website/js/learn.js?1575468222"></script>
+    <script src="/zen-website/js/hugo-learn.js?1575468222"></script>
 
-    <link href="/zen-website/mermaid/mermaid.css?1575468221" rel="stylesheet" />
-    <script src="/zen-website/mermaid/mermaid.js?1575468221"></script>
+    <link href="/zen-website/mermaid/mermaid.css?1575468222" rel="stylesheet" />
+    <script src="/zen-website/mermaid/mermaid.js?1575468222"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

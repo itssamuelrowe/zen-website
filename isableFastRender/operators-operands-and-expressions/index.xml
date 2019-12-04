@@ -61,5 +61,15 @@ You must always remember, an operator always calculates and returns a result.</d
    Operator Description     + Addition   - Subtraction   * Multiplication   / Division (returns quotient)   % Division (returns remainder)    Addition The addition operator, written as plus + accepts two operands.</description>
     </item>
     
+    <item>
+      <title>Working with Equality Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-equality-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-equality-operators/</guid>
+      <description>In this section, you will learn about the equality operators in Zen.
+   Operator Description     == Equality   != Inequality    Equality Returns true if the operand on the left is the same as the operand on the right. Please note that this operator compares the content of the left operand with the content of the right operand, along with the references.</description>
+    </item>
+    
   </channel>
 </rss>
