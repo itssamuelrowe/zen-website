@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Overriding Operators :: Zen</title>
+    <title>Working with Arithmetic Operators :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575467995" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/overriding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -378,7 +378,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/overriding-operators/">
         Overriding Operators
         <i class="fas fa-check read-icon"></i>
@@ -435,7 +435,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/" title="Working with Arithmetic Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/" title="Working with Arithmetic Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/">
         Working with Arithmetic Operators
         <i class="fas fa-check read-icon"></i>
@@ -701,7 +701,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Overriding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Working with Arithmetic Operators
           
          
           
@@ -714,7 +714,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#addition">Addition</a></li>
+<li><a href="#subtraction">Subtraction</a></li>
+<li><a href="#multiplication">Multiplication</a></li>
+<li><a href="#division">Division</a></li>
+<li><a href="#remainder">Remainder</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -730,7 +741,7 @@
           
             <h1>
               
-              Overriding Operators
+              Working with Arithmetic Operators
             </h1>
           
 
@@ -738,43 +749,125 @@
 
 
 
-<p>Zen allows operator overriding through a combination of functions and
-annotations.</p>
 
-<p>All the operators in Zen are dispatched to a function call.
-The <code>ZenKernel.evaluate(...)</code> function finds a suitable handler for the
-operator defined within the operand object and dispatches it. In other words,
-the compiler translates expressions with operators to equivalent
-<code>ZenKernel.evaluate(...)</code> calls.</p>
 
-<p>For example, in the <code>HashMap</code> class the following annotation
-overrides the subscript operator.</p>
+<p>In this section, you will learn about the arithmetic operators in Zen.</p>
 
-<pre><code>@Operator symbol='[]'
-function getValue(key)
-    ...
+<blockquote>
+<p>Please note that the operators described in this section are with respect
+to the <code>Integer8</code>, <code>Integer16</code>, <code>Integer32</code>, <code>Integer64</code>, <code>Decimal32</code> and <code>Decimal64</code>
+data types. For behavior specific to other data types, please refer the documentation.</p>
+</blockquote>
+
+<p>You can perform addition, subtraction, multiplication, and division with the
+arithmetic operators. They are similar to operators in basic mathematics.</p>
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+</tr>
+
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+</tr>
+
+<tr>
+<td>/</td>
+<td>Division (returns quotient)</td>
+</tr>
+
+<tr>
+<td>%</td>
+<td>Division (returns remainder)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="addition">Addition</h2>
+
+<p>The addition operator, written as plus <code>+</code> accepts two operands. It adds both the operands
+that you specify and returns their sum as its result. You can add two
+constants, a constant and a variable, or two variables.</p>
+
+<p>Here&rsquo;s an example.</p>
+
+<pre><code>var age = 10
+var ageAfter10Years = age + 10
 </code></pre>
 
-<p>With that information, consider the following snippet of code.</p>
+<h2 id="subtraction">Subtraction</h2>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = emailAddresses['Samuel Rowe']
+<p>The subtraction operator, written as minus <code>-</code> accepts two operands. It subtracts the
+second operand from the first operand. You can subtract a constant from
+another constant, a constant from a variable, or a variable from another
+variable.</p>
+
+<p>Here&rsquo;s an example.</p>
+
+<pre><code>var age = 10
+var ageBefore10Years = age - 10
 </code></pre>
 
-<p>The above code snippet is equivalent to the following expression statement.</p>
+<h2 id="multiplication">Multiplication</h2>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = ZenKernel.evaluate(emailAddresses, 'Samuel Rowe', '[]')
+<p>The multiplication operator, written as asterisk<code>*</code> accepts two operands. It multiplies both the operands
+that you specify and returns their product as its result. You can multiply two
+constants, a constant and a variable, or two variables.</p>
+
+<p>Here&rsquo;s an example.</p>
+
+<pre><code>var increment = 1.2
+var salary = 10000
+var newSalary = increment * salary
 </code></pre>
 
-<p>In fact, when you compile the former code snippet the compiler generates
-instructions as if the code was written in the latter form.</p>
+<p>In algebra, you can write a number next to a variable and
+imply multiplication. For example in algebra, <code>8y</code> means eight times y. But this is not the case in Zen. You always
+need to write the asterisk to indicate multiplication.</p>
+
+<h2 id="division">Division</h2>
+
+<p>The division operator, written as forward slash  <code>/</code> accepts two operands. It divides one operand
+by another and returns the quotient as its result. You can divide two
+constants, a constant and a variable, or two variables.</p>
+
+<p>Here&rsquo;s an example.</p>
+
+<pre><code>var favorable = 1
+var total = 6
+var probability = favorable / total
+</code></pre>
+
+<p>When you add two <code>int</code> values, the result is an <code>int</code> value, even if you assign the result to a <code>double</code> variable.</p>
+
+<h2 id="remainder">Remainder</h2>
+
+<p>In Zen, the modulus <code>%</code> operator does not calculate percentage. <strong>It divides
+one operand by another and returns the remainder as its result.</strong> This operator is known as the modulus operator.
+You can divide two constants, a constant and a variable, or two variables.</p>
+
+<pre><code>var a = 21
+var b = 2
+var c = a % b
+</code></pre>
+
+<p>For example, when you divide 21 by 2 the quotient is 10 and the remainder is 1.
+Thus, in this example <code>c</code> is equal to 1.</p>
 
 
 <footer class=" footline" >
@@ -1022,23 +1115,6 @@ instructions as if the code was written in the latter form.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1085,6 +1161,23 @@ instructions as if the code was written in the latter form.</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1092,6 +1185,9 @@ instructions as if the code was written in the latter form.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1241,10 +1337,10 @@ instructions as if the code was written in the latter form.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/" title="Operators, Operands, and Expressions"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/understanding-operators/" title="Understanding Operators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/variables-values-and-data-types/" title="Variables, Values, and Data Types" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

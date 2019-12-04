@@ -186,6 +186,18 @@ For exampe, you can store a value like 100 in a variable. After you store a valu
     </item>
     
     <item>
+      <title>Working with Arithmetic Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</guid>
+      <description>In this section, you will learn about the arithmetic operators in Zen.
+ Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
+ You can perform addition, subtraction, multiplication, and division with the arithmetic operators. They are similar to operators in basic mathematics.
+   Operator Description     + Addition   - Subtraction   * Multiplication   / Division (returns quotient)   % Division (returns remainder)    Addition The addition operator, written as plus + accepts two operands.</description>
+    </item>
+    
+    <item>
       <title>Working with Blocks</title>
       <link>http://localhost:1313/zen-website/basics-of-zen/working-with-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
