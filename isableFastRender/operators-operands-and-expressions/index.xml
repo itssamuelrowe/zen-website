@@ -85,6 +85,17 @@ expression1 ? expression2 : expression3  Here, expression1 can be any expression
     </item>
     
     <item>
+      <title>Using the Logical Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-logical-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-logical-operators/</guid>
+      <description>You can combine two or more conditions or constraints or complement with logical operators. The result of the operation of a logical operator is a Boolean value, either true or false.
+Logical AND Operator The logical AND operator combines two Boolean expressions and returns true if both the expressions evaluate to true. Otherwise, it returns false for the given expressions.
+The general form of the logical AND operator is shown here.</description>
+    </item>
+    
+    <item>
       <title>Using the Unary Plus and Minus Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
