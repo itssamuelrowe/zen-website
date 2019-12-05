@@ -9,7 +9,7 @@ All keywords are in lowercase.
 Like everything else in Zen, keywords are case sensitive. For example, if you
 use `For` with uppercase `F` instead of `for` with lowercase `f` it is an error.
 
-The hello world program shown in the beginnig of this chapter use one keyword:
+The hello world program shown in the beginning of this chapter use one keyword:
 `function`.
 
 In Zen there are 36 keywords. They are listed below in alphabetical order.

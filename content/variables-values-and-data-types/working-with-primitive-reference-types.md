@@ -65,10 +65,10 @@ boolean values without explicitly converting.
 An *integer* is a number without any fractional or decimal portion.
 
 There are four integer types you can use.
- * `Integer8`
- * `Integer16`
- * `Integer32`
- * `Integer64`
+  * `Integer8`
+  * `Integer16`
+  * `Integer32`
+  * `Integer64`
 
 You can store different *range* of integer values in each of these types because
 they differ in size.
@@ -143,8 +143,8 @@ mantissa × (2 ^ exponent)
 ```
 
 There are two decimal types you can use.
-    * `Decimal32`
-    * `Decimal64`
+  * `Decimal32`
+  * `Decimal64`
 
 The most commonly used decimal type is `Decimal64`. It uses eight bytes (64 bits)
 to store decimal values. *It implements the IEEE 754 double-precision format.*

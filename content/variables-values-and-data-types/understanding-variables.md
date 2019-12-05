@@ -2,7 +2,7 @@
 title = "Understanding Variables"
 +++
 
-In this section, you will learn to declare variables.
+In this section, you will learn about variables.
 
 A variable is a place holder. A variable's value can change when your program
 is running.
