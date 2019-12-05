@@ -96,6 +96,17 @@ Note that the symbol used to represent these operators are the same as the addit
     </item>
     
     <item>
+      <title>Working with Bitwise Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</guid>
+      <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
+ A computer stores data in binary. In other words, information is encoded as a sequence of 1&amp;rsquo;s and 0&amp;rsquo;s. On most computers, the memory is organized into 8-bit cells known as bytes.
+Zen defines several operators that allow you to work at the binary level.</description>
+    </item>
+    
+    <item>
       <title>Working with Comparison Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-comparison-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
