@@ -54,6 +54,17 @@ Zen was designed to develop applications that are capable of running across mult
     </item>
     
     <item>
+      <title>Combing Operators</title>
+      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</guid>
+      <description>The concepts explained in this section are very important. Do not worry if you find the concepts confusing. You can always come back and read the section later.
+You can combine operators to form complex expessions. The order in which the operations are evaluated is determined by the precedence of the operators involved in the expression. For example, multiplication and division have a higher precedence than addition and subtraction.
+Always remember, precedence rules can be overridden by explicit parentheses.</description>
+    </item>
+    
+    <item>
       <title>Declaring Final Variables or Constants</title>
       <link>http://localhost:1313/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
