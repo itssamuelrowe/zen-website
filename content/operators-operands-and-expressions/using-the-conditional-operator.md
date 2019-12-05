@@ -11,7 +11,7 @@ It can seem somewhat confusing at first, but the conditional operator
 can be used very effectively once understood.
 
 The conditional operator has the following general form.
-````
+```
 expression1 ? expression2 : expression3
 ```
 

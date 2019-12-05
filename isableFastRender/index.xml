@@ -216,7 +216,8 @@ Here&amp;rsquo;s a list of all the compound arithmetic assignment operators in Z
       <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-conditional-operator/</guid>
       <description>The conditional operator is the only ternary operator in Zen. It is used to replace certain types of if-then-else statements. You will learn more about if statements later in the manual.
 The conditional operator is represented by a question mark (?). It can seem somewhat confusing at first, but the conditional operator can be used very effectively once understood.
-The conditional operator has the following general form. ```` expression1 ? expression2 : expression3</description>
+The conditional operator has the following general form.
+expression1 ? expression2 : expression3  Here, expression1 can be any expression that evaluates to a boolean value.</description>
     </item>
     
     <item>
