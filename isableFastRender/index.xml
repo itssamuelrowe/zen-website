@@ -197,6 +197,17 @@ For exampe, you can store a value like 100 in a variable. After you store a valu
     </item>
     
     <item>
+      <title>Using If Statements</title>
+      <link>http://localhost:1313/zen-website/conditional-statements/using-if-statements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/conditional-statements/using-if-statements/</guid>
+      <description>The if statement is one of the most important statements in any programming language. The following sections describe the various forms of the if statement in Zen. Basically, the if statement allows your program to branch conditionally. It is a compound statement.
+Here is the general form of the if statement.
+if condition statement else statement  Here, a statement may be either a simple statement or a compound statement. The condition is any expression that evaluates to a Boolean value.</description>
+    </item>
+    
+    <item>
       <title>Using the Assignment Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
