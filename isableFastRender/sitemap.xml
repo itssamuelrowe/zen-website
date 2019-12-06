@@ -31,6 +31,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/conditional-statements/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</loc>
   </url>
   
