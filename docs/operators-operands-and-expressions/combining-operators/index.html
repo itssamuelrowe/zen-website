@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Overriding Operators :: Zen</title>
+    <title>Combing Operators :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575591224" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/overriding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/combining-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -378,7 +378,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/combining-operators/" title="Combing Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/combining-operators/" title="Combing Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/combining-operators/">
         Combing Operators
         <i class="fas fa-check read-icon"></i>
@@ -397,7 +397,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/overriding-operators/">
         Overriding Operators
         <i class="fas fa-check read-icon"></i>
@@ -872,7 +872,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Overriding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Combing Operators
           
          
           
@@ -901,7 +901,7 @@
           
             <h1>
               
-              Overriding Operators
+              Combing Operators
             </h1>
           
 
@@ -909,43 +909,312 @@
 
 
 
-<p>Zen allows operator overriding through a combination of functions and
-annotations.</p>
+<p>The concepts explained in this section are very important. Do not worry if you
+find the concepts confusing. You can always come back and read the section later.</p>
 
-<p>All the operators in Zen are dispatched to a function call.
-The <code>ZenKernel.evaluate(...)</code> function finds a suitable handler for the
-operator defined within the operand object and dispatches it. In other words,
-the compiler translates expressions with operators to equivalent
-<code>ZenKernel.evaluate(...)</code> calls.</p>
+<p>You can combine operators to form complex expessions. The order in which the
+operations are evaluated is determined by the precedence of the operators involved
+in the expression. For example, multiplication and division have a higher
+precedence than addition and subtraction.</p>
 
-<p>For example, in the <code>HashMap</code> class the following annotation
-overrides the subscript operator.</p>
+<p>Always remember, precedence rules can be overridden by explicit parentheses.
+They raise the precedence of the operations that are inside them. This is
+often necessary to obtain the result you desire. We recommend you to use
+parentheses whenever possible for clarity.</p>
 
-<pre><code>@Operator symbol='[]'
-function getValue(key)
-    ...
-</code></pre>
+<p>When two operators share an operand the operator with the higher precedence goes
+first. For example, <code>1 + 2 * 3</code> is treated as <code>1 + (2 * 3)</code>, whereas <code>1 * 2 + 3</code>
+is treated as <code>(1 * 2) + 3</code> since multiplication has a higher precedence than addition.</p>
 
-<p>With that information, consider the following snippet of code.</p>
+<p>But what happens when two operators with the same precedence
+occur in the same expression? In such cases, the expression is evaluated
+according to the associativity of the operators involved.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = emailAddresses['Samuel Rowe']
-</code></pre>
+<p>For example, the expression <code>x = y = z = 7</code> is equivalent to <code>x = (y = (z = 7))</code>,
+because the assignment operator has right-to-left associativity which means the
+operators are evaluated from right to left.</p>
 
-<p>The above code snippet is equivalent to the following expression statement.</p>
+<p>Here&rsquo;s another example. The expression <code>10 / 20 / 30</code> is equivalent to <code>(10 / 20) / 30</code>
+because the <code>/</code> division operator has left-to-right associativity.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = ZenKernel.evaluate(emailAddresses, 'Samuel Rowe', '[]')
-</code></pre>
+<p>Further, some operators are non-associative. For example, the expression <code>x &lt;= y &lt;= z</code>
+is invalid.</p>
 
-<p>In fact, when you compile the former code snippet the compiler generates
-instructions as if the code was written in the latter form.</p>
+<p>The following table shows all operators in Zen from highest to lowest precedence,
+along with their associativity. You do not have to memorize them all. You will
+learn their properties eventually with practise.</p>
+
+<table>
+<thead>
+<tr>
+<th>Precedence</th>
+<th>Operator</th>
+<th>Type</th>
+<th>Associativity</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>14</td>
+<td>()</td>
+<td>Parentheses</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td></td>
+<td>[]</td>
+<td>Subscript</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>·</td>
+<td>Member selection</td>
+<td></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>+</td>
+<td>Unary plus</td>
+<td>right-to-left</td>
+</tr>
+
+<tr>
+<td></td>
+<td>-</td>
+<td>Unary minus</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>!</td>
+<td>Logical NOT</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>~</td>
+<td>Bitwise NOT</td>
+<td></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>*</td>
+<td>Multiplication</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td></td>
+<td>/</td>
+<td>Division (quotient)</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>%</td>
+<td>Division (remainder)</td>
+<td></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>+</td>
+<td>Addition</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td></td>
+<td>-</td>
+<td>Subtraction</td>
+<td></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>&lt;&lt;</td>
+<td>Bitwise left shift</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td></td>
+<td>&gt;&gt;</td>
+<td>Bitwise right shift with sign extension</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>&gt;&gt;&gt;</td>
+<td>Bitwise right shift with zero extension</td>
+<td></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>&lt;</td>
+<td>Lesser than</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td></td>
+<td>&lt;=</td>
+<td>Lesser than or equal</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>&gt;</td>
+<td>Greater than</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>&gt;=</td>
+<td>Greater than or equal</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>is</td>
+<td>Reference comparison</td>
+<td></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>==</td>
+<td>Equality</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td></td>
+<td>!=</td>
+<td>Inequality</td>
+<td></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>&amp;</td>
+<td>Bitwise AND</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>^</td>
+<td>Bitwise Exclusive OR</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>|</td>
+<td>Bitwise Inclusive OR</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>&amp;&amp;</td>
+<td>Logical AND</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>||</td>
+<td>Logical OR</td>
+<td>left-to-right</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>? :</td>
+<td>Conditional</td>
+<td>right-to-left</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>=</td>
+<td>Assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>+=</td>
+<td>Addition and assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>-=</td>
+<td>Subtraction and assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>*=</td>
+<td>Multiplication and assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>/=</td>
+<td>Division (quotient) and assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>&amp;=</td>
+<td>Bitwise AND and assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>^=</td>
+<td>Bitwise XOR and assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>|=</td>
+<td>Bitwise OR and assignment</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>~=</td>
+<td>Bitwise NOT and assignment</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >
@@ -1193,25 +1462,6 @@ instructions as if the code was written in the latter form.</p>
             
                 
                     
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1231,6 +1481,22 @@ instructions as if the code was written in the latter form.</p>
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1559,10 +1825,10 @@ instructions as if the code was written in the latter form.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/combining-operators/" title="Combing Operators"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/" title="Operators, Operands, and Expressions"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

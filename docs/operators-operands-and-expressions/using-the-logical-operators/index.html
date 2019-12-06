@@ -9,23 +9,23 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Overriding Operators :: Zen</title>
+    <title>Using the Logical Operators :: Zen</title>
 
     
-    <link href="/zen-website/css/nucleus.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/fontawesome-all.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/hybrid.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/featherlight.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/perfect-scrollbar.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/auto-complete.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/theme.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/hugo-theme.css?1575591224" rel="stylesheet">
+    <link href="/zen-website/css/nucleus.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/fontawesome-all.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/hybrid.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/featherlight.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/perfect-scrollbar.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/auto-complete.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/theme.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/hugo-theme.css?1575591225" rel="stylesheet">
     
-      <link href="/zen-website/css/theme-green.css?1575591224" rel="stylesheet">
+      <link href="/zen-website/css/theme-green.css?1575591225" rel="stylesheet">
     
 
-    <script src="/zen-website/js/jquery-3.3.1.min.js?1575591224"></script>
+    <script src="/zen-website/js/jquery-3.3.1.min.js?1575591225"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/overriding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/using-the-logical-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575591224"></script>
-<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575591224"></script>
+<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575591225"></script>
+<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575591225"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/itssamuelrowe.github.io\/zen-website\/";
     
 </script>
-<script type="text/javascript" src="/zen-website/js/search.js?1575591224"></script>
+<script type="text/javascript" src="/zen-website/js/search.js?1575591225"></script>
 
     
   </div>
@@ -397,7 +397,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/overriding-operators/">
         Overriding Operators
         <i class="fas fa-check read-icon"></i>
@@ -511,7 +511,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-logical-operators/" title="Using the Logical Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-logical-operators/" title="Using the Logical Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/using-the-logical-operators/">
         Using the Logical Operators
         <i class="fas fa-check read-icon"></i>
@@ -872,7 +872,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Overriding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Using the Logical Operators
           
          
           
@@ -885,7 +885,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#logical-and-operator">Logical AND Operator</a></li>
+<li><a href="#logical-or-operator">Logical OR Operator</a></li>
+</ul></li>
+<li><a href="#the-logical-not-operator">The Logical NOT Operator</a></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -901,7 +910,7 @@
           
             <h1>
               
-              Overriding Operators
+              Using the Logical Operators
             </h1>
           
 
@@ -909,43 +918,162 @@
 
 
 
-<p>Zen allows operator overriding through a combination of functions and
-annotations.</p>
 
-<p>All the operators in Zen are dispatched to a function call.
-The <code>ZenKernel.evaluate(...)</code> function finds a suitable handler for the
-operator defined within the operand object and dispatches it. In other words,
-the compiler translates expressions with operators to equivalent
-<code>ZenKernel.evaluate(...)</code> calls.</p>
 
-<p>For example, in the <code>HashMap</code> class the following annotation
-overrides the subscript operator.</p>
+<p>You can combine two or more conditions or constraints or complement with logical
+operators. The result of the operation of a logical operator is a Boolean value,
+either <code>true</code> or <code>false</code>.</p>
 
-<pre><code>@Operator symbol='[]'
-function getValue(key)
-    ...
+<h2 id="logical-and-operator">Logical AND Operator</h2>
+
+<p>The logical AND operator combines two Boolean expressions and returns <code>true</code>
+if both the expressions evaluate to <code>true</code>. Otherwise, it returns <code>false</code> for
+the given expressions.</p>
+
+<p>The general form of the logical AND operator is shown here.</p>
+
+<pre><code>expression1 &amp;&amp; expression2
 </code></pre>
 
-<p>With that information, consider the following snippet of code.</p>
+<p>Here, <code>expression1</code> and <code>expression2</code> must evaluate to Boolean values. The
+result of the above operation <code>expression1 &amp;&amp; expression2</code> will be
+ * <code>true</code> if both the operands are <code>true</code>
+ * <code>false</code> if any of the operands is <code>false</code> or both the operands are <code>false</code>.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = emailAddresses['Samuel Rowe']
+<p>For example, consider the following statements.</p>
+
+<pre><code>var value1 = 10
+var value2 = 20
+var value3 = 30
+var result = value2 &gt; value1 &amp;&amp; value2 &lt; value3
 </code></pre>
 
-<p>The above code snippet is equivalent to the following expression statement.</p>
+<p>Can you guess the value stored in <code>result</code>? It will be equal to <code>true</code>, because
+<code>value2</code> is greater than <code>value1</code> and <code>value2</code> is lesser than <code>value3</code>.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = ZenKernel.evaluate(emailAddresses, 'Samuel Rowe', '[]')
+<p>The logical AND operator is similar to the bitwise AND operator. In fact, you
+could use the bitwise AND to combine Boolean conditions. However, the logical
+AND leverages your knowledge of logic.</p>
+
+<p>We know that both expressions compared by the logical AND operator must be <code>true</code>
+for the entire expression to be <code>true</code>. There is no reason to evaluate the
+second expression if the first one returns <code>false</code>. The logical AND leverages
+this idea and skips the evaluation of the second expression, if the first expression
+evalutes to <code>false</code>. On the other hand, the bitwise AND operator is not aware of
+this fact, so it blindly evaluates both expressions before determining the results.
+The logical AND operator is smart enough to stop when it knows what the result is.</p>
+
+<p>Programmers almost always use logical AND instead of bitwise AND for combining
+conditions. In fact, you should do the same. Because sometimes the expressions
+have significant side effects.</p>
+
+<p>For example, the second expression may delete a file. But what if the file
+was supposed to be deleted only if the first condition was true? The bitwise
+AND does not stop when the first condition is <code>false</code>, deleting the
+file. With a logical AND, the operator does the work for as expected.</p>
+
+<p>Relying on the side effects of expressions can be risky. In fact, you can almost
+always find a better way to write your code without side effects.</p>
+
+<h2 id="logical-or-operator">Logical OR Operator</h2>
+
+<p>The OR operator combines two Boolean expressions and returns <code>true</code>
+if at least one of the expressions evaluates to <code>true</code>. Otherwise, it returns
+<code>false</code> for the given expressions.</p>
+
+<p>The general form of the logical OR operator is shown here.</p>
+
+<pre><code>expression1 || expression2
 </code></pre>
 
-<p>In fact, when you compile the former code snippet the compiler generates
-instructions as if the code was written in the latter form.</p>
+<p>Here, <code>expression1</code> and <code>expression2</code> must evaluate to Boolean values. The
+result of the operation <code>expression1 || expression2</code> will be
+ * <code>true</code>if at least one of the operands is <code>true</code>
+ * <code>false</code> if both the operands are <code>false</code></p>
+
+<p>For example, consider the following statements.</p>
+
+<pre><code>var value1 = 10
+var value2 = 20
+var value3 = 30
+var result = value2 &lt; value1 || value2 &lt; value3
+</code></pre>
+
+<p>Can you guess the value stored in <code>result</code>? It will be equal to <code>true</code>. Since
+<code>value2</code> is greater than <code>value1</code>, it evaluates to false. Then <code>value2</code> is lesser
+than <code>value3</code> evaluates to <code>true</code>. Thus, <code>result1</code> evaluates to <code>true</code>.</p>
+
+<p>The logical OR operator is similar to the bitwise OR operator. In fact, you could use
+the bitwise OR to combine Boolean conditions. However, the logical OR leverages your
+knowledge of logic.</p>
+
+<p>We know that at least one of the expressions compared by the logical OR operator must be
+true for the entire expression to be <code>true</code>, there is no reason to evaluate the
+second expression if the first one returns <code>true</code>. Whereas, the bitwise OR operator
+is not aware of this fact, so it blindly evaluates both expressions before determining
+the results. The logical OR operator is smart enough to stop when it knows what the
+result is.</p>
+
+<p>Therefore, programmers almost always use logical OR instead of bitwise OR
+for combining conditions. In fact, you should do the same.
+Because sometimes the expressions have significant side effects.</p>
+
+<p>For example, the second expression may delete a file. But what if the file
+was supposed to be deleted only if the first condition was false? The bitwise
+OR does not stop when the first condition is <code>true</code>, deleting the
+file. With a logical OR, the operator does the work for as expected.</p>
+
+<p>Again, relying on the side effects of expressions can be risky.
+In fact, you can almost always find a better way to write your code without
+side effects.</p>
+
+<h1 id="the-logical-not-operator">The Logical NOT Operator</h1>
+
+<p>The simplest of the logical operators is the logical NOT operator. It is a unary
+prefix operator, which means you can use it with only one operand and you write it
+immediately before its operand.</p>
+
+<p>This operator is also called as the complement operator.</p>
+
+<p>The logical NOT operator reverses the value of a Boolean expression. Thus, if the
+expression is <code>true</code>, the operator changes it to <code>false</code>. If the expression is <code>false</code>,
+the operator changes it to <code>true</code>.</p>
+
+<p>Here’s an example.</p>
+
+<p><code>!(day == 7)</code></p>
+
+<p>This expression evaluates to <code>true</code> if <code>day</code> is any value other than <code>7</code>.
+If <code>day</code> is <code>7</code>, it evaluates to <code>false</code>. It works by first evaluating the
+expression <code>(day == 4)</code>, after which it reverses the result of the evaluation.
+Do not confuse the logical NOT operator <code>!</code> with the NOT equals relational
+operator <code>!=</code>.</p>
+
+<p>The preceding example could have be written like this, too. The result will be
+the same.</p>
+
+<pre><code>day != 4
+</code></pre>
+
+<p>The logical NOT operator is more general. It can be applied to any expression
+that returns a Boolean result, not just an equality expression.</p>
+
+<p>You must almost always enclose the expression that the logical NOT <code>!</code> operator is
+applied to in parentheses.</p>
+
+<p>Consider the following expression.</p>
+
+<pre><code>!i == 6
+</code></pre>
+
+<p>Assume that <code>i</code> is a variable holding an integer value. The compiler does not
+generate any error about this expression. However, during runtime an exception
+will be thrown because it looks like you are trying to apply the logical NOT
+operator to the variable, not to the result of the comparison. Enclosig the
+comparison with parentheses solves the problem.</p>
+
+<pre><code>!(i == 6)
+</code></pre>
 
 
 <footer class=" footline" >
@@ -1212,26 +1340,6 @@ instructions as if the code was written in the latter form.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1327,6 +1435,26 @@ instructions as if the code was written in the latter form.</p>
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1559,10 +1687,10 @@ instructions as if the code was written in the latter form.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/combining-operators/" title="Combing Operators"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/using-the-conditional-operator/" title="Using the Conditional Operator"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/" title="Using the Unary Plus and Minus Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1572,19 +1700,19 @@ instructions as if the code was written in the latter form.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/zen-website/js/clipboard.min.js?1575591224"></script>
-    <script src="/zen-website/js/perfect-scrollbar.min.js?1575591224"></script>
-    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575591224"></script>
-    <script src="/zen-website/js/jquery.sticky.js?1575591224"></script>
-    <script src="/zen-website/js/featherlight.min.js?1575591224"></script>
-    <script src="/zen-website/js/highlight.pack.js?1575591224"></script>
+    <script src="/zen-website/js/clipboard.min.js?1575591225"></script>
+    <script src="/zen-website/js/perfect-scrollbar.min.js?1575591225"></script>
+    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575591225"></script>
+    <script src="/zen-website/js/jquery.sticky.js?1575591225"></script>
+    <script src="/zen-website/js/featherlight.min.js?1575591225"></script>
+    <script src="/zen-website/js/highlight.pack.js?1575591225"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575591224"></script>
-    <script src="/zen-website/js/learn.js?1575591224"></script>
-    <script src="/zen-website/js/hugo-learn.js?1575591224"></script>
+    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575591225"></script>
+    <script src="/zen-website/js/learn.js?1575591225"></script>
+    <script src="/zen-website/js/hugo-learn.js?1575591225"></script>
 
-    <link href="/zen-website/mermaid/mermaid.css?1575591224" rel="stylesheet" />
-    <script src="/zen-website/mermaid/mermaid.js?1575591224"></script>
+    <link href="/zen-website/mermaid/mermaid.css?1575591225" rel="stylesheet" />
+    <script src="/zen-website/mermaid/mermaid.js?1575591225"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

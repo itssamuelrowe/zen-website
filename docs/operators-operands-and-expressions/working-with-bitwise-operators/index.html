@@ -9,23 +9,23 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Overriding Operators :: Zen</title>
+    <title>Working with Bitwise Operators :: Zen</title>
 
     
-    <link href="/zen-website/css/nucleus.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/fontawesome-all.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/hybrid.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/featherlight.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/perfect-scrollbar.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/auto-complete.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/theme.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/hugo-theme.css?1575591224" rel="stylesheet">
+    <link href="/zen-website/css/nucleus.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/fontawesome-all.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/hybrid.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/featherlight.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/perfect-scrollbar.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/auto-complete.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/theme.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/hugo-theme.css?1575591225" rel="stylesheet">
     
-      <link href="/zen-website/css/theme-green.css?1575591224" rel="stylesheet">
+      <link href="/zen-website/css/theme-green.css?1575591225" rel="stylesheet">
     
 
-    <script src="/zen-website/js/jquery-3.3.1.min.js?1575591224"></script>
+    <script src="/zen-website/js/jquery-3.3.1.min.js?1575591225"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/overriding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575591224"></script>
-<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575591224"></script>
+<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575591225"></script>
+<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575591225"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/itssamuelrowe.github.io\/zen-website\/";
     
 </script>
-<script type="text/javascript" src="/zen-website/js/search.js?1575591224"></script>
+<script type="text/javascript" src="/zen-website/js/search.js?1575591225"></script>
 
     
   </div>
@@ -397,7 +397,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/overriding-operators/">
         Overriding Operators
         <i class="fas fa-check read-icon"></i>
@@ -568,7 +568,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/" title="Working with Bitwise Operators" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/" title="Working with Bitwise Operators" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/">
         Working with Bitwise Operators
         <i class="fas fa-check read-icon"></i>
@@ -872,7 +872,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Overriding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Working with Bitwise Operators
           
          
           
@@ -885,7 +885,19 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#the-bitwise-and-operator">The Bitwise AND Operator</a></li>
+<li><a href="#the-bitwise-or-operator">The Bitwise OR Operator</a></li>
+<li><a href="#the-bitwise-xor-operator">The Bitwise XOR Operator</a></li>
+<li><a href="#the-bitwise-complement-operator">The Bitwise Complement Operator</a></li>
+<li><a href="#the-left-shift-operator">The Left Shift Operator</a></li>
+<li><a href="#the-right-shift-operator">The Right Shift Operator</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -901,7 +913,7 @@
           
             <h1>
               
-              Overriding Operators
+              Working with Bitwise Operators
             </h1>
           
 
@@ -909,43 +921,305 @@
 
 
 
-<p>Zen allows operator overriding through a combination of functions and
-annotations.</p>
 
-<p>All the operators in Zen are dispatched to a function call.
-The <code>ZenKernel.evaluate(...)</code> function finds a suitable handler for the
-operator defined within the operand object and dispatches it. In other words,
-the compiler translates expressions with operators to equivalent
-<code>ZenKernel.evaluate(...)</code> calls.</p>
 
-<p>For example, in the <code>HashMap</code> class the following annotation
-overrides the subscript operator.</p>
+<blockquote>
+<p>Please note that the operators described in this section are with respect
+to the <code>Integer8</code>, <code>Integer16</code>, <code>Integer32</code>, <code>Integer64</code>, <code>Decimal32</code> and <code>Decimal64</code>
+data types. For behavior specific to other data types, please refer the documentation.</p>
+</blockquote>
 
-<pre><code>@Operator symbol='[]'
-function getValue(key)
-    ...
+<p>A computer stores data in binary. In other words, information is encoded as
+a sequence of 1&rsquo;s and 0&rsquo;s. On most computers, the memory is organized into 8-bit
+cells known as bytes.</p>
+
+<p>Zen defines several operators that allow you to work at the binary level. These
+operators perform bit-by-bit (commonly known as bitwise) operations on bit
+patterns and involve manipulation of individual bits. Such operators are known
+as bitwise operators. These operators can be applied only to integers.</p>
+
+<h2 id="the-bitwise-and-operator">The Bitwise AND Operator</h2>
+
+<p>The bitwise AND operator combines two bits and returns true
+only if both the bits are true. Otherwise, it returns false for
+the given bit pair. When we say true and false, we mean <code>1</code> and <code>0</code>, respectively.
+The operator basically combines all the bits in the given operands.</p>
+
+<p>This operator is called the bitwise AND because the left hand side bit <em>and</em> the
+right hand side bit must be true for the operator to return true.</p>
+
+<p>Here&rsquo;s the truth table for the bitwise AND operator.</p>
+
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<p>Mathematically, it is written as <code>Z = X . Y</code> where <code>.</code> implies multiplication.</p>
+
+<p>In a bitwise operation, the smaller sized operand is padded with zeroes before the most significant bit
+to match the larger sized operand.</p>
+
+<p>Consider the following example.</p>
+
+<pre><code>// BitwiseAndExample.zen
+
+function main(...arguments)
+    var a = 10
+    var b = 255
+    var c = a &amp; b
+    print(c)
 </code></pre>
 
-<p>With that information, consider the following snippet of code.</p>
+<p>We know that integers occupy 32 bits. To evaluate the last expression, each bit
+of the operands is combined to produce 0 or 1 if the corresponding bits are 1 or
+otherwise, respectively.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = emailAddresses['Samuel Rowe']
+<h2 id="the-bitwise-or-operator">The Bitwise OR Operator</h2>
+
+<p>The bitwise OR operator combines two bits and returns true if at least one of
+the bits is true. Otherwise, it returns false for the given bit pair. Again,
+when we say true and alse, we mean <code>1</code> and <code>0</code>, respectively The operator basically
+combines all the bits in the given operands.</p>
+
+<p>This operator is called the bitwise OR because the left hand side bit <em>or</em> the
+right hande side bit must be true for the operator to return true. Further, by
+definition it returns true if both the bits are true and returns false if both
+the bits are false.</p>
+
+<p>Here&rsquo;s the truth table for the bitwise OR operator.</p>
+
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<p>Mathematically, it is written as <code>Z = X + Y</code> where <code>.</code> implies addition.</p>
+
+<p>Consider the following example.</p>
+
+<pre><code>// BitwiseOrExample.zen
+
+function main(...arguments)
+    var a = 19
+    var b = 7
+    var c = a | b
+    print(c)
 </code></pre>
 
-<p>The above code snippet is equivalent to the following expression statement.</p>
+<p>We know that integers occupy 32 bits. To evaluate the last expression, each bit
+is combined to produce 1 or 0 if at least one of the corresponding bits is 1 or
+otherwise, respectively.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = ZenKernel.evaluate(emailAddresses, 'Samuel Rowe', '[]')
+<h2 id="the-bitwise-xor-operator">The Bitwise XOR Operator</h2>
+
+<p>The bitwise XOR operator combines two bits and returns true only if one of the
+bits is true and the other bit is false. Otherwise, it returns false for the
+given bit pair. Again, when we say true and false, we mean <code>1</code> and <code>0</code>, respectively.
+The operator basically combines all the bits in the given operands.</p>
+
+<p>This operator is called the bitwise XOR because the left hand side bit must be
+<em>exclusive</em> of the right hande side bit for the operator to return true.
+Further, by definition it returns false if both the bits are true or false.</p>
+
+<p>Here&rsquo;s the truth table for the bitwise XOR operator.</p>
+
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+
+<p>Mathematically, it is written as <code>Z = X . ~Y + ~X . Y</code> where <code>.</code> implies multiplication.</p>
+
+<p>As metioned previously, in a bitwise operation, the smaller sized operand is
+padded with zeroes before the most significant bit to match the larger sized
+operand.</p>
+
+<p>Consider the following example.</p>
+
+<pre><code>// BitwiseXorExample.zen
+
+function main(...arguments)
+    var a = 25
+    var b = 25
+    var c = a ^ b
+    print(c)
 </code></pre>
 
-<p>In fact, when you compile the former code snippet the compiler generates
-instructions as if the code was written in the latter form.</p>
+<p>To evaluate the last expression, each bit is combined to produce 1 or 0 if the
+corresponding bits are exclusive or otherwise, respectively.</p>
+
+<h2 id="the-bitwise-complement-operator">The Bitwise Complement Operator</h2>
+
+<p>The bitwise complement operator is a unary operator. It flips every bit in the
+operand.</p>
+
+<p>Here&rsquo;s the truth table for the bitwise complement operator.</p>
+
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>Y</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+
+<p>Mathematically, it is written as <code>Y = ~X</code>, where <code>~</code> implies negation.</p>
+
+<p>Consider the following example.</p>
+
+<pre><code>// BitwiseNotExample.zen
+
+function main(...arguments)
+    var a = 255
+    var b = ~a
+    print(b)
+</code></pre>
+
+<p>Here, each bit is flipped to produce 1 or 0 if the corresponding bit is 0 or 1,
+respectively.</p>
+
+<h2 id="the-left-shift-operator">The Left Shift Operator</h2>
+
+<p>The left shift operator <code>&lt;&lt;</code> shifts all of the bits in the first operand to
+the left by a number of times specified by the second operand.</p>
+
+<p>It has the following general form.</p>
+
+<pre><code>value &lt;&lt; times
+</code></pre>
+
+<p>Where, <code>times</code> specifies the number of positions to left-shift the specified value.</p>
+
+<p>For each shift, the most significant bit is shifted out and lost. A zero is brought
+in as the least significant bit.</p>
+
+<p>This means that when you left shift a 32-bit integer operand, bits are lost after
+32 positions.</p>
+
+<h2 id="the-right-shift-operator">The Right Shift Operator</h2>
+
+<p>The right shift operator <code>&gt;&gt;</code> shifts all of the bits in the first operand to
+the right by a number of times specified by the second operand.</p>
+
+<p>It has the following general form.</p>
+
+<pre><code>value &gt;&gt; times
+</code></pre>
+
+<p>Where, <code>times</code> specifies the number of positions to right-shift the specified value.</p>
+
+<p>For each shift, the least significant bit is shifted out and lost. A zero is brought
+in as the most significant bit.</p>
+
+<p>This means that when you right shift a 32-bit integer operand, bits are lost
+after 32 positions.</p>
 
 
 <footer class=" footline" >
@@ -1212,26 +1486,6 @@ instructions as if the code was written in the latter form.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1375,6 +1629,26 @@ instructions as if the code was written in the latter form.</p>
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1559,10 +1833,10 @@ instructions as if the code was written in the latter form.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/combining-operators/" title="Combing Operators"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/" title="Working with Arithmetic Operators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/working-with-comparison-operators/" title="Working with Comparison Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1572,19 +1846,19 @@ instructions as if the code was written in the latter form.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/zen-website/js/clipboard.min.js?1575591224"></script>
-    <script src="/zen-website/js/perfect-scrollbar.min.js?1575591224"></script>
-    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575591224"></script>
-    <script src="/zen-website/js/jquery.sticky.js?1575591224"></script>
-    <script src="/zen-website/js/featherlight.min.js?1575591224"></script>
-    <script src="/zen-website/js/highlight.pack.js?1575591224"></script>
+    <script src="/zen-website/js/clipboard.min.js?1575591225"></script>
+    <script src="/zen-website/js/perfect-scrollbar.min.js?1575591225"></script>
+    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575591225"></script>
+    <script src="/zen-website/js/jquery.sticky.js?1575591225"></script>
+    <script src="/zen-website/js/featherlight.min.js?1575591225"></script>
+    <script src="/zen-website/js/highlight.pack.js?1575591225"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575591224"></script>
-    <script src="/zen-website/js/learn.js?1575591224"></script>
-    <script src="/zen-website/js/hugo-learn.js?1575591224"></script>
+    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575591225"></script>
+    <script src="/zen-website/js/learn.js?1575591225"></script>
+    <script src="/zen-website/js/hugo-learn.js?1575591225"></script>
 
-    <link href="/zen-website/mermaid/mermaid.css?1575591224" rel="stylesheet" />
-    <script src="/zen-website/mermaid/mermaid.js?1575591224"></script>
+    <link href="/zen-website/mermaid/mermaid.css?1575591225" rel="stylesheet" />
+    <script src="/zen-website/mermaid/mermaid.js?1575591225"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

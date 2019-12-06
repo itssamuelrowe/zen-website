@@ -9,23 +9,23 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Overriding Operators :: Zen</title>
+    <title>Using the Conditional Operator :: Zen</title>
 
     
-    <link href="/zen-website/css/nucleus.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/fontawesome-all.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/hybrid.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/featherlight.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/perfect-scrollbar.min.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/auto-complete.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/theme.css?1575591224" rel="stylesheet">
-    <link href="/zen-website/css/hugo-theme.css?1575591224" rel="stylesheet">
+    <link href="/zen-website/css/nucleus.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/fontawesome-all.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/hybrid.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/featherlight.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/perfect-scrollbar.min.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/auto-complete.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/atom-one-dark-reasonable.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/theme.css?1575591225" rel="stylesheet">
+    <link href="/zen-website/css/hugo-theme.css?1575591225" rel="stylesheet">
     
-      <link href="/zen-website/css/theme-green.css?1575591224" rel="stylesheet">
+      <link href="/zen-website/css/theme-green.css?1575591225" rel="stylesheet">
     
 
-    <script src="/zen-website/js/jquery-3.3.1.min.js?1575591224"></script>
+    <script src="/zen-website/js/jquery-3.3.1.min.js?1575591225"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/operators-operands-and-expressions/overriding-operators/">
+  <body class="" data-url="/zen-website/operators-operands-and-expressions/using-the-conditional-operator/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575591224"></script>
-<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575591224"></script>
+<script type="text/javascript" src="/zen-website/js/lunr.min.js?1575591225"></script>
+<script type="text/javascript" src="/zen-website/js/auto-complete.js?1575591225"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/itssamuelrowe.github.io\/zen-website\/";
     
 </script>
-<script type="text/javascript" src="/zen-website/js/search.js?1575591224"></script>
+<script type="text/javascript" src="/zen-website/js/search.js?1575591225"></script>
 
     
   </div>
@@ -397,7 +397,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item active">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/overriding-operators/" title="Overriding Operators" class="dd-item ">
         <a href="/zen-website/operators-operands-and-expressions/overriding-operators/">
         Overriding Operators
         <i class="fas fa-check read-icon"></i>
@@ -492,7 +492,7 @@
  
   
     
-      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-conditional-operator/" title="Using the Conditional Operator" class="dd-item ">
+      <li data-nav-id="/zen-website/operators-operands-and-expressions/using-the-conditional-operator/" title="Using the Conditional Operator" class="dd-item active">
         <a href="/zen-website/operators-operands-and-expressions/using-the-conditional-operator/">
         Using the Conditional Operator
         <i class="fas fa-check read-icon"></i>
@@ -872,7 +872,7 @@
             
           
           
-            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Overriding Operators
+            <a href='/zen-website/'>Zen</a> > <a href='/zen-website/operators-operands-and-expressions/'>Operators, Operands, and Expressions</a> > Using the Conditional Operator
           
          
           
@@ -901,7 +901,7 @@
           
             <h1>
               
-              Overriding Operators
+              Using the Conditional Operator
             </h1>
           
 
@@ -909,43 +909,62 @@
 
 
 
-<p>Zen allows operator overriding through a combination of functions and
-annotations.</p>
+<p>The conditional operator is the only ternary operator in Zen.
+It is used to replace certain types of if-then-else statements.
+You will learn more about if statements later in the manual.</p>
 
-<p>All the operators in Zen are dispatched to a function call.
-The <code>ZenKernel.evaluate(...)</code> function finds a suitable handler for the
-operator defined within the operand object and dispatches it. In other words,
-the compiler translates expressions with operators to equivalent
-<code>ZenKernel.evaluate(...)</code> calls.</p>
+<p>The conditional operator is represented by a question mark (?).
+It can seem somewhat confusing at first, but the conditional operator
+can be used very effectively once understood.</p>
 
-<p>For example, in the <code>HashMap</code> class the following annotation
-overrides the subscript operator.</p>
+<p>The conditional operator has the following general form.</p>
 
-<pre><code>@Operator symbol='[]'
-function getValue(key)
-    ...
+<pre><code>expression1 ? expression2 : expression3
 </code></pre>
 
-<p>With that information, consider the following snippet of code.</p>
+<p>Here, <code>expression1</code> can be any expression that evaluates to a boolean value.
+If expression1 is true, then expression2 is evaluated; otherwise, expression3
+is evaluated.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = emailAddresses['Samuel Rowe']
+<p>The result of the conditional operator is that of the expression evaluated.
+Both <code>expression2</code> and <code>expression3</code> are required to return the same type.</p>
+
+<p>In Zen, you cannot use 0 as denominator in integer division.</p>
+
+<p>Here, is an example which prevents division by 0 using the conditional operator.</p>
+
+<pre><code>result = (denominator == 0) ? 0 : numerator / denominator
 </code></pre>
 
-<p>The above code snippet is equivalent to the following expression statement.</p>
+<p>When Zen evaluates this assignment expression, it first evaluates the expression
+in the parenthesis, which is not really necessary. In other words, the expression
+to the left of the question mark is first evaluated. If the denominator equals
+to zero, then the expression between the question mark and
+the colon is evaluated and used as the value of the entire conditional
+expression. If denominator is not equal to zero, then the expression after the colon
+is evaluated and used for the value of the entire conditional expression. The result
+produced by the conditional operator is then assigned to result.</p>
 
-<pre><code>var emailAddresses = {
-    'Samuel Rowe' : 'samuelrowe1999@gmail.com',
-    'Joel E. Rego' : 'joelerego@gmail.com'
-}
-var myEmailAddress = ZenKernel.evaluate(emailAddresses, 'Samuel Rowe', '[]')
+<p>Here is a program that demonstrates the conditional operator. It uses it to obtain the
+absolute value of a variable.</p>
+
+<pre><code>// ConditionalOperatorExample.zen
+
+function main(...arguments)
+    var i = 10
+    var k = i &lt; 0? -i : i
+    print('Absolute value of i is ' + k)
+
+    i = -7
+    k = i &lt; 0 ? -i : i
+    print('Absolute value of i is ' + k)
 </code></pre>
 
-<p>In fact, when you compile the former code snippet the compiler generates
-instructions as if the code was written in the latter form.</p>
+<p>The output generated by the program is shown here.</p>
+
+<pre><code>Absolute value of 10 is 10
+Absolute value of -7 is 7
+</code></pre>
 
 
 <footer class=" footline" >
@@ -1212,26 +1231,6 @@ instructions as if the code was written in the latter form.</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1311,6 +1310,26 @@ instructions as if the code was written in the latter form.</p>
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1559,10 +1578,10 @@ instructions as if the code was written in the latter form.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/combining-operators/" title="Combing Operators"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/" title="Using the Compound Assignment Operators"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/types-of-operators/" title="Types of Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/operators-operands-and-expressions/using-the-logical-operators/" title="Using the Logical Operators" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1572,19 +1591,19 @@ instructions as if the code was written in the latter form.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/zen-website/js/clipboard.min.js?1575591224"></script>
-    <script src="/zen-website/js/perfect-scrollbar.min.js?1575591224"></script>
-    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575591224"></script>
-    <script src="/zen-website/js/jquery.sticky.js?1575591224"></script>
-    <script src="/zen-website/js/featherlight.min.js?1575591224"></script>
-    <script src="/zen-website/js/highlight.pack.js?1575591224"></script>
+    <script src="/zen-website/js/clipboard.min.js?1575591225"></script>
+    <script src="/zen-website/js/perfect-scrollbar.min.js?1575591225"></script>
+    <script src="/zen-website/js/perfect-scrollbar.jquery.min.js?1575591225"></script>
+    <script src="/zen-website/js/jquery.sticky.js?1575591225"></script>
+    <script src="/zen-website/js/featherlight.min.js?1575591225"></script>
+    <script src="/zen-website/js/highlight.pack.js?1575591225"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575591224"></script>
-    <script src="/zen-website/js/learn.js?1575591224"></script>
-    <script src="/zen-website/js/hugo-learn.js?1575591224"></script>
+    <script src="/zen-website/js/modernizr.custom-3.6.0.js?1575591225"></script>
+    <script src="/zen-website/js/learn.js?1575591225"></script>
+    <script src="/zen-website/js/hugo-learn.js?1575591225"></script>
 
-    <link href="/zen-website/mermaid/mermaid.css?1575591224" rel="stylesheet" />
-    <script src="/zen-website/mermaid/mermaid.js?1575591224"></script>
+    <link href="/zen-website/mermaid/mermaid.css?1575591225" rel="stylesheet" />
+    <script src="/zen-website/mermaid/mermaid.js?1575591225"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
