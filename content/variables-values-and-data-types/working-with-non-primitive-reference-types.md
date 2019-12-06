@@ -10,8 +10,7 @@ The rules that apply to these types also apply to primitive reference types.
 > You will learn more about classes and objects later in the course.
 
 Zen programs are built with classes. You can use classes to create objects.
-A reference type is a type which references an object. The class can be any class.
-It can either be a part of the Zen standard API or a class that you create.
+A class can either be a part of the Zen standard API or a class that you create.
 
 When you create an object, you allocate memory to store the object. Here's an
 example of how you can create an object.
@@ -36,9 +35,9 @@ var car
 Here, the variable `car` can hold any type of object, including `Car` objects.
 
 To create a new *instance* of a class, you can use the `new` keyword. You have
-to tell `new` the class whose instance you want. When you create an instance of
-a class, you actually call a *constructor*. The constructor initializes the new
-object.
+to provide `new` keyword the name of the class, whose instance you want to create.
+When you create an instance of a class, you actually call a *constructor*.
+The constructor initializes the new object.
 
 > You do not have to understand these concepts right away. You will understand
 > them when you learn about them in detail.

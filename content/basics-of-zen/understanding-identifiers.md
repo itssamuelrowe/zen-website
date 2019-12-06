@@ -3,7 +3,7 @@ title = "Understanding Identifiers"
 +++
 
 Identifiers are the names you give to variables, methods, classes, annotations
-and enumerations. Unlike literals, identifiers only help you reference something.
+and enumerations. Unlike literals, identifiers only help you reference to something.
 
 The program shown in the hello world example shown in the previous section
 uses three identifiers.
@@ -36,7 +36,7 @@ x1010
 
 Here are a few examples of invalid identifiers.
 ```
-function /* function is a keyword. You cannt use a keyword as an identifier. */
+function /* function is a keyword. You cannot use a keyword as an identifier. */
 hello world /* An identifier cannot have spaces. */
 3dCube /* An identifier cannot begin with a numeral. */
 a*a /* An identifier cannot have symbols. */
