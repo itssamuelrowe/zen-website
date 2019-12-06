@@ -19,6 +19,11 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/basics-of-zen/</loc>
   </url>
   

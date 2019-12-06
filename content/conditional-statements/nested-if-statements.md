@@ -24,13 +24,13 @@ structure of the nested statements.
 Here is the general form of a nested if statement.
 
 ```
-if (condition1)
-    if (condition2)
+if condition1
+    if condition2
         statement1
     else
         statement2
 else
-   if (condition3)
+   if condition3
         statement3
     else
         statement4

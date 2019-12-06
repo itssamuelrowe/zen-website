@@ -54,6 +54,17 @@ Zen was designed to develop applications that are capable of running across mult
     </item>
     
     <item>
+      <title></title>
+      <link>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</guid>
+      <description>A common programming construct based on a sequence if statements is the if-else-if ladder.
+Here is the general form of an if-else-if ladder.
+if condition1 statement1 else if condition2 statement2 else if condition3 statement3 else statement4  These ladders are basically a group of nested if statements. The if statements are executed from the top to down. As soon as one of the conditions associated with an if clause is true, then the statement associated with that if clause is executed, and the rest of the ladder is skipped.</description>
+    </item>
+    
+    <item>
       <title>Combing Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
