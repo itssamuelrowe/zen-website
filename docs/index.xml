@@ -79,6 +79,18 @@ Unlike other statically typed programming languages, you don&amp;rsquo;t have to
     </item>
     
     <item>
+      <title>Overriding Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/overriding-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/overriding-operators/</guid>
+      <description>Zen allows operator overriding through a combination of functions and annotations.
+All the operators in Zen are dispatched to a function call. The ZenKernel.evaluate(...) function finds a suitable handler for the operator defined within the operand object and dispatches it. In other words, the compiler translates expressions with operators to equivalent ZenKernel.evaluate(...) calls.
+For example, in the HashMap class the following annotation overrides the subscript operator.
+@Operator symbol=&#39;[]&#39; function getValue(key) .</description>
+    </item>
+    
+    <item>
       <title>The Hello World Program</title>
       <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -87,6 +99,21 @@ Unlike other statically typed programming languages, you don&amp;rsquo;t have to
       <description>In this section, you will learn to write the Hello World program.
 Many programming courses begin with a simple example program that prints the text, &amp;ldquo;Hello, world!&amp;rdquo; on the console.
 function main(...arguments) print(&#39;Hello, world!&#39;)   Copy the source code from here. Paste the source code into a text editor, such as Notepad or Notepad++. Save it in a file named Hello.zen. You need to remember where you save your file.</description>
+    </item>
+    
+    <item>
+      <title>Types of Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</guid>
+      <description>In this lecture, we&amp;rsquo;ll learn about the types of operators based on the number of operands they expect.
+A common way to categorize Zen’s operators is by the number of operands the operator expect.
+There are three types of operators based on the number of operands they accept.
+ Unary Operators
+ Binary Operators
+ Ternary Operators
+  Unary Operators Unary operators are operators that expect one operand.</description>
     </item>
     
     <item>
@@ -105,7 +132,7 @@ The advantage of dynamically typed languages is that programs can be written qui
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-identifiers/</guid>
-      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference something.
+      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference to something.
 The program shown in the hello world example shown in the previous section uses three identifiers. * main * arguments * print
  Identifiers are case sensitive. For example, ArrayList with uppercase A and arrayList with lowercase a are two different identifiers. Identifiers may contain uppercase or lowercase letters, numerals, underscore characters _, and dollar symbols $.</description>
     </item>
@@ -118,7 +145,19 @@ The program shown in the hello world example shown in the previous section uses 
       <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-keywords/</guid>
       <description>A keyword is a special word whose meaning is defined by the Zen programming language specification. You cannot use these words as identifiers. All keywords are in lowercase.
 Like everything else in Zen, keywords are case sensitive. For example, if you use For with uppercase F instead of for with lowercase f it is an error.
-The hello world program shown in the beginnig of this chapter use one keyword: function.</description>
+The hello world program shown in the beginning of this chapter use one keyword: function.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/understanding-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/understanding-operators/</guid>
+      <description>In this lecture, you will learn about operators.
+An operator is a special symbol or a keyword that performs a mathemtical operation or a specific operation.
+Generally, an operator expects one, two, or three values known as operands.
+You must always remember, an operator always calculates and returns a result.</description>
     </item>
     
     <item>
@@ -141,9 +180,55 @@ Understanding Characters Repertoire A character repertoire is a collection of ch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-variables/</guid>
-      <description>In this section, you will learn to declare variables.
+      <description>In this section, you will learn about variables.
 A variable is a place holder. A variable&amp;rsquo;s value can change when your program is running.
 For exampe, you can store a value like 100 in a variable. After you store a value, you can store a different value in the variable whenever you want. When you store a new value in a variable, the old value is no longer there. In other words, the old value is replaced by the new value.</description>
+    </item>
+    
+    <item>
+      <title>Using the Assignment Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</guid>
+      <description>The assignment operator helps you assign a value to a variable. You have already seen many examples of this operator. It assigns the value on its right to the operand on its left.
+For example, here&amp;rsquo;s an example of the assignment operator in use.
+var vehicles var cars = 100 vehicles = cars  In the above example, we created a variable named vehicles. Think that it stores the number of vehicles you own.</description>
+    </item>
+    
+    <item>
+      <title>Using the Compound Assignment Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</guid>
+      <description>A compound assignment operator is an operator that performs both an implicit calculation and an assignment.
+Here&amp;rsquo;s a list of all the compound arithmetic assignment operators in Zen.
+ Please note that the operators described in the table below are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
+    Operator Description     += Addition and assignment   -= Subtraction and assignment   *= Multiplication and assignment   /= Division (for quotient) and assignment   %= Division (for remainder) and assignment    For example, the expression a = a + 10 can be written as a += 10.</description>
+    </item>
+    
+    <item>
+      <title>Using the Unary Plus and Minus Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</guid>
+      <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
+ The unary plus and minus operators let you change the sign of an operand.
+Note that the symbol used to represent these operators are the same as the addition and subtraction operators. The compiler figures out which operation you mean by examining the expression.</description>
+    </item>
+    
+    <item>
+      <title>Working with Arithmetic Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</guid>
+      <description>In this section, you will learn about the arithmetic operators in Zen.
+ Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
+ You can perform addition, subtraction, multiplication, and division with the arithmetic operators. They are similar to operators in basic mathematics.
+   Operator Description     + Addition   - Subtraction   * Multiplication   / Division (returns quotient)   % Division (returns remainder)    Addition The addition operator, written as plus + accepts two operands.</description>
     </item>
     
     <item>
@@ -169,6 +254,27 @@ Types of Comments There are 3 types of comments in Zen.
     </item>
     
     <item>
+      <title>Working with Comparison Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-comparison-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-comparison-operators/</guid>
+      <description>In this section, you will learn about the comparison operators in Zen.
+   Operator Description     &amp;lt; Lesser than   &amp;gt; Greater than   &amp;lt;= Lesser than or equal   &amp;gt;= Greater than or equal    Lesser Returns true if the operand on the left is lesser than the operand on the right.
+Greater Returns true if the operand on the left is greater than the operand on the right.</description>
+    </item>
+    
+    <item>
+      <title>Working with Equality Operators</title>
+      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-equality-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-equality-operators/</guid>
+      <description>In this section, you will learn about the equality operators in Zen.
+   Operator Description     == Equality   != Inequality    Equality Returns true if the operand on the left is the same as the operand on the right. Please note that this operator compares the content of the left operand with the content of the right operand, along with the references.</description>
+    </item>
+    
+    <item>
       <title>Working with Non-Primitive Reference Types</title>
       <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-non-primitive-reference-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -177,7 +283,7 @@ Types of Comments There are 3 types of comments in Zen.
       <description>In this section, you will learn about the basics of non-primitive reference types. You learn to create variables that work with objects.
 The rules that apply to these types also apply to primitive reference types.
  You will learn more about classes and objects later in the course.
- Zen programs are built with classes. You can use classes to create objects. A reference type is a type which references an object.</description>
+ Zen programs are built with classes. You can use classes to create objects. A class can either be a part of the Zen standard API or a class that you create.</description>
     </item>
     
     <item>

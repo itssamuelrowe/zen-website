@@ -65,7 +65,7 @@ Understanding Characters Repertoire A character repertoire is a collection of ch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-variables/</guid>
-      <description>In this section, you will learn to declare variables.
+      <description>In this section, you will learn about variables.
 A variable is a place holder. A variable&amp;rsquo;s value can change when your program is running.
 For exampe, you can store a value like 100 in a variable. After you store a value, you can store a different value in the variable whenever you want. When you store a new value in a variable, the old value is no longer there. In other words, the old value is replaced by the new value.</description>
     </item>
@@ -79,7 +79,7 @@ For exampe, you can store a value like 100 in a variable. After you store a valu
       <description>In this section, you will learn about the basics of non-primitive reference types. You learn to create variables that work with objects.
 The rules that apply to these types also apply to primitive reference types.
  You will learn more about classes and objects later in the course.
- Zen programs are built with classes. You can use classes to create objects. A reference type is a type which references an object.</description>
+ Zen programs are built with classes. You can use classes to create objects. A class can either be a part of the Zen standard API or a class that you create.</description>
     </item>
     
     <item>

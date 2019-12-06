@@ -54,17 +54,6 @@ Zen was designed to develop applications that are capable of running across mult
     </item>
     
     <item>
-      <title>Combing Operators</title>
-      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</guid>
-      <description>The concepts explained in this section are very important. Do not worry if you find the concepts confusing. You can always come back and read the section later.
-You can combine operators to form complex expessions. The order in which the operations are evaluated is determined by the precedence of the operators involved in the expression. For example, multiplication and division have a higher precedence than addition and subtraction.
-Always remember, precedence rules can be overridden by explicit parentheses.</description>
-    </item>
-    
-    <item>
       <title>Declaring Final Variables or Constants</title>
       <link>http://localhost:1313/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -143,7 +132,7 @@ The advantage of dynamically typed languages is that programs can be written qui
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/zen-website/basics-of-zen/understanding-identifiers/</guid>
-      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference something.
+      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference to something.
 The program shown in the hello world example shown in the previous section uses three identifiers. * main * arguments * print
  Identifiers are case sensitive. For example, ArrayList with uppercase A and arrayList with lowercase a are two different identifiers. Identifiers may contain uppercase or lowercase letters, numerals, underscore characters _, and dollar symbols $.</description>
     </item>
@@ -156,7 +145,7 @@ The program shown in the hello world example shown in the previous section uses 
       <guid>http://localhost:1313/zen-website/basics-of-zen/understanding-keywords/</guid>
       <description>A keyword is a special word whose meaning is defined by the Zen programming language specification. You cannot use these words as identifiers. All keywords are in lowercase.
 Like everything else in Zen, keywords are case sensitive. For example, if you use For with uppercase F instead of for with lowercase f it is an error.
-The hello world program shown in the beginnig of this chapter use one keyword: function.</description>
+The hello world program shown in the beginning of this chapter use one keyword: function.</description>
     </item>
     
     <item>
@@ -191,7 +180,7 @@ Understanding Characters Repertoire A character repertoire is a collection of ch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/zen-website/variables-values-and-data-types/understanding-variables/</guid>
-      <description>In this section, you will learn to declare variables.
+      <description>In this section, you will learn about variables.
 A variable is a place holder. A variable&amp;rsquo;s value can change when your program is running.
 For exampe, you can store a value like 100 in a variable. After you store a value, you can store a different value in the variable whenever you want. When you store a new value in a variable, the old value is no longer there. In other words, the old value is replaced by the new value.</description>
     </item>
@@ -220,29 +209,6 @@ Here&amp;rsquo;s a list of all the compound arithmetic assignment operators in Z
     </item>
     
     <item>
-      <title>Using the Conditional Operator</title>
-      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-conditional-operator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-conditional-operator/</guid>
-      <description>The conditional operator is the only ternary operator in Zen. It is used to replace certain types of if-then-else statements. You will learn more about if statements later in the manual.
-The conditional operator is represented by a question mark (?). It can seem somewhat confusing at first, but the conditional operator can be used very effectively once understood.
-The conditional operator has the following general form.
-expression1 ? expression2 : expression3  Here, expression1 can be any expression that evaluates to a boolean value.</description>
-    </item>
-    
-    <item>
-      <title>Using the Logical Operators</title>
-      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-logical-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-logical-operators/</guid>
-      <description>You can combine two or more conditions or constraints or complement with logical operators. The result of the operation of a logical operator is a Boolean value, either true or false.
-Logical AND Operator The logical AND operator combines two Boolean expressions and returns true if both the expressions evaluate to true. Otherwise, it returns false for the given expressions.
-The general form of the logical AND operator is shown here.</description>
-    </item>
-    
-    <item>
       <title>Using the Unary Plus and Minus Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -263,17 +229,6 @@ Note that the symbol used to represent these operators are the same as the addit
  Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
  You can perform addition, subtraction, multiplication, and division with the arithmetic operators. They are similar to operators in basic mathematics.
    Operator Description     + Addition   - Subtraction   * Multiplication   / Division (returns quotient)   % Division (returns remainder)    Addition The addition operator, written as plus + accepts two operands.</description>
-    </item>
-    
-    <item>
-      <title>Working with Bitwise Operators</title>
-      <link>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</guid>
-      <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
- A computer stores data in binary. In other words, information is encoded as a sequence of 1&amp;rsquo;s and 0&amp;rsquo;s. On most computers, the memory is organized into 8-bit cells known as bytes.
-Zen defines several operators that allow you to work at the binary level.</description>
     </item>
     
     <item>
@@ -328,7 +283,7 @@ Greater Returns true if the operand on the left is greater than the operand on t
       <description>In this section, you will learn about the basics of non-primitive reference types. You learn to create variables that work with objects.
 The rules that apply to these types also apply to primitive reference types.
  You will learn more about classes and objects later in the course.
- Zen programs are built with classes. You can use classes to create objects. A reference type is a type which references an object.</description>
+ Zen programs are built with classes. You can use classes to create objects. A class can either be a part of the Zen standard API or a class that you create.</description>
     </item>
     
     <item>

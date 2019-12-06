@@ -39,11 +39,23 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/overriding-operators/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/tags/</loc>
   </url>
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</loc>
   </url>
   
   <url>
@@ -59,6 +71,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/understanding-operators/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-unicode/</loc>
   </url>
   
@@ -67,7 +83,23 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</loc>
   </url>
   
   <url>
@@ -76,6 +108,14 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-comments/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-comparison-operators/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-equality-operators/</loc>
   </url>
   
   <url>

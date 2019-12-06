@@ -27,10 +27,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</loc>
   </url>
   
@@ -95,14 +91,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-conditional-operator/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-logical-operators/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</loc>
   </url>
   
@@ -112,10 +100,6 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</loc>
   </url>
   
   <url>

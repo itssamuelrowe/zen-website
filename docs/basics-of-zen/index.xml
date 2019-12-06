@@ -27,7 +27,7 @@ function main(...arguments) print(&#39;Hello, world!&#39;)   Copy the source cod
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-identifiers/</guid>
-      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference something.
+      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference to something.
 The program shown in the hello world example shown in the previous section uses three identifiers. * main * arguments * print
  Identifiers are case sensitive. For example, ArrayList with uppercase A and arrayList with lowercase a are two different identifiers. Identifiers may contain uppercase or lowercase letters, numerals, underscore characters _, and dollar symbols $.</description>
     </item>
@@ -40,7 +40,7 @@ The program shown in the hello world example shown in the previous section uses 
       <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-keywords/</guid>
       <description>A keyword is a special word whose meaning is defined by the Zen programming language specification. You cannot use these words as identifiers. All keywords are in lowercase.
 Like everything else in Zen, keywords are case sensitive. For example, if you use For with uppercase F instead of for with lowercase f it is an error.
-The hello world program shown in the beginnig of this chapter use one keyword: function.</description>
+The hello world program shown in the beginning of this chapter use one keyword: function.</description>
     </item>
     
     <item>
