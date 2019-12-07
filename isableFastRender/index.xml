@@ -32,6 +32,16 @@ A class is a blueprint from which you create objects. The most important thing t
     </item>
     
     <item>
+      <title>Conventions for Class Names</title>
+      <link>http://localhost:1313/zen-website/classes-and-objects/conventions-for-class-names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/classes-and-objects/conventions-for-class-names/</guid>
+      <description>Your class name is an identifier. You can use any identifier you want. But we suggest you to follow these guidelines.
+ Begin the class name with a capital letter. For example, Bike, Car, Planet and Person. If the class name consists of more than one word, capitalize each word. For example, BikeRace, CarGame, CollegeLibrary and StringBuilder. Try to use nouns for your class names. We know that classes represent real life objects.</description>
+    </item>
+    
+    <item>
       <title>Principles of Object Oriented Programming</title>
       <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

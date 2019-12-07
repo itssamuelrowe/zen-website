@@ -192,6 +192,8 @@ instance variable access later in the course.
 Here is the complete Superhero program.
 
 ```
+// Superhero.zen
+
 class Superhero
 
     var name
