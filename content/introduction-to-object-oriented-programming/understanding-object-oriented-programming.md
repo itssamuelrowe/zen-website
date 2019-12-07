@@ -60,10 +60,8 @@ instantiation.
 
 ## State
 
-The state determines the attributes of an object.
-
-For example, a car can have the attributes such as speed, RPM, gear, fuel level,
-and engine temperature.
+The state determines the attributes of an object. For example, a car can have
+the attributes such as speed, RPM, gear, fuel level, and engine temperature.
 
 The type of an object determines what attributes the object has. Thus, all
 instances of a particular object have the same attributes. But there is no

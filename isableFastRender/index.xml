@@ -113,6 +113,17 @@ For example, in the HashMap class the following annotation overrides the subscri
     </item>
     
     <item>
+      <title>Principles of Object Oriented Programming</title>
+      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</guid>
+      <description>Object oriented programming is based on the following principles.
+ Class Object Inheritance Abstraction Encapsulation Polymorphism  We will briefly discuss each of these principles in this section. In the next few chapters we will learn about them in detail with their applications in Zen.
+Understanding Classes A class is a collection of objects of similar type. Once a class is defined, any number of instances can be created which belong to that class.</description>
+    </item>
+    
+    <item>
       <title>The Hello World Program</title>
       <link>http://localhost:1313/zen-website/basics-of-zen/the-hello-world-program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
