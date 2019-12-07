@@ -64,6 +64,16 @@ Maintenance Code maintainance is a necessity for any programming languages. Obje
     </item>
     
     <item>
+      <title>Understanding Visibility</title>
+      <link>http://localhost:1313/zen-website/classes-and-objects/understanding-visibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/classes-and-objects/understanding-visibility/</guid>
+      <description>You can control whether the world outside your class can access its members. This is known as visibility of the member. In other words, you can expose only certain members to public, that is the world outside your class, while keep other members private or secret. Thus, you can control the access of your members. The visibility modifiers are a form of encapsulation in Zen.
+You will use visibility modifiers very often.</description>
+    </item>
+    
+    <item>
       <title>Advantages of Zen</title>
       <link>http://localhost:1313/zen-website/introduction-to-zen/advantages-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
