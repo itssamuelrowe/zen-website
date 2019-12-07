@@ -11,16 +11,6 @@
     
     
     <item>
-      <title>Declaring Functions</title>
-      <link>http://localhost:1313/zen-website/functions/declaring-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/functions/declaring-functions/</guid>
-      <description>A function is a block of statements. You can give it a name. When a function is declared inside a class, it defines an object&amp;rsquo;s behavior, basically whatever an object is capable of performing.
-You can call or invoke a function with its name. When you invoke a function, the execution of your program branches to the body of that function. When the function is finished, execution resumes from where the program branched, and the program continues on to the next statement.</description>
-    </item>
-    
-    <item>
       <title>Understanding Object Oriented Programming</title>
       <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,6 +19,16 @@ You can call or invoke a function with its name. When you invoke a function, the
       <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
 An object is simply data that has attributes and behavior.
 An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
+    </item>
+    
+    <item>
+      <title>What is a Function?</title>
+      <link>http://localhost:1313/zen-website/functions/what-is-a-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/what-is-a-function/</guid>
+      <description>A function is a block of statements. You can give it a name. When a function is declared inside a class, it defines an object&amp;rsquo;s behavior, basically whatever an object is capable of performing.
+You can call or invoke a function with its name. When you invoke a function, the execution of your program branches to the body of that function. When the function is finished, execution resumes from where the program branched, and the program continues on to the next statement.</description>
     </item>
     
     <item>
@@ -71,6 +71,18 @@ Understanding Classes A class is a collection of objects of similar type. Once a
       <description>In this section, we will learn about the advantages of Object Oriented Programming (OOP).
 Reusability Reusability allows us to reuse available facilities rather building it again and again. This is done with the use of a class. You can use it any number of times. Thus, your productivity is improved.
 Maintenance Code maintainance is a necessity for any programming languages. Object Oriented Programming allows programmers to refactor code in many ways.</description>
+    </item>
+    
+    <item>
+      <title>Declaring Functions</title>
+      <link>http://localhost:1313/zen-website/functions/declaring-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/declaring-functions/</guid>
+      <description>Here is the general form of a function declaration.
+function name(parameters) statement1 statement2 ... statementN  The name of your function helps you call it.
+Here is an example of a program which has redundant statements. Apparently, Harry and Hermione are on an adventure, trying to break into a mysterious tower. The following program prints the dialogue between them.
+// MysteryTower.zen function main(...arguments) print(&#39;Harry Potter: Can you open this door?&#39;) print(&#39;Hermione Granger: Alohomora!</description>
     </item>
     
     <item>

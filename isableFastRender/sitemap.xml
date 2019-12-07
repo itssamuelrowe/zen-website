@@ -3,15 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/zen-website/functions/declaring-functions/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/zen-website/introduction-to-zen/</loc>
   </url>
   
   <url>
     <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/functions/what-is-a-function/</loc>
   </url>
   
   <url>
@@ -32,6 +32,10 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/basics-of-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/functions/declaring-functions/</loc>
   </url>
   
   <url>
