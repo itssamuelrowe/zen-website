@@ -277,6 +277,16 @@ expression1 ? expression2 : expression3  Here, expression1 can be any expression
     </item>
     
     <item>
+      <title>Using the Continue Statement</title>
+      <link>http://localhost:1313/zen-website/loop-statements/using-the-continue-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/loop-statements/using-the-continue-statement/</guid>
+      <description>Sometimes it is useful to force an early iteration of a loop. In other words, you might want to continue running the loop but stop processing the remainder of the code in its body for this particular iteration.
+In a while statement, a continue statement causes control to be transferred directly to the conditional expression that controls the loop. In a for statement, control first goes to the updation section of the for statement and then to the conditional expression.</description>
+    </item>
+    
+    <item>
       <title>Using the Logical Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-logical-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
