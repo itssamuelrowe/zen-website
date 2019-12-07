@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zen</title>
+    <title>The Zen Programming Language on Zen</title>
     <link>http://localhost:1313/zen-website/</link>
-    <description>Recent content on Zen</description>
+    <description>Recent content in The Zen Programming Language on Zen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     

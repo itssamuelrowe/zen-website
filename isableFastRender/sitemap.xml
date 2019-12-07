@@ -91,6 +91,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/types-of-operators/</loc>
   </url>
   
@@ -200,10 +204,6 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/loop-statements/working-with-the-while-statement/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/zen-website/</loc>
   </url>
   
 </urlset>
