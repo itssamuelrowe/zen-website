@@ -19,11 +19,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/zen-website/basics-of-zen/</loc>
   </url>
   
@@ -49,6 +44,10 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/introduction-to-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/loop-statements/</loc>
   </url>
   
   <url>
@@ -104,6 +103,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</loc>
   </url>
   
@@ -125,6 +128,10 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/variables-values-and-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/loop-statements/what-is-a-loop/</loc>
   </url>
   
   <url>

@@ -90,6 +90,17 @@ Unlike other statically typed programming languages, you don&amp;rsquo;t have to
     </item>
     
     <item>
+      <title>Nested If Statements</title>
+      <link>https://itssamuelrowe.github.io/zen-website/conditional-statements/nested-if-statements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/conditional-statements/nested-if-statements/</guid>
+      <description>You can write any statement under the if and else clauses. In fact, you could write another if statement under them. This is known as nesting. So, if you write an if statement inside another if statement, we call the arrangment as nested if statements.
+The if statement written inside another if statement is called the inner if statement.
+Similarly, the if statement which contains another if statement is called the outer if statement.</description>
+    </item>
+    
+    <item>
       <title>Overriding Operators</title>
       <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/overriding-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -197,6 +208,28 @@ For exampe, you can store a value like 100 in a variable. After you store a valu
     </item>
     
     <item>
+      <title>Using If Statements</title>
+      <link>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-statements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-statements/</guid>
+      <description>The if statement is one of the most important statements in any programming language. The following sections describe the various forms of the if statement in Zen. Basically, the if statement allows your program to branch conditionally. It is a compound statement.
+Here is the general form of the if statement.
+if condition statement else statement  Here, a statement may be either a simple statement or a compound statement. The condition is any expression that evaluates to a Boolean value.</description>
+    </item>
+    
+    <item>
+      <title>Using If-Else-If Ladders</title>
+      <link>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-else-if-ladders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-else-if-ladders/</guid>
+      <description>A common programming construct based on a sequence if statements is the if-else-if ladder.
+Here is the general form of an if-else-if ladder.
+if condition1 statement1 else if condition2 statement2 else if condition3 statement3 else statement4  These ladders are basically a group of nested if statements. The if statements are executed from the top to down. As soon as one of the conditions associated with an if clause is true, then the statement associated with that if clause is executed, and the rest of the ladder is skipped.</description>
+    </item>
+    
+    <item>
       <title>Using the Assignment Operators</title>
       <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -251,6 +284,17 @@ The general form of the logical AND operator is shown here.</description>
       <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
  The unary plus and minus operators let you change the sign of an operand.
 Note that the symbol used to represent these operators are the same as the addition and subtraction operators. The compiler figures out which operation you mean by examining the expression.</description>
+    </item>
+    
+    <item>
+      <title>What is a Loop?</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</guid>
+      <description>Repeating things over and over is referred to as looping. The iteration statements in Zen help you create loops in your programs. These statements allow a segment of your code to repeat a given number of times.
+As an example of a loop, consider yourself watching a series like Breaking Bad. * Find the next episode to watch. * Watch the episode. * Repeat.
+This simple example contains a loop. The loop is based on the &amp;ldquo;Repeat&amp;rdquo; instruction, which tells you that the entire sequence of steps repeats itself.</description>
     </item>
     
     <item>

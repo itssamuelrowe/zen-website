@@ -54,17 +54,6 @@ Zen was designed to develop applications that are capable of running across mult
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</guid>
-      <description>A common programming construct based on a sequence if statements is the if-else-if ladder.
-Here is the general form of an if-else-if ladder.
-if condition1 statement1 else if condition2 statement2 else if condition3 statement3 else statement4  These ladders are basically a group of nested if statements. The if statements are executed from the top to down. As soon as one of the conditions associated with an if clause is true, then the statement associated with that if clause is executed, and the rest of the ladder is skipped.</description>
-    </item>
-    
-    <item>
       <title>Combing Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -230,6 +219,17 @@ if condition statement else statement  Here, a statement may be either a simple 
     </item>
     
     <item>
+      <title>Using If-Else-If Ladders</title>
+      <link>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/conditional-statements/using-if-else-if-ladders/</guid>
+      <description>A common programming construct based on a sequence if statements is the if-else-if ladder.
+Here is the general form of an if-else-if ladder.
+if condition1 statement1 else if condition2 statement2 else if condition3 statement3 else statement4  These ladders are basically a group of nested if statements. The if statements are executed from the top to down. As soon as one of the conditions associated with an if clause is true, then the statement associated with that if clause is executed, and the rest of the ladder is skipped.</description>
+    </item>
+    
+    <item>
       <title>Using the Assignment Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -284,6 +284,17 @@ The general form of the logical AND operator is shown here.</description>
       <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
  The unary plus and minus operators let you change the sign of an operand.
 Note that the symbol used to represent these operators are the same as the addition and subtraction operators. The compiler figures out which operation you mean by examining the expression.</description>
+    </item>
+    
+    <item>
+      <title>What is a Loop?</title>
+      <link>http://localhost:1313/zen-website/loop-statements/what-is-a-loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/loop-statements/what-is-a-loop/</guid>
+      <description>Repeating things over and over is referred to as looping. The iteration statements in Zen help you create loops in your programs. These statements allow a segment of your code to repeat a given number of times.
+As an example of a loop, consider yourself watching a series like Breaking Bad. * Find the next episode to watch. * Watch the episode. * Repeat.
+This simple example contains a loop. The loop is based on the &amp;ldquo;Repeat&amp;rdquo; instruction, which tells you that the entire sequence of steps repeats itself.</description>
     </item>
     
     <item>

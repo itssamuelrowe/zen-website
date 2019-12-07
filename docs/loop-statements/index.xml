@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Loop Statements on Zen</title>
+    <link>https://itssamuelrowe.github.io/zen-website/loop-statements/</link>
+    <description>Recent content in Loop Statements on Zen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://itssamuelrowe.github.io/zen-website/loop-statements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is a Loop?</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</guid>
+      <description>Repeating things over and over is referred to as looping. The iteration statements in Zen help you create loops in your programs. These statements allow a segment of your code to repeat a given number of times.
+As an example of a loop, consider yourself watching a series like Breaking Bad. * Find the next episode to watch. * Watch the episode. * Repeat.
+This simple example contains a loop. The loop is based on the &amp;ldquo;Repeat&amp;rdquo; instruction, which tells you that the entire sequence of steps repeats itself.</description>
+    </item>
+    
+  </channel>
+</rss>
