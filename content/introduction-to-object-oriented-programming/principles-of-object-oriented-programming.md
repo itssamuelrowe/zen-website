@@ -1,5 +1,6 @@
 +++
 title = "Principles of Object Oriented Programming"
+weight = 2
 +++
 
 Object oriented programming is based on the following principles.

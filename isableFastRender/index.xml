@@ -11,6 +11,39 @@
     
     
     <item>
+      <title>Understanding Object Oriented Programming</title>
+      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</guid>
+      <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
+An object is simply data that has attributes and behavior.
+An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
+    </item>
+    
+    <item>
+      <title>Principles of Object Oriented Programming</title>
+      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</guid>
+      <description>Object oriented programming is based on the following principles.
+ Class Object Inheritance Abstraction Encapsulation Polymorphism  We will briefly discuss each of these principles in this section. In the next few chapters we will learn about them in detail with their applications in Zen.
+Understanding Classes A class is a collection of objects of similar type. Once a class is defined, any number of instances can be created which belong to that class.</description>
+    </item>
+    
+    <item>
+      <title>Advantages of Object-Oriented Programming</title>
+      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</guid>
+      <description>In this section, we will learn about the advantages of Object Oriented Programming (OOP).
+Reusability Reusability allows us to reuse available facilities rather building it again and again. This is done with the use of a class. You can use it any number of times. Thus, your productivity is improved.
+Maintenance Code maintainance is a necessity for any programming languages. Object Oriented Programming allows programmers to refactor code in many ways.</description>
+    </item>
+    
+    <item>
       <title>Advantages of Zen</title>
       <link>http://localhost:1313/zen-website/introduction-to-zen/advantages-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -51,17 +84,6 @@ Consumes More Memory This is one of the biggest problems in Zen. Zen takes more 
       <description>Java is a general purpose programming language. It was created by Samuel Rowe. The initial development began in 2016.
 Zen is similar to Java, Python, and C. So, if you have any experience with these languages, you will find Zen easy to learn. However, Zen is different in many significant ways.
 Zen was designed to develop applications that are capable of running across multiple platforms. As of now, Zen is officially supported on all major platforms, in particular, Linux, Windows, and MacOS.</description>
-    </item>
-    
-    <item>
-      <title>Advantages of Object-Oriented Programming</title>
-      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</guid>
-      <description>In this section, we will learn about the advantages of Object Oriented Programming (OOP).
-Reusability Reusability allows us to reuse available facilities rather building it again and again. This is done with the use of a class. You can use it any number of times. Thus, your productivity is improved.
-Maintenance Code maintainance is a necessity for any programming languages. Object Oriented Programming allows programmers to refactor code in many ways.</description>
     </item>
     
     <item>
@@ -124,17 +146,6 @@ For example, in the HashMap class the following annotation overrides the subscri
     </item>
     
     <item>
-      <title>Principles of Object Oriented Programming</title>
-      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</guid>
-      <description>Object oriented programming is based on the following principles.
- Class Object Inheritance Abstraction Encapsulation Polymorphism  We will briefly discuss each of these principles in this section. In the next few chapters we will learn about them in detail with their applications in Zen.
-Understanding Classes A class is a collection of objects of similar type. Once a class is defined, any number of instances can be created which belong to that class.</description>
-    </item>
-    
-    <item>
       <title>The Hello World Program</title>
       <link>http://localhost:1313/zen-website/basics-of-zen/the-hello-world-program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -190,17 +201,6 @@ The program shown in the hello world example shown in the previous section uses 
       <description>A keyword is a special word whose meaning is defined by the Zen programming language specification. You cannot use these words as identifiers. All keywords are in lowercase.
 Like everything else in Zen, keywords are case sensitive. For example, if you use For with uppercase F instead of for with lowercase f it is an error.
 The hello world program shown in the beginning of this chapter use one keyword: function.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Object Oriented Programming</title>
-      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</guid>
-      <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
-An object is simply data that has attributes and behavior.
-An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
     </item>
     
     <item>

@@ -1,5 +1,6 @@
 +++
 title = "Advantages of Object-Oriented Programming"
+weight = 3
 +++
 
 In this section, we will learn about the advantages of Object Oriented Programming (OOP).

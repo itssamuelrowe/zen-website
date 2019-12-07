@@ -11,6 +11,39 @@
     
     
     <item>
+      <title>Understanding Object Oriented Programming</title>
+      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</guid>
+      <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
+An object is simply data that has attributes and behavior.
+An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
+    </item>
+    
+    <item>
+      <title>Principles of Object Oriented Programming</title>
+      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</guid>
+      <description>Object oriented programming is based on the following principles.
+ Class Object Inheritance Abstraction Encapsulation Polymorphism  We will briefly discuss each of these principles in this section. In the next few chapters we will learn about them in detail with their applications in Zen.
+Understanding Classes A class is a collection of objects of similar type. Once a class is defined, any number of instances can be created which belong to that class.</description>
+    </item>
+    
+    <item>
+      <title>Advantages of Object-Oriented Programming</title>
+      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</guid>
+      <description>In this section, we will learn about the advantages of Object Oriented Programming (OOP).
+Reusability Reusability allows us to reuse available facilities rather building it again and again. This is done with the use of a class. You can use it any number of times. Thus, your productivity is improved.
+Maintenance Code maintainance is a necessity for any programming languages. Object Oriented Programming allows programmers to refactor code in many ways.</description>
+    </item>
+    
+    <item>
       <title>Advantages of Zen</title>
       <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/advantages-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -241,6 +274,18 @@ var vehicles var cars = 100 vehicles = cars  In the above example, we created a 
     </item>
     
     <item>
+      <title>Using the Break Statement</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</guid>
+      <description>All loops end when a test condition fails. There might be situations where something occurs during the execution of a loop, and you want to exit the loop early. In such cases, you can use the break statement.
+The general form of a break statement is like this.
+break label  Here, the label is optional. You will learn more about labels in just a moment.
+Break is a simple statement therefore it ends with a newline.</description>
+    </item>
+    
+    <item>
       <title>Using the Compound Assignment Operators</title>
       <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -262,6 +307,16 @@ Here&amp;rsquo;s a list of all the compound arithmetic assignment operators in Z
 The conditional operator is represented by a question mark (?). It can seem somewhat confusing at first, but the conditional operator can be used very effectively once understood.
 The conditional operator has the following general form.
 expression1 ? expression2 : expression3  Here, expression1 can be any expression that evaluates to a boolean value.</description>
+    </item>
+    
+    <item>
+      <title>Using the Continue Statement</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</guid>
+      <description>Sometimes it is useful to force an early iteration of a loop. In other words, you might want to continue running the loop but stop processing the remainder of the code in its body for this particular iteration.
+In a while statement, a continue statement causes control to be transferred directly to the conditional expression that controls the loop. In a for statement, control first goes to the updation section of the for statement and then to the conditional expression.</description>
     </item>
     
     <item>
@@ -416,6 +471,16 @@ Understanding Simple Statements Simple statements are the actions your program p
 A string is a sequence of characters. String literals are enclosed in single quotes (&#39;).
 Here&amp;rsquo;s an example of a string.
 &#39;Hello, world!&#39;  The Zen Virtual Machine does not define string as a primitive type. Further, the Zen programming language treats strings specially and classifies a string as primitive reference type. It is implemented by the zen.core.String class.</description>
+    </item>
+    
+    <item>
+      <title>Working with the While Statement</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</guid>
+      <description>When it comes to loops, Zen gives you two choices. You can go with the while loop, which provides enough flexbility to make most programmers happy, or you can choose the simpler for loop for your programs.
+The for statement is clearer and lays out all its plans in one place. Whereas, the while statement gives you more flexbility. The important thing to remember is that you can convert a for loop into a while loop, and vice versa.</description>
     </item>
     
   </channel>

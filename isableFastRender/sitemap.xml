@@ -7,6 +7,18 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/basics-of-zen/</loc>
   </url>
   
@@ -47,10 +59,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/zen-website/categories/</loc>
   </url>
   
@@ -75,10 +83,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/zen-website/tags/</loc>
   </url>
   
@@ -100,10 +104,6 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/basics-of-zen/understanding-keywords/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</loc>
   </url>
   
   <url>

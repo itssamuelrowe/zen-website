@@ -11,6 +11,28 @@
     
     
     <item>
+      <title>Using the Break Statement</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</guid>
+      <description>All loops end when a test condition fails. There might be situations where something occurs during the execution of a loop, and you want to exit the loop early. In such cases, you can use the break statement.
+The general form of a break statement is like this.
+break label  Here, the label is optional. You will learn more about labels in just a moment.
+Break is a simple statement therefore it ends with a newline.</description>
+    </item>
+    
+    <item>
+      <title>Using the Continue Statement</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</guid>
+      <description>Sometimes it is useful to force an early iteration of a loop. In other words, you might want to continue running the loop but stop processing the remainder of the code in its body for this particular iteration.
+In a while statement, a continue statement causes control to be transferred directly to the conditional expression that controls the loop. In a for statement, control first goes to the updation section of the for statement and then to the conditional expression.</description>
+    </item>
+    
+    <item>
       <title>What is a Loop?</title>
       <link>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -19,6 +41,16 @@
       <description>Repeating things over and over is referred to as looping. The iteration statements in Zen help you create loops in your programs. These statements allow a segment of your code to repeat a given number of times.
 As an example of a loop, consider yourself watching a series like Breaking Bad. * Find the next episode to watch. * Watch the episode. * Repeat.
 This simple example contains a loop. The loop is based on the &amp;ldquo;Repeat&amp;rdquo; instruction, which tells you that the entire sequence of steps repeats itself.</description>
+    </item>
+    
+    <item>
+      <title>Working with the While Statement</title>
+      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</guid>
+      <description>When it comes to loops, Zen gives you two choices. You can go with the while loop, which provides enough flexbility to make most programmers happy, or you can choose the simpler for loop for your programs.
+The for statement is clearer and lays out all its plans in one place. Whereas, the while statement gives you more flexbility. The important thing to remember is that you can convert a for loop into a while loop, and vice versa.</description>
     </item>
     
   </channel>

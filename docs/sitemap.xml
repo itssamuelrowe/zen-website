@@ -3,6 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/advantages-of-zen/</loc>
   </url>
   
@@ -15,11 +39,23 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/what-is-zen/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/</loc>
+    <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/</loc>
   </url>
   
   <url>
@@ -31,10 +67,6 @@
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/</loc>
-  </url>
-  
-  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</loc>
   </url>
   
@@ -43,19 +75,7 @@
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/</loc>
-  </url>
-  
-  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/nested-if-statements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/</loc>
   </url>
   
   <url>
@@ -111,6 +131,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</loc>
   </url>
   
@@ -119,15 +143,15 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-logical-operators/</loc>
   </url>
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/</loc>
   </url>
   
   <url>
@@ -172,6 +196,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-strings/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</loc>
   </url>
   
   <url>

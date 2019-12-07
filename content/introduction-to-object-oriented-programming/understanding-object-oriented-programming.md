@@ -1,5 +1,6 @@
 +++
 title = "Understanding Object Oriented Programming"
+weight = 1
 +++
 
 Object-oriented programming is a programming language paradigm or model.
