@@ -74,6 +74,16 @@ You will use visibility modifiers very often.</description>
     </item>
     
     <item>
+      <title>Understanding Instance and Static Members</title>
+      <link>http://localhost:1313/zen-website/classes-and-objects/understanding-instance-and-static-members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/classes-and-objects/understanding-instance-and-static-members/</guid>
+      <description>Instance Members Instance variables are variables that you declare inside a class body and without the static keyword. They are declared outside functions, constructors, and initializers. These variables are initialized when you create an instance of the class. Further, each instance of the class gets a copy of these variables.
+In fact, when any member of a class, except constructors, is declared without the static keyword you are essentially declaring an instance member.</description>
+    </item>
+    
+    <item>
       <title>Advantages of Zen</title>
       <link>http://localhost:1313/zen-website/introduction-to-zen/advantages-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
