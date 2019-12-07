@@ -54,6 +54,17 @@ Zen was designed to develop applications that are capable of running across mult
     </item>
     
     <item>
+      <title>Advantages of Object-Oriented Programming</title>
+      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</guid>
+      <description>In this section, we will learn about the advantages of Object Oriented Programming (OOP).
+Reusability Reusability allows us to reuse available facilities rather building it again and again. This is done with the use of a class. You can use it any number of times. Thus, your productivity is improved.
+Maintenance Code maintainance is a necessity for any programming languages. Object Oriented Programming allows programmers to refactor code in many ways.</description>
+    </item>
+    
+    <item>
       <title>Combing Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
