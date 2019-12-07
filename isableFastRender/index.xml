@@ -189,6 +189,16 @@ It is important to understand the difference between parameters and arguments. A
     </item>
     
     <item>
+      <title>Understanding Functions That Return Values</title>
+      <link>http://localhost:1313/zen-website/functions/understanding-functions-that-return-values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/understanding-functions-that-return-values/</guid>
+      <description>Functions that perform operations without returning any value are useful, but this is not the case always. In this section you will learn how to return values from functions.
+Imagine that you write a function that accepts your date of birth and calculates your age. Probably the function can print it on the console. But this is not what you always want. For example, you would want the calculated age to determine if you are eligible to vote, or not.</description>
+    </item>
+    
+    <item>
       <title>Combing Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
