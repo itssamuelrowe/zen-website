@@ -52,6 +52,17 @@ A class is a blueprint from which you create objects. The most important thing t
     </item>
     
     <item>
+      <title>Difference Between Functions and Methods</title>
+      <link>http://localhost:1313/zen-website/functions/difference-between-functions-and-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/difference-between-functions-and-methods/</guid>
+      <description>Function is a sequence of instructions that achieve some result. It may take arguments and return a result. If a function does not return a result it is usually called a procedure.
+Here are a few examples of functions.
+function drawLine(x1, y1, x2, y2) /* Draws a line using Bresenham&#39;s algorithm from (x1, y1) to (x2, y2). * It does not return anything. */ function add(a, b) /* Adds a to b and returns the result as a number.</description>
+    </item>
+    
+    <item>
       <title>Principles of Object Oriented Programming</title>
       <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
