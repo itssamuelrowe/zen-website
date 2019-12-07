@@ -111,6 +111,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/loop-statements/using-the-break-statement/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</loc>
   </url>
   
@@ -172,6 +176,10 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/variables-values-and-data-types/working-with-strings/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/loop-statements/working-with-the-while-statement/</loc>
   </url>
   
   <url>
