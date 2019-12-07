@@ -1,7 +1,7 @@
 +++
 title = "Introduction to Object Oriented Programming"
-weight = 8
 chapter = true
+weight = 8
 +++
 
 ### Chapter 8

@@ -1,6 +1,7 @@
 +++
 title = "Variables, Values, and Data Types"
 chapter = true
+weight = 4
 +++
 
 ### Chapter 4

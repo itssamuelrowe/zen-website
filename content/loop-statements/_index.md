@@ -1,6 +1,7 @@
 +++
 title = "Loop Statements"
 chapter = true
+weight = 7
 +++
 
 ### Chapter 7

@@ -1,5 +1,7 @@
 +++
 title = "Conditional Statements"
+chapter = true
+weight = 6
 +++
 
 ### Chapter 6

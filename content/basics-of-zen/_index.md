@@ -1,6 +1,7 @@
 +++
 title = "Basics of Zen"
 chapter = true
+weight = 3
 +++
 
 ### Chapter 3

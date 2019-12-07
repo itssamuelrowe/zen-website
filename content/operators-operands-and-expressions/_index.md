@@ -1,6 +1,7 @@
 +++
 title = "Operators, Operands, and Expressions"
 chapter = true
+weight = 5
 +++
 
 ### Chapter 4

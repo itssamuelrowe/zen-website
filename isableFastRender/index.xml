@@ -171,6 +171,17 @@ The hello world program shown in the beginning of this chapter use one keyword: 
     </item>
     
     <item>
+      <title>Understanding Object Oriented Programming</title>
+      <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</guid>
+      <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
+An object is simply data that has attributes and behavior.
+An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
+    </item>
+    
+    <item>
       <title>Understanding Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/understanding-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
