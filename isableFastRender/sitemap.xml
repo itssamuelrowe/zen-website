@@ -59,6 +59,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/functions/advantages-of-functions/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/introduction-to-zen/advantages-of-zen/</loc>
   </url>
   
@@ -80,6 +84,10 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/conditional-statements/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/functions/working-with-parameters/</loc>
   </url>
   
   <url>

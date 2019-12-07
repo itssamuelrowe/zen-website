@@ -126,6 +126,16 @@ In fact, when any member of a class, except constructors, is declared without th
     </item>
     
     <item>
+      <title>Advantages of Functions</title>
+      <link>http://localhost:1313/zen-website/functions/advantages-of-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/advantages-of-functions/</guid>
+      <description>The primary advantages of functions are as follows.
+ Functions improve the quality of your code. They make it more readable because you break your code into logical chunks. You avoid duplicate code. Imagine you are writing an application that simulates an airplane, which requires primitive matrix operations such as addition, subtraction and multiplication. Without functions you would have to write these operations in several places. So whenever you see yourself writing the same code, it is a good idea to write a function.</description>
+    </item>
+    
+    <item>
       <title>Advantages of Zen</title>
       <link>http://localhost:1313/zen-website/introduction-to-zen/advantages-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -166,6 +176,16 @@ Consumes More Memory This is one of the biggest problems in Zen. Zen takes more 
       <description>Java is a general purpose programming language. It was created by Samuel Rowe. The initial development began in 2016.
 Zen is similar to Java, Python, and C. So, if you have any experience with these languages, you will find Zen easy to learn. However, Zen is different in many significant ways.
 Zen was designed to develop applications that are capable of running across multiple platforms. As of now, Zen is officially supported on all major platforms, in particular, Linux, Windows, and MacOS.</description>
+    </item>
+    
+    <item>
+      <title>Working with Parameters</title>
+      <link>http://localhost:1313/zen-website/functions/working-with-parameters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/working-with-parameters/</guid>
+      <description>A parameter is a value that you can send to a function. Parameters allow a function to be generalized. In other words, such functions can operate on a variety of data and work differently based on different arguments.
+It is important to understand the difference between parameters and arguments. A parameter is a variable defined by a function that receives a value when the function is invoked. Whereas, an argument is the value that is passed to a function when it is invoked.</description>
     </item>
     
     <item>

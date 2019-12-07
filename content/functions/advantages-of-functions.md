@@ -1,9 +1,10 @@
 +++
 title = "Advantages of Functions"
-weight = 
+weight = 5
 +++
 
 The primary advantages of functions are as follows.
+
  * Functions improve the quality of your code. They make it more readable because
    you break your code into logical chunks.
  * You avoid duplicate code. Imagine you are writing an application that simulates
