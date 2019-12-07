@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Introduction :: Zen</title>
+    <title>Understanding Visibility :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575708135" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/introduction-to-zen/">
+  <body class="" data-url="/zen-website/classes-and-objects/understanding-visibility/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -94,8 +94,8 @@
   
     
     <li data-nav-id="/zen-website/introduction-to-zen/" title="Introduction" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/zen-website/introduction-to-zen/">
@@ -1111,7 +1111,7 @@
   
     
     <li data-nav-id="/zen-website/classes-and-objects/" title="Classes and Objects" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1175,7 +1175,7 @@
  
   
     
-      <li data-nav-id="/zen-website/classes-and-objects/understanding-visibility/" title="Understanding Visibility" class="dd-item ">
+      <li data-nav-id="/zen-website/classes-and-objects/understanding-visibility/" title="Understanding Visibility" class="dd-item active">
         <a href="/zen-website/classes-and-objects/understanding-visibility/">
         Understanding Visibility
         <i class="fas fa-check read-icon"></i>
@@ -1258,6 +1258,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -1268,7 +1270,13 @@
             
           
           
-            <a href='/zen-website/'>The Zen Programming Language</a> > Introduction
+            
+            
+          
+          
+            <a href='/zen-website/'>The Zen Programming Language</a> > <a href='/zen-website/classes-and-objects/'>Classes and Objects</a> > Understanding Visibility
+          
+         
           
          
           
@@ -1277,6 +1285,22 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#private-access">Private Access</a></li>
+<li><a href="#secret-access">Secret Access</a></li>
+<li><a href="#public-access">Public Access</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1284,9 +1308,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Understanding Visibility
+            </h1>
           
 
         
@@ -1294,33 +1321,66 @@
 
 
 
-	
 
-<h3 id="chapter-1">Chapter 1</h3>
+<p>You can control whether the world outside your class can access its members.
+This is known as visibility of the member. In other words, you can expose only
+certain members to public, that is the world outside your class, while keep other
+members private or secret. Thus, you can control the access of your members.
+The visibility modifiers are a form of encapsulation in Zen.</p>
 
-<h1 id="introduction-to-zen">Introduction to Zen</h1>
+<p>You will use visibility modifiers very often. There are three visibility levels
+in Zen.</p>
 
-<p>This chapter is a gentle introduction to the world of Zen. You will learn what
-Zen is, its history, and where it is going. You will also also learn about
-its advantages and disadvantages. Finally, we will try to compare Zen with
-other popular programming languages.</p>
+<ul>
+<li>Public</li>
+<li>Private</li>
+<li>Secret</li>
+</ul>
 
-<blockquote>
-<p>You can download all the examples shown throughout the manual from the following
-link.<br />
-<a href="https://github.com/itssamuelrowe/zen-examples">https://github.com/itssamuelrowe/zen-examples</a></p>
-</blockquote>
+<p>The visibility modifiers determine which members of your class are visible
+to other classes. With access control, you can tell the compiler how your class
+can be used by other classes. You can use only one visibility modifier at a time.</p>
 
+<h2 id="private-access">Private Access</h2>
 
+<p>You can use the private modifier to hide a class member from all the other classes.
+In other words, a private member is accessible only within its class.</p>
 
+<p>Some members of a class are useful only within the class. There is no point in
+such members being accessed from other classes. In such cases, you should always
+use the private modifier.</p>
+
+<p>In fact, fields are marked as private by default. You will learn more about this
+later in this chapter.</p>
+
+<h2 id="secret-access">Secret Access</h2>
+
+<p>A secret member is accessible to the following two groups.
+    * Subclasses of a class
+    * Other classes in the same package</p>
+
+<p>You will learn more about subclasses and packages later in this manual.</p>
+
+<h2 id="public-access">Public Access</h2>
+
+<p>In some cases, you want your class members to be completely visible to the
+outside world. In other words, any class can access the member.</p>
+
+<p>You can use the public modifier to make a member completely visible to all
+the classes. Unlike fields, functions are <code>public</code> by default.</p>
+
+<p>In fact, you have already used the public modifier from the beginning of this
+course implicitly.</p>
+
+<p>The <code>main()</code> function of an application has to be public. Otherwise, it cannot
+not be invoked by the Zen Virtual Machine (ZVM).</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -1352,20 +1412,6 @@ link.<br />
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1376,105 +1422,6 @@ link.<br />
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1555,38 +1502,6 @@ link.<br />
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1828,150 +1743,6 @@ link.<br />
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2052,6 +1823,19 @@ link.<br />
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2067,6 +1851,73 @@ link.<br />
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2180,10 +2031,226 @@ link.<br />
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -2208,10 +2275,10 @@ link.<br />
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/" title="The Zen Programming Language"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/classes-and-objects/conventions-for-class-names/" title="Conventions for Class Names"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/introduction-to-zen/advantages-of-zen/" title="Advantages of Zen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/classes-and-objects/understanding-instance-and-static-members/" title="Understanding Instance and Static Members" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2241,3 +2308,4 @@ link.<br />
 
   </body>
 </html>
+

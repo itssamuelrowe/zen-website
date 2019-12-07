@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Introduction :: Zen</title>
+    <title>Classes and Objects :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575708135" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/introduction-to-zen/">
+  <body class="" data-url="/zen-website/classes-and-objects/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -94,8 +94,8 @@
   
     
     <li data-nav-id="/zen-website/introduction-to-zen/" title="Introduction" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/zen-website/introduction-to-zen/">
@@ -1111,8 +1111,8 @@
   
     
     <li data-nav-id="/zen-website/classes-and-objects/" title="Classes and Objects" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/zen-website/classes-and-objects/">
@@ -1268,7 +1268,7 @@
             
           
           
-            <a href='/zen-website/'>The Zen Programming Language</a> > Introduction
+            <a href='/zen-website/'>The Zen Programming Language</a> > Classes and Objects
           
          
           
@@ -1296,20 +1296,16 @@
 
 	
 
-<h3 id="chapter-1">Chapter 1</h3>
+<h3 id="chapter-9">Chapter 9</h3>
 
-<h1 id="introduction-to-zen">Introduction to Zen</h1>
+<h1 id="classes-and-objects">Classes and Objects</h1>
 
-<p>This chapter is a gentle introduction to the world of Zen. You will learn what
-Zen is, its history, and where it is going. You will also also learn about
-its advantages and disadvantages. Finally, we will try to compare Zen with
-other popular programming languages.</p>
+<p>You have been using classes since the beginning of this manual. However, until
+now, you have barely scratched the surface, because the classes in the previous
+chapters simply wrapped the <code>main()</code> function implicitly. As you will see,
+classes are very powerful and important in Zen.</p>
 
-<blockquote>
-<p>You can download all the examples shown throughout the manual from the following
-link.<br />
-<a href="https://github.com/itssamuelrowe/zen-examples">https://github.com/itssamuelrowe/zen-examples</a></p>
-</blockquote>
+<p>In this chapter, you discover the basics of creating classes in Zen.</p>
 
 
 
@@ -1352,20 +1348,6 @@ link.<br />
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1376,105 +1358,6 @@ link.<br />
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1555,38 +1438,6 @@ link.<br />
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1828,150 +1679,6 @@ link.<br />
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2052,6 +1759,150 @@ link.<br />
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -2136,6 +1987,154 @@ link.<br />
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -2208,10 +2207,10 @@ link.<br />
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/" title="The Zen Programming Language"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/" title="Advantages of Object-Oriented Programming"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/introduction-to-zen/advantages-of-zen/" title="Advantages of Zen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/classes-and-objects/working-with-classes/" title="Working with Classes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zen</title>
+    <title>The Zen Programming Language on Zen</title>
     <link>https://itssamuelrowe.github.io/zen-website/</link>
-    <description>Recent content on Zen</description>
+    <description>Recent content in The Zen Programming Language on Zen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -19,6 +19,26 @@
       <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
 An object is simply data that has attributes and behavior.
 An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
+    </item>
+    
+    <item>
+      <title>Working with Classes</title>
+      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</guid>
+      <description>In the real world, you wll find many objects of the same kind. There are thousands of bikes with the same make and model. Each of these bikes was built with the same blueprint.
+A class is a blueprint from which you create objects. The most important thing to understand about a class is that it defines a new data type. Once defined, this new type can be used to create instances.</description>
+    </item>
+    
+    <item>
+      <title>Conventions for Class Names</title>
+      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</guid>
+      <description>Your class name is an identifier. You can use any identifier you want. But we suggest you to follow these guidelines.
+ Begin the class name with a capital letter. For example, Bike, Car, Planet and Person. If the class name consists of more than one word, capitalize each word. For example, BikeRace, CarGame, CollegeLibrary and StringBuilder. Try to use nouns for your class names. We know that classes represent real life objects.</description>
     </item>
     
     <item>
@@ -41,6 +61,26 @@ Understanding Classes A class is a collection of objects of similar type. Once a
       <description>In this section, we will learn about the advantages of Object Oriented Programming (OOP).
 Reusability Reusability allows us to reuse available facilities rather building it again and again. This is done with the use of a class. You can use it any number of times. Thus, your productivity is improved.
 Maintenance Code maintainance is a necessity for any programming languages. Object Oriented Programming allows programmers to refactor code in many ways.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Visibility</title>
+      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</guid>
+      <description>You can control whether the world outside your class can access its members. This is known as visibility of the member. In other words, you can expose only certain members to public, that is the world outside your class, while keep other members private or secret. Thus, you can control the access of your members. The visibility modifiers are a form of encapsulation in Zen.
+You will use visibility modifiers very often.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Instance and Static Members</title>
+      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</guid>
+      <description>Instance Members Instance variables are variables that you declare inside a class body and without the static keyword. They are declared outside functions, constructors, and initializers. These variables are initialized when you create an instance of the class. Further, each instance of the class gets a copy of these variables.
+In fact, when any member of a class, except constructors, is declared without the static keyword you are essentially declaring an instance member.</description>
     </item>
     
     <item>

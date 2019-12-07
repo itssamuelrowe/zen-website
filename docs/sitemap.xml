@@ -11,6 +11,14 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</loc>
   </url>
   
@@ -20,6 +28,14 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</loc>
   </url>
   
   <url>
@@ -59,6 +75,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/categories/</loc>
   </url>
   
@@ -88,6 +108,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/</loc>
   </url>
   
   <url>
@@ -200,10 +224,6 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/</loc>
   </url>
   
 </urlset>

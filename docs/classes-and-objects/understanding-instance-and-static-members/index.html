@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/zen-website/images/favicon.png" type="image/png">
 
-    <title>Introduction :: Zen</title>
+    <title>Understanding Instance and Static Members :: Zen</title>
 
     
     <link href="/zen-website/css/nucleus.css?1575708135" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/zen-website/introduction-to-zen/">
+  <body class="" data-url="/zen-website/classes-and-objects/understanding-instance-and-static-members/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -94,8 +94,8 @@
   
     
     <li data-nav-id="/zen-website/introduction-to-zen/" title="Introduction" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/zen-website/introduction-to-zen/">
@@ -1111,7 +1111,7 @@
   
     
     <li data-nav-id="/zen-website/classes-and-objects/" title="Classes and Objects" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1194,7 +1194,7 @@
  
   
     
-      <li data-nav-id="/zen-website/classes-and-objects/understanding-instance-and-static-members/" title="Understanding Instance and Static Members" class="dd-item ">
+      <li data-nav-id="/zen-website/classes-and-objects/understanding-instance-and-static-members/" title="Understanding Instance and Static Members" class="dd-item active">
         <a href="/zen-website/classes-and-objects/understanding-instance-and-static-members/">
         Understanding Instance and Static Members
         <i class="fas fa-check read-icon"></i>
@@ -1258,6 +1258,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -1268,7 +1270,13 @@
             
           
           
-            <a href='/zen-website/'>The Zen Programming Language</a> > Introduction
+            
+            
+          
+          
+            <a href='/zen-website/'>The Zen Programming Language</a> > <a href='/zen-website/classes-and-objects/'>Classes and Objects</a> > Understanding Instance and Static Members
+          
+         
           
          
           
@@ -1277,6 +1285,21 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#instance-members">Instance Members</a></li>
+<li><a href="#static-members">Static Members</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1284,9 +1307,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Understanding Instance and Static Members
+            </h1>
           
 
         
@@ -1294,33 +1320,79 @@
 
 
 
-	
 
-<h3 id="chapter-1">Chapter 1</h3>
+<h2 id="instance-members">Instance Members</h2>
 
-<h1 id="introduction-to-zen">Introduction to Zen</h1>
+<p>Instance variables are variables that you declare inside a class body and
+without the <code>static</code> keyword. They are declared outside functions, constructors,
+and initializers. These variables are initialized when you create an instance
+of the class. Further, each instance of the class gets a copy of these variables.</p>
 
-<p>This chapter is a gentle introduction to the world of Zen. You will learn what
-Zen is, its history, and where it is going. You will also also learn about
-its advantages and disadvantages. Finally, we will try to compare Zen with
-other popular programming languages.</p>
+<p>In fact, when any member of a class, except constructors, is declared
+without the <code>static</code> keyword you are essentially declaring an instance member.
+An instance member can be accessed only with a reference to an instance.</p>
 
-<blockquote>
-<p>You can download all the examples shown throughout the manual from the following
-link.<br />
-<a href="https://github.com/itssamuelrowe/zen-examples">https://github.com/itssamuelrowe/zen-examples</a></p>
-</blockquote>
+<p>When you create an instance of a class, the instance gets its own copy of the
+instance variables in memory. Zen treats other instance members specially.
+In fact, each instance of class does not contain its own copy of instance members
+such as functions, constructors, and initializers. Because multiple copies of
+such members will exhaust the memory. Instead Zen keeps only one copy of
+such instance members and simulates as if each instance gets its own copy.
+Actually, if memory were not a concern, each instance would get its own copy
+of such members to improve performance.</p>
 
+<h2 id="static-members">Static Members</h2>
 
+<p>Class variables are variables that you declare within a class with the <code>static</code>
+keyword. They are outside functions, constructors, and initializers. Remember,
+you declare class variables with the <code>static</code> keyword.</p>
 
+<p>Unlike instance variables, each instance of a class does not get a copy of class
+variables. A class member can be accessed without a reference to an instance.</p>
+
+<p>Static members belong to the class instead of a specific instance. Which means
+if you make a member static, you can access it without an instance.
+You should always remember that whenever you create an instance of a class,
+the instance does not get its own copy of the static members.</p>
+
+<p>You have already used the <code>static</code> modifier from the beginning of this manual.
+The <code>main()</code> function is declared outside a class, an implicit static modifier
+is added by the compiler. However, you must explicitly add the static modifier
+when you declare the <code>main()</code> function inside a class. The Zen Virtual Machine
+(ZVM) does not create an instance of your main class before invoking the main
+function. This is why you should always declare the main function as static.</p>
+
+<p>Here is an example of a class variable.</p>
+
+<pre><code>// Circle.zen
+
+class Circle
+    static var PI = 3.14159265f
+</code></pre>
+
+<p>You can access a class member without a reference to an instance. You
+can access a class member using the class name followed by the member access
+operator (<code>.</code>) and the name of the member.</p>
+
+<p>Here is an example that calculates the area of a cirlce. It demonstrates
+accessing the class variable from the previous example.</p>
+
+<pre><code>// CircleArea.zen
+function main(...arguments)
+    var radius = promptFloat('Enter the radius: ')
+    var area = Circle.PI * radius * radius
+    printf('The area of the circle with radius %f is %f.\n', radius, area)
+</code></pre>
+
+<p>You cannot use an instance of a class to access its class members. This design
+choice was made to improve code clarity.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
         
@@ -1352,20 +1424,6 @@ link.<br />
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1376,105 +1434,6 @@ link.<br />
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1555,38 +1514,6 @@ link.<br />
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1828,150 +1755,6 @@ link.<br />
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -2052,6 +1835,19 @@ link.<br />
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -2067,6 +1863,73 @@ link.<br />
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -2180,10 +2043,223 @@ link.<br />
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -2208,10 +2284,10 @@ link.<br />
 	 
 	 
 		
-			<a class="nav nav-prev" href="/zen-website/" title="The Zen Programming Language"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/zen-website/classes-and-objects/understanding-visibility/" title="Understanding Visibility"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zen-website/introduction-to-zen/advantages-of-zen/" title="Advantages of Zen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zen-website/classes-and-objects/working-with-classes/" title="Working with Classes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2241,3 +2317,4 @@ link.<br />
 
   </body>
 </html>
+
