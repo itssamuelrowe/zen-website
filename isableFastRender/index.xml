@@ -199,6 +199,16 @@ Imagine that you write a function that accepts your date of birth and calculates
     </item>
     
     <item>
+      <title>Function Overloading</title>
+      <link>http://localhost:1313/zen-website/functions/function-overloading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/function-overloading/</guid>
+      <description>Unlike variables, multiple functions in the same scope can have the same name. This technique is known as function overloading. It is a feature of polymorphism. Function overloading is a very useful feature.
+Zen differentiates functions using pseudo function signatures. A pseudo function signature is a part of function declaration. It is the combination of the function name and the parameter count. The names of the parameters are not included in the pseudo function signature.</description>
+    </item>
+    
+    <item>
       <title>Combing Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

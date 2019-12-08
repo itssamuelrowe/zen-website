@@ -92,7 +92,7 @@ class Superhero
 
     var name
 
-    var gender;
+    var gender
 
     var strength
 
