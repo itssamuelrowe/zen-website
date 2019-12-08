@@ -221,6 +221,15 @@ There are two types of accessors.
     </item>
     
     <item>
+      <title>Using the Property Annotation</title>
+      <link>http://localhost:1313/zen-website/functions/using-the-property-annotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/using-the-property-annotation/</guid>
+      <description>class Rocket @Property var mass @Property var velocity @Property var acceleration  class Rectangle @Property var width @Property var height function getArea() return width * height  </description>
+    </item>
+    
+    <item>
       <title>Combing Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
