@@ -209,6 +209,18 @@ Zen differentiates functions using pseudo function signatures. A pseudo function
     </item>
     
     <item>
+      <title>Working with Getters and Setters</title>
+      <link>http://localhost:1313/zen-website/functions/working-with-getters-and-setters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/functions/working-with-getters-and-setters/</guid>
+      <description>Object-oriented programming helps you hide the details of a class. You can expose certain parts of your class to others.
+You should generally avoid creating public fields. You can make all your fields private. You can give access to the values in these fields with accessors. Accessors are functions which access fields on the behalf of the world outside your class.
+There are two types of accessors.
+ Get Accessor Set Accessor  A get accessor is also known as getter.</description>
+    </item>
+    
+    <item>
       <title>Combing Operators</title>
       <link>http://localhost:1313/zen-website/operators-operands-and-expressions/combining-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
