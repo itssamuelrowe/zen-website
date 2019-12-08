@@ -22,6 +22,16 @@ An example of an object is a human being. A human being has properties like name
     </item>
     
     <item>
+      <title>Understanding this Keyword</title>
+      <link>http://localhost:1313/zen-website/constructors/understanding-this-keyword/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/constructors/understanding-this-keyword/</guid>
+      <description>In the body of a function, constructor, or initializer block, sometimes you need to refer to the object that contains the instance member in question. In other words, sometimes an instance member may want to access the instance it is contained in. In such cases, you can refer the instance using the this keyword. It always represents the instance within which the instance member is contained.
+To refer to the instance in an instance function, use the this keyword where you normally would refer to an object&amp;rsquo;s reference through a variable.</description>
+    </item>
+    
+    <item>
       <title>What is a Function?</title>
       <link>http://localhost:1313/zen-website/functions/what-is-a-function/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
