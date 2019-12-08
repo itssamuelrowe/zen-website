@@ -22,6 +22,16 @@ An example of an object is a human being. A human being has properties like name
     </item>
     
     <item>
+      <title>What is a Function?</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/what-is-a-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/what-is-a-function/</guid>
+      <description>A function is a block of statements. You can give it a name. When a function is declared inside a class, it defines an object&amp;rsquo;s behavior, basically whatever an object is capable of performing.
+You can call or invoke a function with its name. When you invoke a function, the execution of your program branches to the body of that function. When the function is finished, execution resumes from where the program branched, and the program continues on to the next statement.</description>
+    </item>
+    
+    <item>
       <title>Working with Classes</title>
       <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -39,6 +49,17 @@ A class is a blueprint from which you create objects. The most important thing t
       <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</guid>
       <description>Your class name is an identifier. You can use any identifier you want. But we suggest you to follow these guidelines.
  Begin the class name with a capital letter. For example, Bike, Car, Planet and Person. If the class name consists of more than one word, capitalize each word. For example, BikeRace, CarGame, CollegeLibrary and StringBuilder. Try to use nouns for your class names. We know that classes represent real life objects.</description>
+    </item>
+    
+    <item>
+      <title>Difference Between Functions and Methods</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/difference-between-functions-and-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/difference-between-functions-and-methods/</guid>
+      <description>Function is a sequence of instructions that achieve some result. It may take arguments and return a result. If a function does not return a result it is usually called a procedure.
+Here are a few examples of functions.
+function drawLine(x1, y1, x2, y2) /* Draws a line using Bresenham&#39;s algorithm from (x1, y1) to (x2, y2). * It does not return anything. */ function add(a, b) /* Adds a to b and returns the result as a number.</description>
     </item>
     
     <item>
@@ -64,6 +85,18 @@ Maintenance Code maintainance is a necessity for any programming languages. Obje
     </item>
     
     <item>
+      <title>Declaring Functions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/declaring-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/declaring-functions/</guid>
+      <description>Here is the general form of a function declaration.
+function name(parameters) statement1 statement2 ... statementN  The name of your function helps you call it.
+Here is an example of a program which has redundant statements. Apparently, Harry and Hermione are on an adventure, trying to break into a mysterious tower. The following program prints the dialogue between them.
+// MysteryTower.zen function main(...arguments) print(&#39;Harry Potter: Can you open this door?&#39;) print(&#39;Hermione Granger: Alohomora!</description>
+    </item>
+    
+    <item>
       <title>Understanding Visibility</title>
       <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -74,6 +107,15 @@ You will use visibility modifiers very often.</description>
     </item>
     
     <item>
+      <title>Naming Conventions for Functions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/naming-conventions-for-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/naming-conventions-for-functions/</guid>
+      <description> Begin function names with a lowercase letter. For example, print, getName, setTitle and buffer. If the function name consists of more than one word, capitalize every word, except the first word. For example, toString, initializeCamera, launchRocket and parseInteger. Try to begin your function names with verbs. The name of a function should indicate an action.  </description>
+    </item>
+    
+    <item>
       <title>Understanding Instance and Static Members</title>
       <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -81,6 +123,16 @@ You will use visibility modifiers very often.</description>
       <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</guid>
       <description>Instance Members Instance variables are variables that you declare inside a class body and without the static keyword. They are declared outside functions, constructors, and initializers. These variables are initialized when you create an instance of the class. Further, each instance of the class gets a copy of these variables.
 In fact, when any member of a class, except constructors, is declared without the static keyword you are essentially declaring an instance member.</description>
+    </item>
+    
+    <item>
+      <title>Advantages of Functions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/advantages-of-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/advantages-of-functions/</guid>
+      <description>The primary advantages of functions are as follows.
+ Functions improve the quality of your code. They make it more readable because you break your code into logical chunks. You avoid duplicate code. Imagine you are writing an application that simulates an airplane, which requires primitive matrix operations such as addition, subtraction and multiplication. Without functions you would have to write these operations in several places. So whenever you see yourself writing the same code, it is a good idea to write a function.</description>
     </item>
     
     <item>
@@ -124,6 +176,57 @@ Consumes More Memory This is one of the biggest problems in Zen. Zen takes more 
       <description>Java is a general purpose programming language. It was created by Samuel Rowe. The initial development began in 2016.
 Zen is similar to Java, Python, and C. So, if you have any experience with these languages, you will find Zen easy to learn. However, Zen is different in many significant ways.
 Zen was designed to develop applications that are capable of running across multiple platforms. As of now, Zen is officially supported on all major platforms, in particular, Linux, Windows, and MacOS.</description>
+    </item>
+    
+    <item>
+      <title>Working with Parameters</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</guid>
+      <description>A parameter is a value that you can send to a function. Parameters allow a function to be generalized. In other words, such functions can operate on a variety of data and work differently based on different arguments.
+It is important to understand the difference between parameters and arguments. A parameter is a variable defined by a function that receives a value when the function is invoked. Whereas, an argument is the value that is passed to a function when it is invoked.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Functions That Return Values</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/understanding-functions-that-return-values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/understanding-functions-that-return-values/</guid>
+      <description>Functions that perform operations without returning any value are useful, but this is not the case always. In this section you will learn how to return values from functions.
+Imagine that you write a function that accepts your date of birth and calculates your age. Probably the function can print it on the console. But this is not what you always want. For example, you would want the calculated age to determine if you are eligible to vote, or not.</description>
+    </item>
+    
+    <item>
+      <title>Function Overloading</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/function-overloading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/function-overloading/</guid>
+      <description>Unlike variables, multiple functions in the same scope can have the same name. This technique is known as function overloading. It is a feature of polymorphism. Function overloading is a very useful feature.
+Zen differentiates functions using pseudo function signatures. A pseudo function signature is a part of function declaration. It is the combination of the function name and the parameter count. The names of the parameters are not included in the pseudo function signature.</description>
+    </item>
+    
+    <item>
+      <title>Working with Getters and Setters</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/working-with-getters-and-setters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/working-with-getters-and-setters/</guid>
+      <description>Object-oriented programming helps you hide the details of a class. You can expose certain parts of your class to others.
+You should generally avoid creating public fields. You can make all your fields private. You can give access to the values in these fields with accessors. Accessors are functions which access fields on the behalf of the world outside your class.
+There are two types of accessors.
+ Get Accessor Set Accessor  A get accessor is also known as getter.</description>
+    </item>
+    
+    <item>
+      <title>Using the Property Annotation</title>
+      <link>https://itssamuelrowe.github.io/zen-website/functions/using-the-property-annotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/functions/using-the-property-annotation/</guid>
+      <description>class Rocket @Property var mass @Property var velocity @Property var acceleration  class Rectangle @Property var width @Property var height function getArea() return width * height  </description>
     </item>
     
     <item>

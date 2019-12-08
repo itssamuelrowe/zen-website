@@ -11,11 +11,19 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/what-is-a-function/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</loc>
   </url>
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/difference-between-functions-and-methods/</loc>
   </url>
   
   <url>
@@ -31,7 +39,15 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/declaring-functions/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/naming-conventions-for-functions/</loc>
   </url>
   
   <url>
@@ -40,6 +56,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/advantages-of-functions/</loc>
   </url>
   
   <url>
@@ -67,6 +87,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/</loc>
   </url>
   
@@ -75,7 +99,27 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/understanding-functions-that-return-values/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/function-overloading/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/working-with-getters-and-setters/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/functions/using-the-property-annotation/</loc>
   </url>
   
   <url>
