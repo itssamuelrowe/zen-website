@@ -16,9 +16,9 @@ the `this` keyword as a reference anyway you please. In other words, the
 `this` keyword refers to the current object, and you can use it anywhere a
 reference to an object might appear.
 
-Here is a some situations where you can use the `this` keyword:
- * with the member access operator
- * as an argument to a function or constructor
+Here is a some situations where you can use the `this` keyword:  
+ * with the member access operator  
+ * as an argument to a function or constructor  
  * as the return value for a function, and so on.
 
 In fact, whenever you refer to instance members in functions and constructors
