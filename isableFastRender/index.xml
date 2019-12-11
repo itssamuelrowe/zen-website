@@ -84,6 +84,18 @@ Understanding Classes A class is a collection of objects of similar type. Once a
     </item>
     
     <item>
+      <title>Working with Constructors</title>
+      <link>http://localhost:1313/zen-website/constructors/working-with-constructors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/constructors/working-with-constructors/</guid>
+      <description>A constructor is a special function which initializes your variables and performs any other additional operations when you create an object. It is called whenever you create an object.
+Here is the general form of a constructor.
+function new(parameters) statement1 statement2 ... statementN  Here, the new keyword indicates that the function is a constructor. Constructors usually initialize values of fields.
+You have already learnt about parameters in the previous chapter.</description>
+    </item>
+    
+    <item>
       <title>Advantages of Object-Oriented Programming</title>
       <link>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -104,6 +116,16 @@ Maintenance Code maintainance is a necessity for any programming languages. Obje
 function name(parameters) statement1 statement2 ... statementN  The name of your function helps you call it.
 Here is an example of a program which has redundant statements. Apparently, Harry and Hermione are on an adventure, trying to break into a mysterious tower. The following program prints the dialogue between them.
 // MysteryTower.zen function main(...arguments) print(&#39;Harry Potter: Can you open this door?&#39;) print(&#39;Hermione Granger: Alohomora!</description>
+    </item>
+    
+    <item>
+      <title>Overloading Constructors</title>
+      <link>http://localhost:1313/zen-website/constructors/overloading-constructors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/constructors/overloading-constructors/</guid>
+      <description>A class can have multiple constructors, this achived through a technique known as constructor overloading. It is a feature of polymorphism and is a very useful feature. It is similar to function overloading.
+Zen differentiates constructors using constructor signatures. A constructor signature is a part of constructor declaration. It is the combination of the new keyword and the parameter count. The names of the parameters are not included in the signature.</description>
     </item>
     
     <item>
@@ -133,6 +155,16 @@ You will use visibility modifiers very often.</description>
       <guid>http://localhost:1313/zen-website/classes-and-objects/understanding-instance-and-static-members/</guid>
       <description>Instance Members Instance variables are variables that you declare inside a class body and without the static keyword. They are declared outside functions, constructors, and initializers. These variables are initialized when you create an instance of the class. Further, each instance of the class gets a copy of these variables.
 In fact, when any member of a class, except constructors, is declared without the static keyword you are essentially declaring an instance member.</description>
+    </item>
+    
+    <item>
+      <title>Working with the Static Initializer</title>
+      <link>http://localhost:1313/zen-website/constructors/working-with-the-static-initializer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zen-website/constructors/working-with-the-static-initializer/</guid>
+      <description>Sometimes you may want to initialize your static fields after computing a value. A static initializer is a special block of code which initializes a class. It is written inside a class and outside function and constructors. You cannot assign a name or invoke a static initializer, at least directly.
+It is executed whenever the class is loaded. The Zen Virtual Machine may unload a class when the class is unused to save memory.</description>
     </item>
     
     <item>

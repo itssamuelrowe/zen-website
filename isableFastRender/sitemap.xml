@@ -35,6 +35,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/zen-website/constructors/working-with-constructors/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</loc>
   </url>
   
@@ -44,6 +48,10 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/functions/declaring-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/constructors/overloading-constructors/</loc>
   </url>
   
   <url>
@@ -60,6 +68,10 @@
   
   <url>
     <loc>http://localhost:1313/zen-website/variables-values-and-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/zen-website/constructors/working-with-the-static-initializer/</loc>
   </url>
   
   <url>
