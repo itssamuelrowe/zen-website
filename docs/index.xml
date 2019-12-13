@@ -11,6 +11,38 @@
     
     
     <item>
+      <title>Understanding Abstract Classes</title>
+      <link>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</guid>
+      <description>In a class hierarchy, the classes at the top are abstract in their definitions because these classes can define behavior and attributes common to all the classes below them. Classes with specific behavior and attributes are usually at the bottom of the hierarchy.
+When you design a class hirerarchy, your first step is to factor out the common behavior and attributes common to all the classes. In some situations you may find yourself with a very abstract behavior, which prevents you from providing a general implementation.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</guid>
+      <description>In Zen, errors of all types are generalized into a special type of object known as an exception. An exception is an object which represents an unexpected event. It occurs when your program is running. It disturbs the flow of your program. Exceptions are used to indicate many types of error conditions.
+An exception is represented by an object. It holds the information about the event such as the condition, the stacktrace, the location, and a message.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Inheritance</title>
+      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-inheritance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-inheritance/</guid>
+      <description>Inheritance is a concept of object-oriented programming. You can derive a class from another class with inheritance.
+A class that you inherit is known as parent class, or base class, or superclass.
+A class which inherits is known as child class, or derived class, or subclass.
+Imagine you have a class that already has behavior and attributes that another class needs. You do not have to rewrite or copy your code to have the same behavior and attributes.</description>
+    </item>
+    
+    <item>
       <title>Understanding Object Oriented Programming</title>
       <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -19,6 +51,16 @@
       <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
 An object is simply data that has attributes and behavior.
 An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
+    </item>
+    
+    <item>
+      <title>Understanding this Keyword</title>
+      <link>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</guid>
+      <description>In the body of a function, constructor, or initializer block, sometimes you need to refer to the object that contains the instance member in question. In other words, sometimes an instance member may want to access the instance it is contained in. In such cases, you can refer the instance using the this keyword. It always represents the instance within which the instance member is contained.
+To refer to the instance in an instance function, use the this keyword where you normally would refer to an object&amp;rsquo;s reference through a variable.</description>
     </item>
     
     <item>
@@ -39,6 +81,18 @@ You can call or invoke a function with its name. When you invoke a function, the
       <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</guid>
       <description>In the real world, you wll find many objects of the same kind. There are thousands of bikes with the same make and model. Each of these bikes was built with the same blueprint.
 A class is a blueprint from which you create objects. The most important thing to understand about a class is that it defines a new data type. Once defined, this new type can be used to create instances.</description>
+    </item>
+    
+    <item>
+      <title>Advantages of Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</guid>
+      <description>The advantages of exceptions are as follows.
+You can separate error handling from your algorithm. With exceptions you can separate the details of what happens when an unexpected situation occurs. You can separate such logic from the main logic of your program.
+In other programming languages, error detection, reporting, and handling often lead to complex and confusing code.
+Exceptions allow you to keep your source code clean and organized.</description>
     </item>
     
     <item>
@@ -74,6 +128,28 @@ Understanding Classes A class is a collection of objects of similar type. Once a
     </item>
     
     <item>
+      <title>The Object Class</title>
+      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/the-object-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/the-object-class/</guid>
+      <description>Inheritance is comparable to how you inherited traits such as your height, eyes, hair, DNA, and allergies from your parents. They in turn inherited some of their traits from their parents, that is, your grandparents. Inheritance of such tratis basically keeps going backwards in time till the very first people who populated Earth, say Adam and Eve, the root of your ancestorial hierarchy.
+Similarly, every class hierarchy has a root class.</description>
+    </item>
+    
+    <item>
+      <title>Working with Constructors</title>
+      <link>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</guid>
+      <description>A constructor is a special function which initializes your variables and performs any other additional operations when you create an object. It is called whenever you create an object.
+Here is the general form of a constructor.
+function new(parameters) statement1 statement2 ... statementN  Here, the new keyword indicates that the function is a constructor. Constructors usually initialize values of fields.
+You have already learnt about parameters in the previous chapter.</description>
+    </item>
+    
+    <item>
       <title>Advantages of Object-Oriented Programming</title>
       <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -97,6 +173,36 @@ Here is an example of a program which has redundant statements. Apparently, Harr
     </item>
     
     <item>
+      <title>Overloading Constructors</title>
+      <link>https://itssamuelrowe.github.io/zen-website/constructors/overloading-constructors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/constructors/overloading-constructors/</guid>
+      <description>A class can have multiple constructors, this achived through a technique known as constructor overloading. It is a feature of polymorphism and is a very useful feature. It is similar to function overloading.
+Zen differentiates constructors using constructor signatures. A constructor signature is a part of constructor declaration. It is the combination of the new keyword and the parameter count. The names of the parameters are not included in the signature.</description>
+    </item>
+    
+    <item>
+      <title>Overriding Functions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/overriding-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/overriding-functions/</guid>
+      <description>A subclass inherits all the behavior and attributes of its superclass. It can then extend the behavior and attributes of its superclass. In fact, a subclass can change the behavior provided by its superclass. This is known as overriding. Overriding functions is a feature of polymorphism. In this section, you will learn about overriding functions.
+When you call an instance function, Zen looks for the definition of the function in the object&amp;rsquo;s class.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Exception Types</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</guid>
+      <description>An exception object contains the information about the error condition. It includes information such as stacktrace and message. Perhaps, the most important information is the cause of the error. It is indicated by the name of the exception class used to create the exception object. Usually, you will use exception objects only to figure out the kind of error that occurred.
+In order to understand exceptions fully, you need to understand the class hierarchy of exceptions first.</description>
+    </item>
+    
+    <item>
       <title>Understanding Visibility</title>
       <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -104,6 +210,16 @@ Here is an example of a program which has redundant statements. Apparently, Harr
       <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</guid>
       <description>You can control whether the world outside your class can access its members. This is known as visibility of the member. In other words, you can expose only certain members to public, that is the world outside your class, while keep other members private or secret. Thus, you can control the access of your members. The visibility modifiers are a form of encapsulation in Zen.
 You will use visibility modifiers very often.</description>
+    </item>
+    
+    <item>
+      <title>Catching Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</guid>
+      <description>Before you learn to catch exceptions in your program, you need to see what happens when you do not catch them. Here is an example which generates an exception.
+// GenerateException.zen function main(...arguments) var a = 100 var b = 0 var c = a / b printf(&#39;%d / %d = %d\n&#39;, a, b, c)  When the Zen Virtual Machine tries to evalute a / b, it throws an exception because you tried to divide an integer by zero.</description>
     </item>
     
     <item>
@@ -123,6 +239,26 @@ You will use visibility modifiers very often.</description>
       <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</guid>
       <description>Instance Members Instance variables are variables that you declare inside a class body and without the static keyword. They are declared outside functions, constructors, and initializers. These variables are initialized when you create an instance of the class. Further, each instance of the class gets a copy of these variables.
 In fact, when any member of a class, except constructors, is declared without the static keyword you are essentially declaring an instance member.</description>
+    </item>
+    
+    <item>
+      <title>Working with Constructors and Inheritance</title>
+      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/working-with-constructors-and-inheritance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/working-with-constructors-and-inheritance/</guid>
+      <description>When you inherit a class, the constructors are not inherited because cnostructors are not instance members. Which means each class should create its own constructors. However, sometimes you may want to invoke the constructor of a superclass from your subclass.
+For example, to initialize the fields in a superclass you either need access to them or invoke the constructor. The former technique is verbose and not recommended because it violates the principles of encapsulation.</description>
+    </item>
+    
+    <item>
+      <title>Working with the Static Initializer</title>
+      <link>https://itssamuelrowe.github.io/zen-website/constructors/working-with-the-static-initializer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/constructors/working-with-the-static-initializer/</guid>
+      <description>Sometimes you may want to initialize your static fields after computing a value. A static initializer is a special block of code which initializes a class. It is written inside a class and outside function and constructors. You cannot assign a name or invoke a static initializer, at least directly.
+It is executed whenever the class is loaded. The Zen Virtual Machine may unload a class when the class is unused to save memory.</description>
     </item>
     
     <item>
@@ -168,6 +304,25 @@ Consumes More Memory This is one of the biggest problems in Zen. Zen takes more 
     </item>
     
     <item>
+      <title>Multiple Catch Clauses</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</guid>
+      <description>In some cases, more than one type of exception can be thrown by the statements in your try clause. To handle such situations, you can specify more than one catch clause, each catching a different type of exception. When an exception is thrown, each catch clause is checked in order to see if it handles the exception. The first catch clause whose type matches the thrown exception object is executed. When one catch statement is finished executing, the other catch clauses are skipped.</description>
+    </item>
+    
+    <item>
+      <title>Understanding the Extended Self Reference</title>
+      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-the-extended-self-referenced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-the-extended-self-referenced/</guid>
+      <description>You have already seen how the this reference works. It provides a reference to the current instance. You can use it distinguish between a local variable and an instance variable with the same name.
+Sometimes you may want to distinguish between a subclass instance member and a superclass instance member. In such cases, you can use the extended form of the this keyword known as the extended self reference. You can reference a superclass directly above the current subclass in the hierarchy.</description>
+    </item>
+    
+    <item>
       <title>What is Zen?</title>
       <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/what-is-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -179,6 +334,15 @@ Zen was designed to develop applications that are capable of running across mult
     </item>
     
     <item>
+      <title>Understanding Multiple Catch Clauses and Inheritance</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</guid>
+      <description>When you use multiple catch clauses, you need arrange them properly. Imagine that you have two catch clauses. The first catch clause handles exceptions of type A and the second catch clause handles exceptions of type B. The order in which your catch clauses appear does not matter as long as A and B are not related. In other words, the order does not matter if A is neither the superclass or subclass of B.</description>
+    </item>
+    
+    <item>
       <title>Working with Parameters</title>
       <link>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -186,6 +350,28 @@ Zen was designed to develop applications that are capable of running across mult
       <guid>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</guid>
       <description>A parameter is a value that you can send to a function. Parameters allow a function to be generalized. In other words, such functions can operate on a variety of data and work differently based on different arguments.
 It is important to understand the difference between parameters and arguments. A parameter is a variable defined by a function that receives a value when the function is invoked. Whereas, an argument is the value that is passed to a function when it is invoked.</description>
+    </item>
+    
+    <item>
+      <title>Throwing Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</guid>
+      <description>So far, you have only learnt to catch exceptions. In particular, the exceptions that were thrown by Zen. However, you can throw an exception manually, using the throw statement.
+The general form of throw statement is shown here.
+throw expression  The throw statement is a simple statement. Therefore, it is terminated by a semicolon.
+Here, the expression must evaluates to an object whose type inherits Throwable. It can be an instance of the Throwable class itself.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Checked and Unchecked Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</guid>
+      <description>The concepts of checked and unchecked exceptions were inspired from Java. These concepts are simplified in Zen and are observed only as design principles, meaning the compiler does not enforce these rules. However, the compiler marks each function with the exceptions it may throw. This information can be used outside Zen by other tools.
+An unchecked exception is an exception which you can handle if you want. Any exception class which inherits the RuntimeException class is an unchecked exception.</description>
     </item>
     
     <item>
@@ -460,6 +646,16 @@ expression1 ? expression2 : expression3  Here, expression1 can be any expression
       <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</guid>
       <description>Sometimes it is useful to force an early iteration of a loop. In other words, you might want to continue running the loop but stop processing the remainder of the code in its body for this particular iteration.
 In a while statement, a continue statement causes control to be transferred directly to the conditional expression that controls the loop. In a for statement, control first goes to the updation section of the for statement and then to the conditional expression.</description>
+    </item>
+    
+    <item>
+      <title>Using the Finally Clause</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</guid>
+      <description>When an exception is thrown, the execution of your code jumps abruptly, possibly from one function to another function. This means some important segment of your code may be skipped. This could be a problem in some functions.
+For example, if a function opens a file in the beginning and closes it before returning, then you will not want the code that closes the file to be skipped by an exception.</description>
     </item>
     
     <item>

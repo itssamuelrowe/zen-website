@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exceptions on Zen</title>
+    <link>https://itssamuelrowe.github.io/zen-website/exceptions/</link>
+    <description>Recent content in Exceptions on Zen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://itssamuelrowe.github.io/zen-website/exceptions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understanding Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</guid>
+      <description>In Zen, errors of all types are generalized into a special type of object known as an exception. An exception is an object which represents an unexpected event. It occurs when your program is running. It disturbs the flow of your program. Exceptions are used to indicate many types of error conditions.
+An exception is represented by an object. It holds the information about the event such as the condition, the stacktrace, the location, and a message.</description>
+    </item>
+    
+    <item>
+      <title>Advantages of Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</guid>
+      <description>The advantages of exceptions are as follows.
+You can separate error handling from your algorithm. With exceptions you can separate the details of what happens when an unexpected situation occurs. You can separate such logic from the main logic of your program.
+In other programming languages, error detection, reporting, and handling often lead to complex and confusing code.
+Exceptions allow you to keep your source code clean and organized.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Exception Types</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</guid>
+      <description>An exception object contains the information about the error condition. It includes information such as stacktrace and message. Perhaps, the most important information is the cause of the error. It is indicated by the name of the exception class used to create the exception object. Usually, you will use exception objects only to figure out the kind of error that occurred.
+In order to understand exceptions fully, you need to understand the class hierarchy of exceptions first.</description>
+    </item>
+    
+    <item>
+      <title>Catching Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</guid>
+      <description>Before you learn to catch exceptions in your program, you need to see what happens when you do not catch them. Here is an example which generates an exception.
+// GenerateException.zen function main(...arguments) var a = 100 var b = 0 var c = a / b printf(&#39;%d / %d = %d\n&#39;, a, b, c)  When the Zen Virtual Machine tries to evalute a / b, it throws an exception because you tried to divide an integer by zero.</description>
+    </item>
+    
+    <item>
+      <title>Multiple Catch Clauses</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</guid>
+      <description>In some cases, more than one type of exception can be thrown by the statements in your try clause. To handle such situations, you can specify more than one catch clause, each catching a different type of exception. When an exception is thrown, each catch clause is checked in order to see if it handles the exception. The first catch clause whose type matches the thrown exception object is executed. When one catch statement is finished executing, the other catch clauses are skipped.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Multiple Catch Clauses and Inheritance</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</guid>
+      <description>When you use multiple catch clauses, you need arrange them properly. Imagine that you have two catch clauses. The first catch clause handles exceptions of type A and the second catch clause handles exceptions of type B. The order in which your catch clauses appear does not matter as long as A and B are not related. In other words, the order does not matter if A is neither the superclass or subclass of B.</description>
+    </item>
+    
+    <item>
+      <title>Throwing Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</guid>
+      <description>So far, you have only learnt to catch exceptions. In particular, the exceptions that were thrown by Zen. However, you can throw an exception manually, using the throw statement.
+The general form of throw statement is shown here.
+throw expression  The throw statement is a simple statement. Therefore, it is terminated by a semicolon.
+Here, the expression must evaluates to an object whose type inherits Throwable. It can be an instance of the Throwable class itself.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Checked and Unchecked Exceptions</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</guid>
+      <description>The concepts of checked and unchecked exceptions were inspired from Java. These concepts are simplified in Zen and are observed only as design principles, meaning the compiler does not enforce these rules. However, the compiler marks each function with the exceptions it may throw. This information can be used outside Zen by other tools.
+An unchecked exception is an exception which you can handle if you want. Any exception class which inherits the RuntimeException class is an unchecked exception.</description>
+    </item>
+    
+    <item>
+      <title>Using the Finally Clause</title>
+      <link>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</guid>
+      <description>When an exception is thrown, the execution of your code jumps abruptly, possibly from one function to another function. This means some important segment of your code may be skipped. This could be a problem in some functions.
+For example, if a function opens a file in the beginning and closes it before returning, then you will not want the code that closes the file to be skipped by an exception.</description>
+    </item>
+    
+  </channel>
+</rss>

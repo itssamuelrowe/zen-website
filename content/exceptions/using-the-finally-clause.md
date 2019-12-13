@@ -25,7 +25,7 @@ requires at least one catch or a finally clause to follow it.
 
 function divide(a, b)
     return a / b
-    
+
 function main(...arguments)
     try
         var a = 10

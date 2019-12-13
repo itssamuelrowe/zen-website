@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abstract Classes on Zen</title>
+    <link>https://itssamuelrowe.github.io/zen-website/abstract-classes/</link>
+    <description>Recent content in Abstract Classes on Zen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://itssamuelrowe.github.io/zen-website/abstract-classes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understanding Abstract Classes</title>
+      <link>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</guid>
+      <description>In a class hierarchy, the classes at the top are abstract in their definitions because these classes can define behavior and attributes common to all the classes below them. Classes with specific behavior and attributes are usually at the bottom of the hierarchy.
+When you design a class hirerarchy, your first step is to factor out the common behavior and attributes common to all the classes. In some situations you may find yourself with a very abstract behavior, which prevents you from providing a general implementation.</description>
+    </item>
+    
+  </channel>
+</rss>

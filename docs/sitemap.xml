@@ -7,7 +7,23 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-inheritance/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</loc>
   </url>
   
   <url>
@@ -16,6 +32,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</loc>
   </url>
   
   <url>
@@ -31,6 +51,14 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/the-object-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</loc>
   </url>
   
@@ -43,7 +71,23 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/constructors/overloading-constructors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/overriding-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</loc>
   </url>
   
   <url>
@@ -56,6 +100,14 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/working-with-constructors-and-inheritance/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/constructors/working-with-the-static-initializer/</loc>
   </url>
   
   <url>
@@ -75,7 +127,15 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-the-extended-self-referenced/</loc>
   </url>
   
   <url>
@@ -87,6 +147,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</loc>
   </url>
   
@@ -95,7 +159,15 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</loc>
   </url>
   
   <url>
@@ -119,7 +191,23 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/constructors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/functions/using-the-property-annotation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/abstract-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/</loc>
   </url>
   
   <url>
@@ -212,6 +300,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</loc>
   </url>
   
   <url>
