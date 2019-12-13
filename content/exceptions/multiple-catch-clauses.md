@@ -1,6 +1,6 @@
 +++
 title = "Multiple Catch Clauses"
-weight = 4
+weight = 5
 +++
 
 In some cases, more than one type of exception can be thrown by the statements
