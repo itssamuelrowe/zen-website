@@ -54,6 +54,16 @@ An example of an object is a human being. A human being has properties like name
     </item>
     
     <item>
+      <title>Understanding Packages</title>
+      <link>https://itssamuelrowe.github.io/zen-website/packages/understanding-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/packages/understanding-packages/</guid>
+      <description>A package is a group of related classes, annotations and enumerations bundled together. Henceforth, when we refer to classes in this chapter we mean to include other components such as annotations and enumerations, unless stated otherwise.
+Packages are like containers that provide your classes a namespace. For example, a package allows you to create two classes named Scanner. You simply need to store the classes in different packages. However, the class names should be unique within their respective packages.</description>
+    </item>
+    
+    <item>
       <title>Understanding this Keyword</title>
       <link>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -103,6 +113,16 @@ Exceptions allow you to keep your source code clean and organized.</description>
       <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</guid>
       <description>Your class name is an identifier. You can use any identifier you want. But we suggest you to follow these guidelines.
  Begin the class name with a capital letter. For example, Bike, Car, Planet and Person. If the class name consists of more than one word, capitalize each word. For example, BikeRace, CarGame, CollegeLibrary and StringBuilder. Try to use nouns for your class names. We know that classes represent real life objects.</description>
+    </item>
+    
+    <item>
+      <title>Creating Packages</title>
+      <link>https://itssamuelrowe.github.io/zen-website/packages/creating-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/packages/creating-packages/</guid>
+      <description>If you do not create a package, your classes are stored in the default package, which is why you were able to create classes so far. The default package has no name. The default package is usually not used in real life applications. Most of the time, you will create your own packages.
+Zen uses folders, also known as directories, to represent packages. For example, your .zen and .feb files for the classes you declare in the hello package should be stored in the hello directory.</description>
     </item>
     
     <item>
@@ -203,6 +223,18 @@ In order to understand exceptions fully, you need to understand the class hierar
     </item>
     
     <item>
+      <title>Understanding Qualified Names</title>
+      <link>https://itssamuelrowe.github.io/zen-website/packages/understanding-qualified-names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/packages/understanding-qualified-names/</guid>
+      <description>You can create a hierarchy of packages using a qualified name. We mentioned this term in the previous section without going into its details.
+A qualified name is a sequence of identifiers separated by dots. Here are some examples of qualified names.
+zen.core zen.support zen.io com.onecube com.onecube.model com.onecube.storage  Here is the general form of a qualified name.
+identifier1.identifier2.identifier3  A qualified name can consist of any number of identifiers. Each identifier is separated by a dot and indicates a node or level in your hierarchy.</description>
+    </item>
+    
+    <item>
       <title>Understanding Visibility</title>
       <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -239,6 +271,16 @@ You will use visibility modifiers very often.</description>
       <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</guid>
       <description>Instance Members Instance variables are variables that you declare inside a class body and without the static keyword. They are declared outside functions, constructors, and initializers. These variables are initialized when you create an instance of the class. Further, each instance of the class gets a copy of these variables.
 In fact, when any member of a class, except constructors, is declared without the static keyword you are essentially declaring an instance member.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Package Lookup</title>
+      <link>https://itssamuelrowe.github.io/zen-website/packages/understanding-package-lookup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/packages/understanding-package-lookup/</guid>
+      <description>Your packages should be organized correspondingly in your directories. But how does the Zen Virtual Machine determine which directory to look for your packages?
+By default Zen looks for packages in the current working directory, the directory from where you are invoking the virtual machine. Further, the Zen Virtual Machine looks for packages in the directories listed in the search path of the application. You can specify the search path for an application in two ways.</description>
     </item>
     
     <item>
@@ -331,6 +373,28 @@ Sometimes you may want to distinguish between a subclass instance member and a s
       <description>Java is a general purpose programming language. It was created by Samuel Rowe. The initial development began in 2016.
 Zen is similar to Java, Python, and C. So, if you have any experience with these languages, you will find Zen easy to learn. However, Zen is different in many significant ways.
 Zen was designed to develop applications that are capable of running across multiple platforms. As of now, Zen is officially supported on all major platforms, in particular, Linux, Windows, and MacOS.</description>
+    </item>
+    
+    <item>
+      <title>Working with the Import Statement</title>
+      <link>https://itssamuelrowe.github.io/zen-website/packages/working-with-the-import-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/packages/working-with-the-import-statement/</guid>
+      <description>You have learnt how packages allow you to keep your classes organized. However, as you have seen accessing classes from different packages require fully qualified names, which means you have to type so much just to refere a class! For this reason, Zen provides the import statement.
+The general form of the import statement is shown here.
+import qualifiedName  Here, the qualified name refers to the class which you want to import.</description>
+    </item>
+    
+    <item>
+      <title>Naming Conventions for Packages</title>
+      <link>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</guid>
+      <description>You can use any identifier you wish to name your packages. However, we recommend you to follow these naming conventions when you create your packages.
+ Packages are usually named using the authors domain name. The domain name is written backwards to obtain the package name.  For example, imagine you own the domain example.com. You can create a package named com.example for all your packages.
+Using your domain name allows you to create package names which are unique from the packages created by other programmers around the world.</description>
     </item>
     
     <item>

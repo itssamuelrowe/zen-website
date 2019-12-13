@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/packages/understanding-packages/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</loc>
   </url>
   
@@ -40,6 +44,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/packages/creating-packages/</loc>
   </url>
   
   <url>
@@ -83,6 +91,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/packages/understanding-qualified-names/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</loc>
   </url>
   
@@ -96,6 +108,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/packages/understanding-package-lookup/</loc>
   </url>
   
   <url>
@@ -143,7 +159,15 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/packages/working-with-the-import-statement/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</loc>
   </url>
   
   <url>
@@ -208,6 +232,14 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/exceptions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/packages/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/</loc>
   </url>
   
   <url>
