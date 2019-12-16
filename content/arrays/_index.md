@@ -23,6 +23,5 @@ declaration and initialization. Finally, we will learn a variation of arrays
 known as multdimensional arrays.
 
 Interestingly, Zen actually includes classes which implement the full fledged
-behavior of lists. A particular list known as array list is a fundamental type,
-which is treated specially by Zen. Further, some of these lists internally store
-the values using arrays.
+behavior of lists. A particular list known as array list, which internally stores
+the values using arrays, is a fundamental type. It is treated specially by Zen.
