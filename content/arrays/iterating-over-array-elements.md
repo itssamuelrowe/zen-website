@@ -14,7 +14,7 @@ Here is an example of iterating through the elements of an array using
 a while loop.
 
 ```
-// ArrayTraversing2.zen
+// ArrayTraversing.zen
 
 function main(...arguments)
     var daysOfWeek = array(
@@ -113,7 +113,7 @@ Here is an example of iterating through the elements of an array
 using the for loop.
 
 ```
-// TraversingArray3.zen
+// TraversingArray2.zen
 
 function main(...arguments)
     var daysOfWeek = array(
@@ -132,3 +132,37 @@ This example is simpler than the example shown earlier, which used an index.
 You can always use the for loop whenever you do not need an index or your
 iteration is always strictly linear. In all other cases, you need to
 use the while statement.
+
+Here is another example of iterating through the elements of an array using the
+for statement.
+
+```
+// ArrayTraversing3.zen
+
+function main(...arguments)
+    var daysOfWeek = array(
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday')
+    for var i in range(0, daysOfWeek.length)
+        print(daysOfWeek[i])
+```
+
+This example produces the following output.
+```
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+```
+
+In this example, we created an array of strings, which stores the days of a week.
+We use a combination of the for loop and `range()` function to iterate over the
+array elements and print them on the console.
