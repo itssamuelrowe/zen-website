@@ -6,7 +6,7 @@ weight = 3
 When you create an array using the `Array` class, each slot in an array contains
 a default value, which is `null`. Therefore, you must assign a value to each slot
 before using it. There are two ways in which you can accomplish this, that is,
-manually initialize each slot or specify a default value to the `Array` constructor.
+manually initialize each slot or specify a default value to the `makeArray` function.
 You will learn these techniques in this section.
 
 Once you have allocated an array, you can access a specific element in the array
@@ -56,7 +56,7 @@ prints the fourth day of the week. Notice that we used `3` as the index to acces
 
 In some situations, when you create an array using the `Array` class, you may
 want each slot in the array to contain a default value other than `null`.
-In such cases, you can use the overloaded version of the `Array` constructor
+In such cases, you can use the `makeArray()` function
 which accepts a default value.
 
 Here is an example an integer array whose slots are initialized to `0`.
@@ -64,6 +64,6 @@ Here is an example an integer array whose slots are initialized to `0`.
 // DefaultArrayValue.zen
 
 function main(...arguments)
-    var marks = new Array(Integer, 10, 0)
+    var marks = makeArray(Integer, 10, 0)
     serialize(marks, System.out)
 ```
