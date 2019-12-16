@@ -123,7 +123,7 @@ The logical NOT operator reverses the value of a Boolean expression. Thus, if th
 expression is `true`, the operator changes it to `false`. If the expression is `false`,
 the operator changes it to `true`.
 
-Here’s an example.
+Here's an example.
 
 `!(day == 7)`
 

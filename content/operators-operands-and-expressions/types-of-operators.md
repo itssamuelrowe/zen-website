@@ -5,7 +5,7 @@ title = "Types of Operators"
 In this lecture, we'll learn about the types of operators based on the
 number of operands they expect.
 
-A common way to categorize Zen’s operators is by the number of operands the
+A common way to categorize Zen's operators is by the number of operands the
 operator expect.
 
 There are three types of operators based on the number of operands they accept.

@@ -75,7 +75,7 @@ From the parking lot example, your Lamborghini may have a different fuel
 level than the Lamborghini parked next to yours.
 
 The combination of the values assigned to all the attributes of an object is
-called the object’s state. Unlike an objects identity, the state can change over
+called the object's state. Unlike an objects identity, the state can change over
 its lifetime.
 
 For example, the engine temperature of your Lamborghini may heat up and cool

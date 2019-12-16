@@ -13,7 +13,7 @@ procedural oriented programming (POP) language.
 ## Memory Management
 
 All programming languages let you handle data. When you create a variable,
-you can assign a portion of the computer’s memory to store the data.
+you can assign a portion of the computer's memory to store the data.
 The allocation of memory is a detail that you can usually ignore.
 But you need to know what happens to that memory when you no longer need
 the data that was stored in it.

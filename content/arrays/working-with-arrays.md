@@ -62,7 +62,7 @@ week. A print statement prints the second day of the week. Notice that we used
 `1` as the index to access `'Monday'`. This is because array indexes start from
 zero.
 
-## Using the New Operator to Allocate Array Objects
+### Using the New Operator to Allocate Array Objects
 
 Arrays are objects in Zen. Therefore, you can use the new operator to create a
 new instance of the `Array` class.

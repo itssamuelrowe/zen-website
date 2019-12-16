@@ -31,7 +31,7 @@ expression is `true`, the body is executed. Then, the conditional expression
 is evaluated again, and the whole process repeats. If the expression is `false`,
 the body is not executed, and the while loop ends.
 
-Here’s a simple program that uses a while loop to print the even numbers
+Here's a simple program that uses a while loop to print the even numbers
 from 2 through 10 on the console.
 
 ```

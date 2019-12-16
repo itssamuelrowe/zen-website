@@ -18,7 +18,7 @@ control statements. You will learn about these statements in this chapter
 and the next chapter.
 
 A programming language provides control statements that allow your
-programs to alter the flow of execution. Zen’s control statements are
+programs to alter the flow of execution. Zen's control statements are
 divided into the following categories: selection, iteration, and jump.
 
 ## Selection Statement
@@ -37,7 +37,7 @@ will learn more about these statements in the next chapter.
 
 By far, jump statements are the simplest control statements. As the
 name suggests, they allow your program to jump from one location to
-another location. Given their simplicity, they don’t get their own
+another location. Given their simplicity, they don't get their own
 chapter. However, we explain them in detail whenever their usage is
 required or when a concept is closely associated with them.
 
