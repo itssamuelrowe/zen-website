@@ -11,6 +11,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</loc>
   </url>
   
@@ -27,6 +31,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/strings/understanding-strings/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</loc>
   </url>
   
@@ -40,6 +48,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/strings/constructors-of-the-string-class/</loc>
   </url>
   
   <url>
@@ -63,6 +75,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</loc>
   </url>
   
@@ -76,6 +92,14 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/functions/declaring-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/strings/determining-the-size-of-strings/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</loc>
   </url>
   
   <url>
@@ -99,7 +123,15 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/strings/comparing-strings/</loc>
   </url>
   
   <url>
@@ -143,11 +175,19 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/strings/extracting-characters-from-strings/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</loc>
   </url>
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</loc>
   </url>
   
   <url>
@@ -167,6 +207,10 @@
   </url>
   
   <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</loc>
+  </url>
+  
+  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</loc>
   </url>
   
@@ -176,6 +220,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</loc>
   </url>
   
   <url>
@@ -240,6 +288,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/arrays/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/strings/</loc>
   </url>
   
   <url>

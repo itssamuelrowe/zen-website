@@ -28,7 +28,7 @@ Zen provides high-level collections such as lists, maps, sets, bags, queues, sta
       <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/comparing-zen-to-other-programming-languages/</guid>
       <description>In this lecture, we will compare Zen, Java, C and C++.
 Paradigm Zen, Java and C++ are object-oriented programming languages. Whereas, C is procedural oriented programming (POP) language.
-Memory Management All programming languages let you handle data. When you create a variable, you can assign a portion of the computer’s memory to store the data. The allocation of memory is a detail that you can usually ignore. But you need to know what happens to that memory when you no longer need the data that was stored in it.</description>
+Memory Management All programming languages let you handle data. When you create a variable, you can assign a portion of the computer&amp;rsquo;s memory to store the data. The allocation of memory is a detail that you can usually ignore. But you need to know what happens to that memory when you no longer need the data that was stored in it.</description>
     </item>
     
     <item>

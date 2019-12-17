@@ -21,6 +21,16 @@ When you design a class hirerarchy, your first step is to factor out the common 
     </item>
     
     <item>
+      <title>Understanding Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</guid>
+      <description>An array is an object which stores a fixed number of values of the same type. It is a linear data structure, which means the values are stored in a sequence. Each value stored in an array is known as an element, item, or value.
+You can store any type of value that you can store in a variable. However, you can store only one type of value once you create it.</description>
+    </item>
+    
+    <item>
       <title>Understanding Exceptions</title>
       <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -64,6 +74,17 @@ Packages are like containers that provide your classes a namespace. For example,
     </item>
     
     <item>
+      <title>Understanding Strings</title>
+      <link>https://itssamuelrowe.github.io/zen-website/strings/understanding-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/strings/understanding-strings/</guid>
+      <description>In Zen, strings are not primitive reference types. Strings are implemented by the String class defined in the zen.core package. All strings are objects and Zen treats strings specially.
+A string is a sequence of characters. You can create a string by enclosing your text in single quotes. The character sequence along with the single quotes form a string literal.
+Unlike many other programming languages, string are not arrays of characters.</description>
+    </item>
+    
+    <item>
       <title>Understanding this Keyword</title>
       <link>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -103,6 +124,18 @@ A class is a blueprint from which you create objects. The most important thing t
 You can separate error handling from your algorithm. With exceptions you can separate the details of what happens when an unexpected situation occurs. You can separate such logic from the main logic of your program.
 In other programming languages, error detection, reporting, and handling often lead to complex and confusing code.
 Exceptions allow you to keep your source code clean and organized.</description>
+    </item>
+    
+    <item>
+      <title>Constructors of the String Class</title>
+      <link>https://itssamuelrowe.github.io/zen-website/strings/constructors-of-the-string-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/strings/constructors-of-the-string-class/</guid>
+      <description>The String class exposes many constructors. You will learn about a few of these constructors in this section. Please refer the Zen API documentation for more information.
+Creating Empty Strings You can create an empty string by calling the default constructor. An empty string basically contains no characters.
+Here is an example.
+var emtpyString = new String()  Creating Strings From Array of Characters The String class implements a constructor which accepts an array of characters.</description>
     </item>
     
     <item>
@@ -158,6 +191,16 @@ Similarly, every class hierarchy has a root class.</description>
     </item>
     
     <item>
+      <title>Working with Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</guid>
+      <description>In order to work with arrays you need follow these steps.
+ Declare a variable to reference the array object. Create a new array object. Assign the reference of the array object to the array variable. Store information in the newly created array.  Declaring Array Variables Before you start working with an array, you need to create a variable that can store a reference to the array object. You have already learnt how to create variables.</description>
+    </item>
+    
+    <item>
       <title>Working with Constructors</title>
       <link>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -190,6 +233,28 @@ Maintenance Code maintainance is a necessity for any programming languages. Obje
 function name(parameters) statement1 statement2 ... statementN  The name of your function helps you call it.
 Here is an example of a program which has redundant statements. Apparently, Harry and Hermione are on an adventure, trying to break into a mysterious tower. The following program prints the dialogue between them.
 // MysteryTower.zen function main(...arguments) print(&#39;Harry Potter: Can you open this door?&#39;) print(&#39;Hermione Granger: Alohomora!</description>
+    </item>
+    
+    <item>
+      <title>Determining the Size of Strings</title>
+      <link>https://itssamuelrowe.github.io/zen-website/strings/determining-the-size-of-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/strings/determining-the-size-of-strings/</guid>
+      <description>You can determine the size of a string using the immutable size property. The size of a string is basically the number of code points it contains.
+Here is an example which prints the size of a string.
+// StringSize.zen function main(...arguments) var name = &#39;Shazam&#39; printf(&#39;The size of &amp;quot;%s&amp;quot; is %d.\n&#39;, name.size)  The example above produces the following output:
+The size of &amp;quot;Shazam&amp;quot; is 6.  The size of a string is an important value when you want to manipulate strings.</description>
+    </item>
+    
+    <item>
+      <title>Initializing Array Objects</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</guid>
+      <description>When you create an array using the Array class, each slot in an array contains a default value, which is null. Therefore, you must assign a value to each slot before using it. There are two ways in which you can accomplish this, that is, manually initialize each slot or specify a default value to the makeArray function. You will learn these techniques in this section.
+Once you have allocated an array, you can access a specific element in the array using the index enclosed in square brackets, known as the subscript operator.</description>
     </item>
     
     <item>
@@ -245,6 +310,16 @@ You will use visibility modifiers very often.</description>
     </item>
     
     <item>
+      <title>Accessing Array Elements</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</guid>
+      <description>After you have an array with initial values, you can read, modify, and test the values in each slot. The value in a slot is accessed using the subscript operator. You can write expressions like this using the subscript operator.
+identifier[index] = value  Whenever you try to access an element with an index, Zen makes sure that you are specifying a valid index. The index should always be greater than or equal to zero and lesser than the size of the array, known as the arrays boundaries.</description>
+    </item>
+    
+    <item>
       <title>Catching Exceptions</title>
       <link>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -252,6 +327,17 @@ You will use visibility modifiers very often.</description>
       <guid>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</guid>
       <description>Before you learn to catch exceptions in your program, you need to see what happens when you do not catch them. Here is an example which generates an exception.
 // GenerateException.zen function main(...arguments) var a = 100 var b = 0 var c = a / b printf(&#39;%d / %d = %d\n&#39;, a, b, c)  When the Zen Virtual Machine tries to evalute a / b, it throws an exception because you tried to divide an integer by zero.</description>
+    </item>
+    
+    <item>
+      <title>Comparing Strings</title>
+      <link>https://itssamuelrowe.github.io/zen-website/strings/comparing-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/strings/comparing-strings/</guid>
+      <description>String Equality You can compare two strings for equality using the equality operator (==). The behavior of the equality operator is overridden in the equals() function, which means you can use it to compare two strings for equality, too.
+The declaration of the equals function is shown here.
+function equals(other)  It returns true if both the strings contain the same characters in the same order; false otherwise. You need to remember that this function is case sensistive.</description>
     </item>
     
     <item>
@@ -331,7 +417,7 @@ Zen provides high-level collections such as lists, maps, sets, bags, queues, sta
       <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/comparing-zen-to-other-programming-languages/</guid>
       <description>In this lecture, we will compare Zen, Java, C and C++.
 Paradigm Zen, Java and C++ are object-oriented programming languages. Whereas, C is procedural oriented programming (POP) language.
-Memory Management All programming languages let you handle data. When you create a variable, you can assign a portion of the computer’s memory to store the data. The allocation of memory is a detail that you can usually ignore. But you need to know what happens to that memory when you no longer need the data that was stored in it.</description>
+Memory Management All programming languages let you handle data. When you create a variable, you can assign a portion of the computer&amp;rsquo;s memory to store the data. The allocation of memory is a detail that you can usually ignore. But you need to know what happens to that memory when you no longer need the data that was stored in it.</description>
     </item>
     
     <item>
@@ -346,12 +432,34 @@ Consumes More Memory This is one of the biggest problems in Zen. Zen takes more 
     </item>
     
     <item>
+      <title>Extracting Characters From Strings</title>
+      <link>https://itssamuelrowe.github.io/zen-website/strings/extracting-characters-from-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/strings/extracting-characters-from-strings/</guid>
+      <description>You can extract characters from strings in a number of ways. We discuss about each technique in this section.
+Internally, strings store characters in an array. The String class overrides the subscript operator, which allows you to access characters in a string as if it were an array. Many functions in the String class require indexes to operate. Just like array, string indexes are zero based. So it would help you to understand strings better if you think of them as arrays.</description>
+    </item>
+    
+    <item>
       <title>Multiple Catch Clauses</title>
       <link>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</guid>
       <description>In some cases, more than one type of exception can be thrown by the statements in your try clause. To handle such situations, you can specify more than one catch clause, each catching a different type of exception. When an exception is thrown, each catch clause is checked in order to see if it handles the exception. The first catch clause whose type matches the thrown exception object is executed. When one catch statement is finished executing, the other catch clauses are skipped.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Multidimensional Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</guid>
+      <description>In Zen all arrays are objects, which means you can store an array inside another array. Such an arrangment of arrays allows you to create multidimensional arrays.
+The two dimensional array is very common compared to other higher dimensional arrays. A common use of a two dimensional array is to represent data in grids, such as cartesian planes and matrices.
+Here is an example of a two dimensional array.
+var matrix = new Array(Integer, 5, 10)  This example allocates an array with 5 slots in the first dimension.</description>
     </item>
     
     <item>
@@ -387,6 +495,17 @@ import qualifiedName  Here, the qualified name refers to the class which you wan
     </item>
     
     <item>
+      <title>Iterating Over Array Elements</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</guid>
+      <description>So far, you have learnt how to access array elements manually. In most cases, you will automate this process with a loop. You will often encounter code which iterates over the elements of an array. You will learn about this technique in this section.
+Traversing with While Loop Here is an example of iterating through the elements of an array using a while loop.
+// ArrayTraversing.zen function main(...arguments) var daysOfWeek = array( &#39;Sunday&#39;, &#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39;, &#39;Saturday&#39;) var i = 0 while i &amp;lt; daysOfWeek.</description>
+    </item>
+    
+    <item>
       <title>Naming Conventions for Packages</title>
       <link>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -414,6 +533,16 @@ Using your domain name allows you to create package names which are unique from 
       <guid>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</guid>
       <description>A parameter is a value that you can send to a function. Parameters allow a function to be generalized. In other words, such functions can operate on a variety of data and work differently based on different arguments.
 It is important to understand the difference between parameters and arguments. A parameter is a variable defined by a function that receives a value when the function is invoked. Whereas, an argument is the value that is passed to a function when it is invoked.</description>
+    </item>
+    
+    <item>
+      <title>Iterating Over Multidimensional Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</guid>
+      <description>You can either use the for statement or the while statement for traversing multidimensional arrays. You need to remember that multidimensional arrays consist of arrays of arrays. When you use loops to iterate over multidimensional arrays, the easiest way is to use nested loop statements. This is important when iterating over a multidimensional array, because each iteration retrieves the next array dimensions, until you reach the last dimension.
+In general, you will have k depth of nested loop statements, to iterate over an array of k dimensions, because you will have k - 1 array objects, here 1 represents the last dimension where values are stored.</description>
     </item>
     
     <item>
@@ -556,7 +685,7 @@ function main(...arguments) print(&#39;Hello, world!&#39;)   Copy the source cod
       
       <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</guid>
       <description>In this lecture, we&amp;rsquo;ll learn about the types of operators based on the number of operands they expect.
-A common way to categorize Zen’s operators is by the number of operands the operator expect.
+A common way to categorize Zen&amp;rsquo;s operators is by the number of operands the operator expect.
 There are three types of operators based on the number of operands they accept.
  Unary Operators
  Binary Operators

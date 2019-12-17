@@ -40,7 +40,7 @@ For example, in the HashMap class the following annotation overrides the subscri
       
       <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</guid>
       <description>In this lecture, we&amp;rsquo;ll learn about the types of operators based on the number of operands they expect.
-A common way to categorize Zen’s operators is by the number of operands the operator expect.
+A common way to categorize Zen&amp;rsquo;s operators is by the number of operands the operator expect.
 There are three types of operators based on the number of operands they accept.
  Unary Operators
  Binary Operators

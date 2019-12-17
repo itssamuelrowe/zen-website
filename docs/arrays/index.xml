@@ -10,5 +10,78 @@
 	<atom:link href="https://itssamuelrowe.github.io/zen-website/arrays/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Understanding Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</guid>
+      <description>An array is an object which stores a fixed number of values of the same type. It is a linear data structure, which means the values are stored in a sequence. Each value stored in an array is known as an element, item, or value.
+You can store any type of value that you can store in a variable. However, you can store only one type of value once you create it.</description>
+    </item>
+    
+    <item>
+      <title>Working with Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</guid>
+      <description>In order to work with arrays you need follow these steps.
+ Declare a variable to reference the array object. Create a new array object. Assign the reference of the array object to the array variable. Store information in the newly created array.  Declaring Array Variables Before you start working with an array, you need to create a variable that can store a reference to the array object. You have already learnt how to create variables.</description>
+    </item>
+    
+    <item>
+      <title>Initializing Array Objects</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</guid>
+      <description>When you create an array using the Array class, each slot in an array contains a default value, which is null. Therefore, you must assign a value to each slot before using it. There are two ways in which you can accomplish this, that is, manually initialize each slot or specify a default value to the makeArray function. You will learn these techniques in this section.
+Once you have allocated an array, you can access a specific element in the array using the index enclosed in square brackets, known as the subscript operator.</description>
+    </item>
+    
+    <item>
+      <title>Accessing Array Elements</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</guid>
+      <description>After you have an array with initial values, you can read, modify, and test the values in each slot. The value in a slot is accessed using the subscript operator. You can write expressions like this using the subscript operator.
+identifier[index] = value  Whenever you try to access an element with an index, Zen makes sure that you are specifying a valid index. The index should always be greater than or equal to zero and lesser than the size of the array, known as the arrays boundaries.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Multidimensional Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</guid>
+      <description>In Zen all arrays are objects, which means you can store an array inside another array. Such an arrangment of arrays allows you to create multidimensional arrays.
+The two dimensional array is very common compared to other higher dimensional arrays. A common use of a two dimensional array is to represent data in grids, such as cartesian planes and matrices.
+Here is an example of a two dimensional array.
+var matrix = new Array(Integer, 5, 10)  This example allocates an array with 5 slots in the first dimension.</description>
+    </item>
+    
+    <item>
+      <title>Iterating Over Array Elements</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</guid>
+      <description>So far, you have learnt how to access array elements manually. In most cases, you will automate this process with a loop. You will often encounter code which iterates over the elements of an array. You will learn about this technique in this section.
+Traversing with While Loop Here is an example of iterating through the elements of an array using a while loop.
+// ArrayTraversing.zen function main(...arguments) var daysOfWeek = array( &#39;Sunday&#39;, &#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39;, &#39;Saturday&#39;) var i = 0 while i &amp;lt; daysOfWeek.</description>
+    </item>
+    
+    <item>
+      <title>Iterating Over Multidimensional Arrays</title>
+      <link>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</guid>
+      <description>You can either use the for statement or the while statement for traversing multidimensional arrays. You need to remember that multidimensional arrays consist of arrays of arrays. When you use loops to iterate over multidimensional arrays, the easiest way is to use nested loop statements. This is important when iterating over a multidimensional array, because each iteration retrieves the next array dimensions, until you reach the last dimension.
+In general, you will have k depth of nested loop statements, to iterate over an array of k dimensions, because you will have k - 1 array objects, here 1 represents the last dimension where values are stored.</description>
+    </item>
+    
   </channel>
 </rss>

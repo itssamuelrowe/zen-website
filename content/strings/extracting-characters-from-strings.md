@@ -1,5 +1,5 @@
 +++
-title = 'Extract Characters From Strings'
+title = 'Extracting Characters From Strings'
 weight = 5
 +++
 
