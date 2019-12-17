@@ -61,10 +61,13 @@ You can create a copy of the string object using the `clone()` function.
 
 Here is an example.
 ```
-var string1 = 'Hello'
-var string2 = string1.clone()
-print(string1 is string2)
-print(string1 == string2)
+// StringCopy.zen
+
+function main(...arguments)
+    var string1 = 'Hello'
+    var string2 = string1.clone()
+    print(string1 is string2)
+    print(string1 == string2)
 ```
 
 The first string contains the text `'Hello'`. We create another copy of this string.
