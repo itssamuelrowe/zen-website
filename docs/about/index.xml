@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on The Zen Programming Language</title>
-    <link>http://itssamuelrowe.github.io/zen-website/about/</link>
+    <link>https://itssamuelrowe.github.io/zen-website/about/</link>
     <description>Recent content in About on The Zen Programming Language</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
     
-	<atom:link href="http://itssamuelrowe.github.io/zen-website/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://itssamuelrowe.github.io/zen-website/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

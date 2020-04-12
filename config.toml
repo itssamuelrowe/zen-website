@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://itssamuelrowe.github.io/zen-website"
+baseURL = "https://itssamuelrowe.github.io/zen-website"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross"
