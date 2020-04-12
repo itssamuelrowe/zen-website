@@ -1,9 +1,88 @@
-baseURL = "https://itssamuelrowe.github.io/zen-website/"
+# default configuration
+baseURL = "http://itssamuelrowe.github.io/zen-website"
 languageCode = "en-us"
-title = "Zen"
-theme = "grav"
+summaryLength = "10"
+theme = "kross-hugo"
+title = "The Zen Programming Language"
 
+# css plugins
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+
+
+# js plugin
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "plugins/shuffle/shuffle.min.js"
+
+
+# menu
+[[menu.main]]
+URL = "docs"
+name = "Docs"
+weight = 2
+
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+
+[[menu.main]]
+URL = "download"
+name = "Download"
+weight = 4
+
+# default parameters
 [params]
-    themeVariant = "green"
-    showVisitedLinks = true
-    author = "Samuel Rowe"
+home = "Home"
+logo = "images/logo.png"
+# theme color
+theme_color = "#41228e"
+# contact info
+phone = "+880 2544 658 256"
+email = "steve.fruits@email.com"
+address = "125/A, CA Commercial Area, California, USA"
+# meta description
+author = "Johnathan Smith"
+description = "This is meta description"
+# google analytics
+google_analytics_id = "" # Your ID
+# copyright
+copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
+
+
+# contact
+[params.contact]
+enable = true
+form_action = "#" # contact form works with : https://formspree.io
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
+# social site
+[[params.social]]
+URL = "#"
+icon = "ti-facebook"
+
+[[params.social]]
+URL = "#"
+icon = "ti-instagram"
+
+[[params.social]]
+URL = "#"
+icon = "ti-dribbble"
+
+[[params.social]]
+URL = "#"
+icon = "ti-twitter-alt"
