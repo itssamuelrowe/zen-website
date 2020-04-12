@@ -1,1018 +1,204 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Zen Programming Language on Zen</title>
-    <link>https://itssamuelrowe.github.io/zen-website/</link>
-    <description>Recent content in The Zen Programming Language on Zen</description>
+    <title>The Zen Programming Language</title>
+    <link>http://itssamuelrowe.github.io/zen-website/</link>
+    <description>Recent content on The Zen Programming Language</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
     
-	<atom:link href="https://itssamuelrowe.github.io/zen-website/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://itssamuelrowe.github.io/zen-website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Understanding Abstract Classes</title>
-      <link>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</link>
+      <title></title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/introduction-to-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</guid>
-      <description>In a class hierarchy, the classes at the top are abstract in their definitions because these classes can define behavior and attributes common to all the classes below them. Classes with specific behavior and attributes are usually at the bottom of the hierarchy.
-When you design a class hirerarchy, your first step is to factor out the common behavior and attributes common to all the classes. In some situations you may find yourself with a very abstract behavior, which prevents you from providing a general implementation.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/introduction-to-zen/</guid>
+      <description>Chapter 1 Introduction to Zen This chapter is a gentle introduction to the world of Zen.</description>
     </item>
     
     <item>
-      <title>Understanding Arrays</title>
-      <link>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</link>
+      <title>Basics of Zen</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/basics-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</guid>
-      <description>An array is an object which stores a fixed number of values of the same type. It is a linear data structure, which means the values are stored in a sequence. Each value stored in an array is known as an element, item, or value.
-You can store any type of value that you can store in a variable. However, you can store only one type of value once you create it.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/basics-of-zen/</guid>
+      <description>Chapter 3 Basics of Zen In this chapter, you will learn the basics of writing simple Zen programs.</description>
     </item>
     
     <item>
-      <title>Understanding Exceptions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</link>
+      <title>Variables, Values, and Data Types</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/variables-values-and-data-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</guid>
-      <description>In Zen, errors of all types are generalized into a special type of object known as an exception. An exception is an object which represents an unexpected event. It occurs when your program is running. It disturbs the flow of your program. Exceptions are used to indicate many types of error conditions.
-An exception is represented by an object. It holds the information about the event such as the condition, the stacktrace, the location, and a message.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/variables-values-and-data-types/</guid>
+      <description>Chapter 4 Variables, Values, and Data Types In this chapter, you will learn the basics of working with variables in Java.</description>
     </item>
     
     <item>
-      <title>Understanding Inheritance</title>
-      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-inheritance/</link>
+      <title>Operators, Operands, and Expressions</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/operators-operands-and-expressions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-inheritance/</guid>
-      <description>Inheritance is a concept of object-oriented programming. You can derive a class from another class with inheritance.
-A class that you inherit is known as parent class, or base class, or superclass.
-A class which inherits is known as child class, or derived class, or subclass.
-Imagine you have a class that already has behavior and attributes that another class needs. You do not have to rewrite or copy your code to have the same behavior and attributes.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/operators-operands-and-expressions/</guid>
+      <description>Chapter 4 +++ title = &amp;ldquo;Understanding Operators&amp;rdquo; +++
+In this lecture, you will learn about operators.</description>
     </item>
     
     <item>
-      <title>Understanding Object Oriented Programming</title>
-      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</link>
+      <title>Conditional Statements</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/conditional-statements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</guid>
-      <description>Object-oriented programming is a programming language paradigm or model. In this model, programs are organized around data, also known as objects. Zen is unlike languages such as C, a Procedural Oriented Language (POL), in which the programs are organized around functions and logic.
-An object is simply data that has attributes and behavior.
-An example of an object is a human being. A human being has properties like name, date of birth, and gender.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/conditional-statements/</guid>
+      <description>Chapter 6 Conditional Statements: How Your Programs Make Choices So far in this book, all the programs have run in a linear fashion.</description>
     </item>
     
     <item>
-      <title>Understanding Packages</title>
-      <link>https://itssamuelrowe.github.io/zen-website/packages/understanding-packages/</link>
+      <title>Loop Statements</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/iterative-statements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/packages/understanding-packages/</guid>
-      <description>A package is a group of related classes, annotations and enumerations bundled together. Henceforth, when we refer to classes in this chapter we mean to include other components such as annotations and enumerations, unless stated otherwise.
-Packages are like containers that provide your classes a namespace. For example, a package allows you to create two classes named Scanner. You simply need to store the classes in different packages. However, the class names should be unique within their respective packages.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/iterative-statements/</guid>
+      <description>Chapter 7 Loop Statements: How Your Programs Repeat Things One thing computers enjoy doing more than anything else is repeating themselves.</description>
     </item>
     
     <item>
-      <title>Understanding Strings</title>
-      <link>https://itssamuelrowe.github.io/zen-website/strings/understanding-strings/</link>
+      <title>Introduction to Object Oriented Programming</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/introduction-to-object-oriented-programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/strings/understanding-strings/</guid>
-      <description>In Zen, strings are not primitive reference types. Strings are implemented by the String class defined in the zen.core package. All strings are objects and Zen treats strings specially.
-A string is a sequence of characters. You can create a string by enclosing your text in single quotes. The character sequence along with the single quotes form a string literal.
-Unlike many other programming languages, string are not arrays of characters.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/introduction-to-object-oriented-programming/</guid>
+      <description>Chapter 8 Introduction to Object Oriented Programming Zen is a pure object-oriented programming language.</description>
     </item>
     
     <item>
-      <title>Understanding this Keyword</title>
-      <link>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</link>
+      <title>Classes and Objects</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/classes-and-objects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</guid>
-      <description>In the body of a function, constructor, or initializer block, sometimes you need to refer to the object that contains the instance member in question. In other words, sometimes an instance member may want to access the instance it is contained in. In such cases, you can refer the instance using the this keyword. It always represents the instance within which the instance member is contained.
-To refer to the instance in an instance function, use the this keyword where you normally would refer to an object&amp;rsquo;s reference through a variable.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/classes-and-objects/</guid>
+      <description>Chapter 9 Classes and Objects You have been using classes since the beginning of this manual.</description>
     </item>
     
     <item>
-      <title>What is a Function?</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/what-is-a-function/</link>
+      <title>Functions</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/what-is-a-function/</guid>
-      <description>A function is a block of statements. You can give it a name. When a function is declared inside a class, it defines an object&amp;rsquo;s behavior, basically whatever an object is capable of performing.
-You can call or invoke a function with its name. When you invoke a function, the execution of your program branches to the body of that function. When the function is finished, execution resumes from where the program branched, and the program continues on to the next statement.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/functions/</guid>
+      <description>Chapter 10 Functions In Zen all programs are built with classes, which means there is at least one class.</description>
     </item>
     
     <item>
-      <title>Working with Classes</title>
-      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</link>
+      <title>Constructors</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/constructors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</guid>
-      <description>In the real world, you wll find many objects of the same kind. There are thousands of bikes with the same make and model. Each of these bikes was built with the same blueprint.
-A class is a blueprint from which you create objects. The most important thing to understand about a class is that it defines a new data type. Once defined, this new type can be used to create instances.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/constructors/</guid>
+      <description>Chapter 11 Constructors: How Your Objects are Initialized When you create an object using the new operator, Zen does several things for you.</description>
     </item>
     
     <item>
-      <title>Advantages of Exceptions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</link>
+      <title>Superclasses and Subclasses</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/superclasses-and-subclasses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</guid>
-      <description>The advantages of exceptions are as follows.
-You can separate error handling from your algorithm. With exceptions you can separate the details of what happens when an unexpected situation occurs. You can separate such logic from the main logic of your program.
-In other programming languages, error detection, reporting, and handling often lead to complex and confusing code.
-Exceptions allow you to keep your source code clean and organized.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/superclasses-and-subclasses/</guid>
+      <description>Chapter 11 Superclasses and Subclasses Inheritance is a very important feature of object-oriented programming, a mechanism which allows one class to inherit the behaviors and attributes from another class.</description>
     </item>
     
     <item>
-      <title>Constructors of the String Class</title>
-      <link>https://itssamuelrowe.github.io/zen-website/strings/constructors-of-the-string-class/</link>
+      <title>Exceptions</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/exceptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/strings/constructors-of-the-string-class/</guid>
-      <description>The String class exposes many constructors. You will learn about a few of these constructors in this section. Please refer the Zen API documentation for more information.
-Creating Empty Strings You can create an empty string by calling the default constructor. An empty string basically contains no characters.
-Here is an example.
-var emtpyString = new String()  Creating Strings From Array of Characters The String class implements a constructor which accepts an array of characters.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/exceptions/</guid>
+      <description>Chapter 14 Exceptions No matter how carefully you design and test your program, errors are bound to happen one or the other.</description>
     </item>
     
     <item>
-      <title>Conventions for Class Names</title>
-      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</link>
+      <title>Packages</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</guid>
-      <description>Your class name is an identifier. You can use any identifier you want. But we suggest you to follow these guidelines.
- Begin the class name with a capital letter. For example, Bike, Car, Planet and Person. If the class name consists of more than one word, capitalize each word. For example, BikeRace, CarGame, CollegeLibrary and StringBuilder. Try to use nouns for your class names. We know that classes represent real life objects.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/packages/</guid>
+      <description>Chapter 15 Packages: How Your Source Code is Organized Imagine you have two classes, one of which represents a component that reads data from the console.</description>
     </item>
     
     <item>
-      <title>Creating Packages</title>
-      <link>https://itssamuelrowe.github.io/zen-website/packages/creating-packages/</link>
+      <title>Arrays</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/packages/creating-packages/</guid>
-      <description>If you do not create a package, your classes are stored in the default package, which is why you were able to create classes so far. The default package has no name. The default package is usually not used in real life applications. Most of the time, you will create your own packages.
-Zen uses folders, also known as directories, to represent packages. For example, your .zen and .feb files for the classes you declare in the hello package should be stored in the hello directory.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/arrays/</guid>
+      <description>Chapter 16 Arrays So far in this manual, you have written programs which work with few variables.</description>
     </item>
     
     <item>
-      <title>Difference Between Functions and Methods</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/difference-between-functions-and-methods/</link>
+      <title>Strings</title>
+      <link>http://itssamuelrowe.github.io/zen-website/docs/strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/difference-between-functions-and-methods/</guid>
-      <description>Function is a sequence of instructions that achieve some result. It may take arguments and return a result. If a function does not return a result it is usually called a procedure.
-Here are a few examples of functions.
-function drawLine(x1, y1, x2, y2) /* Draws a line using Bresenham&#39;s algorithm from (x1, y1) to (x2, y2). * It does not return anything. */ function add(a, b) /* Adds a to b and returns the result as a number.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/docs/strings/</guid>
+      <description>Chapter 16 Strings A string is a very common object in Zen.</description>
     </item>
     
     <item>
-      <title>Principles of Object Oriented Programming</title>
-      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</guid>
-      <description>Object oriented programming is based on the following principles.
- Class Object Inheritance Abstraction Encapsulation Polymorphism  We will briefly discuss each of these principles in this section. In the next few chapters we will learn about them in detail with their applications in Zen.
-Understanding Classes A class is a collection of objects of similar type. Once a class is defined, any number of instances can be created which belong to that class.</description>
-    </item>
-    
-    <item>
-      <title>The Object Class</title>
-      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/the-object-class/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/the-object-class/</guid>
-      <description>Inheritance is comparable to how you inherited traits such as your height, eyes, hair, DNA, and allergies from your parents. They in turn inherited some of their traits from their parents, that is, your grandparents. Inheritance of such tratis basically keeps going backwards in time till the very first people who populated Earth, say Adam and Eve, the root of your ancestorial hierarchy.
-Similarly, every class hierarchy has a root class.</description>
-    </item>
-    
-    <item>
-      <title>Working with Arrays</title>
-      <link>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</guid>
-      <description>In order to work with arrays you need follow these steps.
- Declare a variable to reference the array object. Create a new array object. Assign the reference of the array object to the array variable. Store information in the newly created array.  Declaring Array Variables Before you start working with an array, you need to create a variable that can store a reference to the array object. You have already learnt how to create variables.</description>
-    </item>
-    
-    <item>
-      <title>Working with Constructors</title>
-      <link>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</guid>
-      <description>A constructor is a special function which initializes your variables and performs any other additional operations when you create an object. It is called whenever you create an object.
-Here is the general form of a constructor.
-function new(parameters) statement1 statement2 ... statementN  Here, the new keyword indicates that the function is a constructor. Constructors usually initialize values of fields.
-You have already learnt about parameters in the previous chapter.</description>
-    </item>
-    
-    <item>
-      <title>Advantages of Object-Oriented Programming</title>
-      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</guid>
-      <description>In this section, we will learn about the advantages of Object Oriented Programming (OOP).
-Reusability Reusability allows us to reuse available facilities rather building it again and again. This is done with the use of a class. You can use it any number of times. Thus, your productivity is improved.
-Maintenance Code maintainance is a necessity for any programming languages. Object Oriented Programming allows programmers to refactor code in many ways.</description>
-    </item>
-    
-    <item>
-      <title>Declaring Functions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/declaring-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/declaring-functions/</guid>
-      <description>Here is the general form of a function declaration.
-function name(parameters) statement1 statement2 ... statementN  The name of your function helps you call it.
-Here is an example of a program which has redundant statements. Apparently, Harry and Hermione are on an adventure, trying to break into a mysterious tower. The following program prints the dialogue between them.
-// MysteryTower.zen function main(...arguments) print(&#39;Harry Potter: Can you open this door?&#39;) print(&#39;Hermione Granger: Alohomora!</description>
-    </item>
-    
-    <item>
-      <title>Determining the Size of Strings</title>
-      <link>https://itssamuelrowe.github.io/zen-website/strings/determining-the-size-of-strings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/strings/determining-the-size-of-strings/</guid>
-      <description>You can determine the size of a string using the immutable size property. The size of a string is basically the number of code points it contains.
-Here is an example which prints the size of a string.
-// StringSize.zen function main(...arguments) var name = &#39;Shazam&#39; printf(&#39;The size of &amp;quot;%s&amp;quot; is %d.\n&#39;, name.size)  The example above produces the following output:
-The size of &amp;quot;Shazam&amp;quot; is 6.  The size of a string is an important value when you want to manipulate strings.</description>
-    </item>
-    
-    <item>
-      <title>Initializing Array Objects</title>
-      <link>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</guid>
-      <description>When you create an array using the Array class, each slot in an array contains a default value, which is null. Therefore, you must assign a value to each slot before using it. There are two ways in which you can accomplish this, that is, manually initialize each slot or specify a default value to the makeArray function. You will learn these techniques in this section.
-Once you have allocated an array, you can access a specific element in the array using the index enclosed in square brackets, known as the subscript operator.</description>
-    </item>
-    
-    <item>
-      <title>Overloading Constructors</title>
-      <link>https://itssamuelrowe.github.io/zen-website/constructors/overloading-constructors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/constructors/overloading-constructors/</guid>
-      <description>A class can have multiple constructors, this achived through a technique known as constructor overloading. It is a feature of polymorphism and is a very useful feature. It is similar to function overloading.
-Zen differentiates constructors using constructor signatures. A constructor signature is a part of constructor declaration. It is the combination of the new keyword and the parameter count. The names of the parameters are not included in the signature.</description>
-    </item>
-    
-    <item>
-      <title>Overriding Functions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/overriding-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/overriding-functions/</guid>
-      <description>A subclass inherits all the behavior and attributes of its superclass. It can then extend the behavior and attributes of its superclass. In fact, a subclass can change the behavior provided by its superclass. This is known as overriding. Overriding functions is a feature of polymorphism. In this section, you will learn about overriding functions.
-When you call an instance function, Zen looks for the definition of the function in the object&amp;rsquo;s class.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Exception Types</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</guid>
-      <description>An exception object contains the information about the error condition. It includes information such as stacktrace and message. Perhaps, the most important information is the cause of the error. It is indicated by the name of the exception class used to create the exception object. Usually, you will use exception objects only to figure out the kind of error that occurred.
-In order to understand exceptions fully, you need to understand the class hierarchy of exceptions first.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Qualified Names</title>
-      <link>https://itssamuelrowe.github.io/zen-website/packages/understanding-qualified-names/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/packages/understanding-qualified-names/</guid>
-      <description>You can create a hierarchy of packages using a qualified name. We mentioned this term in the previous section without going into its details.
-A qualified name is a sequence of identifiers separated by dots. Here are some examples of qualified names.
-zen.core zen.support zen.io com.onecube com.onecube.model com.onecube.storage  Here is the general form of a qualified name.
-identifier1.identifier2.identifier3  A qualified name can consist of any number of identifiers. Each identifier is separated by a dot and indicates a node or level in your hierarchy.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Visibility</title>
-      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</guid>
-      <description>You can control whether the world outside your class can access its members. This is known as visibility of the member. In other words, you can expose only certain members to public, that is the world outside your class, while keep other members private or secret. Thus, you can control the access of your members. The visibility modifiers are a form of encapsulation in Zen.
-You will use visibility modifiers very often.</description>
-    </item>
-    
-    <item>
-      <title>Accessing Array Elements</title>
-      <link>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</guid>
-      <description>After you have an array with initial values, you can read, modify, and test the values in each slot. The value in a slot is accessed using the subscript operator. You can write expressions like this using the subscript operator.
-identifier[index] = value  Whenever you try to access an element with an index, Zen makes sure that you are specifying a valid index. The index should always be greater than or equal to zero and lesser than the size of the array, known as the arrays boundaries.</description>
-    </item>
-    
-    <item>
-      <title>Catching Exceptions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</guid>
-      <description>Before you learn to catch exceptions in your program, you need to see what happens when you do not catch them. Here is an example which generates an exception.
-// GenerateException.zen function main(...arguments) var a = 100 var b = 0 var c = a / b printf(&#39;%d / %d = %d\n&#39;, a, b, c)  When the Zen Virtual Machine tries to evalute a / b, it throws an exception because you tried to divide an integer by zero.</description>
-    </item>
-    
-    <item>
-      <title>Comparing Strings</title>
-      <link>https://itssamuelrowe.github.io/zen-website/strings/comparing-strings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/strings/comparing-strings/</guid>
-      <description>String Equality You can compare two strings for equality using the equality operator (==). The behavior of the equality operator is overridden in the equals() function, which means you can use it to compare two strings for equality, too.
-The declaration of the equals function is shown here.
-function equals(other)  It returns true if both the strings contain the same characters in the same order; false otherwise. You need to remember that this function is case sensistive.</description>
-    </item>
-    
-    <item>
-      <title>Naming Conventions for Functions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/naming-conventions-for-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/naming-conventions-for-functions/</guid>
-      <description> Begin function names with a lowercase letter. For example, print, getName, setTitle and buffer. If the function name consists of more than one word, capitalize every word, except the first word. For example, toString, initializeCamera, launchRocket and parseInteger. Try to begin your function names with verbs. The name of a function should indicate an action.  </description>
-    </item>
-    
-    <item>
-      <title>Understanding Instance and Static Members</title>
-      <link>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</guid>
-      <description>Instance Members Instance variables are variables that you declare inside a class body and without the static keyword. They are declared outside functions, constructors, and initializers. These variables are initialized when you create an instance of the class. Further, each instance of the class gets a copy of these variables.
-In fact, when any member of a class, except constructors, is declared without the static keyword you are essentially declaring an instance member.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Package Lookup</title>
-      <link>https://itssamuelrowe.github.io/zen-website/packages/understanding-package-lookup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/packages/understanding-package-lookup/</guid>
-      <description>Your packages should be organized correspondingly in your directories. But how does the Zen Virtual Machine determine which directory to look for your packages?
-By default Zen looks for packages in the current working directory, the directory from where you are invoking the virtual machine. Further, the Zen Virtual Machine looks for packages in the directories listed in the search path of the application. You can specify the search path for an application in two ways.</description>
-    </item>
-    
-    <item>
-      <title>Working with Constructors and Inheritance</title>
-      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/working-with-constructors-and-inheritance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/working-with-constructors-and-inheritance/</guid>
-      <description>When you inherit a class, the constructors are not inherited because cnostructors are not instance members. Which means each class should create its own constructors. However, sometimes you may want to invoke the constructor of a superclass from your subclass.
-For example, to initialize the fields in a superclass you either need access to them or invoke the constructor. The former technique is verbose and not recommended because it violates the principles of encapsulation.</description>
-    </item>
-    
-    <item>
-      <title>Working with the Static Initializer</title>
-      <link>https://itssamuelrowe.github.io/zen-website/constructors/working-with-the-static-initializer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/constructors/working-with-the-static-initializer/</guid>
-      <description>Sometimes you may want to initialize your static fields after computing a value. A static initializer is a special block of code which initializes a class. It is written inside a class and outside function and constructors. You cannot assign a name or invoke a static initializer, at least directly.
-It is executed whenever the class is loaded. The Zen Virtual Machine may unload a class when the class is unused to save memory.</description>
-    </item>
-    
-    <item>
-      <title>Advantages of Functions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/advantages-of-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/advantages-of-functions/</guid>
-      <description>The primary advantages of functions are as follows.
- Functions improve the quality of your code. They make it more readable because you break your code into logical chunks. You avoid duplicate code. Imagine you are writing an application that simulates an airplane, which requires primitive matrix operations such as addition, subtraction and multiplication. Without functions you would have to write these operations in several places. So whenever you see yourself writing the same code, it is a good idea to write a function.</description>
-    </item>
-    
-    <item>
-      <title>Advantages of Zen</title>
-      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/advantages-of-zen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/advantages-of-zen/</guid>
-      <description>Zen is Simple Zen is easy to learn and use. It has a clear syntax. With a combination of powerful libraries, it makes tasks such as string manipulation and networking extremely easy. If you know the basics of object oriented programming, you can easily learn Zen.
-Zen provides high-level collections such as lists, maps, sets, bags, queues, stacks, and so on. You do not need external libraries or hours of coding to use these collections.</description>
-    </item>
-    
-    <item>
-      <title>Comparing Zen to Other Programming Languages</title>
-      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/comparing-zen-to-other-programming-languages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/comparing-zen-to-other-programming-languages/</guid>
-      <description>In this lecture, we will compare Zen, Java, C and C++.
-Paradigm Zen, Java and C++ are object-oriented programming languages. Whereas, C is procedural oriented programming (POP) language.
-Memory Management All programming languages let you handle data. When you create a variable, you can assign a portion of the computer&amp;rsquo;s memory to store the data. The allocation of memory is a detail that you can usually ignore. But you need to know what happens to that memory when you no longer need the data that was stored in it.</description>
-    </item>
-    
-    <item>
-      <title>Disadvantages of Zen</title>
-      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/disadvantages-of-zen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/disadvantages-of-zen/</guid>
-      <description>Like any programming language, Zen is not perfect.
-Performance Zen programs are converted to bytecodes when compiled. During execution, these byte codes are interpreted by the virtual machine. Thus, Zen programs take longer time to run compared to programs written in C and C++. But this problem will soon be overcome with a Just-in-time Compiler (JIT).
-Consumes More Memory This is one of the biggest problems in Zen. Zen takes more memory space than the other native programming languages like C and C++.</description>
-    </item>
-    
-    <item>
-      <title>Extracting Characters From Strings</title>
-      <link>https://itssamuelrowe.github.io/zen-website/strings/extracting-characters-from-strings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/strings/extracting-characters-from-strings/</guid>
-      <description>You can extract characters from strings in a number of ways. We discuss about each technique in this section.
-Internally, strings store characters in an array. The String class overrides the subscript operator, which allows you to access characters in a string as if it were an array. Many functions in the String class require indexes to operate. Just like array, string indexes are zero based. So it would help you to understand strings better if you think of them as arrays.</description>
-    </item>
-    
-    <item>
-      <title>Multiple Catch Clauses</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</guid>
-      <description>In some cases, more than one type of exception can be thrown by the statements in your try clause. To handle such situations, you can specify more than one catch clause, each catching a different type of exception. When an exception is thrown, each catch clause is checked in order to see if it handles the exception. The first catch clause whose type matches the thrown exception object is executed. When one catch statement is finished executing, the other catch clauses are skipped.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Multidimensional Arrays</title>
-      <link>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</guid>
-      <description>In Zen all arrays are objects, which means you can store an array inside another array. Such an arrangment of arrays allows you to create multidimensional arrays.
-The two dimensional array is very common compared to other higher dimensional arrays. A common use of a two dimensional array is to represent data in grids, such as cartesian planes and matrices.
-Here is an example of a two dimensional array.
-var matrix = new Array(Integer, 5, 10)  This example allocates an array with 5 slots in the first dimension.</description>
-    </item>
-    
-    <item>
-      <title>Understanding the Extended Self Reference</title>
-      <link>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-the-extended-self-referenced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-the-extended-self-referenced/</guid>
-      <description>You have already seen how the this reference works. It provides a reference to the current instance. You can use it distinguish between a local variable and an instance variable with the same name.
-Sometimes you may want to distinguish between a subclass instance member and a superclass instance member. In such cases, you can use the extended form of the this keyword known as the extended self reference. You can reference a superclass directly above the current subclass in the hierarchy.</description>
-    </item>
-    
-    <item>
-      <title>What is Zen?</title>
-      <link>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/what-is-zen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/what-is-zen/</guid>
-      <description>Java is a general purpose programming language. It was created by Samuel Rowe. The initial development began in 2016.
-Zen is similar to Java, Python, and C. So, if you have any experience with these languages, you will find Zen easy to learn. However, Zen is different in many significant ways.
-Zen was designed to develop applications that are capable of running across multiple platforms. As of now, Zen is officially supported on all major platforms, in particular, Linux, Windows, and MacOS.</description>
-    </item>
-    
-    <item>
-      <title>Working with the Import Statement</title>
-      <link>https://itssamuelrowe.github.io/zen-website/packages/working-with-the-import-statement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/packages/working-with-the-import-statement/</guid>
-      <description>You have learnt how packages allow you to keep your classes organized. However, as you have seen accessing classes from different packages require fully qualified names, which means you have to type so much just to refere a class! For this reason, Zen provides the import statement.
-The general form of the import statement is shown here.
-import qualifiedName  Here, the qualified name refers to the class which you want to import.</description>
-    </item>
-    
-    <item>
-      <title>Iterating Over Array Elements</title>
-      <link>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</guid>
-      <description>So far, you have learnt how to access array elements manually. In most cases, you will automate this process with a loop. You will often encounter code which iterates over the elements of an array. You will learn about this technique in this section.
-Traversing with While Loop Here is an example of iterating through the elements of an array using a while loop.
-// ArrayTraversing.zen function main(...arguments) var daysOfWeek = array( &#39;Sunday&#39;, &#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;, &#39;Thursday&#39;, &#39;Friday&#39;, &#39;Saturday&#39;) var i = 0 while i &amp;lt; daysOfWeek.</description>
-    </item>
-    
-    <item>
-      <title>Naming Conventions for Packages</title>
-      <link>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</guid>
-      <description>You can use any identifier you wish to name your packages. However, we recommend you to follow these naming conventions when you create your packages.
- Packages are usually named using the authors domain name. The domain name is written backwards to obtain the package name.  For example, imagine you own the domain example.com. You can create a package named com.example for all your packages.
-Using your domain name allows you to create package names which are unique from the packages created by other programmers around the world.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Multiple Catch Clauses and Inheritance</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</guid>
-      <description>When you use multiple catch clauses, you need arrange them properly. Imagine that you have two catch clauses. The first catch clause handles exceptions of type A and the second catch clause handles exceptions of type B. The order in which your catch clauses appear does not matter as long as A and B are not related. In other words, the order does not matter if A is neither the superclass or subclass of B.</description>
-    </item>
-    
-    <item>
-      <title>Working with Parameters</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</guid>
-      <description>A parameter is a value that you can send to a function. Parameters allow a function to be generalized. In other words, such functions can operate on a variety of data and work differently based on different arguments.
-It is important to understand the difference between parameters and arguments. A parameter is a variable defined by a function that receives a value when the function is invoked. Whereas, an argument is the value that is passed to a function when it is invoked.</description>
-    </item>
-    
-    <item>
-      <title>Iterating Over Multidimensional Arrays</title>
-      <link>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</guid>
-      <description>You can either use the for statement or the while statement for traversing multidimensional arrays. You need to remember that multidimensional arrays consist of arrays of arrays. When you use loops to iterate over multidimensional arrays, the easiest way is to use nested loop statements. This is important when iterating over a multidimensional array, because each iteration retrieves the next array dimensions, until you reach the last dimension.
-In general, you will have k depth of nested loop statements, to iterate over an array of k dimensions, because you will have k - 1 array objects, here 1 represents the last dimension where values are stored.</description>
-    </item>
-    
-    <item>
-      <title>Throwing Exceptions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</guid>
-      <description>So far, you have only learnt to catch exceptions. In particular, the exceptions that were thrown by Zen. However, you can throw an exception manually, using the throw statement.
-The general form of throw statement is shown here.
-throw expression  The throw statement is a simple statement. Therefore, it is terminated by a semicolon.
-Here, the expression must evaluates to an object whose type inherits Throwable. It can be an instance of the Throwable class itself.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Checked and Unchecked Exceptions</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</guid>
-      <description>The concepts of checked and unchecked exceptions were inspired from Java. These concepts are simplified in Zen and are observed only as design principles, meaning the compiler does not enforce these rules. However, the compiler marks each function with the exceptions it may throw. This information can be used outside Zen by other tools.
-An unchecked exception is an exception which you can handle if you want. Any exception class which inherits the RuntimeException class is an unchecked exception.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Functions That Return Values</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/understanding-functions-that-return-values/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/understanding-functions-that-return-values/</guid>
-      <description>Functions that perform operations without returning any value are useful, but this is not the case always. In this section you will learn how to return values from functions.
-Imagine that you write a function that accepts your date of birth and calculates your age. Probably the function can print it on the console. But this is not what you always want. For example, you would want the calculated age to determine if you are eligible to vote, or not.</description>
-    </item>
-    
-    <item>
-      <title>Function Overloading</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/function-overloading/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/function-overloading/</guid>
-      <description>Unlike variables, multiple functions in the same scope can have the same name. This technique is known as function overloading. It is a feature of polymorphism. Function overloading is a very useful feature.
-Zen differentiates functions using pseudo function signatures. A pseudo function signature is a part of function declaration. It is the combination of the function name and the parameter count. The names of the parameters are not included in the pseudo function signature.</description>
-    </item>
-    
-    <item>
-      <title>Working with Getters and Setters</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/working-with-getters-and-setters/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/working-with-getters-and-setters/</guid>
-      <description>Object-oriented programming helps you hide the details of a class. You can expose certain parts of your class to others.
-You should generally avoid creating public fields. You can make all your fields private. You can give access to the values in these fields with accessors. Accessors are functions which access fields on the behalf of the world outside your class.
-There are two types of accessors.
- Get Accessor Set Accessor  A get accessor is also known as getter.</description>
-    </item>
-    
-    <item>
-      <title>Using the Property Annotation</title>
-      <link>https://itssamuelrowe.github.io/zen-website/functions/using-the-property-annotation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/functions/using-the-property-annotation/</guid>
-      <description>class Rocket @Property var mass @Property var velocity @Property var acceleration  class Rectangle @Property var width @Property var height function getArea() return width * height  </description>
-    </item>
-    
-    <item>
-      <title>Combing Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/combining-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/combining-operators/</guid>
-      <description>The concepts explained in this section are very important. Do not worry if you find the concepts confusing. You can always come back and read the section later.
-You can combine operators to form complex expessions. The order in which the operations are evaluated is determined by the precedence of the operators involved in the expression. For example, multiplication and division have a higher precedence than addition and subtraction.
-Always remember, precedence rules can be overridden by explicit parentheses.</description>
-    </item>
-    
-    <item>
-      <title>Declaring Final Variables or Constants</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</guid>
-      <description>In this section, you will learn how to declare final variables or constants.
-A final variable is variable that you cannot change after initializing. The compiler will generate errors if you try to change it. It is also called as a constant.
-The basic form of a constant declaration statement is shown here.
-final name = expression  The primary difference between declaring a variable and a constant is the use of final keyword.</description>
-    </item>
-    
-    <item>
-      <title>Declaring Variables</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/declaring-variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/declaring-variables/</guid>
-      <description>In this lecture, you will learn how to declare variables.
-You must declare a variable before using it. The compiler will display errors otherwise.
-The basic form of a variable declaration statement is shown below.
-var name  A variable name is an identifier. You can refer the value stored in the variable with its name.
-Unlike other statically typed programming languages, you don&amp;rsquo;t have to write the type of values that can be stored in a variable.</description>
-    </item>
-    
-    <item>
-      <title>Nested If Statements</title>
-      <link>https://itssamuelrowe.github.io/zen-website/conditional-statements/nested-if-statements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/conditional-statements/nested-if-statements/</guid>
-      <description>You can write any statement under the if and else clauses. In fact, you could write another if statement under them. This is known as nesting. So, if you write an if statement inside another if statement, we call the arrangment as nested if statements.
-The if statement written inside another if statement is called the inner if statement.
-Similarly, the if statement which contains another if statement is called the outer if statement.</description>
-    </item>
-    
-    <item>
-      <title>Overriding Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/overriding-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/overriding-operators/</guid>
-      <description>Zen allows operator overriding through a combination of functions and annotations.
-All the operators in Zen are dispatched to a function call. The ZenKernel.evaluate(...) function finds a suitable handler for the operator defined within the operand object and dispatches it. In other words, the compiler translates expressions with operators to equivalent ZenKernel.evaluate(...) calls.
-For example, in the HashMap class the following annotation overrides the subscript operator.
-@Operator symbol=&#39;[]&#39; function getValue(key) .</description>
-    </item>
-    
-    <item>
-      <title>The Hello World Program</title>
-      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</guid>
-      <description>In this section, you will learn to write the Hello World program.
-Many programming courses begin with a simple example program that prints the text, &amp;ldquo;Hello, world!&amp;rdquo; on the console.
-function main(...arguments) print(&#39;Hello, world!&#39;)   Copy the source code from here. Paste the source code into a text editor, such as Notepad or Notepad++. Save it in a file named Hello.zen. You need to remember where you save your file.</description>
-    </item>
-    
-    <item>
-      <title>Types of Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</guid>
-      <description>In this lecture, we&amp;rsquo;ll learn about the types of operators based on the number of operands they expect.
-A common way to categorize Zen&amp;rsquo;s operators is by the number of operands the operator expect.
-There are three types of operators based on the number of operands they accept.
- Unary Operators
- Binary Operators
- Ternary Operators
-  Unary Operators Unary operators are operators that expect one operand.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Data Types</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-data-types/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-data-types/</guid>
-      <description>Zen is a dynamically typed programming language. What this means is, the compiler does not know the type of every variable. Once you declare a variable, it can hold values of any type. For example, a variable referencing an integer may be updated to reference a string without making the compiler complain.
-The advantage of dynamically typed languages is that programs can be written quickly. On the other hand, the primary disadvantage of a dynamically typed language is that many bugs cannot be caught during compilation.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Identifiers</title>
-      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-identifiers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-identifiers/</guid>
-      <description>Identifiers are the names you give to variables, methods, classes, annotations and enumerations. Unlike literals, identifiers only help you reference to something.
-The program shown in the hello world example shown in the previous section uses three identifiers. * main * arguments * print
- Identifiers are case sensitive. For example, ArrayList with uppercase A and arrayList with lowercase a are two different identifiers. Identifiers may contain uppercase or lowercase letters, numerals, underscore characters _, and dollar symbols $.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Keywords</title>
-      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-keywords/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-keywords/</guid>
-      <description>A keyword is a special word whose meaning is defined by the Zen programming language specification. You cannot use these words as identifiers. All keywords are in lowercase.
-Like everything else in Zen, keywords are case sensitive. For example, if you use For with uppercase F instead of for with lowercase f it is an error.
-The hello world program shown in the beginning of this chapter use one keyword: function.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/understanding-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/understanding-operators/</guid>
-      <description>In this lecture, you will learn about operators.
-An operator is a special symbol or a keyword that performs a mathemtical operation or a specific operation.
-Generally, an operator expects one, two, or three values known as operands.
-You must always remember, an operator always calculates and returns a result.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Unicode</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-unicode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-unicode/</guid>
-      <description>This section describes Unicode and how Zen deals with it. It is a difficult concept to grasp. You can safely skip this section for now. You can come back when you are comfortable with Zen.
- To work with characters in a computer, you need the following:
-* Character Repertoire
-* Character Set
-* Character Encoding
-Understanding Characters Repertoire A character repertoire is a collection of characters your computer can work with.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Variables</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-variables/</guid>
-      <description>In this section, you will learn about variables.
-A variable is a place holder. A variable&amp;rsquo;s value can change when your program is running.
-For exampe, you can store a value like 100 in a variable. After you store a value, you can store a different value in the variable whenever you want. When you store a new value in a variable, the old value is no longer there. In other words, the old value is replaced by the new value.</description>
-    </item>
-    
-    <item>
-      <title>Using If Statements</title>
-      <link>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-statements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-statements/</guid>
-      <description>The if statement is one of the most important statements in any programming language. The following sections describe the various forms of the if statement in Zen. Basically, the if statement allows your program to branch conditionally. It is a compound statement.
-Here is the general form of the if statement.
-if condition statement else statement  Here, a statement may be either a simple statement or a compound statement. The condition is any expression that evaluates to a Boolean value.</description>
-    </item>
-    
-    <item>
-      <title>Using If-Else-If Ladders</title>
-      <link>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-else-if-ladders/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-else-if-ladders/</guid>
-      <description>A common programming construct based on a sequence if statements is the if-else-if ladder.
-Here is the general form of an if-else-if ladder.
-if condition1 statement1 else if condition2 statement2 else if condition3 statement3 else statement4  These ladders are basically a group of nested if statements. The if statements are executed from the top to down. As soon as one of the conditions associated with an if clause is true, then the statement associated with that if clause is executed, and the rest of the ladder is skipped.</description>
-    </item>
-    
-    <item>
-      <title>Using the Assignment Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</guid>
-      <description>The assignment operator helps you assign a value to a variable. You have already seen many examples of this operator. It assigns the value on its right to the operand on its left.
-For example, here&amp;rsquo;s an example of the assignment operator in use.
-var vehicles var cars = 100 vehicles = cars  In the above example, we created a variable named vehicles. Think that it stores the number of vehicles you own.</description>
-    </item>
-    
-    <item>
-      <title>Using the Break Statement</title>
-      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</guid>
-      <description>All loops end when a test condition fails. There might be situations where something occurs during the execution of a loop, and you want to exit the loop early. In such cases, you can use the break statement.
-The general form of a break statement is like this.
-break label  Here, the label is optional. You will learn more about labels in just a moment.
-Break is a simple statement therefore it ends with a newline.</description>
-    </item>
-    
-    <item>
-      <title>Using the Compound Assignment Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</guid>
-      <description>A compound assignment operator is an operator that performs both an implicit calculation and an assignment.
-Here&amp;rsquo;s a list of all the compound arithmetic assignment operators in Zen.
- Please note that the operators described in the table below are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
-    Operator Description     += Addition and assignment   -= Subtraction and assignment   *= Multiplication and assignment   /= Division (for quotient) and assignment   %= Division (for remainder) and assignment    For example, the expression a = a + 10 can be written as a += 10.</description>
-    </item>
-    
-    <item>
-      <title>Using the Conditional Operator</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-conditional-operator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-conditional-operator/</guid>
-      <description>The conditional operator is the only ternary operator in Zen. It is used to replace certain types of if-then-else statements. You will learn more about if statements later in the manual.
-The conditional operator is represented by a question mark (?). It can seem somewhat confusing at first, but the conditional operator can be used very effectively once understood.
-The conditional operator has the following general form.
-expression1 ? expression2 : expression3  Here, expression1 can be any expression that evaluates to a boolean value.</description>
-    </item>
-    
-    <item>
-      <title>Using the Continue Statement</title>
-      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</guid>
-      <description>Sometimes it is useful to force an early iteration of a loop. In other words, you might want to continue running the loop but stop processing the remainder of the code in its body for this particular iteration.
-In a while statement, a continue statement causes control to be transferred directly to the conditional expression that controls the loop. In a for statement, control first goes to the updation section of the for statement and then to the conditional expression.</description>
-    </item>
-    
-    <item>
-      <title>Using the Finally Clause</title>
-      <link>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</guid>
-      <description>When an exception is thrown, the execution of your code jumps abruptly, possibly from one function to another function. This means some important segment of your code may be skipped. This could be a problem in some functions.
-For example, if a function opens a file in the beginning and closes it before returning, then you will not want the code that closes the file to be skipped by an exception.</description>
-    </item>
-    
-    <item>
-      <title>Using the Logical Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-logical-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-logical-operators/</guid>
-      <description>You can combine two or more conditions or constraints or complement with logical operators. The result of the operation of a logical operator is a Boolean value, either true or false.
-Logical AND Operator The logical AND operator combines two Boolean expressions and returns true if both the expressions evaluate to true. Otherwise, it returns false for the given expressions.
-The general form of the logical AND operator is shown here.</description>
-    </item>
-    
-    <item>
-      <title>Using the Unary Plus and Minus Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</guid>
-      <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
- The unary plus and minus operators let you change the sign of an operand.
-Note that the symbol used to represent these operators are the same as the addition and subtraction operators. The compiler figures out which operation you mean by examining the expression.</description>
-    </item>
-    
-    <item>
-      <title>What is a Loop?</title>
-      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</guid>
-      <description>Repeating things over and over is referred to as looping. The iteration statements in Zen help you create loops in your programs. These statements allow a segment of your code to repeat a given number of times.
-As an example of a loop, consider yourself watching a series like Breaking Bad. * Find the next episode to watch. * Watch the episode. * Repeat.
-This simple example contains a loop. The loop is based on the &amp;ldquo;Repeat&amp;rdquo; instruction, which tells you that the entire sequence of steps repeats itself.</description>
-    </item>
-    
-    <item>
-      <title>Working with Arithmetic Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</guid>
-      <description>In this section, you will learn about the arithmetic operators in Zen.
- Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
- You can perform addition, subtraction, multiplication, and division with the arithmetic operators. They are similar to operators in basic mathematics.
-   Operator Description     + Addition   - Subtraction   * Multiplication   / Division (returns quotient)   % Division (returns remainder)    Addition The addition operator, written as plus + accepts two operands.</description>
-    </item>
-    
-    <item>
-      <title>Working with Bitwise Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</guid>
-      <description>Please note that the operators described in this section are with respect to the Integer8, Integer16, Integer32, Integer64, Decimal32 and Decimal64 data types. For behavior specific to other data types, please refer the documentation.
- A computer stores data in binary. In other words, information is encoded as a sequence of 1&amp;rsquo;s and 0&amp;rsquo;s. On most computers, the memory is organized into 8-bit cells known as bytes.
-Zen defines several operators that allow you to work at the binary level.</description>
-    </item>
-    
-    <item>
-      <title>Working with Blocks</title>
-      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-blocks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-blocks/</guid>
-      <description>A block is a group of one or more statements. It is also known as a statement suite. It is a type of statement, a compound statement to be specific. It begins when the indentation of the first statement of the block is greater than the indentation of its containing block. Subsequent statements with the same indentation as that of the first statement are grouped together in the block.
-You can write any number of statements, including block statements, in a block.</description>
-    </item>
-    
-    <item>
-      <title>Working with Comments</title>
-      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-comments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-comments/</guid>
-      <description>Comments are texts that are ignored by the compiler. They help you write information or explanation about your code. You can use comments to hide a part of your code.
-We recommend you to use plenty of comments in your source code.
-Types of Comments There are 3 types of comments in Zen.
- Single Line Comment Multi-Line Comment Documentation Comment  Single Line Comments A single line comment begins with // and ends at the end of the line.</description>
-    </item>
-    
-    <item>
-      <title>Working with Comparison Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-comparison-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-comparison-operators/</guid>
-      <description>In this section, you will learn about the comparison operators in Zen.
-   Operator Description     &amp;lt; Lesser than   &amp;gt; Greater than   &amp;lt;= Lesser than or equal   &amp;gt;= Greater than or equal    Lesser Returns true if the operand on the left is lesser than the operand on the right.
-Greater Returns true if the operand on the left is greater than the operand on the right.</description>
-    </item>
-    
-    <item>
-      <title>Working with Equality Operators</title>
-      <link>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-equality-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.1/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-equality-operators/</guid>
-      <description>In this section, you will learn about the equality operators in Zen.
-   Operator Description     == Equality   != Inequality    Equality Returns true if the operand on the left is the same as the operand on the right. Please note that this operator compares the content of the left operand with the content of the right operand, along with the references.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Working with Non-Primitive Reference Types</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-non-primitive-reference-types/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.2/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-non-primitive-reference-types/</guid>
-      <description>In this section, you will learn about the basics of non-primitive reference types. You learn to create variables that work with objects.
-The rules that apply to these types also apply to primitive reference types.
- You will learn more about classes and objects later in the course.
- Zen programs are built with classes. You can use classes to create objects. A class can either be a part of the Zen standard API or a class that you create.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Working with Primitive Reference Types</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-primitive-reference-types/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.3/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-primitive-reference-types/</guid>
-      <description>The primitive types are the most basic data types available in the Zen Virtual Machine.
-There are eight primitive data types defined by the Zen Virtual Machine.
-* boolean
-* char
-* integer8
-* integer16
-* integer32
-* integer64
-* decimal32
-* decimal64
-The primitive types are not reference types. Since the Zen programming language supports only primitive types, it adds wrappers around these primitive types through wrapper classes.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.3/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Working with Statements</title>
-      <link>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-statements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.4/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-statements/</guid>
-      <description>Statements are similar to sentences in the English language. A statement tells Zen to perform an action. It can include one or more expressions.
-There are two types of statements in Zen: * Simple Statement * Compound Statement
-Understanding Simple Statements Simple statements are the actions your program performs.
- Assertion Statement Break Statement Continue Statement Empty Statement Expression Statement Return Statement and Throw Statement  A simple statement always ends with a newline.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.4/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Working with Strings</title>
-      <link>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-strings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.5/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-strings/</guid>
-      <description>In this section, you will learn the basics of strings.
-A string is a sequence of characters. String literals are enclosed in single quotes (&#39;).
-Here&amp;rsquo;s an example of a string.
-&#39;Hello, world!&#39;  The Zen Virtual Machine does not define string as a primitive type. Further, the Zen programming language treats strings specially and classifies a string as primitive reference type. It is implemented by the zen.core.String class.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.5/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Working with the While Statement</title>
-      <link>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Amazon increase income 1.5 Million</title>
+      <link>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</guid>
-      <description>When it comes to loops, Zen gives you two choices. You can go with the while loop, which provides enough flexbility to make most programmers happy, or you can choose the simpler for loop for your programs.
-The for statement is clearer and lays out all its plans in one place. Whereas, the while statement gives you more flexbility. The important thing to remember is that you can convert a for loop into a while loop, and vice versa.</description>
+      <guid>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
   </channel>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Loop Statements</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Johnathan Smith">
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  <style>
+    :root{
+      --primary-color:#41228e;
+    }
+  </style>
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/css/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="http://itssamuelrowe.github.io/zen-website"><img src="http://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website"> Home </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/docs">Docs</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/blog">Blog</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/download">Download</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  
+<section class="page-title bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Loop Statements</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
+  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
+  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
+  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
+  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
+</section>
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">Loop Statements</h3>
+          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          <div class="content">
+            <img src="http://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            <h3 id="chapter-7">Chapter 7</h3>
+<h1 id="loop-statements-how-your-programs-repeat-things">Loop Statements: How Your Programs Repeat Things</h1>
+<p>One thing computers enjoy doing more than anything else is repeating themselves.
+Imagine your teacher asked you to write &ldquo;I love Game of Thrones!&rdquo; a hundred
+times. Although you may love the show, you would find this a cruel punishment.
+Computers on the other hand, do not mind this. In fact, a computer could easily
+write this a thousand times in milliseconds.</p>
+<p>You need to understand conditional statements to properly understand the concepts
+of loops, the if statement in particular.</p>
+<p>In this chapter you will learn the three loop statements in Zen.</p>
+<p>+++
+title = &ldquo;What is a Loop?&rdquo;
++++</p>
+<p>Repeating things over and over is referred to as looping. The iteration statements
+in Zen help you create loops in your programs. These statements allow a segment
+of your code to repeat a given number of times.</p>
+<p>As an example of a loop, consider yourself watching a series like Breaking Bad.</p>
+<ul>
+<li>Find the next episode to watch.</li>
+<li>Watch the episode.</li>
+<li>Repeat.</li>
+</ul>
+<p>This simple example contains a loop. The loop is based on the &ldquo;Repeat&rdquo; instruction,
+which tells you that the entire sequence of steps repeats itself.</p>
+<p>Unfortunately, the steps in the previous example do not contain any
+stopping condition. Which means you will never stop watching the series!
+Such a loop is known as an endless loop.</p>
+<p>Most looping statements in computer programming languages have some sort of condition —
+like an if statement — that tells the program when to stop repeating.</p>
+<p>A simple modification to the previous example can fix the endless loop situation:</p>
+<ul>
+<li>Repeat while you&rsquo;re not bored and you have more episodes to watch.</li>
+</ul>
+<p>Now, the example has a stopping condition for the loop.</p>
+<p>In conclusion, loops have four parts:</p>
+<ul>
+<li>Initialization</li>
+<li>Condition</li>
+<li>Action</li>
+<li>Updation</li>
+</ul>
+<p>During initialization, you instruct your program to setup things for the loop.
+In our previous example, starting the Netflix app can be considered as
+initialization.</p>
+<p>The condition determines whether the loop has to execute or terminate.
+&ldquo;Repeat while not bored and you have more episodes to watch&rdquo; was the condition
+in our earlier example.</p>
+<p>The action consists of instructions that are repeated over and over. Finally,
+the updation part prepares the program for the next iteration. Usually, the
+updation brings the program closer to termination.</p>
+<p>In the previous example, &ldquo;Find the next episode to watch.&rdquo; was the updation part
+and &ldquo;Watch the episode.&rdquo; was the action.</p>
+<p>The action and the updation parts are sometimes considered together.</p>
+<p>All the loop statements in Java include these four parts. They differ in the way
+they are expressed.</p>
+<p>After the loop has completed, the program continues as usual. But during looping
+the same part of the program runs over and over.</p>
+<p>+++
+title = &ldquo;Working with the While Statement&rdquo;
++++</p>
+<p>When it comes to loops, Zen gives you two choices. You can go with the
+while loop, which provides enough flexbility to make most programmers
+happy, or you can choose the simpler for loop for your programs.</p>
+<p>The for statement is clearer and lays out all its plans in one place.
+Whereas, the while statement gives you more flexbility. The important thing to
+remember is that you can convert a for loop into a while loop, and vice versa.</p>
+<p>The while loop is the simplest loop in Zen. It simply executes a loop continuously
+as long as a condition is true. While loops are useful in many situations, so
+you use them a lot.</p>
+<p>Generally in a while loop we say &ldquo;while this condition is true, keep repeating
+this action.&rdquo;</p>
+<p>Here is a simple example that shows a while loop in real life. You eat from your
+lunch box while there is food in it. Easy enough.</p>
+<p>The general form of the while statement is like this.</p>
+<pre><code>while condition
+    body
+</code></pre><p>The while statement begins by evaluating the conditional expression. If the
+expression is <code>true</code>, the body is executed. Then, the conditional expression
+is evaluated again, and the whole process repeats. If the expression is <code>false</code>,
+the body is not executed, and the while loop ends.</p>
+<p>Here&rsquo;s a simple program that uses a while loop to print the even numbers
+from 2 through 10 on the console.</p>
+<pre><code>// EvenNumbers.zen
+
+function main(...arguments)
+    var number = 2
+    while number &lt;= 10
+        print(number)
+        number += 2
+</code></pre><p>If you run this program, the following output is displayed on your console.</p>
+<pre><code>2
+4
+6
+8
+10
+</code></pre><p>The conditional expression you used in the while loop shown in the previous
+example is <code>number &lt;= 10</code> (number is less than or equal to 10).
+That means the loop repeats as long as the value of number is less
+than or equal to <code>10</code>.</p>
+<p>The body of the loop consists of two statements. The first statement prints the
+value of <code>number</code>. Then, the second statement adds <code>2</code> to <code>number</code>.</p>
+<p>Notice that we have idented the statements below the while clause. This forms a
+statement suite. You can write more than one statement under the while clause.</p>
+<p>Here&rsquo;s a flowchart for this program. It can help you visualize the basic decision
+making process of a loop.</p>
+<blockquote>
+<p>TODO: Insert an image here.</p>
+</blockquote>
+<p>+++
+title = &ldquo;Using the Break Statement&rdquo;
++++</p>
+<p>All loops end when a test condition fails. There might be situations where
+something occurs during the execution of a loop, and you want to exit the loop
+early. In such cases, you can use the break statement.</p>
+<p>The general form of a break statement is like this.</p>
+<pre><code>break label
+</code></pre><p>Here, the label is optional. You will learn more about labels in just a moment.</p>
+<p>Break is a simple statement therefore it ends with a newline.</p>
+<p>The <code>break</code> keyword, when used inside a loop, does the same thing, that is, it
+immediately halts execution of the loop.</p>
+<p>In the case of nested loops, the loop nearest to the break statement is terminated.
+You can override such behaviour using labels.</p>
+<p>A break statement accepts an optional label that indicates which loop to terminate.
+This is especially useful in nested loop. Without a label, break jumps outside
+loop nearest to the break statement. Using break with a label enables you to
+terminate a particular loop.</p>
+<p>The general form of a label is shown here.</p>
+<pre><code>#label // loop statement
+</code></pre><p>To use a labeled loop, add the label before the initial part of the loop with a
+octothorpe (the hash sign) before the label. Then, when you can use the break
+statement add the name of the label after the <code>break</code> keyword.</p>
+<p>Labels can be used with any type of loop available in Zen, that is, for and while
+loops.</p>
+<p>+++
+title = &ldquo;Using the Continue Statement&rdquo;
++++</p>
+<p>Sometimes it is useful to force an early iteration of a loop. In other words,
+you might want to continue running the loop but stop processing the remainder
+of the code in its body for this particular iteration.</p>
+<p>In a while statement, a continue statement causes control to be transferred
+directly to the conditional expression that controls the loop. In a for statement,
+control first goes to the updation section of the for statement and then to the
+conditional expression. For both the loops, any intermediate code is skipped.</p>
+<p>The general form of a continue statement is like this.</p>
+<pre><code>continue label
+</code></pre><p>Here, the label is optional. You will learn more about labels in just a moment.</p>
+<p>Continue is a simple statement therefore it ends with a newline.</p>
+<p>Here is an example program that uses continue to cause two numbers to be printed
+on each line:</p>
+<pre><code>// TwoNumbersPerLine.zen
+
+function main(...arguments)
+    for var i in range(0, 10)
+        write(i + ' ')
+        if i % 2 == 0
+            continue
+        print()
+</code></pre><p>This code uses the modulus operator to check if <code>i</code> is even. If it is, the loop
+continues without printing a newline.</p>
+<p>Here is the output from this program.</p>
+<pre><code>0 1
+2 3
+4 5
+6 7
+8 9
+</code></pre><p>In the case of nested loops, the loop nearest to the continue statement is affected.
+You can override such behaviour using labels.</p>
+<p>As with the break statement, continue statements may specify a label to describe
+which loop to continue. This is especially useful in nested loop. Without a label,
+continue affects the loop nearest to the continue statement. Using continue with
+a label enables you to effect a particular loop.</p>
+<p>Here is an example program that uses continue statement to print a triangular
+multiplication table for 0 through 9.</p>
+<pre><code>// TriangularMultiplicationTable.zen
+
+function main(...arguments)
+    #outer for var i in range(0, 10)
+        for var j in range (0, 10)
+            if j &gt; i
+                print()
+                continue outer
+            write(' ' + i * j)
+    print()
+}
+</code></pre><p>The continue statement in this example terminates the loop counting <code>j</code> and
+continues with the next iteration of the loop counting <code>i</code>.</p>
+<p>Here is the output of this program.</p>
+<pre><code>0
+0 1
+0 2 4
+0 3 6 9
+0 4 8 12 16
+0 5 10 15 20 25
+0 6 12 18 24 30 36
+0 7 14 21 28 35 42 49
+0 8 16 24 32 40 48 56 64
+0 9 18 27 36 45 54 63 72 81
+</code></pre><p>You will rarely come across continue statements. One reason is that Zen provides
+loop statements which fit most applications. However, for those special circumstances
+in which early iteration is needed, the continue statement provides a structured
+way to get your job done.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="section section-on-footer" data-background="http://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/shuffle/shuffle.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
+
+<!-- google analytics -->
+</body>
+</html>

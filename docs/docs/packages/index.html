@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Packages</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Johnathan Smith">
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  <style>
+    :root{
+      --primary-color:#41228e;
+    }
+  </style>
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/css/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="http://itssamuelrowe.github.io/zen-website"><img src="http://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website"> Home </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/docs">Docs</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/blog">Blog</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/download">Download</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  
+<section class="page-title bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Packages</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
+  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
+  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
+  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
+  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
+</section>
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">Packages</h3>
+          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          <div class="content">
+            <img src="http://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            <h3 id="chapter-15">Chapter 15</h3>
+<h1 id="packages-how-your-source-code-is-organized">Packages: How Your Source Code is Organized</h1>
+<p>Imagine you have two classes, one of which represents a component that reads
+data from the console. Simiarly, the other class represents a device
+which scans papers. Although both the classes are different in functionality,
+both the classes can be named <code>Scanner</code>. So far, you have learnt that you cannot
+declare two classes with the same name. An obvious solution is to name these
+classes differently.</p>
+<p>However, Zen provides a feature known as package that allows you to create
+namespaces. In this chapter, you will learn about creating packages and importing
+packages.</p>
+<p>+++
+title = &ldquo;Understanding Packages&rdquo;
+weight = 1
++++</p>
+<p>A package is a group of related classes, annotations and enumerations bundled
+together. Henceforth, when we refer to classes in this chapter we mean to include
+other components such as annotations and enumerations, unless stated otherwise.</p>
+<p>Packages are like containers that provide your classes a namespace. For example,
+a package allows you to create two classes named <code>Scanner</code>. You simply need to
+store the classes in different packages. However, the class names should be
+unique within their respective packages.</p>
+<p>A package provides a namespace and visibility control to your classes. You can
+tell which classes are available to the world outside your package.</p>
+<blockquote>
+<p>As of now, Zen allows only public classes. In the future, the visibility of
+classes outside a package can be manipulated by the developer.</p>
+</blockquote>
+<p>Packages are organized in a hierarchical fashion. When you want to use a class
+from a different package, you need to import it. So far in this course, all the
+classes you created were stored in the default package. Which means you had to
+provide a unique name for each class to avoid name conflicts. Without packages
+you would soon run out of relevant, convenient and descriptive names for your
+classes.</p>
+<p>Further, without packages you would need to make sure that the name you choose
+for your classes are different from the class names chosen by other programmers.
+In fact, the Zen API consists of hundreds of classes. It would be impossible
+to find a unique name for each of these classes. This is why, the Zen API is
+ogranized as packages.</p>
+<p>+++
+title = &ldquo;Creating Packages&rdquo;
+weight = 2
++++</p>
+<p>If you do not create a package, your classes are stored in the default package,
+which is why you were able to create classes so far. The default package has no
+name. The default package is usually not used in real life applications. Most of
+the time, you will create your own packages.</p>
+<p>Zen uses folders, also known as directories, to represent packages. For
+example, your <code>.zen</code> and <code>.feb</code> files for the classes you declare in the
+<code>hello</code> package should be stored in the <code>hello</code> directory. Similarly, your <code>.zen</code>
+and <code>.feb</code> files for the classes you declare in the <code>com.hello</code> package should
+be stored in the <code>com/hello</code> directory. Remember that package names are case
+sensitive. Therefore, the directory names must match the package name exactly.</p>
+<p>In real-life applications, your source code is spread across many files. Any
+number of source files can be a part of a package, as long as they are all stored
+in the same directory.</p>
+<p>+++
+title = &ldquo;Understanding Qualified Names&rdquo;
+weight = 3
++++</p>
+<p>You can create a hierarchy of packages using a qualified name. We mentioned this
+term in the previous section without going into its details.</p>
+<p>A qualified name is a sequence of identifiers separated by dots.
+Here are some examples of qualified names.</p>
+<pre><code>zen.core
+zen.support
+zen.io
+com.onecube
+com.onecube.model
+com.onecube.storage
+</code></pre><p>Here is the general form of a qualified name.</p>
+<pre><code>identifier1.identifier2.identifier3
+</code></pre><p>A qualified name can consist of any number of identifiers. Each identifier is
+separated by a dot and indicates a node or level in your hierarchy. A package
+hierarchy must be reflected in your file system. Which means, if you change the
+qualified name, you should change the directory structure, too.</p>
+<p>For example, a package <code>com.example</code> should be stored in the directory <code>com/example</code>.</p>
+<p>+++
+title = &ldquo;Understanding Package Lookup&rdquo;
+weight = 4
++++</p>
+<p>Your packages should be organized correspondingly in your directories. But how
+does the Zen Virtual Machine determine which directory to look for your packages?</p>
+<p>By default Zen looks for packages in the current working directory, the directory
+from where you are invoking the virtual machine. Further, the Zen Virtual Machine
+looks for packages in the directories listed in the search path of the application.
+You can specify the search path for an application in two ways.</p>
+<ul>
+<li>
+<p>Create the <code>ZEN_SEARCH_PATH</code> environment variable and store the directories
+where your packages are stored. You usually need to avoid this technique because
+it applies to all the applications that run on the Zen Virtual Machine, not
+just one application.</p>
+</li>
+<li>
+<p>Specify the search path with the <code>--search</code> parameter when you invoke the
+Zen Virtual Machine. This is the preferred way to specify the search path.
+This allows the search path to be specific to individual programs, without
+affecting other programs.</p>
+</li>
+</ul>
+<p>The general form of a search path is shown here.</p>
+<pre><code>path1;path2;path3
+</code></pre><p>The paths point to the directories where your packages are stored. The semicolon
+separates the paths. However, you can use semicolons only on Windows. If you
+are using other operating systems such as Unix, Linux and MacOS you need to
+use the colon (<code>:</code>) symbol to separate the paths.</p>
+<p>Consider the following package which declares a class.</p>
+<pre><code>// com/example/Message.zen
+
+class Message
+
+    var message
+
+    function new(message)
+        this.message = message
+
+    function toString()
+        return message
+</code></pre><p>Now create another class in the default package like this.</p>
+<pre><code>// PackageExample.zen
+
+function main(...arguments)
+    var message = new com.example.Message('Hello, world!')
+    print(message)
+</code></pre><p>The <code>PackageExample</code> classs is declared in the default package. Whereas, the
+<code>Message</code> class is declared in the <code>com.example</code> package. The <code>PackageExample</code> class
+uses the <code>Message</code> class, which is declared in another package. Therefore, you
+need to specify the fully qualified name of <code>Message</code>, which is <code>com.example.Message</code>.
+Basically, the fully qualified name of the <code>Message</code> class consists of its
+containing package and its name.</p>
+<p>However, classes in the same package can access other classes without their fully
+qualified names. Assume two classes, <code>com.example.Message</code> and <code>com.example.User</code>,
+both the classes are in the same package. The <code>User</code> class can access <code>Message</code>
+without its fully qualified name, and vice versa.</p>
+<p>In order for your program to find the <code>Message</code> class, one of following conditions
+should be met.</p>
+<ul>
+<li>The program should be executed from a directory immediately above the <code>com.example</code>
+package.</li>
+<li>The <code>ZEN_SEARCH_PATH</code> environment variable must include the path to <code>com\example</code>.</li>
+<li>The <code>--search</code> parameter must specify the path to <code>com\example</code>.</li>
+</ul>
+<p>When you specify a search path, the path should not include <code>com\example</code> itself.
+Instead you need to specify the directory which contains the package directory.
+Assume the <code>com\example</code> directory is stored in <code>C:\learning\com\example</code>.
+You need include <code>C:\learning</code> in the search path, not <code>C:\learning\com\example</code>.</p>
+<p>We recommend you to run the example programs from their root directories. Which
+means you do not have to create the search path for now. For example, assume the
+<code>PackageExample</code> program shown earlier was stored in <code>C:\learning</code> and the
+<code>com.example</code> package was stored in <code>C:\learning\com\example</code>. To run this program,
+you need to execute the following commands in sequence from <code>C:\learning</code>.</p>
+<pre><code>C:\learning&gt;zen PackageExample.zen com/example/Message.zen
+C:\learning&gt;zvm PackageExample
+</code></pre><p>The output of the program is shown here.</p>
+<pre><code>Hello, world!
+</code></pre><p>The commands for other operating systems are similar with little tweaks.</p>
+<p>+++
+title = &ldquo;Working with the Import Statement&rdquo;
+weight = 5
++++</p>
+<p>You have learnt how packages allow you to keep your classes organized. However,
+as you have seen accessing classes from different packages require fully qualified
+names, which means you have to type so much just to refere a class! For this reason,
+Zen provides the import statement.</p>
+<p>The general form of the import statement is shown here.</p>
+<pre><code>import qualifiedName
+</code></pre><p>Here, the qualified name refers to the class which you want to import. A qualified
+name can consist of any number of identifiers as long as they are separated by
+the dot symbol.</p>
+<p>The import statement basically allows you to access a class from a different
+package without its fully qualified name. Once you import a class, you can refer
+it directly, using only its name. The import statement exists to make your life
+easier. In the background, the classes are still referred by their fully qualified
+names.</p>
+<p>Consider the following classes which we saw in the previous section.</p>
+<pre><code>// com/example/Message.zen
+
+class Message
+
+    var message
+
+    function new(message)
+        this.message = message
+
+    @Override
+    function toString()
+        return message
+</code></pre><pre><code>// PackageExample.zen
+
+function main(...arguments)
+    var message = new com.example.Message('Hello, world!')
+    print(message)
+</code></pre><p>You could rewrite the <code>PackageExample</code> class like this using the import statement.</p>
+<pre><code>// PackageExampe2.zen
+
+import com.example.Message
+
+function main(...arguments)
+    var message = new Message('Hello, world!')
+    print(message)
+</code></pre><p>You always need to write the import statements at the beginning of your source
+file. You cannot write the import statement after or inside components such
+as classes, functions, enumerations, and annotations.</p>
+<p>Sometimes you import many classes from the same package, which means you will
+have to write an import statement for each class. This is again cumbersome.
+Zen provides a solution to this problem: the wildcard import statement.</p>
+<p>In such an import statement, you specify the package name followed by an asterisk.
+Here is the general form of such a statement.</p>
+<pre><code>import level1.level2.*
+</code></pre><p>When you specify a package name followed by an asterisk, all the classes in
+the package are imported.</p>
+<p>Here is an example which demonstrates how you can import all the classes in
+the <code>zen.support</code> package.</p>
+<pre><code>import zen.support.*
+</code></pre><p>There are two drawbacks with wildcard import statements.</p>
+<ul>
+<li>
+<p>It increases the time required to compile your program, especially if your
+source files import large packages. Since the classes are referred by
+their fully qualified names in the background, the bytecode generated
+is the same, with or without the wildcard import statements. In other words,
+wildcard import statements do not affect your runtime performance.</p>
+</li>
+<li>
+<p>It clutters your local namespace, if multiple packages have classes
+with the same names. This forces you to use fully qualified class names.</p>
+<p>When you import multiple packages with a wildcard import, chances are two
+or more classes may have the same name. The import statement does not
+generate an error during such imports. Instead an error is generated when
+you try to refer to either one of them. In such cases, you can resolve
+the conflict by using a fully qualified name to indicate which class
+you are referring to.</p>
+</li>
+</ul>
+<p>For these reasons, we recommed you to use wildcard import statements with care.</p>
+<p>All the standard classes in Zen are bundled in the <code>zen</code> package, which includes
+other sub-packages. It includes a special package called <code>zen.core</code>. The classes
+in this package are always implicitly imported to your source files. Many classes
+such as <code>Object</code>, <code>Integer</code>, and <code>String</code> are defined in this package.</p>
+<p>+++
+title = &ldquo;Naming Conventions for Packages&rdquo;
+weight = 6
++++</p>
+<p>You can use any identifier you wish to name your packages. However, we recommend
+you to follow these naming conventions when you create your packages.</p>
+<ul>
+<li>
+<p>Packages are usually named using the authors domain name. The domain name
+is written backwards to obtain the package name.</p>
+<p>For example, imagine you own the domain <code>example.com</code>. You can create a
+package named <code>com.example</code> for all your packages.</p>
+<p>Using your domain name allows you to create package names which are unique
+from the packages created by other programmers around the world.</p>
+</li>
+<li>
+<p>Package names are usually written in lowercase letters. This helps you to
+avoid conflicts with class names.</p>
+</li>
+<li>
+<p>You can add other subpackages to the package named after your domain.
+For example, you can create a program named <code>Tesla</code> and place all its source
+files under the <code>com.example.tesla</code> package. It can further contain other
+subpackages.</p>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="section section-on-footer" data-background="http://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/shuffle/shuffle.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
+
+<!-- google analytics -->
+</body>
+</html>

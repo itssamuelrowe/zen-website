@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Strings</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Johnathan Smith">
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  <style>
+    :root{
+      --primary-color:#41228e;
+    }
+  </style>
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/css/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="http://itssamuelrowe.github.io/zen-website"><img src="http://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website"> Home </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/docs">Docs</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/blog">Blog</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/download">Download</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  
+<section class="page-title bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Strings</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
+  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
+  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
+  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
+  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
+</section>
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">Strings</h3>
+          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          <div class="content">
+            <img src="http://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            <h3 id="chapter-16">Chapter 16</h3>
+<h1 id="strings">Strings</h1>
+<p>A string is a very common object in Zen. You have used strings throughout
+this manual. You have seen how to use string literals, how to concatenate
+strings, and how to compare strings. However, strings are much more powerful
+and support a wide variety of operations.</p>
+<p>In this chapter, you will learn more about strings.</p>
+<p>+++
+title = &ldquo;Understanding Strings&rdquo;
+weight = 1
++++</p>
+<p>In Zen, strings are not primitive reference types. Strings are implemented by the
+<code>String</code> class defined in the <code>zen.core</code> package. All strings are objects and Zen
+treats strings specially.</p>
+<p>A string is a sequence of characters. You can create a string by enclosing your
+text in single quotes. The character sequence along with the single quotes
+form a string literal.</p>
+<p>Unlike many other programming languages, string are not arrays of characters.
+Internally the <code>String</code> class stores the characters in an array, a detail which
+you can safely ignore. But you always need to perceive strings as objects and
+not arrays.</p>
+<p>So far you have seen only one way to create a string object: to use the string
+literal. However, the <code>String</code> class exposes many constructors, which allow
+you to create strings in many ways.</p>
+<p>You can perform various operations with strings, such as comparing two strings,
+searching for substrings, concatenating two strings, and so on. However, you
+cannot modify them because string objects are immutable. In other words, once a
+string object is created, you cannot change its characters. You can only derive
+a new string which is a modified version of the original string. At first, this
+may seem to be a serious restriction. However, immutable strings make your life
+easier. You can still perform all types of string operations. Immutable strings
+are more efficient than mutable strings.</p>
+<p>Zen provides other mechanisms which allow you to derive modified versions of a
+string. Each time you derive a new version of the string, you are creating a
+new string object. The original string is always left as it is.</p>
+<p>If you have to make many changes to a string, deriving a new string for each
+change is not efficient. For such situtations, Zen provides the <code>StringBuilder</code>
+class, which internally represent strings as arrays. So whatever changes you make
+will be quick and efficient. Once you are satisfied with the changes, these
+classes allow you to derive an immutable string. After which, you can use the
+string as usual.</p>
+<p>The String and StringBuilder classes are defined in the <code>zen.core</code> and <code>zen.text</code>
+packages, respectively. Therefore, all these classes are available to your programs
+automatically. All the three classes extend the <code>CharacterSequence</code> abstract class,
+which means most operations you find in strings are found in the other class, too.</p>
+<p>Before we continue, here is a summary of strings.</p>
+<ul>
+<li>Strings can include escape sequences. An escape sequence allows you to represent
+a special character which you would not be able to type with your keyboard.
+It is written with a backward slash followed by a letter.</li>
+</ul>
+<p>Here is the list of all the escape sequences availablen in Zen.</p>
+<table>
+<thead>
+<tr>
+<th>Escape Sequence</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\n</td>
+<td>Newline</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>Tab</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>Backspace</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>Carriage Return</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>Form feed</td>
+</tr>
+<tr>
+<td>\&rsquo;</td>
+<td>Apostrophe</td>
+</tr>
+<tr>
+<td>\&rdquo;</td>
+<td>Quotation mark</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>Backslash</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Strings are objects. You enclose a string literal in single quotes.
+A string can contain zero or more characters, even if a string contains a single</p>
+</li>
+<li>
+<p>Strings are an important part of programming languages, therefore Zen treats
+strings specially. In fact, strings support many special syntax. For example,
+string objects are created from string literals. However, you can use
+the constructors of the String class for more flexbility. You will learn
+about these constructors in the next lecture.</p>
+</li>
+<li>
+<p>You can combine, or concatenate, strings using the concatenation operator (<code>+</code>).
+You can combine strings with other values, in which case Zen automatically
+converts the value to a string for you. In the case of objects, the <code>toString()</code>
+function is first invoked to derive a string representation.</p>
+<p>Here is an example of the concatenation operator.</p>
+</li>
+</ul>
+<pre><code>var firstPart = 'Hello, '
+var secondPart = 'world!'
+var message = firstPart + secondPart
+</code></pre><ul>
+<li>
+<p>Zen offers a wrapper class for each primitive type defined by the Zen Virtual
+Machine. These wrapper classes allow you to convert a string to a corresponding
+value. You can do this with the <code>parse()</code> function these classes expose.</p>
+<p>Here is an example of how you can convert a string to an integer.</p>
+</li>
+</ul>
+<pre><code>// StringToInteger.zen
+
+function main(...arguments)
+    var text = '2019'
+    var year = Integer.parse(text)
+    printf('This is the year %d. After 11 years, it will be the year %d.\n', year + 11)
+</code></pre><p>This example converts the string which contains <code>'2019'</code> to its equivalent
+integer value, which is <code>2019</code>. However, if you specify an invalid text these
+functions throw <code>NumberFormatException</code>.</p>
+<ul>
+<li>
+<p>Unlike other programming languages, Zen does not support characters inherently.
+However, integer values can be treated as characters and additional support is
+provided through the <code>Character</code> class.</p>
+<p>+++
+title = &ldquo;Constructors of the String Class&rdquo;
+weight = 2
++++</p>
+</li>
+</ul>
+<p>The <code>String</code> class exposes many constructors. You will learn about a few of
+these constructors in this section. Please refer the Zen API documentation for
+more information.</p>
+<h4 id="creating-empty-strings">Creating Empty Strings</h4>
+<p>You can create an empty string by calling the default constructor.
+An empty string basically contains no characters.</p>
+<p>Here is an example.</p>
+<pre><code>var emtpyString = new String()
+</code></pre><h4 id="creating-strings-from-array-of-characters">Creating Strings From Array of Characters</h4>
+<p>The <code>String</code> class implements a constructor which accepts an array of characters.
+This allows you to create a string from an array of characters.</p>
+<pre><code>function new(sequence)
+</code></pre><p>Here is an example which demonstrates how you can create strings using arrays.</p>
+<pre><code>var sequence = arrayEx(String, 'F', 'e', 'b', 'r', 'u', 'a', 'r', 'y' )
+var string = new String(sequence)
+</code></pre><p>This creates a string that holds the text <code>'February'</code>.</p>
+<p>You can further specify a range within the array you want the
+constructor to copy using this constructor.</p>
+<pre><code>function new(sequence, startIndex, count)
+</code></pre><p>Here, the <code>startIndex</code> indicates the index from where the characters should be
+copied. It is inclusive, which means the string at the start index is also
+included. The count parameter indicates the number of characters to copy,
+beginning the copy at the start index.</p>
+<p>The following example demonstrates this constructor.</p>
+<pre><code>var sequence = arrayEx(String, 'F', 'e', 'b', 'r', 'u', 'a', 'r', 'y')
+var string = new String(sequence, 3, 2)
+</code></pre><p>This creates a string which represents <code>'ru'</code>. Remember indexes in Zen always
+begin at <code>0</code>, therefore, <code>3</code> indicates the fourth character.</p>
+<h4 id="cloning-strings">Cloning Strings</h4>
+<p>You can create a copy of the string object using the <code>clone()</code> function.</p>
+<p>Here is an example.</p>
+<pre><code>// StringCopy.zen
+
+function main(...arguments)
+    var string1 = 'Hello'
+    var string2 = string1.clone()
+    print(string1 is string2)
+    print(string1 == string2)
+</code></pre><p>The first string contains the text <code>'Hello'</code>. We create another copy of this string.</p>
+<p>Since the <code>is</code> operator tests if both the variables contain the same reference,
+the first print statement prints false. In other words, the variables <code>string1</code>
+and <code>string2</code> hold two different references. However, they hold logically equal
+objects because they both contain the same text. To prove that they contain the
+same text, we use the <code>==</code> operator, which invokes the <code>equals()</code> function. This
+is why the second print statement prints <code>true</code>.</p>
+<p>There are many other constructors implemented in the <code>String</code> class. We encourage
+you to learn more about these constructors from the Zen API documentation.</p>
+<p>+++
+title = &ldquo;Determining the Size of Strings&rdquo;
+weight = 3
++++</p>
+<p>You can determine the size of a string using the immutable <code>size</code> property.
+The size of a string is basically the number of code points it contains.</p>
+<p>Here is an example which prints the size of a string.</p>
+<pre><code>// StringSize.zen
+
+function main(...arguments)
+    var name = 'Shazam'
+    printf('The size of &quot;%s&quot; is %d.\n', name.size)
+</code></pre><p>The example above produces the following output:</p>
+<pre><code>The size of &quot;Shazam&quot; is 6.
+</code></pre><p>The size of a string is an important value when you want to manipulate strings.</p>
+<p>+++
+title = &ldquo;Comparing Strings&rdquo;
+weight = 4
++++</p>
+<h4 id="string-equality">String Equality</h4>
+<p>You can compare two strings for equality using the equality operator (<code>==</code>).
+The behavior of the equality operator is overridden in the <code>equals()</code> function,
+which means you can use it to compare two strings for equality, too.</p>
+<p>The declaration of the <code>equals</code> function is shown here.</p>
+<pre><code>function equals(other)
+</code></pre><p>It returns <code>true</code> if both the strings contain the same characters in the same
+order; <code>false</code> otherwise. You need to remember that this function is case sensistive.
+For example, if you compare <code>'Batman'</code> and <code>'batman'</code> for equality, it would
+return <code>false</code>.</p>
+<p>Here is an example which demonstrates how you can compare two strings for
+equality.</p>
+<pre><code>// StringEquality.zen
+
+function main(...arguments)
+    var string1 = 'Joker'
+    var string2 = 'Harley Quinn'
+    if string1.equals(string2)
+        printf('&quot;%s&quot; is equal to &quot;%s&quot;!\n', string1, string2)
+    else
+        printf('&quot;%s&quot; is not equal to &quot;%s&quot;!\n', string1, string2)
+</code></pre><p>You can compare two strings for equality without considering case. For this,
+you need to invoke the overloaded version of the equals() function.</p>
+<pre><code>function equals(other, ignoreCase)
+</code></pre><p>It returns <code>true</code> if both the strings contain the same characters in the same
+order; <code>false</code> otherwise. You need to remember that this function is case
+insensistive. For example, if you compare <code>'Camel'</code> and <code>'camel'</code> for equality,
+it would return <code>true</code>.</p>
+<p>Here is an example which demonstrates how you can compare two strings for
+equality.</p>
+<pre><code>// StringEquality2.zen
+
+function main(...arguments)
+    var string1 = 'Poison Ivy'
+    var string2 = 'poison ivy'
+    if string1.equals(string2, true)
+        printf('&quot;%s&quot; is equal to &quot;%s&quot;!\n', string1, string2)
+    else
+        printf('&quot;%s&quot; is not equal to &quot;%s&quot;!\n', string1, string2)
+</code></pre><h4 id="comparing-string-regions">Comparing String Regions</h4>
+<p>You can compare a region inside your string with the region of another string.
+You need to invoke the <code>regionMatches()</code> function for this.</p>
+<p>Here is the declaration of the <code>regionMatches()</code> function.</p>
+<pre><code>function regionMatches(startIndex, other, otherStartIndex, count)
+</code></pre><p>The <code>startIndex</code> specifies the index at which the region begins for the string
+object against which the function is invoked.</p>
+<p><code>other</code> represents the other string to compare. The <code>otherIndex</code> indicates the
+index at which the region begins for the other string.</p>
+<p>The <code>count</code> parameter indicates the number of characters in both the regions.
+You need to carefully specify this parameter.</p>
+<p>You can force <code>regionMatches()</code> function to ignore case. For this invoke the
+overloaded version of the <code>regionMatches()</code>.</p>
+<pre><code>function regionMatches(startIndex, other, otherStartIndex, count, ignoreCase)
+</code></pre><p>The <code>ignoreCase</code> boolean parameter indicates whether the function should ignore
+case when comparing, or not.</p>
+<h4 id="prefixes-and-suffixes">Prefixes and Suffixes</h4>
+<p>You can determine if a string starts with a substring using the <code>startsWith()</code>
+function. It returns <code>true</code> if a string starts with the specified substring;
+<code>false</code> otherwise.</p>
+<p>Here is the declaration of the <code>startsWith()</code> function.</p>
+<pre><code>function startsWith(sequence)
+</code></pre><p>Further, you can specify from which index <code>startsWith()</code> begins comparing.
+An overloaded version of the <code>startsWith()</code> function accepts the starting index.
+Here is the declaration of this function.</p>
+<pre><code>function startsWith(sequence, startIndex)
+</code></pre><p>Here, the <code>startIndex</code> specifies the index applies to the string object against
+which the function is invoked. It indicates the index from where the comparison is
+started.</p>
+<p>Similarly, you can determine if a string ends with a substring using the endsWith()
+function. It returns <code>false</code> if a string ends with the specified substring; <code>false</code>
+otherwise.</p>
+<p>Here is the declaration of the <code>endsWith()</code> function.</p>
+<pre><code>function endsWith(sequence)
+</code></pre><p>Here is an example which demonstrates these functions.</p>
+<pre><code>function main(...arguments)
+    var superhero = 'Swamp Thing'
+    var r1 = superhero.startsWith('Swam')
+    var r2 = superhero.endsWith('ing')
+    var r3 = superhero.startsWith('Thing', 5)
+    printf('&quot;%s&quot; starts with &quot;Swam&quot;: %z\n', superhero, r1)
+    printf('&quot;%s&quot; ends with &quot;ing&quot;: %z\n', superhero, r2)
+    printf('&quot;%s&quot; starts with &quot;Thing&quot; after 5 characters: %z\n', superhero, r3)
+</code></pre><p>This example produces the following output.</p>
+<pre><code>&quot;Swamp Thing&quot; starts with &quot;Swam&quot;: true
+&quot;Swamp Thing&quot; ends with &quot;ing&quot;: true
+&quot;Swamp Thing&quot; starts with &quot;Thing&quot; after 5 characters: true
+</code></pre><h4 id="comparing-strings">Comparing Strings</h4>
+<p>Imagine you are sorting an array of strings. How can you determine whether one
+string is greater than the other? So far you have learnt about functions that only
+help you determine whether they are identical. In order to compare strings
+for relativity, you need to use the <code>compare()</code> function.</p>
+<p>The <code>compare()</code> function compares two strings lexicographically, which means
+a A is lesser B, B is lesser than C and so on. For example, A is lesser than Z
+and Y is greater than M. In this logic, lowercase letters are always greater
+than uppercase letters.</p>
+<p>The declaration of the <code>compare()</code> function is shown here.</p>
+<pre><code>function compare(other)
+</code></pre><ul>
+<li>
+<p>It returns a negative number if the current string object is lesser than the
+specified string.</p>
+</li>
+<li>
+<p>It returns a positive number if the current string object is greater than the
+specified string.</p>
+</li>
+<li>
+<p>It returns zero when both the strings are equal.</p>
+</li>
+</ul>
+<p>Here is an example, which determines if a string is greater than the other.</p>
+<pre><code>// YatchVsDragon.zen
+
+function main(...arguments)
+    var yatch = 'Yatch'
+    var dragon = 'Dragon'
+    if yatch.compare(dragon) &gt; 0
+        print('Yatch is greater than Dragon.')
+    else if yatch.compare(dragon) &lt; 0
+        print('Yatch is lesser than Dragon.')
+    else
+        print('Yatch is equal to Dragon.')
+</code></pre><p>This program generate the following output.</p>
+<pre><code>Yatch is greater than Dragon.
+</code></pre><p>As mentioned previously, the <code>compare()</code> function is case sensitive. For case
+insensistive comparison you need to invoke the overloaded version of the <code>compare()</code>
+function which accepts a Boolean flag indicating whether the function has to
+ignore case or not.</p>
+<p>The declaration of the overloaded version of the <code>compare()</code> function is shown
+below.</p>
+<pre><code>function compare(other, ignoreCase)
+</code></pre><p>+++
+title = &lsquo;Extracting Characters From Strings&rsquo;
+weight = 5
++++</p>
+<p>You can extract characters from strings in a number of ways. We discuss about
+each technique in this section.</p>
+<p>Internally, strings store characters in an array. The <code>String</code> class overrides
+the subscript operator, which allows you to access characters in a string as if
+it were an array. Many functions in the <code>String</code> class require indexes to operate.
+Just like array, string indexes are zero based. So it would help you to understand
+strings better if you think of them as arrays.</p>
+<p>You can extract a single character from a string using the <code>getCharacter()</code> function.
+It accepts an index of the character you want to retrieve. You cannot specify
+negative values. It throws a <code>InvalidStringIndexException</code> if the index is invalid.</p>
+<p>Here is the declaration of the <code>getCharacter()</code> function.</p>
+<pre><code>@Operator symbol='[]'
+function getCharacter(index)
+</code></pre><p>Here is an example.</p>
+<pre><code>// AccessingCharacter.zen
+
+function main(...arguments)
+    var color = 'Neon'
+    var c = color.getCharacter(2)
+    print(c)
+</code></pre><p>This snipet prints the following output.</p>
+<pre><code>o
+</code></pre><p>You can retrieve a range of characters at a time using the <code>getCharacters()</code> function.</p>
+<p>Here is the declaration of the <code>getCharacters()</code> function.</p>
+<pre><code>function getCharacters(startIndex, stopIndex, destination, destinationIndex)
+</code></pre><p>Here, the <code>startIndex</code> specifies the index from which the copying begins. It is
+inclusive.</p>
+<p>The <code>stopIndex</code> specifies the index at which the copying ends. This index is exclusive,
+which means the character at this index is not copied.</p>
+<p>The characters are copied to the <code>destination</code> array you specify. The characters
+are copied into the destination array beginning at the index specified by
+<code>destinationIndex</code>. You need to make sure that the destination array is large
+enough to store the range of characters.</p>
+<p>Here is an example which copies a range of characters.</p>
+<pre><code>// CharacterExtraction.zen
+
+function main(...arguments)
+    var message = 'How you doin?'
+    var startIndex = 4
+    var stopIndex = 7
+    var destination = new Array(Character, 3)
+    message.getCharacters(startIndex, stopIndex, destination, 0)
+
+    var message2 = new String(destination)
+    print(message2)
+</code></pre><p>This example prints the following.</p>
+<pre><code>you
+</code></pre><p>If you want to convert all the characters in your string into a character array,
+invoke the <code>toCharacterArray()</code> function. It returns an array of characters from
+your string.</p>
+<p>The declaration of the <code>toCharacterArray()</code> function is shown here.</p>
+<pre><code>function toCharacterArray()
+</code></pre><p>You can use the <code>getCharacters()</code> function to perform the same operation, except
+<code>getCharacters()</code> makes you write more code.</p>
+<h2 id="extracting-substrings">Extracting Substrings</h2>
+<p>The <code>substring()</code> function allows you to extract a region of your string, usually
+referred as substring.</p>
+<p>The declaration of this function is shown here.</p>
+<pre><code>function substring(index)
+</code></pre><p>Here, the index indicates the index from which the substring is extracted.
+The substring begins from the specified index and extends to the end of the
+string.</p>
+<p>Here is an example of the <code>substring()</code> function.</p>
+<pre><code>// SubstringExtraction.zen
+
+function main(...arguments)
+    var lastName = 'Nikola Tesla'.substring(7)
+    printf('%s was one of the greatest inventors to ever live!\n', lastName)
+</code></pre><p>This example prints the following output.</p>
+<pre><code>Tesla was one of the greatest inventors to ever live!
+</code></pre><p>An overloaded version of the <code>substring()</code> function allows you to extract a
+range of characters from the string.</p>
+<p>Here is the declaration of the <code>substring()</code> function.</p>
+<pre><code>function substring(startIndex, stopIndex)
+</code></pre><p>Here the <code>startIndex</code> specifies the start index of the substring and the
+<code>stopIndex</code> specifies the end index of the substring. The <code>startIndex</code> is
+inclusive, whereas, the <code>stopIndex</code> is exclusive.</p>
+<p>Here is an example of the overloaded version of the <code>substring()</code> function.</p>
+<pre><code>var substring = 'Nikola Tesla'.substring(2, 6)
+println(substring)
+</code></pre><p>This example prints the following output.</p>
+<pre><code>kola
+</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="section section-on-footer" data-background="http://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/shuffle/shuffle.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
+
+<!-- google analytics -->
+</body>
+</html>

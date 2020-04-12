@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Constructors</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Johnathan Smith">
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  <style>
+    :root{
+      --primary-color:#41228e;
+    }
+  </style>
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://itssamuelrowe.github.io/zen-website/css/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="http://itssamuelrowe.github.io/zen-website/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="http://itssamuelrowe.github.io/zen-website"><img src="http://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website"> Home </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/docs">Docs</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/blog">Blog</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="http://itssamuelrowe.github.io/zen-website/download">Download</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  
+<section class="page-title bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">Constructors</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
+  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
+  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
+  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
+  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
+</section>
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">Constructors</h3>
+          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          <div class="content">
+            <img src="http://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            <h3 id="chapter-11">Chapter 11</h3>
+<h1 id="constructors-how-your-objects-are-initialized">Constructors: How Your Objects are Initialized</h1>
+<p>When you create an object using the <code>new</code> operator, Zen does several things
+for you.</p>
+<p>Here is the gist of what happens when you create an object.</p>
+<ul>
+<li>First, the memory to store the object is allocated.</li>
+<li>The allocated memory buffer is initialized internally to create the
+object.</li>
+<li>The object is associated with the class from which it was created.</li>
+<li>The virtual function tables are generated.</li>
+<li>Finally, a special function defined in the objects class is invoked.
+This function is called a constructor.</li>
+</ul>
+<p>In this chapter, we will learn about constructors. We will see how to work with
+constructors, including their declaration and invocation.</p>
+<p>+++
+title = &ldquo;Understanding this Keyword&rdquo;
+weight = 1
++++</p>
+<p>In the body of a function, constructor, or initializer block, sometimes you need
+to refer to the object that contains the instance member in question.
+In other words, sometimes an instance member may want to access the instance
+it is contained in. In such cases, you can refer the instance using the <code>this</code>
+keyword. It always represents the instance within which the instance member is
+contained.</p>
+<p>To refer to the instance in an instance function, use the <code>this</code> keyword where
+you normally would refer to an object&rsquo;s reference through a variable. You can use
+the <code>this</code> keyword as a reference anyway you please. In other words, the
+<code>this</code> keyword refers to the current object, and you can use it anywhere a
+reference to an object might appear.</p>
+<p>Here is a some situations where you can use the <code>this</code> keyword:</p>
+<ul>
+<li>with the member access operator</li>
+<li>as an argument to a function or constructor</li>
+<li>as the return value for a function, and so on.</li>
+</ul>
+<p>In fact, whenever you refer to instance members in functions and constructors
+with just their names, an implicit <code>this</code> reference is present. Which goes to say,
+you can only use the <code>this</code> keyword in instance members. You cannot use the
+<code>this</code> keyword in static contexts, such as static functions and static initializers.</p>
+<p>A very common place where the <code>this</code> keyword is used is when you have a
+local variable and a field with the same name. Yes, this is possible
+because fields and local variables have different scopes.</p>
+<p>Here is an example function which sets the score of a player.</p>
+<pre><code>class Player
+    ...
+
+    var score
+
+    function setScore(score)
+        score = score
+
+    ...
+</code></pre><p>In this example, we are trying to assign the parameter <code>score</code> to the field
+<code>score</code>. When you refer <code>score</code>, the program looks up for the variable named
+<code>score</code> from the nearest scope to farthest scope. In this example, the local
+scope is the nearest scope, where the parameter <code>score</code> is declared. Which means,
+the parameter <code>score</code> gets assigned to itself leaving the <code>score</code> field unchanged.</p>
+<p>In order to override this behaviour, we refer to the field by explicitly adding
+the <code>this</code> keyword to reference the current object.</p>
+<p>Here is the modified version of the previous example.</p>
+<pre><code>class Player
+
+    ...
+
+    var score
+
+    function setScore(score)
+        this.score = score
+
+    ...
+</code></pre><p>You can skip the <code>this</code> reference if the parameter and the field do not have
+the same name.</p>
+<p>+++
+title = &ldquo;Working with Constructors&rdquo;
+weight = 2
++++</p>
+<p>A constructor is a special function which initializes your variables and performs
+any other additional operations when you create an object. It is called whenever
+you create an object.</p>
+<p>Here is the general form of a constructor.</p>
+<pre><code>function new(parameters)
+    statement1
+    statement2
+    ...
+    statementN
+</code></pre><p>Here, the <code>new</code> keyword indicates that the function is a constructor. Constructors
+usually initialize values of fields.</p>
+<p>You have already learnt about parameters in the previous chapter. A parameter
+is a value that you can send to your constructor. Parameters allow a constructor
+to be generalized. In other words, such constructors can operate on a
+variety of data and work differently based on different arguments.</p>
+<p>Here is an example of a constructor.</p>
+<pre><code>class Example
+
+    function new()
+        ;
+</code></pre><p>The constructor is public by default. Which means, other classes can access it.
+You can even make constructors private or secret. You can prevent a class
+from being instantiated by other classes, by making the constructor private.
+You will learn more about secret constructors in the next chapter.</p>
+<p>Finally, the constructor shown here does not accept any parameters, making it
+a default constructor.</p>
+<p>As you can see, constructors are similar to functions, with the following differences.
+* A constructor canntat return any value.
+* Constructors are not considered as members of a class.</p>
+<p>Unlike functions, a constructor cannot be called directly. You need to use the
+<code>new</code> operator to invoke a constructor.</p>
+<p>Every class has at least one constructor. In the examples shown so far, we have
+not defined any constructor. But how were we able to create instances? That is
+because Zen automatically provided your classes with constructors. In other words,
+if you do not define a constructor in your class, Zen automatically creates an
+empty constructor known as the default constructor. A default constructor accepts
+no arguments. It does nothing. But it allows you to create objects of your class.
+This is why you were able to create objects of the classes you created so far.</p>
+<p>Here is an example where we declare an empty class.</p>
+<pre><code>class BlackHole
+    var mass
+</code></pre><p>Here is another way of writing the <code>BlackHole</code> class.</p>
+<pre><code>class BlackHole
+
+    var mass
+
+    function new()
+        ;
+</code></pre><p>Both the classes we declared are exactly the same.</p>
+<p>In the first example, Zen provides you a default constructor. In the second
+example, you declared a constructor that does not accept parameters and does
+nothing. Such a constructor is known as <em>explicit default constructor</em>.</p>
+<p>Here is an example of three classes. Each class demonstrates initialization using
+different techniques.</p>
+<pre><code>// Pizza.zen
+
+class Pizza
+
+    public var name
+    public var size
+    public var price
+
+    @Override
+    function toString()
+        return format('[Pizza] name: %s, size: %d, price: $%f', name, size, price)
+
+// Burger.zen
+
+class Burger
+    var name
+    var size
+    var price
+
+    function initialize(n, s, p)
+        name = n
+        size = s
+        price = p
+
+    @Override
+    function toString()
+        return format('[Burger] name: %s, size: %d, price: $%f', name, size, price)
+
+// Roll.zen
+
+class Roll
+    var name
+    var size
+    var price
+
+    function new(n, s, p)
+        name = n
+        size = s
+        price = p
+
+    @Override
+    function toString()
+        return format('[Roll] name: %s, size: %d, price: $%f', name, size, price)
+
+// FastFoodJoint.zen
+
+function main(...arguments)
+    var pizza = new Pizza()
+    pizza.name = 'Farm House Pizza'
+    pizza.size = 'Large'
+    pizza.price = 12.5
+    print(pizza)
+
+    var burger = new Burger()
+    burger.initialize('Double Cheeseburger', 'Medium', 8.0)
+    print(burger)
+
+    var roll = new Roll('Chilli Chicken Roll', 'Large', 10.0)
+    print(roll)
+</code></pre><p>The output of this program is shown here.</p>
+<pre><code>[Pizza] name: Farm House Pizza, size: Large, price: $12.5
+[Burger] name: Double Cheeseburger, size: Medium, price: $8.0
+[Roll] name: Chilli Chicken Roll, size: Large, price: $10.0
+</code></pre><p>This example demonstrates three ways you can initialize your objects. You
+create three classes which include three fields <code>name</code>, <code>size</code>, and <code>price</code>.</p>
+<p>The first technique is the simplest. You simply declare the fields in your class
+and expose them, that is, make them public. You create an instance of the <code>Pizza</code>
+class and initialize its fields by assigning each field in the <code>main()</code> function.
+Although, this technique is simple you will end up repeating yourself very often.
+Imagine you create twenty instances of the <code>Pizza</code> class in twenty different
+places. You may forget to initialize a field. Imagine what happens when you
+add or remove a field? You will have to find every place where you initialize
+the object and edit your code.</p>
+<p>The second technique is efficient. You declare the fields as private but expose
+a function which initializes the object. After you create an instance of the
+<code>Burger</code> class, to initialize its fields you invoke the <code>initialize</code> function
+from the <code>main()</code> function. You pass the values of the fields as arguments to the
+function, which in turn assigns to the fields. This is efficient, but you still
+need to write two statements: one to create the object and another to initialize
+the object. In case you add or remove a field, you simply need to change the
+<code>initialize()</code> function.</p>
+<p>For the final technique, we take inspiration from the previous technique and
+combine creation and initialization of the object in the same statement. When
+you create an instance of the <code>Roll</code> class, to initialize its fields you pass
+the values of the fields to the constructor of <code>Roll</code> class. The constructor
+assigns the fields the values it receives through its parameters.</p>
+<p>Constructors are both efficient and simple. We recommend you to always initialize
+your objects using constructors. After all, that is their primary purpose.</p>
+<p>You need to remember that, when you create a parameterized constructor, Zen
+does not provide a default constructor. In which case, you need to explicitly
+define a default constructor if you need it.</p>
+<p>Try to compile this example. The compiler will generate errors.</p>
+<pre><code>class Sitcom
+
+    var title
+    var ratings
+    var length
+
+    function new(t, r, l)
+        title = t
+        ratings = r
+        length = l
+
+// SitcomExample.zen
+function main(...arguments)
+    var sitcom = new Sitcom()
+</code></pre><p>In this example, you try to invoke the default constructor of the <code>Sitcom</code> class.
+The compiler generates errors obediently.</p>
+<p>Zen does not provide a default constructor for the <code>Sitcom</code> class because we
+declared a constructor which accepts parameters. We did not provide an explicit
+default constructor either. Because you defined a parameterized constructor in
+the <code>Sitcom</code> class, Zen will not provide a default constructor.
+Which means, we are calling a constructor that does not exist. This is why
+the compiler generates errors. This is basically the gist of the compiler error
+you will see when you try to compile this example.</p>
+<p>+++
+title = &ldquo;Overloading Constructors&rdquo;
+weight = 3
++++</p>
+<p>A class can have multiple constructors, this achived through a technique known
+as constructor overloading. It is a feature of polymorphism and is a very useful feature.
+It is similar to function overloading.</p>
+<p>Zen differentiates constructors using constructor signatures. A constructor
+signature is a part of constructor declaration. It is the combination of the
+new keyword and the parameter count. The names of the parameters are not included
+in the signature.</p>
+<p>In order to overload a constructor, the constructor signatures should be different.
+Which means your constructors need to have different parameter count.</p>
+<p>When you invoke an overloaded constructor, Zen uses the following conditions to
+determine which version of the overloaded constructor you are calling.
+* The type of each argument you are passing.
+* The number of arguments you are passing.</p>
+<p>This is the reason why overloaded constructors must have different parameter counts.
+Otherwise, Zen will not be able to determine which version of the overloaded
+constructor you are calling. It goes without saying, no two constructors in a
+class can have the same number of arguments, because this is the only way
+constructors can be differentiated in Zen.</p>
+<p>Consider the following class.</p>
+<pre><code>// MovieExample.zen
+
+class Movie
+
+    var title
+    var ratings
+    var runtime
+
+    function new(title)
+        this.title = title
+        this.ratings = 0.0
+        this.runtime = 0.0
+
+    function new(title, ratings)
+        this.title = title
+        this.ratings = ratings
+        this.runtime = 0.0
+
+    function new(title, ratings, runtime)
+        this.title = title
+        this.ratings = ratings
+        this.runtime = runtime
+
+    @Override
+    function toString()
+        return String.format('title: %s, ratings = %f, runtime = %f hours', title, ratings, runtime)
+
+function main(...arguments)
+    var forrestGump = new Movie('Forrest Gump')
+    var joker = new Movie('Joker', 8.7)
+    var interstellar = new Movie('Interstellar', 8.6, 2.49)
+
+    print(forrestGump)
+    print(joker)
+    print(interstellar)
+</code></pre><p>In this example, we defined three constructors.</p>
+<p>The first constructor accepts a single parameter named <code>title</code>. It initializes
+corresponding <code>title</code> field.</p>
+<p>The second constructor accepts two paramters named <code>title</code> and <code>ratings</code>.
+It initializes the fields with the corresponding values.</p>
+<p>The third constructor accepts three paramters named <code>title</code>, <code>ratings</code>, and
+<code>runtime</code>. It initializes the fields with the corresponding values.</p>
+<p>You can create an instance of <code>Movie</code> like this.</p>
+<pre><code>var movie = new Movie('Forrest Gump', 8.8, 2.22)
+</code></pre><h2 id="calling-other-constructors">Calling Other Constructors</h2>
+<p>A constructor can call another constructor in the same class. Zen provides
+special syntax for this purpose. You must use the <code>this</code> keyword with parenthesis.
+This is useful when your overloaded constructors have some common behavior of an
+existing constructor. You can call the general purpose constructor from your
+other constructors.</p>
+<p>Here is an example of <code>Movie</code> class where the constructors invoke another
+general purpose constructor.</p>
+<pre><code>// MovieExample2.zen
+
+class Movie {
+
+    var title
+    var ratings
+    var runtime
+
+    function new()
+        this(&quot;Unknown&quot;, 0.0, 0.0)
+
+    function new(title)
+        this(title, 0.0, 0.0)
+
+    function new(title, ratings)
+        this(title, ratings, 0.0)
+
+    function new(title, ratings, runtime)
+        this.title = title
+        this.ratings = ratings
+        this.runtime = runtime
+
+function main(...arguments)
+    var forrestGump = new Movie('Forrest Gump')
+    var joker = new Movie('Joker', 8.7)
+    var interstellar = new Movie('Interstellar', 8.6, 2.49)
+
+    print(forrestGump)
+    print(joker)
+    print(interstellar)
+</code></pre><p>In the above example, we declared four constructors.</p>
+<p>The first constructor is the <em>explicit default constructor</em>. It accepts
+no parameters. It passes default values to the fourth constructor, which is
+general purpose constructor.</p>
+<p>The second constructor accepts the title of a movie. It passes the
+title and default values to the third constructor.</p>
+<p>The third constructor accepts the title and ratings of a movie.
+It initializes the corresponding fields.</p>
+<p>The fourth constructor, the general purpose constructor which is invoked by
+all the other constructors, accepts three parameters <code>length</code>, <code>ratings</code>
+and  <code>runtime</code>. It initializes the corresponding fields.</p>
+<p>You need to follow these rules when calling another constructor.</p>
+<h4 id="rule-1---you-can-call-another-constructor-only-in-the-very-first-statement-of-your-constructor">RULE 1 - You can call another constructor only in the very first statement of your constructor.</h4>
+<p>For example, this will not compile.</p>
+<pre><code>function new(title)
+    int i = 0
+    this(title, 0.0, 0.0)
+</code></pre><p>You can call another constructor only in the first statement. But in the above
+example, a declaration statement is the first statement. This results in a
+compile-time error.</p>
+<h4 id="rule-2---a-constructor-can-call-only-one-other-constructor">RULE 2 - A constructor can call only one other constructor.</h4>
+<p>For example, this will not compile.</p>
+<pre><code>class Movie {
+
+    var title
+    var ratings
+    var runtime
+
+    function new()
+        this('Unknown', 0.0, 0.0)
+
+    function new(title)
+        this()
+        this(title, 0.0, 0.0)
+
+    function new(title, ratings)
+        this(title, ratings, 0.0)
+
+    function new(title, ratings, runtime)
+        this.title = title
+        this.ratings = ratings
+        this.runtime = runtime
+</code></pre><p>You can call only one constructor. But in this example, the second constructor
+invokes two constructors. This results in a compile-time error.</p>
+<h4 id="rule-3---you-can-chain-constructors">RULE 3 - You can chain constructors.</h4>
+<p>For example, the first constructor can call the second constructor. The
+second constructor can call the third constructor.</p>
+<pre><code>class Person
+
+    var name
+    var age
+    var number
+
+    function new()
+        this('Unknown')
+
+    function new(name)
+        this(name, -1, 'Unknown')
+
+    function new(name, age, number)
+        this.name = name
+        this.age = age
+        this.number = number
+</code></pre><h4 id="rule-4---you-cannot-call-constructors-in-a-cycle">RULE 4 - You cannot call constructors in a cycle.</h4>
+<p>For example, the first constructor calls the second constructor. The
+second constructor calls back the first constructor. Such cases will
+generate errors.</p>
+<pre><code>class Pet
+
+    var name
+    var species
+    var owner
+    var age
+
+    function new()
+        this('Unknown', 'Unknown', 'Unknown', -1)
+
+    function new(name, species, owner, age)
+        this()
+        this.name = name
+        this.species = species
+        this.owner = owner
+        this.age = age
+</code></pre><p>+++
+title = &ldquo;Working with the Static Initializer&rdquo;
+weight = 4
++++</p>
+<p>Sometimes you may want to initialize your static fields after computing a value.
+A static initializer is a special block of code which initializes a class.
+It is written inside a class and outside function and constructors. You cannot
+assign a name or invoke a static initializer, at least directly.</p>
+<p>It is executed whenever the class is loaded. The Zen Virtual Machine may
+unload a class when the class is unused to save memory. Since you cannot control
+when a class is loaded in all cases, we recommend you to design your static
+initializers to be unaware of the context in which it is executed.</p>
+<p>The general form of a static initializer is shown here.</p>
+<pre><code>function static()
+    statement1
+    statement2
+    ...
+    statementN
+</code></pre><p>As you can see, a static initializer is similar to a constructor, except it
+is identified by the <code>static</code> keyword. You cannot have more than one static
+initializer in your class.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="section section-on-footer" data-background="http://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/slick/slick.min.js"></script>
+
+<script src="http://itssamuelrowe.github.io/zen-website/plugins/shuffle/shuffle.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
+
+<!-- google analytics -->
+</body>
+</html>

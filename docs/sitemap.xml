@@ -3,447 +3,130 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/introduction-to-zen/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/abstract-classes/understanding-abstract-classes/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/basics-of-zen/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/understanding-arrays/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/variables-values-and-data-types/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exceptions/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/operators-operands-and-expressions/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-inheritance/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/conditional-statements/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/understanding-object-oriented-programming/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/iterative-statements/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/packages/understanding-packages/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/introduction-to-object-oriented-programming/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/strings/understanding-strings/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/classes-and-objects/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/constructors/understanding-this-keyword/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/functions/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/what-is-a-function/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/constructors/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/working-with-classes/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/superclasses-and-subclasses/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/advantages-of-exceptions/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/exceptions/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/strings/constructors-of-the-string-class/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/packages/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/conventions-for-class-names/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/arrays/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/packages/creating-packages/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/strings/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/difference-between-functions-and-methods/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/about/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/principles-of-object-oriented-programming/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.1/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/the-object-class/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.2/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/working-with-arrays/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.3/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/constructors/working-with-constructors/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.4/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/advantages-of-object-oriented-programming/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.5/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/declaring-functions/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/blog/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/strings/determining-the-size-of-strings/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/contact/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/initializing-array-objects/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/portfolio/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/constructors/overloading-constructors/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/overriding-functions/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/categories/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-exception-types/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/docs/</loc>
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/packages/understanding-qualified-names/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-visibility/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/accessing-array-elements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/catching-exceptions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/strings/comparing-strings/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/naming-conventions-for-functions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/understanding-instance-and-static-members/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/packages/understanding-package-lookup/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/working-with-constructors-and-inheritance/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/constructors/working-with-the-static-initializer/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/advantages-of-functions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/advantages-of-zen/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/comparing-zen-to-other-programming-languages/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/disadvantages-of-zen/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/strings/extracting-characters-from-strings/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/multiple-catch-clauses/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/understanding-multidimensional-arrays/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/understanding-the-extended-self-referenced/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-zen/what-is-zen/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/packages/working-with-the-import-statement/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-array-elements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/packages/naming-conventions-for-packages/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-multiple-catch-clauses-and-inheritance/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/working-with-parameters/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/iterating-over-multidimensional-arrays/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/throwing-exceptions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/introduction-to-object-oriented-programming/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/understanding-checked-and-unchecked-exceptions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/understanding-functions-that-return-values/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/classes-and-objects/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/function-overloading/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/working-with-getters-and-setters/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/constructors/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/superclasses-and-subclasses/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/functions/using-the-property-annotation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/abstract-classes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/packages/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/arrays/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/strings/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/combining-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/declaring-final-variables-or-constants/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/declaring-variables/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/nested-if-statements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/overriding-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/the-hello-world-program/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/types-of-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-data-types/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-identifiers/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/understanding-keywords/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/understanding-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-unicode/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/understanding-variables/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-statements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/conditional-statements/using-if-else-if-ladders/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-assignment-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-break-statement/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-compound-assignment-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-conditional-operator/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/using-the-continue-statement/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/exceptions/using-the-finally-clause/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-logical-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/using-the-unary-plus-and-minus-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/what-is-a-loop/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-arithmetic-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-bitwise-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-blocks/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-comments/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-comparison-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/operators-operands-and-expressions/working-with-equality-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-non-primitive-reference-types/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-primitive-reference-types/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/basics-of-zen/working-with-statements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/variables-values-and-data-types/working-with-strings/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/loop-statements/working-with-the-while-statement/</loc>
+    <loc>http://itssamuelrowe.github.io/zen-website/tags/</loc>
   </url>
   
 </urlset>

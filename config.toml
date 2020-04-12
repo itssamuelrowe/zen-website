@@ -2,8 +2,9 @@
 baseURL = "http://itssamuelrowe.github.io/zen-website"
 languageCode = "en-us"
 summaryLength = "10"
-theme = "kross-hugo"
+theme = "kross"
 title = "The Zen Programming Language"
+publishDir = "docs"
 
 # css plugins
 [[params.plugins.css]]
