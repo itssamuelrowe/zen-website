@@ -1,17 +1,14 @@
 +++
 title = "Exceptions"
 weight = 14
-chapter = true
 +++
 
-### Chapter 14
-# Exceptions
+In this module, you will see what happens when programs encounter unexpected
+situations.
 
 No matter how carefully you design and test your program, errors are bound to
 happen one or the other. When they do, chances are your program crashes to a halt.
-
-In this chapter you will see what happens when Zen encounters an unexpected
-situation. Many techniques have been invented to deal with such errors.
+ Many techniques have been invented to deal with such errors.
 Many languages such as C and Assembly, errors must be manually checked and handled
 by using error codes. This technique is very verbose and inelegant. Zen provides
 a sophisticated error handling mechanism. Zen implements an object-oriented
@@ -23,31 +20,25 @@ when your program is running. Exceptions allow your programs to recognize errors
 and respond to them gracefully. In fact, sometimes your program can resolve the
 situation and resume execution normally.
 
-
-+++
-title = "Understanding Exceptions"
-weight = 1
-+++
-
 In Zen, errors of all types are generalized into a special type of object
-known as an exception. An *exception* is an object which represents an unexpected
+known as an exception. An exception is an object which represents an unexpected
 event. It occurs when your program is running. It disturbs the flow of your program.
-Exceptions are used to indicate many types of error conditions.
+Exceptions are used to indicate many types of error conditions which may
+occur for many reasons. For example, the programmers did not anticipate possible
+problems, or the application is untested, or the program encounters situations
+such as corrupt data, corrupt files, network problems, hardware device failure,
+and so on.
 
 An exception is represented by an object. It holds the information about the
 event such as the condition, the stacktrace, the location, and a message.
-The exception object is usually refered to as *exception*. You can *throw and
-catch* an exception.
+The exception object is usually refered to as exception. You can throw and
+catch an exception. After an exception object is created, it is thrown. The
+virtual machine attempts to find an exception handler for the exception by
+backtracking the list of functions that have been called, known as the call
+stack. If a handler is found, the exception is caught. Otherwise, the virtual
+machine invokes the default exception handler and terminates the current
+thread.
 
-After an exception object is created, it is thrown. The Zen Virtual Machine
-attempts to find an exception handler for the exception by backtracking the list
-of functions that have been called, known as the call stack. If a handler is found,
-the exception is caught.
-
-An exception may occur for many reasons. For example, the programmers did not
-anticipate possible problems, or the application is untested, or the program
-encounters situations such as corrupt data, corrupt files, network problems,
-hardware device failure, and so on.
 
 Here are some common exceptions.
 
@@ -61,12 +52,11 @@ Here are some common exceptions.
 When an unexpected situation occurs, an exception object is created and thrown.
 The function which invoked the current function can handle the exception or
 let it pass through. At some point, the exception is caught and handled.
-Exceptions can be thrown either by your code, or the Zen Virtual Machine, or
-any libraries your code uses.
-
-Exceptions thrown by the Zen Virtual Machine indicate errors that violate the
-rules of Zen. For example, if you try to access an instance member through a
-`null` reference, the virtual machine throws a `NullPointerException`.
+Exceptions can be thrown either by your code, or the virtual machine, or
+any libraries your code uses. Exceptions thrown by the virtual machine indicate
+errors that violate the rules of Zen. For example, if you try to access an
+instance member through a `null` reference, the virtual machine throws a
+`NullPointerException`.
 
 Exception handling in Zen uses the following keywords.
 
@@ -113,10 +103,7 @@ finally
 Here, `Exception1` and `Exception2` indicate the type of exception to catch.
 You will learn more about the mechanics involved throughout this chapter.
 
-+++
-title = "Advantages of Exceptions"
-weight = 2
-+++
+### Advantages of Exceptions
 
 The advantages of exceptions are as follows.
 
@@ -124,11 +111,7 @@ The advantages of exceptions are as follows.
 
 With exceptions you can separate the details of what happens when an unexpected
 situation occurs. You can separate such logic from the main logic of your program.
-
-In other programming languages, error detection, reporting, and handling often
-lead to complex and confusing code.
-
-Exceptions allow you to keep your source code clean and organized.
+This allows you to keep your source code clean and organized.
 
 #### Your functions do not have to forward errors.
 
@@ -150,16 +133,15 @@ on the disk.
 
 All these advantages make exceptions reliable, stable, and secure.
 
-+++
-title = "Understanding Exception Types"
-weight = 3
-+++
+## Understanding Exception Types
 
 An exception object contains the information about the error condition. It
 includes information such as stacktrace and message. Perhaps, the most important
 information is the cause of the error. It is indicated by the name of the exception
 class used to create the exception object. Usually, you will use exception
 objects only to figure out the kind of error that occurred.
+
+> Inheritance is currently under development.
 
 In order to understand exceptions fully, you need to understand the class
 hierarchy of exceptions first. All exception classes are subclasses of the
@@ -183,7 +165,7 @@ about checked and unchecked exceptions in the next lecture.
 
 The second subclass of the `Throwable` class is the `Error` class. It defines
 exceptions that your program should generally not catch. These exceptions are
-usually thrown by the Zen Virtual Machine to indicate errors related to the
+usually thrown by the virtual machine to indicate errors related to the
 environment. `OutOfMemoryError` is an example of such an error which indicates
 memory exhaustion.
 
@@ -191,7 +173,7 @@ The following code segement shows the public methods found inside the `Throwable
 class. Please refere the Zen documentation for more reference.
 
 ```
-class Throwable extends Serializable
+class Throwable
 
     function getMessage()
     function getCause()
@@ -220,13 +202,10 @@ Here is a list of some typical exceptions.
  * `ClassNotFoundException`
    This exception is thrown to indicate that class coud not be found.
 
-Zen includes hundreds of exceptions. You can learn more about them from the
-Zen documentation.
+Zen includes many exceptions. You can learn more about them from the
+Zen Standard API documentation.
 
-+++
-title = "Catching Exceptions"
-weight = 4
-+++
+## Catching Exceptions
 
 Before you learn to catch exceptions in your program, you need to see what happens
 when you do not catch them. Here is an example which generates an exception.
@@ -242,15 +221,10 @@ function main(...arguments)
     printf('%d / %d = %d\n', a, b, c)
 ```
 
-When the Zen Virtual Machine tries to evalute `a / b`, it throws an exception
+When the virtual machine tries to evalute `a / b`, it throws an exception
 because you tried to divide an integer by zero.
 
 The output of this example is shown here.
-
-```
-Exception in thread 'main' zen.core.ArithmeticException: Division by zero
-    at GenerateException.main(GenerateException.zen:6)
-```
 
 The output contains the type of the exception, an error message and the
 stacktrace which points to the location from where the exception occurred.
@@ -284,13 +258,6 @@ function main(...arguments)
     var b = 0
     var c = divide(a, b)
     printf('%d / %d = %d\n', a, b, c)
-```
-
-Here is the output generated by this example.
-```
-Exception in thread 'main' zen.core.ArithmeticException: Division by zero
-    at GenerateException2.divide(GenerateException2.zen:4)
-    at GenerateException2.main(GenerateException2.zen:9)
 ```
 
 As you can see, the stacktrace includes the class name, the function name,
@@ -371,17 +338,13 @@ in the stack trace, the program control jumps out of the try clause and is
 transferred to the catch clause. A reference to the exception object is stored
 in the parameter of the catch clause. Once the catch clause is done executing,
 the statement following the catch clause is executed. The control never returns
-back to the location where the exception occurred. Because exceptions are not
+back to the location where the exception occurred because exceptions are not
 like functions to return back.
 
 A catch clause can catch an exception only if one of the statements within the
 try clause associated with it throws an exception.
 
-
-+++
-title = "Multiple Catch Clauses"
-weight = 5
-+++
+### Multiple Catch Clauses
 
 In some cases, more than one type of exception can be thrown by the statements
 in your try clause. To handle such situations, you can specify more than one
@@ -392,7 +355,6 @@ When one catch statement is finished executing, the other catch clauses are skip
 The program control transfers to the statement following the try statement.
 
 Here is an example of a try statement which handles multiple types of exceptions.
-
 ```
 // MultipleCatchClauses.zen
 
@@ -435,10 +397,9 @@ exception. When the exception is thrown, the catch clause which handles the
 `NullPointerException` exception is triggered. Thus, the second print
 statement in the try clause is not executed.
 
-+++
-title = "Understanding Multiple Catch Clauses and Inheritance"
-weight = 6
-+++
+### Understanding Multiple Catch Clauses and Inheritance
+
+> Inheritance is currently under development. You may skip this section.
 
 When you use multiple catch clauses, you need arrange them properly. Imagine
 that you have two catch clauses. The first catch clause handles exceptions of
@@ -477,21 +438,16 @@ function main(...arguments)
         print('Error: You cannot divide an integer by zero.')
 ```
 
-If you try to compile this example, the compiler will generate the following error.
-```
-MultipleCatchClauses2.zen:14: error: overshadowed exception ArithmeticException
-```
-
+If you try to compile this example, the compiler will generate an error.
 The error basically means that your second catch clause will never be executed
 because the first catch clause handles it. You need to change the order of
 the catch clauses to fix this problem.
 
-## Handling all Exceptions in One Place
+### Handling all Exceptions in One Place
 
 You can create a general catch clause such that all the exceptions are handled
-by a single catch clause. You have learnt how implicit casting works with exceptions.
-Using this concept, we can create a general catch clause.
-
+by a single catch clause. You have learnt how the virtual machine finds exception
+handlers. Using this concept, we can create a general catch clause.
 You know that the `Throwable` class is the superclass of all exceptions. Which
 means, if you write a catch clause which handles `Throwable`, then all types
 of exceptions are handled by it.
@@ -522,10 +478,7 @@ catch Exception exception
     ...
 ```
 
-+++
-title = "Throwing Exceptions"
-weight = 7
-+++
+## Throwing Exceptions
 
 So far, you have only learnt to catch exceptions. In particular, the exceptions
 that were thrown by Zen. However, you can throw an exception manually, using
@@ -537,10 +490,8 @@ throw expression
 ```
 
 The throw statement is a simple statement. Therefore, it is terminated by a
-semicolon.
-
-Here, the `expression` must evaluates to an object whose type inherits `Throwable`.
-It can be an instance of the `Throwable` class itself.
+semicolon. Here, the `expression` must evaluates to an object whose type inherits
+`Throwable`. It can be an instance of the `Throwable` class itself.
 
 Unlike C++, you cannot throw primitive values such as integer or floating-point
 decimals. In fact, you cannot throw an instance of a class which does not inherit
@@ -559,7 +510,7 @@ So far you have learnt to write single threaded programs. Therefore, if your
 main thread terminates, your program itself will terminate.
 
 Here is an example program which throws an exception.
-````
+```
 // ThrowExample.zen
 function printGreetings(name)
     if name == 'Chikka Chikka Slim Shady'
@@ -590,10 +541,7 @@ main function catches this exception. You can retrieve the message that you
 specified to the constructor of the `IllegalArgumentException` with the `message`
 property. The catch clause retrieves the message and prints it on the console.
 
-+++
-title = "Understanding Checked and Unchecked Exceptions"
-weight = 8
-+++
+## Understanding Checked and Unchecked Exceptions
 
 The concepts of checked and unchecked exceptions were inspired from Java. These
 concepts are simplified in Zen and are observed only as design principles,
@@ -601,15 +549,15 @@ meaning the compiler does not enforce these rules. However, the compiler
 marks each function with the exceptions it may throw. This information can be
 used outside Zen by other tools.
 
-An *unchecked exception* is an exception which you can handle if you want.
+An unchecked exception is an exception which you can handle if you want.
 Any exception class which inherits the `RuntimeException` class is an unchecked
 exception. The compiler does not force you to handle it. It is assumed that the
 application cannot do anything to recover from such exceptions at runtime.
 So far, all the exceptions you have used are unchecked exceptions.
 
-A *checked exception* is an exception which you need to handle. However, the
+A checked exception is an exception which you need to handle. However, the
 compiler does not force you to handle it. Any exception class which inherits the
-*Exception* class is a checked exception. An example of a checked exception is the
+`Exception` class is a checked exception. An example of a checked exception is the
 `IOException` class.
 
 Unchecked exceptions allow you to ignore exceptions that you cannot recover
@@ -617,14 +565,11 @@ from, and only handle the ones you can. This leads to less clutter. However,
 many programmers simply ignore unchecked exceptions. Turning all exceptions
 into unchecked exceptions would lead to complicated error handling.
 
-+++
-title = "Using the Finally Clause"
-+++
+## Using the Finally Clause
 
 When an exception is thrown, the execution of your code jumps abruptly, possibly
 from one function to another function. This means some important segment of your
 code may be skipped. This could be a problem in some functions.
-
 For example, if a function opens a file in the beginning and closes it before
 returning, then you will not want the code that closes the file to be skipped
 by an exception. The finally clause is designed to control such situations.
@@ -653,15 +598,6 @@ function main(...arguments)
         printf('%d / %d = %d\n', a, b, c)
     finally
         print('This statement was executed.')
-```
-
-This example generates the following output.
-
-```
-This statement was executed.
-Exception in thread 'main' zen.core.ArithmeticException: Division by zero
-    at FinallyExample.divide(FinallyExample.zen:4)
-    at FinallyExample.main(FinallyExample.zen:10)
 ```
 
 As you can see, the print statement inside the finally clause was executed
