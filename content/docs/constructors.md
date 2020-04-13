@@ -1,16 +1,12 @@
 +++
-title = "Constructors"
-chapter = true
+title = "Constructors: How Your Objects are Initialized"
 weight = 11
 +++
 
-### Chapter 11
-# Constructors: How Your Objects are Initialized
+You will learn about constructors, including their declaration and invocation.
 
 When you create an object using the `new` operator, Zen does several things
-for you.
-
-Here is the gist of what happens when you create an object.
+for you. Here is the gist of what happens when you create an object.
 
  * First, the memory to store the object is allocated.
  * The allocated memory buffer is initialized internally to create the
@@ -20,14 +16,7 @@ Here is the gist of what happens when you create an object.
  * Finally, a special function defined in the objects class is invoked.
    This function is called a constructor.
 
-In this chapter, we will learn about constructors. We will see how to work with
-constructors, including their declaration and invocation.
-
-
-+++
-title = "Understanding this Keyword"
-weight = 1
-+++
+## Understanding this Keyword
 
 In the body of a function, constructor, or initializer block, sometimes you need
 to refer to the object that contains the instance member in question.
@@ -52,58 +41,17 @@ with just their names, an implicit `this` reference is present. Which goes to sa
 you can only use the `this` keyword in instance members. You cannot use the
 `this` keyword in static contexts, such as static functions and static initializers.
 
-A very common place where the `this` keyword is used is when you have a
+In Java, a very common place where the `this` keyword is used is in when you have a
 local variable and a field with the same name. Yes, this is possible
-because fields and local variables have different scopes.
+because fields and local variables have different scopes. However, this is not
+possible in Zen even though fields and local variables have different scopes.
 
-Here is an example function which sets the score of a player.
-```
-class Player
-    ...
-
-    var score
-
-    function setScore(score)
-        score = score
-
-    ...
-```
-
-In this example, we are trying to assign the parameter `score` to the field
-`score`. When you refer `score`, the program looks up for the variable named
-`score` from the nearest scope to farthest scope. In this example, the local
-scope is the nearest scope, where the parameter `score` is declared. Which means,
-the parameter `score` gets assigned to itself leaving the `score` field unchanged.
-
-In order to override this behaviour, we refer to the field by explicitly adding
-the `this` keyword to reference the current object.
-
-Here is the modified version of the previous example.
-
-```
-class Player
-
-    ...
-
-    var score
-
-    function setScore(score)
-        this.score = score
-
-    ...
-```
-
-You can skip the `this` reference if the parameter and the field do not have
-the same name.
-
-+++
-title = "Working with Constructors"
-weight = 2
-+++
+## Working with Constructors
 
 A constructor is a special function which initializes your variables and performs
 any other additional operations when you create an object. It is called whenever
-you create an object.
+you create an object. Unlike functions, a constructor cannot be called directly.
+You need to use the `new` operator to invoke a constructor.
 
 Here is the general form of a constructor.
 
@@ -118,7 +66,7 @@ function new(parameters)
 Here, the `new` keyword indicates that the function is a constructor. Constructors
 usually initialize values of fields.
 
-You have already learnt about parameters in the previous chapter. A parameter
+You have already learnt about parameters in the previous module. A parameter
 is a value that you can send to your constructor. Parameters allow a constructor
 to be generalized. In other words, such constructors can operate on a
 variety of data and work differently based on different arguments.
@@ -135,17 +83,13 @@ class Example
 The constructor is public by default. Which means, other classes can access it.
 You can even make constructors private or secret. You can prevent a class
 from being instantiated by other classes, by making the constructor private.
-You will learn more about secret constructors in the next chapter.
-
+You will learn more about secret constructors in the next module.
 Finally, the constructor shown here does not accept any parameters, making it
 a default constructor.
 
 As you can see, constructors are similar to functions, with the following differences.
     * A constructor canntat return any value.
     * Constructors are not considered as members of a class.
-
-Unlike functions, a constructor cannot be called directly. You need to use the
-`new` operator to invoke a constructor.
 
 Every class has at least one constructor. In the examples shown so far, we have
 not defined any constructor. But how were we able to create instances? That is
@@ -156,14 +100,12 @@ no arguments. It does nothing. But it allows you to create objects of your class
 This is why you were able to create objects of the classes you created so far.
 
 Here is an example where we declare an empty class.
-
 ```
 class BlackHole
     var mass
 ```
 
 Here is another way of writing the `BlackHole` class.
-
 ```
 class BlackHole
 
@@ -173,11 +115,10 @@ class BlackHole
         ;
 ```
 
-Both the classes we declared are exactly the same.
-
-In the first example, Zen provides you a default constructor. In the second
-example, you declared a constructor that does not accept parameters and does
-nothing. Such a constructor is known as *explicit default constructor*.
+Both the classes we declared are exactly the same. In the first example, Zen
+provides you a default constructor. In the second example, you declared a
+constructor that does not accept parameters and does nothing. Such a constructor
+is known as explicit default constructor.
 
 Here is an example of three classes. Each class demonstrates initialization using
 different techniques.
@@ -281,7 +222,6 @@ assigns the fields the values it receives through its parameters.
 
 Constructors are both efficient and simple. We recommend you to always initialize
 your objects using constructors. After all, that is their primary purpose.
-
 You need to remember that, when you create a parameterized constructor, Zen
 does not provide a default constructor. In which case, you need to explicitly
 define a default constructor if you need it.
@@ -315,11 +255,7 @@ Which means, we are calling a constructor that does not exist. This is why
 the compiler generates errors. This is basically the gist of the compiler error
 you will see when you try to compile this example.
 
-
-+++
-title = "Overloading Constructors"
-weight = 3
-+++
+## Overloading Constructors
 
 A class can have multiple constructors, this achived through a technique known
 as constructor overloading. It is a feature of polymorphism and is a very useful feature.
@@ -332,7 +268,6 @@ in the signature.
 
 In order to overload a constructor, the constructor signatures should be different.
 Which means your constructors need to have different parameter count.
-
 When you invoke an overloaded constructor, Zen uses the following conditions to
 determine which version of the overloaded constructor you are calling.
     * The type of each argument you are passing.
@@ -400,6 +335,8 @@ var movie = new Movie('Forrest Gump', 8.8, 2.22)
 ```
 
 ## Calling Other Constructors
+
+> This feature is currently under development.
 
 A constructor can call another constructor in the same class. Zen provides
 special syntax for this purpose. You must use the `this` keyword with parenthesis.
@@ -480,7 +417,7 @@ compile-time error.
 For example, this will not compile.
 
 ```
-class Movie {
+class Movie
 
     var title
     var ratings
@@ -554,10 +491,9 @@ class Pet
         this.age = age
 ```
 
-+++
-title = "Working with the Static Initializer"
-weight = 4
-+++
+## Working with the Static Initializer
+
+> This feature is currently unavailable.
 
 Sometimes you may want to initialize your static fields after computing a value.
 A static initializer is a special block of code which initializes a class.
