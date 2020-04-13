@@ -1,25 +1,15 @@
 +++
 title = "Functions"
-chapter = true
 weight = 10
 +++
 
-### Chapter 10
-# Functions
+You will learn how to create your own functions, invoking functions,
+accepting parameters, and returning values.
 
-In Zen all programs are built with classes, which means there is at least
+In Zen, all your programs are built with classes, which means there is at least
 one class. Further, every program must have at least one function, the `main()`
 function. That is it. Beyond that, you do not need to create other functions.
 But, without functions, often your code will contain a lot of duplicate instructions.
-
-In this chapter, you will learn how to create your own functions, invoking functions,
-accepting parameters, and finally returning values from functions.
-
-
-+++
-title = "What is a Function?"
-weight = 1
-+++
 
 A function is a block of statements. You can give it a name. When a function is
 declared inside a class, it defines an object's behavior, basically whatever an
@@ -30,47 +20,22 @@ execution of your program branches to the body of that function. When the functi
 is finished, execution resumes from where the program branched, and the program
 continues on to the next statement.
 
-You have already used functions. For example, `print` and `prompt` are
+You have already used functions. For example, `print` and `scan` are
 functions declared in the `ZenHelper` class.
 
+The primary advantages of functions are as follows.
 
-+++
-title = "Difference Between Functions and Methods"
-weight = 2
-+++
+ * Functions improve the quality of your code. They make it more readable because
+   you break your code into logical chunks.
+ * You avoid duplicate code. Imagine you are writing an application that simulates
+   an airplane, which requires primitive matrix operations such as addition,
+   subtraction and multiplication. Without functions you would have to write these
+   operations in several places. So whenever you see yourself writing the same
+   code, it is a good idea to write a function.
+ * You can implement polymorphism through functions. This is one of the most
+   important features of functions.
 
-Function is a sequence of instructions that achieve some result. It may take
-arguments and return a result. If a function does not return a result it is
-usually called a procedure.
-
-Here are a few examples of functions.
-```
-function drawLine(x1, y1, x2, y2)
-  /* Draws a line using Bresenham's algorithm from (x1, y1) to (x2, y2).
-   * It does not return anything.
-   */
-
-function add(a, b)
-    /* Adds a to b and returns the result as a number. */
-    return a + b
-```
-
-When you need to draw a polygon of 3 lines as a part of a vector image it is
-more convenient to invoke the `drawLine()` function thrice rather than duplicating
-the algorithm thrice.
-
-Functions are similar to functions, they belong to classes or objects and usually
-express verbs of an object. For example, an object of class `Window` usually
-would have methods `resize()` and `setVisible()` which do corresponding operations
-to the object they belong.
-
-In Zen, methods are also referred to as functions.
-
-
-+++
-title = "Declaring Functions"
-weight = 3
-+++
+## Declaring Functions
 
 Here is the general form of a function declaration.
 
@@ -149,10 +114,7 @@ are executed sequentially. After which the control returns back to where the
 function was called.
 
 
-+++
-title = "Naming Conventions for Functions"
-weight = 4
-+++
+## Naming Conventions for Functions
 
  * Begin function names with a lowercase letter. For example, `print`, `getName`,
   `setTitle` and `buffer`.
@@ -162,30 +124,9 @@ weight = 4
  * Try to begin your function names with verbs. The name of a function should indicate
    an action.
 
-   +++
-title = "Advantages of Functions"
-weight = 5
-+++
+## Working with Parameters
 
-The primary advantages of functions are as follows.
-
- * Functions improve the quality of your code. They make it more readable because
-   you break your code into logical chunks.
- * You avoid duplicate code. Imagine you are writing an application that simulates
-   an airplane, which requires primitive matrix operations such as addition,
-   subtraction and multiplication. Without functions you would have to write these
-   operations in several places. So whenever you see yourself writing the same
-   code, it is a good idea to write a function.
- * You can implement polymorphism through functions. This is one of the most
-   important features of functions.
-
-
-+++
-title = "Working with Parameters"
-weight = 6
-+++
-
-A *parameter* is a value that you can send to a function. Parameters allow a
+A parameter is a value that you can send to a function. Parameters allow a
 function to be generalized. In other words, such functions can operate on a
 variety of data and work differently based on different arguments.
 
@@ -194,17 +135,12 @@ A parameter is a variable defined by a function that receives a value when the
 function is invoked. Whereas, an argument is the value that is passed to a function
 when it is invoked.
 
-## Declaring Parameters
-
 You must list your parameters when you declare your function. The parameters are
 listed in the parentheses after your functions name. Every parameter should
-have a name.
-
-You can pass values to your function when you call it. List your values in the
-parentheses after your functions name.
+have a name. You can pass values to your function when you call it. List your
+values in the parentheses after your functions name.
 
 Consider the following example.
-
 ```
 function square()
     print(7 * 7)
@@ -254,7 +190,7 @@ You can call `collect` like this:
 collect()
 ```
 
-## Understanding Scope of Parameters
+### Understanding Scope of Parameters
 
 The parameters of your function exists only within the function. You cannot access
 it outside your function.
@@ -262,18 +198,15 @@ it outside your function.
 ```
 // Calculator.zen
 
-class Calculator
+function main(...arguments)
+    var x = 10
+    var y = 20
+    var result = add(x, y)
 
-    static function main(...arguments)
-        var x = 10
-        var y = 20
-        var result = add(x, y)
+    printf('%d + %d = %d\n', x, y, result)
 
-        printf('%d + %d = %d\n', x, y, result)
-
-    static function add(x, y)
-        return x + y
-}
+function add(x, y)
+    return x + y
 ```
 
 In 'main`, we declared three variables named `x`, `y` and `result`. We call
@@ -289,11 +222,7 @@ does not generate any error. In other words, the local variables `x` and `y`
 declared in the `main()` function and the parameters `x` and `y` declared in the
 `add()` function exist in different scopes.
 
-
-+++
-title = "Understanding Functions That Return Values"
-weight = 8
-+++
+## Understanding Functions That Return Values
 
 Functions that perform operations without returning any value are useful, but this
 is not the case always. In this section you will learn how to return values
@@ -304,12 +233,9 @@ your age. Probably the function can print it on the console. But this is not wha
 you always want. For example, you would want the calculated age to determine if
 you are eligible to vote, or not. In such cases, your function needs to return
 a value or store the result in some field. Usually, returning a value is much
-easier.
-
-You can use the return statement to return a value to the caller.
+easier. You can use the return statement to return a value to the caller.
 
 Here is the general form of the return statement.
-
 ```
 return expression
 ```
@@ -367,10 +293,9 @@ function isEven(number)
 In this example, the function does not return a value in all cases. If the specified
 number was odd, the function would not return any value, but the compiler expects
 you to return a value in all cases. This is why it would generate errors if you
-tried to feed code like this.
-
-You should be careful when you return values from loops and conditional statements.
-You need to ensure that a value is returned in all case.
+tried to feed code like this. You should be careful when you return values from
+loops and conditional statements. You need to ensure that a value is returned in
+all case.
 
 Here is an example of a program that computes the factorial of a number.
 ```
@@ -388,10 +313,7 @@ function main(...arguments)
     printf("%d! = %d\n", n, result)
 ```
 
-+++
-title = "Function Overloading"
-weight = 9
-+++
+## Function Overloading
 
 Unlike variables, multiple functions in the same scope can have the same
 name. This technique is known as function overloading. It is a feature of
@@ -405,10 +327,9 @@ pseudo function signature.
 In order to overload a function, the pseudo function signatures should be different.
 Which means even if your function names are the same, you need to have different
 parameter counts. When the functions have the same name but different parameter
-counts, the functions are said to be overloaded.
-
-When you invoke an overloaded function, Zen uses the following conditions to
-determine which version of the overloaded function you are calling.
+counts, the functions are said to be overloaded. When you invoke an overloaded
+function, Zen uses the following conditions to determine which version of the
+overloaded function you are calling.
 
  * The type of each argument you are passing.
  * The number of arguments you are passing.
@@ -466,13 +387,11 @@ which computes the area of a rectangle is invoked. The results are respectively
 stored in variables before printing.
 
 Overloading is useful because it allows you to declare and invoke related functions
-with the same name.
-
-For example, you could implement an operation such as `computeVelocity`, which
-obviously evalutes the velocity of an object, say a bike. The name `computeVelocity`
-represents the general action that is being performed. You could implement
-two different versions of calculations using different formulas. Assume
-one version accepts distance and time, whereas another version accepts force,
+with the same name. For example, you could implement an operation such as
+`computeVelocity`, which obviously evalutes the velocity of an object, say a bike.
+The name `computeVelocity` represents the general action that is being performed.
+You could implement two different versions of calculations using different formulas.
+Assume one version accepts distance and time, whereas another version accepts force,
 mass and time. With function overloading you could easily implement this. Otherwise,
 you would have to come up with different names for each function.
 
@@ -480,36 +399,25 @@ When you overload a function, each version can implement anything. You do not
 have to relate the functions to one another. We recommend you to always overload
 functions that perform the same operation but in different ways.
 
-
-+++
-title = "Working with Getters and Setters"
-weight = 10
-+++
+## Working with Getters and Setters
 
 Object-oriented programming helps you hide the details of a class. You can
-expose certain parts of your class to others.
-
-You should generally avoid creating public fields. You can make all your
-fields private. You can give access to the values in these fields with
-*accessors*. Accessors are functions which access fields on the behalf of the
-world outside your class.
+expose certain parts of your class to others. You should generally avoid creating
+public fields. You can make all your fields private. You can give access to the
+values in these fields with accessors. Accessors are functions which access
+fields on the behalf of the world outside your class.
 
 There are two types of accessors.
-
  * Get Accessor
  * Set Accessor
 
-A get accessor is also known as **getter**. It is a function which gets the value
-of a field.
-
-A set accessor is also known as **setter**. It is a function that sets the value
-of a field.
-
-Accessors are usually named `getField` and `setField`. For example, for a
-field named `age`, the accessors are named `getAge` and `setAge`.
+A get accessor is also known as getter. It is a function which gets the value
+of a field. Similarly, a set accessor is also known as setter. It is a function
+that sets the value of a field. Accessors are usually named `getField` and
+`setField`. For example, for a field named `age`, the accessors are named
+`getAge` and `setAge`.
 
 Here is an example.
-
 ```
 class Rocket
 
@@ -541,7 +449,6 @@ You cannot access them directly outside the class. You need to use their accesso
 instead.
 
 Accessors have the following advantages over public fields.
-
  * You can create read-only properties. You can provide only the getter but not
    a setter. Which means other classes can only read the property, but cannot
    write.
@@ -601,10 +508,7 @@ It is designed to provide a consistent way to read and write values of class
 fields while hiding the fields from the outside world. This pattern is very
 common because fields are usually private.
 
-+++
-title = "Using the Property Annotation"
-weight = 11
-+++
+#### Using the Property Annotation
 
 ```
 class Rocket
@@ -632,25 +536,18 @@ class Rectangle
         return width * height
 ```
 
-+++
-title = "Understanding Pass-By-Reference"
-weight = 12
-+++
+## Understanding Pass-By-Reference
 
 When you pass a reference value, such as objects and arrays, as an argument to
 a function, the function receives a copy of the reference. In other words, the object
 itself is not copied when you pass it as an argument, only its reference is copied.
-
 Similarly, when you pass a variable that contains a reference to an object as an
 argument to a function, the function receives a copy of the reference, not the the
-variable itself.
+variable itself. This technique is called pass-by-reference.
 
-This technique is called pass-by-reference. It is applied when you pass reference
-values, such as objects and arrays.
-
-Therefore, if a function changes the reference it received through the parameter,
-it is not reflected in the original variable that was passed to the function.
-
+Pass-by-reference is applied when you pass reference values, such as objects and
+arrays. Therefore, if a function changes the reference it received through the
+parameter, it is not reflected in the original variable that was passed to the function.
 However, if the object is modified through the reference, then the change is
 reflected in the object. Because both the argument and the parameter refer to
 the same object, and not separate copies of the object.
@@ -693,9 +590,7 @@ object is copied, not the object itself.
 
 `changeValue()` receives the reference as the parameter named `square`.
 It modifies the value of `side` contained in the `Square` object to `7`. After
-which it prints out the value stored in it.
-
-When the `changeValue()` function terminates, the control is again transferred to
-`main()`, where the current value of `side` is printed. Since the
-`changeValue()` was invoked with a copy of the reference, the `square` object
-has been changed.
+which it prints out the value stored in it. When the `changeValue()` function
+terminates, the control is again transferred to `main()`, where the current value
+of `side` is printed. Since the `changeValue()` was invoked with a copy of the
+reference, the `square` object has been changed.
