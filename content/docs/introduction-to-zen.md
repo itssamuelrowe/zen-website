@@ -54,7 +54,7 @@ written in Zen will able to run on browsers via WebAssembly.
 #### Zen is Purely Object Oriented
 
 Zen is a purely object-oriented programming language, which means your programs
-are built with *objects*. Objects are programming entities that represent real-world
+are built with objects. Objects are programming entities that represent real-world
 objects.
 
 #### Zen Includes Automatic Memory Management
