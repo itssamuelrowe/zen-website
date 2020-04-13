@@ -1,24 +1,16 @@
 +++
 title = "Classes and Objects"
-chapter = true
-weight = 9
+weight = 8
 +++
 
-### Chapter 9
-# Classes and Objects
+In this chapter, you discover the basics of creating classes in Zen.
 
 You have been using classes since the beginning of this manual. However, until
 now, you have barely scratched the surface, because the classes in the previous
 chapters simply wrapped the `main()` function implicitly. As you will see,
 classes are very powerful and important in Zen.
 
-In this chapter, you discover the basics of creating classes in Zen.
-
-
-+++
-title = "Working with Classes"
-weight = 1
-+++
+## Working with Classes
 
 In the real world, you wll find many objects of the same kind. There are
 thousands of bikes with the same make and model. Each of these bikes was built
@@ -38,23 +30,17 @@ a class declaration.
 class Name
 
     /* Fields */
-    /* Initializers */
     /* Constructors */
     /* Functions */
 ```
 
 A class body can contain the following elements.
 
- * **Constructors**
+ * Constructors
    A constructor is a block of code that runs whenever you create an instance.
    It initializes new instances.
 
- * **Initializers**
-   An initializer is a block of code that runs whenever you create an instance.
-   It initializes new instances. Initializers are similar to constructors,
-   except initializers cannot accept parameters.
-
- * **Fields**
+ * Fields
    A field is a variable declared inside a class body and outside a method body.
    A field provides the state of the class and its instances.
    There are two types of fields, instance variables and static variables.
@@ -64,21 +50,16 @@ A class body can contain the following elements.
    with the `static` keyword it is a static variable. You will learn about static
    variables later in this chapter.
 
- * **Functions**
-   A function is a block of code. It defines *a behavior* of the class and its
+ * Functions
+   A function is a block of code. It defines a behavior of the class and its
    instances.
 
-Do not worry if you do not understand these concepts. You will learn them
-in detail later in the following chapters.
+The order in which you write your class members does not matter. We recommend
+you to follow a uniform order. So you will know where to find your members.
+Further, the fields and functions, that is, the entities that you declare
+inside your class are known as its members.
 
-The order in which you write your class members does not matter, except for
-initializers. We recommend you to follow a uniform order. So you will know where
-to find your members.
-
-The fields and functions, that is, the entities that you declare
-inside your class are known as its **members**.
-
-## Working with Fields
+### Working with Fields
 
 The general form of a field is shown here.
 
@@ -87,7 +68,7 @@ modifiers var identifier
 ```
 
 You can declare fields like any other variable. You can optionally specify
-*modifiers*. The modifiers tell the compiler additional characteristics of the
+modifiers. The modifiers tell the compiler additional characteristics of the
 field such as visibility, mutability, etc.
 
 Basically, there are four modifiers you can use when you declare a field.
@@ -122,26 +103,19 @@ This class definition contains five variables. Given these variables are not
 defined inside a method without the `static` keyword, they are instance variables.
 
 In this example, the `name` field holds the name of the superhero.
-For example, `Batman`.
-
-The `gender` field holds the gender of the superhero. For example, it could be
-`'female'` for Wonder Woman.
-
-The `strength` field represents the muscular strength of the superhero, ranging
-from 1 to 10. For example, The Presence would have a perfect 10.
-
-The `speed` field represents the speed of the superhero, ranging from 1 to 10.
-For example, you guessed it, The Flash would have a perfect 10.
-
-The `intelligence` fields represents the intellect of the superhero. For example,
-Batman would be considered `very intelligent`, just behind Lex Luthor, a supervillan.
+For example, `Batman`. The `gender` field holds the gender of the superhero.
+For example, it could be `'female'` for Wonder Woman. The `strength` field represents
+the muscular strength of the superhero, ranging from 1 to 10. For example, The
+Presence would have a perfect 10. The `speed` field represents the speed of the
+superhero, ranging from 1 to 10. For example, you guessed it, The Flash would
+have a perfect 10. The `intelligence` fields represents the intellect of the
+superhero. For example, Batman would be considered `very intelligent`, just
+behind Lex Luthor, a supervillan.
 
 It is important to remember that a class declaration only creates a blueprint.
 It does not create an actual object. Thus, the previous example does not create
-any object.
-
-To actually create a `Superhero` object, you should use the `new` keyword, which is
-an operator.
+any object. To actually create a `Superhero` object, you should use the `new`
+keyword, which is an operator.
 
 ## Working with the New Operator
 
@@ -156,11 +130,7 @@ Here the `Class` represents the name of the class whose instance you want to
 create. You will learn the significance of the parenthesis when you learn
 about constructors.
 
-You can use the `new` operator to create other kinds of objects, such as arrays.
-You will learn the other forms of the `new` operator later in the course.
-
-To create an instance of the Superhero class, you would write something like this.
-
+To create an instance of the `Superhero` class, you would write something like this.
 ```
 var superman = new Superhero()
 ```
@@ -188,10 +158,9 @@ its own copies of the `Superhero` fields.
 
 To access an instance variable, you can use the member access operator (`.`).
 The dot operator (synonym for the member access operator) links the reference
-of the object with the instance variable.
-
-For example, to assign `'Batman'` to the `name` instance variable contained in
-the `batman` object, you can write the following statement.
+of the object with the instance variable. For example, to assign `'Batman'` to
+the `name` instance variable contained in the `batman` object, you can write the
+following statement.
 
 ```
 batman.name = 'Batman'
@@ -224,7 +193,7 @@ class Superhero
     var intelligence
 
     static function main(...arguments)
-        /* Create the Superhero objects. */
+        // Create the Superhero objects.
 
         var superman = new Superhero()
         superman.name = 'Superman'
@@ -240,7 +209,7 @@ class Superhero
         batman.speed = 6
         batman.intelligence = 'Very Intelligent'
 
-        /* Print the values contained in the instance variables. */
+        // Print the values contained in the instance variables.
         print(serialize(batman, 'json'))
         print(serialize(superman, 'json'))
 }
@@ -265,7 +234,7 @@ The output produced by the Superhero program is shown here.
 }
 ```
 
-## Understanding Object References
+### Understanding Object References
 
 When you declare a variable, you are basically creating a reference variable.
 
@@ -283,15 +252,11 @@ However, this is not true.
 If you ran this code, `shazamKid` and `darlaDudley` will both refer to the same
 object. The assignment of `shazamKid` to `darlaDudley` did not create any new
 copy of the original object. It simply makes `darlaDudley` refer to the same
-object that `shazamKid` references.
+object that `shazamKid` references. Thus, any changes made to the object through
+`darlaDudley` will affect the original object and the changes will reflect through
+`shazamKid`.
 
-Thus, any changes made to the object through `darlaDudley` will affect the
-original object and the changes will reflect through `shazamKid`.
-
-+++
-title = "Conventions for Class Names"
-weight = 2
-+++
+### Conventions for Class Names
 
 Your class name is an identifier. You can use any identifier you want. But we
 suggest you to follow these guidelines.
@@ -304,11 +269,7 @@ suggest you to follow these guidelines.
   life objects. In the real word, you identify objects with nouns. Hence,
   we recommend you to use nouns for naming your classes.
 
-
-  +++
-title = "Understanding Visibility"
-weight = 3
-+++
+### Understanding Visibility
 
 You can control whether the world outside your class can access its members.
 This is known as visibility of the member. In other words, you can expose only
@@ -327,7 +288,7 @@ The visibility modifiers determine which members of your class are visible
 to other classes. With access control, you can tell the compiler how your class
 can be used by other classes. You can use only one visibility modifier at a time.
 
-## Private Access
+#### Private Access
 
 You can use the private modifier to hide a class member from all the other classes.
 In other words, a private member is accessible only within its class.
@@ -339,7 +300,7 @@ use the private modifier.
 In fact, fields are marked as private by default. You will learn more about this
 later in this chapter.
 
-## Secret Access
+#### Secret Access
 
 A secret member is accessible to the following two groups.
     * Subclasses of a class
@@ -347,7 +308,7 @@ A secret member is accessible to the following two groups.
 
 You will learn more about subclasses and packages later in this manual.
 
-## Public Access
+#### Public Access
 
 In some cases, you want your class members to be completely visible to the
 outside world. In other words, any class can access the member.
@@ -361,18 +322,14 @@ course implicitly.
 The `main()` function of an application has to be public. Otherwise, it cannot
 not be invoked by the Zen Virtual Machine (ZVM).
 
-+++
-title = "Understanding Instance and Static Members"
-weight = 4
-+++
+## Understanding Instance and Static Members
 
-## Instance Members
+#### Instance Members
 
 Instance variables are variables that you declare inside a class body and
 without the `static` keyword. They are declared outside functions, constructors,
 and initializers. These variables are initialized when you create an instance
 of the class. Further, each instance of the class gets a copy of these variables.
-
 In fact, when any member of a class, except constructors, is declared
 without the `static` keyword you are essentially declaring an instance member.
 An instance member can be accessed only with a reference to an instance.
@@ -386,14 +343,13 @@ such instance members and simulates as if each instance gets its own copy.
 Actually, if memory were not a concern, each instance would get its own copy
 of such members to improve performance.
 
-## Static Members
+#### Static Members
 
 Class variables are variables that you declare within a class with the `static`
 keyword. They are outside functions, constructors, and initializers. Remember,
-you declare class variables with the `static` keyword.
-
-Unlike instance variables, each instance of a class does not get a copy of class
-variables. A class member can be accessed without a reference to an instance.
+you declare class variables with the `static` keyword. Unlike instance variables,
+each instance of a class does not get a copy of class variables. A class member
+can be accessed without a reference to an instance.
 
 Static members belong to the class instead of a specific instance. Which means
 if you make a member static, you can access it without an instance.
@@ -413,7 +369,7 @@ Here is an example of a class variable.
 // Circle.zen
 
 class Circle
-    static var PI = 3.14159265f
+    static final PI = 3.14159265
 ```
 
 You can access a class member without a reference to an instance. You

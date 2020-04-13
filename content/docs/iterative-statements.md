@@ -3,7 +3,7 @@ title = "Iterative Statements: How Your Programs Repeat Things"
 weight = 7
 +++
 
-In this chapter you will learn the two iterative statements in Zen.
+In this module, you will learn the two iterative statements in Zen.
 
 One thing computers enjoy doing more than anything else is repeating themselves.
 Imagine your teacher asked you to write "I love Game of Thrones!" a hundred
