@@ -1,5 +1,5 @@
 +++
-title = "Basics of Zen"
+title = "Basics of Zen: The Tradition of Hello World!"
 weight = 2
 +++
 

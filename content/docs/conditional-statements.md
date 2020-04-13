@@ -1,77 +1,60 @@
 +++
-title = "Conditional Statements"
-chapter = true
+title = "Conditional Statements: How Your Programs Make Choices"
 weight = 6
 +++
 
-### Chapter 6
+In this module, you will learn about the if statement.
 
-# Conditional Statements: How Your Programs Make Choices
-
-So far in this book, all the programs have run in a linear fashion. In
+So far in this documentation, all the programs have run in a linear fashion. In
 other words, your programs simply ran from start to finish with each
 statement being executed one after the other. However, in most real-life
 situations, your programs will need to make decisions whether to skip a
 few statements, repeat things multiple times, or even jump from one
 part of your code to another part. Such actions are performed using
-control statements. You will learn about these statements in this chapter
-and the next chapter.
+control statements. You will learn about these statements in this module
+and the next module.
 
 A programming language provides control statements that allow your
 programs to alter the flow of execution. Zen's control statements are
 divided into the following categories: selection, iteration, and jump.
 
-## Selection Statement
+##### Selection Statement
 
 Selection statements allow your program to choose different paths of
 execution based on a Boolean expression. They are also known as
 conditional statements. They are the focus of this chapter.
 
-## Iteration Statement
+##### Iteration Statement
 
 Iteration statements enable your program to repeat one or more
 statements in your code. They are also known as loop statements. You
 will learn more about these statements in the next chapter.
 
-## Jump Statements
+##### Jump Statements
 
 By far, jump statements are the simplest control statements. As the
 name suggests, they allow your program to jump from one location to
 another location. Given their simplicity, they don't get their own
-chapter. However, we explain them in detail whenever their usage is
+module. However, we explain them in detail whenever their usage is
 required or when a concept is closely associated with them.
 
-In this chapter, we will learn about the selection statements in Zen. You
-discover two Zen statements that let your programs make decisions.
-First you will learn about the if statement which allows you to execute a
-statement or a block of statements based on a Boolean condition. After
-which, you will learn about the switch statement, which is an elegant
-version of the if statement.
-
+In this module, we will learn about the if statement which allows you to
+execute a statement or a block of statements based on a Boolean condition.
 The if statement relies heavily on the use of Boolean expressions. In
-general, these expressions produce true or false. Which is why, this
-chapter begins by showing you how to write simple Boolean expressions
-that test the value of a variable. You have already learnt the various
-logical and comparison operators, which produce Boolean values. You
-can always go back to the previous chapter to jog your memory
+general, these expressions produce true or false. You have already learnt
+the various logical and comparison operators, which produce Boolean values. You
+can always go back to the previous module to jog your memory.
 
-
-
-
-
-+++
-title = "Using If Statements"
-+++
+## Using If Statements
 
 The if statement is one of the most important statements in any
 programming language. The following sections describe the various
-forms of the if statement in Zen.
-Basically, the if statement allows your program to branch conditionally.
-It is a compound statement.
+forms of the if statement in Zen. Basically, the if statement allows your
+program to branch conditionally. It is a compound statement.
 
 Here is the general form of the *if statement*.
 
-```java
+```
 if condition
     statement
 else
@@ -100,7 +83,7 @@ Here is a simple example of the if statement.
 function main(...arguments)
     var age = 18
     if age >= 18
-        println('You are eligible to vote!')
+        print('You are eligible to vote!')
 ```
 
 In this example, a variable named age is initialized to 18. Using the if
@@ -116,7 +99,6 @@ You are eligible to vote!
 As you can see, the else clause was not written in this example. By now
 if you compiled and ran this program, you wold know that the compiler
 did not generate any errors. This is because the else clause is optional.
-
 Can you guess what would have happened if the Boolean expression
 evaluated to false in this example? The entire if statement would have
 been skipped because the else clause is absent.
@@ -127,7 +109,6 @@ statement under a clause.
 
 Now, let's extend the program to print a message when the user is not
 eligible to vote.
-
 ```
 // VoteEligibility2.zen {
 
@@ -143,8 +124,9 @@ The if clause is exactly the same as the previous example. The only
 changes here are the else clause and the age variable initialized to 14.
 Since the condition evaluates to `false`, the if clause is skipped and the
 else clause is executed. The output of this program is shown below.
-
-*Sorry, kid. You cannot vote.*
+```
+Sorry, kid. You cannot vote.
+```
 
 Notice that the statements inside the blocks are indented. Indentation
 refers to the space and tab characters that you write before you write any
@@ -179,29 +161,21 @@ function main(...arguments)
         print('Sorry, kid. You cannot vote.')
 ```
 
+## Nested If Statements
 
-+++
-title = "Nested If Statements"
-+++
-
-You can write any statement under the *if* and *else* clauses.
+You can write any statement under the if and else clauses.
 In fact, you could write another if statement under them.
-This is known as nesting. So, if you write an *if statement* inside
-another *if statement*, we call the arrangment as *nested if statements.*
+This is known as nesting. So, if you write an if statement inside
+another if statement, we call the arrangment as nested if statements.
+The if statement written inside another if statement is called the
+inner if statement. Similarly, the if statement which contains another if statement is
+called the outer if statement.
 
-The *if statement* written inside another *if statement* is called the
-*inner if statement*.
-
-Similarly, the *if statement* which contains another *if statement* is
-called the *outer if statement*.
-
-*Nested if statements* are very common in programming. When you nest
-*if statements*, you must always remember that the *else clause* is
-associated with the nearest *if clause*.
-
-You can nest any number of *if statements* to any depth. We recommend you to
-keep it as simple as possible. Also, be sure to use indentation to indicate the
-structure of the nested statements.
+Nested if statements are very common in programming. When you nest
+if statements, you must always remember that the else clause is
+associated with the nearest if clause. You can nest any number of if statements
+to any depth. We recommend you to keep it as simple as possible. Also, be sure
+to use indentation to indicate the structure of the nested statements.
 
 Here is the general form of a nested if statement.
 
@@ -218,14 +192,11 @@ else
         statement4
 ```
 
-Remember, you construct a *nested if statement* with regular *if statements*.
-So, you don't have to use *if statements* under both the clauses
-if you don't have to. Again, all the *else clauses* are optional.
+Remember, you construct a nested if statement with regular if statements.
+So, you do not have to use if statements under both the clauses
+if you do not have to. Again, all the else clauses are optional.
 
-
-+++
-title = "Using If-Else-If Ladders"
-+++
+## Using If-Else-If Ladders
 
 A common programming construct based on a sequence if statements is the if-else-if
 ladder.
@@ -242,8 +213,7 @@ else
     statement4
 ```
 
-These ladders are basically a group of nested *if statements*.
-The *if statements* are executed from the top to down. As soon
+The if statements are executed from the top to down. As soon
 as one of the conditions associated with an if clause is `true`,
 then the statement associated with that if clause is executed,
 and the rest of the ladder is skipped. If none of the conditions are

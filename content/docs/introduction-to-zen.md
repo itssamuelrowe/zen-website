@@ -1,5 +1,5 @@
 +++
-title = "Introduction to Zen"
+title = "Introduction: Yet Another Programming Language"
 weight = 1
 +++
 
