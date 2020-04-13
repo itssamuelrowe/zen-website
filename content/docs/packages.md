@@ -1,44 +1,41 @@
 +++
-title = "Packages"
-chapter = true
+title = "Packages: How Your Source Code is Organized"
 weight = 15
 +++
 
-### Chapter 15
-# Packages: How Your Source Code is Organized
+In this module, you will learn about creating packages and importing
+packages.
 
-Imagine you have two classes, one of which represents a component that reads
+As new features are implemented, the source code of a project grows in complexity.
+It becomes hard to maintain the source code when everything is crammed into a
+single source file. Therefore, an intuitive feature of a programming language is
+to allow programmers to split their source code into multiple files. The symbols
+defined in these source files can be imported and exported outside a given source
+file or compilation unit as needed.
+
+Further, imagine you have two classes, one of which represents a component that reads
 data from the console. Simiarly, the other class represents a device
 which scans papers. Although both the classes are different in functionality,
 both the classes can be named `Scanner`. So far, you have learnt that you cannot
 declare two classes with the same name. An obvious solution is to name these
-classes differently.
+classes differently. However, that would not be effective considering software
+projects always depend on external code.
 
-However, Zen provides a feature known as package that allows you to create
-namespaces. In this chapter, you will learn about creating packages and importing
-packages.
+In order to address these problems, Zen provides a feature known as package that
+allows you to create namespaces.
 
-
-
-+++
-title = "Understanding Packages"
-weight = 1
-+++
+## Understanding Packages
 
 A package is a group of related classes, annotations and enumerations bundled
-together. Henceforth, when we refer to classes in this chapter we mean to include
-other components such as annotations and enumerations, unless stated otherwise.
-
-Packages are like containers that provide your classes a namespace. For example,
-a package allows you to create two classes named `Scanner`. You simply need to
-store the classes in different packages. However, the class names should be
-unique within their respective packages.
+together. Packages are like containers that provide your classes a namespace.
+For example, a package allows you to create two classes named `Scanner`. You
+simply need to store the classes in different packages. However, the class names
+should be unique within their respective packages.
 
 A package provides a namespace and visibility control to your classes. You can
-tell which classes are available to the world outside your package.
-
-> As of now, Zen allows only public classes. In the future, the visibility of
-> classes outside a package can be manipulated by the developer.
+tell which classes are available to the world outside your package. As of this
+writing, Zen allows only public classes. In the future, the visibility of
+classes outside a package may be manipulated by the developer. No promises though.
 
 Packages are organized in a hierarchical fashion. When you want to use a class
 from a different package, you need to import it. So far in this course, all the
@@ -50,13 +47,10 @@ classes.
 Further, without packages you would need to make sure that the name you choose
 for your classes are different from the class names chosen by other programmers.
 In fact, the Zen API consists of hundreds of classes. It would be impossible
-to find a unique name for each of these classes. This is why, the Zen API is
-ogranized as packages.
+to find a unique name for each of these classes. This is why, the Zen Standard
+API is ogranized as packages.
 
-+++
-title = "Creating Packages"
-weight = 2
-+++
+## Creating Packages
 
 If you do not create a package, your classes are stored in the default package,
 which is why you were able to create classes so far. The default package has no
@@ -74,26 +68,18 @@ In real-life applications, your source code is spread across many files. Any
 number of source files can be a part of a package, as long as they are all stored
 in the same directory.
 
-
-
-+++
-title = "Understanding Qualified Names"
-weight = 3
-+++
+### Understanding Qualified Names
 
 You can create a hierarchy of packages using a qualified name. We mentioned this
-term in the previous section without going into its details.
+term in the previous section without going into its details. A qualified name is
+a sequence of identifiers separated by dots.
 
-A qualified name is a sequence of identifiers separated by dots.
 Here are some examples of qualified names.
-
 ```
 zen.core
-zen.support
+zen.net
 zen.io
-com.onecube
-com.onecube.model
-com.onecube.storage
+zen.fs
 ```
 
 Here is the general form of a qualified name.
@@ -108,32 +94,26 @@ qualified name, you should change the directory structure, too.
 
 For example, a package `com.example` should be stored in the directory `com/example`.
 
-
-
-+++
-title = "Understanding Package Lookup"
-weight = 4
-+++
+### Understanding Package Lookup
 
 Your packages should be organized correspondingly in your directories. But how
-does the Zen Virtual Machine determine which directory to look for your packages?
-
+does the virtual machine determine which directory to look for your packages?
 By default Zen looks for packages in the current working directory, the directory
-from where you are invoking the virtual machine. Further, the Zen Virtual Machine
-looks for packages in the directories listed in the search path of the application.
-You can specify the search path for an application in two ways.
+from where you are invoking the virtual machine. Further, the virtual machine
+looks for packages in the directories listed in the lookup path of the application.
+You can specify the lookup path for an application in two ways.
 
- * Create the `ZEN_SEARCH_PATH` environment variable and store the directories
+ * Create the `ZEN_PATH` environment variable and store the directories
    where your packages are stored. You usually need to avoid this technique because
-   it applies to all the applications that run on the Zen Virtual Machine, not
+   it applies to all the applications that run on the virtual machine, not
    just one application.
 
- * Specify the search path with the `--search` parameter when you invoke the
-   Zen Virtual Machine. This is the preferred way to specify the search path.
-   This allows the search path to be specific to individual programs, without
+ * Specify the lookup path with the `--path` parameter when you invoke the
+   virtual machine. This is the preferred way to specify the lookup path.
+   This allows the lookup path to be specific to individual programs, without
    affecting other programs.
 
-The general form of a search path is shown here.
+The general form of a lookup path is shown here.
 ```
 path1;path2;path3
 ```
@@ -145,7 +125,7 @@ use the colon (`:`) symbol to separate the paths.
 
 Consider the following package which declares a class.
 ```
-// com/example/Message.zen
+// example/Message.zen
 
 class Message
 
@@ -154,6 +134,7 @@ class Message
     function new(message)
         this.message = message
 
+    @Override
     function toString()
         return message
 ```
@@ -163,42 +144,42 @@ Now create another class in the default package like this.
 // PackageExample.zen
 
 function main(...arguments)
-    var message = new com.example.Message('Hello, world!')
+    var message = new example.Message('Hello, world!')
     print(message)
 ```
 
 The `PackageExample` classs is declared in the default package. Whereas, the
-`Message` class is declared in the `com.example` package. The `PackageExample` class
+`Message` class is declared in the `example` package. The `PackageExample` class
 uses the `Message` class, which is declared in another package. Therefore, you
-need to specify the fully qualified name of `Message`, which is `com.example.Message`.
+need to specify the fully qualified name of `Message`, which is `example.Message`.
 Basically, the fully qualified name of the `Message` class consists of its
 containing package and its name.
 
 However, classes in the same package can access other classes without their fully
-qualified names. Assume two classes, `com.example.Message` and `com.example.User`,
+qualified names. Assume two classes, `example.Message` and `example.User`,
 both the classes are in the same package. The `User` class can access `Message`
 without its fully qualified name, and vice versa.
 
 In order for your program to find the `Message` class, one of following conditions
 should be met.
 
- * The program should be executed from a directory immediately above the `com.example`
+ * The program should be executed from a directory immediately above the `example`
    package.
- * The `ZEN_SEARCH_PATH` environment variable must include the path to `com\example`.
- * The `--search` parameter must specify the path to `com\example`.
+ * The `ZEN_PATH` environment variable must include the path to `example`.
+ * The `--path` parameter must specify the path to `example`.
 
-When you specify a search path, the path should not include `com\example` itself.
+When you specify a lookup path, the path should not include `com\example` itself.
 Instead you need to specify the directory which contains the package directory.
 Assume the `com\example` directory is stored in `C:\learning\com\example`.
-You need include `C:\learning` in the search path, not `C:\learning\com\example`.
+You need include `C:\learning` in the lookup path, not `C:\learning\com\example`.
 
 We recommend you to run the example programs from their root directories. Which
-means you do not have to create the search path for now. For example, assume the
+means you do not have to create the lookup path for now. For example, assume the
 `PackageExample` program shown earlier was stored in `C:\learning` and the
-`com.example` package was stored in `C:\learning\com\example`. To run this program,
+`example` package was stored in `C:\learning\example`. To run this program,
 you need to execute the following commands in sequence from `C:\learning`.
 ```
-C:\learning>zen PackageExample.zen com/example/Message.zen
+C:\learning>zc PackageExample.zen example/Message.zen
 C:\learning>zvm PackageExample
 ```
 
@@ -209,10 +190,13 @@ Hello, world!
 
 The commands for other operating systems are similar with little tweaks.
 
-+++
-title = "Working with the Import Statement"
-weight = 5
-+++
+## Working with the Import Statement
+
+In Zen, the import statement allows a compilation unit to refer to external
+classes. Without the use of the import statement, the only way to refer to a
+class outside the current compilation unit is to use a fully qualified name.
+Further, all the classes declared in Zen are exported by default. As of this
+writing, there is no way to override this behavior.
 
 You have learnt how packages allow you to keep your classes organized. However,
 as you have seen accessing classes from different packages require fully qualified
@@ -271,13 +255,13 @@ function main(...arguments)
 
 You always need to write the import statements at the beginning of your source
 file. You cannot write the import statement after or inside components such
-as classes, functions, enumerations, and annotations.
+as classes and functions.
 
 Sometimes you import many classes from the same package, which means you will
 have to write an import statement for each class. This is again cumbersome.
 Zen provides a solution to this problem: the wildcard import statement.
-
 In such an import statement, you specify the package name followed by an asterisk.
+
 Here is the general form of such a statement.
 ```
 import level1.level2.*
@@ -302,7 +286,6 @@ There are two drawbacks with wildcard import statements.
 
  * It clutters your local namespace, if multiple packages have classes
    with the same names. This forces you to use fully qualified class names.
-
    When you import multiple packages with a wildcard import, chances are two
    or more classes may have the same name. The import statement does not
    generate an error during such imports. Instead an error is generated when
@@ -317,28 +300,22 @@ other sub-packages. It includes a special package called `zen.core`. The classes
 in this package are always implicitly imported to your source files. Many classes
 such as `Object`, `Integer`, and `String` are defined in this package.
 
-
-+++
-title = "Naming Conventions for Packages"
-weight = 6
-+++
+## Naming Conventions for Packages
 
 You can use any identifier you wish to name your packages. However, we recommend
 you to follow these naming conventions when you create your packages.
 
- * Packages are usually named using the authors domain name. The domain name
-   is written backwards to obtain the package name.
-
-   For example, imagine you own the domain `example.com`. You can create a
-   package named `com.example` for all your packages.
-
-   Using your domain name allows you to create package names which are unique
-   from the packages created by other programmers around the world.
+ * Packages are usually named using the name of the project.
+   For example, imagine you are working a text editor called Kush. You can
+   create a package named `kush` for all your classes. Using your project name
+   allows you to create package names which are unique from the packages created
+   by other programmers around the world.
 
  * Package names are usually written in lowercase letters. This helps you to
    avoid conflicts with class names.
 
- * You can add other subpackages to the package named after your domain.
-   For example, you can create a program named `Tesla` and place all its source
-   files under the `com.example.tesla` package. It can further contain other
-   subpackages.
+ * You can add other subpackages to the package named after your project.
+   For example, you can create a subpackage named `workspace` and place all its
+   source files under the `kush.workspace` package. It can further contain other
+   subpackages. However, we recommend you to work with two levels of packages
+   to avoid convolution.
