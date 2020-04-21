@@ -9,26 +9,26 @@ about:
   button:
     enable : true
     label : "Read More"
-    URL : "about"
+    URL : "blog/why-i-created-zen-yet-another-programming-language"
 
 # service
 service:
   enable : true
   title : "Zen... Why?"
   item:
-    - title : "Light Weight"
+    - title : "Simple"
       icon : "ti-palette"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "The syntax of Zen was intentionally designed to restrict the number of ways a certain task can be achieved."
       highlighted : false
 
-    - title : "Portable"
+    - title : "Dynamically Typed"
       icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "Zen is based on the hypothesis that with certain restrictions on the language, both productivity and efficiency can be achieved."
       highlighted : true
 
-    - title : "Fast"
+    - title : "Fast Compile Time"
       icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "The simplistic design of Zen, both in terms of syntax and semantics, allows you to compile your source codes quickly. "
       highlighted : false
 
 # portfolio
@@ -95,5 +95,5 @@ clients_logo_slider:
 # blog
 blog:
   enable : true
-  title : "Blogs"
+  title : "Docs"
   # blog post comes from "content/blog" folder
