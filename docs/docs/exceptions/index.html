@@ -5,8 +5,8 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
-  <meta name="author" content="Johnathan Smith">
+  <meta name="description" content="Zen is a general-purpose programming language designed to build simple, reliable and efficient programs.">
+  <meta name="author" content="Samuel Rowe">
   <meta name="generator" content="Hugo 0.69.0" />
 
   <style>
@@ -40,7 +40,7 @@
 <!-- preloader end -->
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img style="height: 48px; width: auto" src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,7 @@
         
         
         <li class="nav-item ">
-          <a class="nav-link" href="https://itssamuelrowe.github.io/zen-website/download">Download</a>
+          <a class="nav-link" href="https://github.com/itssamuelrowe/Zen/releases">Download</a>
         </li>
         
         
@@ -82,41 +82,23 @@
   </nav>
 </header>
 
-  
-<section class="page-title bg-primary position-relative overflow-hidden">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">Exceptions</h1>
-      </div>
-    </div>
+  <div class="bg-primary" style="height: 140px">
   </div>
-  
-  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
-  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
-  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
-  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
-  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
-  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
-</section>
-
-
 
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h3 class="font-tertiary mb-5">Exceptions</h3>
-          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          
+          <p class="font-secondary">Published by <a href="https://itssamuelrowe.github.io"><span class="text-primary">Samuel Rowe</span></a></p>
           <div class="content">
-            <img src="https://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-            <h3 id="chapter-14">Chapter 14</h3>
-<h1 id="exceptions">Exceptions</h1>
+            <img src="https://itssamuelrowe.github.io/zen-website" alt="Exceptions" class="img-fluid rounded float-left mr-5 mb-4">
+            <p>In this module, you will see what happens when programs encounter unexpected
+situations.</p>
 <p>No matter how carefully you design and test your program, errors are bound to
-happen one or the other. When they do, chances are your program crashes to a halt.</p>
-<p>In this chapter you will see what happens when Zen encounters an unexpected
-situation. Many techniques have been invented to deal with such errors.
+happen one or the other. When they do, chances are your program crashes to a halt.
+Many techniques have been invented to deal with such errors.
 Many languages such as C and Assembly, errors must be manually checked and handled
 by using error codes. This technique is very verbose and inelegant. Zen provides
 a sophisticated error handling mechanism. Zen implements an object-oriented
@@ -126,26 +108,23 @@ your program at runtime. In other words, an exception is an error that occurs
 when your program is running. Exceptions allow your programs to recognize errors
 and respond to them gracefully. In fact, sometimes your program can resolve the
 situation and resume execution normally.</p>
-<p>+++
-title = &ldquo;Understanding Exceptions&rdquo;
-weight = 1
-+++</p>
 <p>In Zen, errors of all types are generalized into a special type of object
-known as an exception. An <em>exception</em> is an object which represents an unexpected
+known as an exception. An exception is an object which represents an unexpected
 event. It occurs when your program is running. It disturbs the flow of your program.
-Exceptions are used to indicate many types of error conditions.</p>
+Exceptions are used to indicate many types of error conditions which may
+occur for many reasons. For example, the programmers did not anticipate possible
+problems, or the application is untested, or the program encounters situations
+such as corrupt data, corrupt files, network problems, hardware device failure,
+and so on.</p>
 <p>An exception is represented by an object. It holds the information about the
 event such as the condition, the stacktrace, the location, and a message.
-The exception object is usually refered to as <em>exception</em>. You can <em>throw and
-catch</em> an exception.</p>
-<p>After an exception object is created, it is thrown. The Zen Virtual Machine
-attempts to find an exception handler for the exception by backtracking the list
-of functions that have been called, known as the call stack. If a handler is found,
-the exception is caught.</p>
-<p>An exception may occur for many reasons. For example, the programmers did not
-anticipate possible problems, or the application is untested, or the program
-encounters situations such as corrupt data, corrupt files, network problems,
-hardware device failure, and so on.</p>
+The exception object is usually refered to as exception. You can throw and
+catch an exception. After an exception object is created, it is thrown. The
+virtual machine attempts to find an exception handler for the exception by
+backtracking the list of functions that have been called, known as the call
+stack. If a handler is found, the exception is caught. Otherwise, the virtual
+machine invokes the default exception handler and terminates the current
+thread.</p>
 <p>Here are some common exceptions.</p>
 <ul>
 <li><code>OutOfMemoryError</code></li>
@@ -158,11 +137,11 @@ hardware device failure, and so on.</p>
 <p>When an unexpected situation occurs, an exception object is created and thrown.
 The function which invoked the current function can handle the exception or
 let it pass through. At some point, the exception is caught and handled.
-Exceptions can be thrown either by your code, or the Zen Virtual Machine, or
-any libraries your code uses.</p>
-<p>Exceptions thrown by the Zen Virtual Machine indicate errors that violate the
-rules of Zen. For example, if you try to access an instance member through a
-<code>null</code> reference, the virtual machine throws a <code>NullPointerException</code>.</p>
+Exceptions can be thrown either by your code, or the virtual machine, or
+any libraries your code uses. Exceptions thrown by the virtual machine indicate
+errors that violate the rules of Zen. For example, if you try to access an
+instance member through a <code>null</code> reference, the virtual machine throws a
+<code>NullPointerException</code>.</p>
 <p>Exception handling in Zen uses the following keywords.</p>
 <ul>
 <li><code>try</code></li>
@@ -203,17 +182,12 @@ finally
     statementN
 </code></pre><p>Here, <code>Exception1</code> and <code>Exception2</code> indicate the type of exception to catch.
 You will learn more about the mechanics involved throughout this chapter.</p>
-<p>+++
-title = &ldquo;Advantages of Exceptions&rdquo;
-weight = 2
-+++</p>
+<h3 id="advantages-of-exceptions">Advantages of Exceptions</h3>
 <p>The advantages of exceptions are as follows.</p>
 <h4 id="you-can-separate-error-handling-from-your-algorithm">You can separate error handling from your algorithm.</h4>
 <p>With exceptions you can separate the details of what happens when an unexpected
-situation occurs. You can separate such logic from the main logic of your program.</p>
-<p>In other programming languages, error detection, reporting, and handling often
-lead to complex and confusing code.</p>
-<p>Exceptions allow you to keep your source code clean and organized.</p>
+situation occurs. You can separate such logic from the main logic of your program.
+This allows you to keep your source code clean and organized.</p>
 <h4 id="your-functions-do-not-have-to-forward-errors">Your functions do not have to forward errors.</h4>
 <p>Exceptions have the ability to propagate up the stack of functions currently
 invoked. For example, assume that a function is the fourth function in a series
@@ -229,15 +203,15 @@ represents an input/output error. Its descendants represent more specific errors
 For example, <code>InvalidPathException</code> indicates that a path could not be found
 on the disk.</p>
 <p>All these advantages make exceptions reliable, stable, and secure.</p>
-<p>+++
-title = &ldquo;Understanding Exception Types&rdquo;
-weight = 3
-+++</p>
+<h2 id="understanding-exception-types">Understanding Exception Types</h2>
 <p>An exception object contains the information about the error condition. It
 includes information such as stacktrace and message. Perhaps, the most important
 information is the cause of the error. It is indicated by the name of the exception
 class used to create the exception object. Usually, you will use exception
 objects only to figure out the kind of error that occurred.</p>
+<blockquote>
+<p>Inheritance is currently under development.</p>
+</blockquote>
 <p>In order to understand exceptions fully, you need to understand the class
 hierarchy of exceptions first. All exception classes are subclasses of the
 <code>Throwable</code> class. In other words, the <code>Throwable</code> is the superclass of all
@@ -258,12 +232,12 @@ Exceptions which are intended to be unchecked should inherit this class.
 about checked and unchecked exceptions in the next lecture.</p>
 <p>The second subclass of the <code>Throwable</code> class is the <code>Error</code> class. It defines
 exceptions that your program should generally not catch. These exceptions are
-usually thrown by the Zen Virtual Machine to indicate errors related to the
+usually thrown by the virtual machine to indicate errors related to the
 environment. <code>OutOfMemoryError</code> is an example of such an error which indicates
 memory exhaustion.</p>
 <p>The following code segement shows the public methods found inside the <code>Throwable</code>
 class. Please refere the Zen documentation for more reference.</p>
-<pre><code>class Throwable extends Serializable
+<pre><code>class Throwable
 
     function getMessage()
     function getCause()
@@ -295,12 +269,9 @@ when you tried to perform an I/O operation.</p>
 This exception is thrown to indicate that class coud not be found.</p>
 </li>
 </ul>
-<p>Zen includes hundreds of exceptions. You can learn more about them from the
-Zen documentation.</p>
-<p>+++
-title = &ldquo;Catching Exceptions&rdquo;
-weight = 4
-+++</p>
+<p>Zen includes many exceptions. You can learn more about them from the
+Zen Standard API documentation.</p>
+<h2 id="catching-exceptions">Catching Exceptions</h2>
 <p>Before you learn to catch exceptions in your program, you need to see what happens
 when you do not catch them. Here is an example which generates an exception.</p>
 <pre><code>// GenerateException.zen
@@ -311,12 +282,10 @@ function main(...arguments)
     var c = a / b
 
     printf('%d / %d = %d\n', a, b, c)
-</code></pre><p>When the Zen Virtual Machine tries to evalute <code>a / b</code>, it throws an exception
+</code></pre><p>When the virtual machine tries to evalute <code>a / b</code>, it throws an exception
 because you tried to divide an integer by zero.</p>
 <p>The output of this example is shown here.</p>
-<pre><code>Exception in thread 'main' zen.core.ArithmeticException: Division by zero
-    at GenerateException.main(GenerateException.zen:6)
-</code></pre><p>The output contains the type of the exception, an error message and the
+<p>The output contains the type of the exception, an error message and the
 stacktrace which points to the location from where the exception occurred.
 The stack trace includes the class names, the function names, the file names, and
 the line numbers through which the exception propogated.</p>
@@ -344,10 +313,6 @@ function main(...arguments)
     var b = 0
     var c = divide(a, b)
     printf('%d / %d = %d\n', a, b, c)
-</code></pre><p>Here is the output generated by this example.</p>
-<pre><code>Exception in thread 'main' zen.core.ArithmeticException: Division by zero
-    at GenerateException2.divide(GenerateException2.zen:4)
-    at GenerateException2.main(GenerateException2.zen:9)
 </code></pre><p>As you can see, the stacktrace includes the class name, the function name,
 the file name, and the line numbers through which the exception propogated.
 The exception can occur in any source file, any class, and any function. This
@@ -408,14 +373,11 @@ in the stack trace, the program control jumps out of the try clause and is
 transferred to the catch clause. A reference to the exception object is stored
 in the parameter of the catch clause. Once the catch clause is done executing,
 the statement following the catch clause is executed. The control never returns
-back to the location where the exception occurred. Because exceptions are not
+back to the location where the exception occurred because exceptions are not
 like functions to return back.</p>
 <p>A catch clause can catch an exception only if one of the statements within the
 try clause associated with it throws an exception.</p>
-<p>+++
-title = &ldquo;Multiple Catch Clauses&rdquo;
-weight = 5
-+++</p>
+<h3 id="multiple-catch-clauses">Multiple Catch Clauses</h3>
 <p>In some cases, more than one type of exception can be thrown by the statements
 in your try clause. To handle such situations, you can specify more than one
 catch clause, each catching a different type of exception. When an exception is
@@ -457,10 +419,10 @@ it. The program successfully divides <code>a</code> and <code>b</code> and print
 exception. When the exception is thrown, the catch clause which handles the
 <code>NullPointerException</code> exception is triggered. Thus, the second print
 statement in the try clause is not executed.</p>
-<p>+++
-title = &ldquo;Understanding Multiple Catch Clauses and Inheritance&rdquo;
-weight = 6
-+++</p>
+<h3 id="understanding-multiple-catch-clauses-and-inheritance">Understanding Multiple Catch Clauses and Inheritance</h3>
+<blockquote>
+<p>Inheritance is currently under development. You may skip this section.</p>
+</blockquote>
 <p>When you use multiple catch clauses, you need arrange them properly. Imagine
 that you have two catch clauses. The first catch clause handles exceptions of
 type <code>A</code> and the second catch clause handles exceptions of type <code>B</code>. The order
@@ -492,16 +454,15 @@ function main(...arguments)
         print('Error: This is a generic message.')
     catch ArithmeticException exception
         print('Error: You cannot divide an integer by zero.')
-</code></pre><p>If you try to compile this example, the compiler will generate the following error.</p>
-<pre><code>MultipleCatchClauses2.zen:14: error: overshadowed exception ArithmeticException
-</code></pre><p>The error basically means that your second catch clause will never be executed
+</code></pre><p>If you try to compile this example, the compiler will generate an error.
+The error basically means that your second catch clause will never be executed
 because the first catch clause handles it. You need to change the order of
 the catch clauses to fix this problem.</p>
-<h2 id="handling-all-exceptions-in-one-place">Handling all Exceptions in One Place</h2>
+<h3 id="handling-all-exceptions-in-one-place">Handling all Exceptions in One Place</h3>
 <p>You can create a general catch clause such that all the exceptions are handled
-by a single catch clause. You have learnt how implicit casting works with exceptions.
-Using this concept, we can create a general catch clause.</p>
-<p>You know that the <code>Throwable</code> class is the superclass of all exceptions. Which
+by a single catch clause. You have learnt how the virtual machine finds exception
+handlers. Using this concept, we can create a general catch clause.
+You know that the <code>Throwable</code> class is the superclass of all exceptions. Which
 means, if you write a catch clause which handles <code>Throwable</code>, then all types
 of exceptions are handled by it.</p>
 <p>Here is the general form of such a catch clause.</p>
@@ -523,19 +484,15 @@ catch only the exceptions that are meant to be caught.</p>
     statementN
 catch Exception exception
     ...
-</code></pre><p>+++
-title = &ldquo;Throwing Exceptions&rdquo;
-weight = 7
-+++</p>
+</code></pre><h2 id="throwing-exceptions">Throwing Exceptions</h2>
 <p>So far, you have only learnt to catch exceptions. In particular, the exceptions
 that were thrown by Zen. However, you can throw an exception manually, using
 the throw statement.</p>
 <p>The general form of throw statement is shown here.</p>
 <pre><code>throw expression
 </code></pre><p>The throw statement is a simple statement. Therefore, it is terminated by a
-semicolon.</p>
-<p>Here, the <code>expression</code> must evaluates to an object whose type inherits <code>Throwable</code>.
-It can be an instance of the <code>Throwable</code> class itself.</p>
+semicolon. Here, the <code>expression</code> must evaluates to an object whose type inherits
+<code>Throwable</code>. It can be an instance of the <code>Throwable</code> class itself.</p>
 <p>Unlike C++, you cannot throw primitive values such as integer or floating-point
 decimals. In fact, you cannot throw an instance of a class which does not inherit
 the <code>Throwable</code> class. Which means, you cannot throw objects such as strings
@@ -562,76 +519,52 @@ function main(...arguments)
         printGreetings('Chikka Chikka Slim Shady')
     catch IllegalArgumentException exception
         print('Error: ' + exception.message)
-```
-
-This program generates the following output.
-```
-Error: That hardly sounds like a name.
-```
-
-The `printGreetings()` function validates the name before printing it. It considers
-`'Chikka Chikka Slim Shady'` an invalid name. Therefore, when you specify this name
-it throws an exception. The `IllegalArgumentException` class is an in-built Zen
+</code></pre><p>This program generates the following output.</p>
+<pre><code>Error: That hardly sounds like a name.
+</code></pre><p>The <code>printGreetings()</code> function validates the name before printing it. It considers
+<code>'Chikka Chikka Slim Shady'</code> an invalid name. Therefore, when you specify this name
+it throws an exception. The <code>IllegalArgumentException</code> class is an in-built Zen
 class. It is thrown to indicate an illegal argument passed to a function.
-You can pass a message to its constructor.
-
-In the `main()` function, we invoke the `printGreetings()` function with `&quot;Chikka
-Chikka Slim Shady&quot;` as the name. This causes it to throw an exception. The
+You can pass a message to its constructor.</p>
+<p>In the <code>main()</code> function, we invoke the <code>printGreetings()</code> function with <code>&quot;Chikka Chikka Slim Shady&quot;</code> as the name. This causes it to throw an exception. The
 main function catches this exception. You can retrieve the message that you
-specified to the constructor of the `IllegalArgumentException` with the `message`
-property. The catch clause retrieves the message and prints it on the console.
-
-+++
-title = &quot;Understanding Checked and Unchecked Exceptions&quot;
-weight = 8
-+++
-
-The concepts of checked and unchecked exceptions were inspired from Java. These
+specified to the constructor of the <code>IllegalArgumentException</code> with the <code>message</code>
+property. The catch clause retrieves the message and prints it on the console.</p>
+<h2 id="understanding-checked-and-unchecked-exceptions">Understanding Checked and Unchecked Exceptions</h2>
+<p>The concepts of checked and unchecked exceptions were inspired from Java. These
 concepts are simplified in Zen and are observed only as design principles,
 meaning the compiler does not enforce these rules. However, the compiler
 marks each function with the exceptions it may throw. This information can be
-used outside Zen by other tools.
-
-An *unchecked exception* is an exception which you can handle if you want.
-Any exception class which inherits the `RuntimeException` class is an unchecked
+used outside Zen by other tools.</p>
+<p>An unchecked exception is an exception which you can handle if you want.
+Any exception class which inherits the <code>RuntimeException</code> class is an unchecked
 exception. The compiler does not force you to handle it. It is assumed that the
 application cannot do anything to recover from such exceptions at runtime.
-So far, all the exceptions you have used are unchecked exceptions.
-
-A *checked exception* is an exception which you need to handle. However, the
+So far, all the exceptions you have used are unchecked exceptions.</p>
+<p>A checked exception is an exception which you need to handle. However, the
 compiler does not force you to handle it. Any exception class which inherits the
-*Exception* class is a checked exception. An example of a checked exception is the
-`IOException` class.
-
-Unchecked exceptions allow you to ignore exceptions that you cannot recover
+<code>Exception</code> class is a checked exception. An example of a checked exception is the
+<code>IOException</code> class.</p>
+<p>Unchecked exceptions allow you to ignore exceptions that you cannot recover
 from, and only handle the ones you can. This leads to less clutter. However,
 many programmers simply ignore unchecked exceptions. Turning all exceptions
-into unchecked exceptions would lead to complicated error handling.
-
-+++
-title = &quot;Using the Finally Clause&quot;
-+++
-
-When an exception is thrown, the execution of your code jumps abruptly, possibly
+into unchecked exceptions would lead to complicated error handling.</p>
+<h2 id="using-the-finally-clause">Using the Finally Clause</h2>
+<p>When an exception is thrown, the execution of your code jumps abruptly, possibly
 from one function to another function. This means some important segment of your
 code may be skipped. This could be a problem in some functions.
-
 For example, if a function opens a file in the beginning and closes it before
 returning, then you will not want the code that closes the file to be skipped
-by an exception. The finally clause is designed to control such situations.
-
-You can create a finally clause in a try statement. The finally clause is
+by an exception. The finally clause is designed to control such situations.</p>
+<p>You can create a finally clause in a try statement. The finally clause is
 basically a block of code that will always be executed, regardless of an exception
 being thrown or not. If an exception is thrown, the finally block will execute
-even if no catch clause matches.
-
-If a function is returns to the caller from inside a try/catch clauses, via an
+even if no catch clause matches.</p>
+<p>If a function is returns to the caller from inside a try/catch clauses, via an
 uncaught exception or a return statement, the finally clause is executed just
 before the function returns. The finally clause is optional. However, a try clause
-requires at least one catch or a finally clause to follow it.
-
-```
-// FinallyExample.zen
+requires at least one catch or a finally clause to follow it.</p>
+<pre><code>// FinallyExample.zen
 
 function divide(a, b)
     return a / b
@@ -644,20 +577,10 @@ function main(...arguments)
         printf('%d / %d = %d\n', a, b, c)
     finally
         print('This statement was executed.')
-```
-
-This example generates the following output.
-
-```
-This statement was executed.
-Exception in thread 'main' zen.core.ArithmeticException: Division by zero
-    at FinallyExample.divide(FinallyExample.zen:4)
-    at FinallyExample.main(FinallyExample.zen:10)
-```
-
-As you can see, the print statement inside the finally clause was executed
+</code></pre><p>As you can see, the print statement inside the finally clause was executed
 even when an exception was thrown. Without the finally clause the exception
-would have prevented the print statement from being executed.</code></pre>
+would have prevented the print statement from being executed.</p>
+
           </div>
         </div>
       </div>
@@ -665,61 +588,9 @@ would have prevented the print statement from being executed.</code></pre>
   </section>
 
 
-
-<section class="section section-on-footer" data-background="https://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<footer class="bg-dark">
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+    <p class="mb-0 text-light">Copyright © 2017—2020 <a href="https://itssamuelrowe.github.io">Samuel Rowe</a></p>
   </div>
 </footer>
 
@@ -740,5 +611,16 @@ would have prevented the print statement from being executed.</code></pre>
 <script src="https://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
 
 <!-- google analytics -->
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-149427149-5', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>

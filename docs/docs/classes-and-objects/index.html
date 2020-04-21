@@ -5,8 +5,8 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
-  <meta name="author" content="Johnathan Smith">
+  <meta name="description" content="Zen is a general-purpose programming language designed to build simple, reliable and efficient programs.">
+  <meta name="author" content="Samuel Rowe">
   <meta name="generator" content="Hugo 0.69.0" />
 
   <style>
@@ -40,7 +40,7 @@
 <!-- preloader end -->
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img style="height: 48px; width: auto" src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,7 @@
         
         
         <li class="nav-item ">
-          <a class="nav-link" href="https://itssamuelrowe.github.io/zen-website/download">Download</a>
+          <a class="nav-link" href="https://github.com/itssamuelrowe/Zen/releases">Download</a>
         </li>
         
         
@@ -82,46 +82,24 @@
   </nav>
 </header>
 
-  
-<section class="page-title bg-primary position-relative overflow-hidden">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">Classes and Objects</h1>
-      </div>
-    </div>
+  <div class="bg-primary" style="height: 140px">
   </div>
-  
-  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
-  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
-  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
-  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
-  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
-  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
-</section>
-
-
 
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h3 class="font-tertiary mb-5">Classes and Objects</h3>
-          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          
+          <p class="font-secondary">Published by <a href="https://itssamuelrowe.github.io"><span class="text-primary">Samuel Rowe</span></a></p>
           <div class="content">
-            <img src="https://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-            <h3 id="chapter-9">Chapter 9</h3>
-<h1 id="classes-and-objects">Classes and Objects</h1>
+            <img src="https://itssamuelrowe.github.io/zen-website" alt="Classes and Objects" class="img-fluid rounded float-left mr-5 mb-4">
+            <p>In this chapter, you discover the basics of creating classes in Zen.</p>
 <p>You have been using classes since the beginning of this manual. However, until
 now, you have barely scratched the surface, because the classes in the previous
 chapters simply wrapped the <code>main()</code> function implicitly. As you will see,
 classes are very powerful and important in Zen.</p>
-<p>In this chapter, you discover the basics of creating classes in Zen.</p>
-<p>+++
-title = &ldquo;Working with Classes&rdquo;
-weight = 1
-+++</p>
+<h2 id="working-with-classes">Working with Classes</h2>
 <p>In the real world, you wll find many objects of the same kind. There are
 thousands of bikes with the same make and model. Each of these bikes was built
 with the same blueprint.</p>
@@ -136,24 +114,17 @@ a class declaration.</p>
 <pre><code>class Name
 
     /* Fields */
-    /* Initializers */
     /* Constructors */
     /* Functions */
 </code></pre><p>A class body can contain the following elements.</p>
 <ul>
 <li>
-<p><strong>Constructors</strong>
+<p>Constructors
 A constructor is a block of code that runs whenever you create an instance.
 It initializes new instances.</p>
 </li>
 <li>
-<p><strong>Initializers</strong>
-An initializer is a block of code that runs whenever you create an instance.
-It initializes new instances. Initializers are similar to constructors,
-except initializers cannot accept parameters.</p>
-</li>
-<li>
-<p><strong>Fields</strong>
+<p>Fields
 A field is a variable declared inside a class body and outside a method body.
 A field provides the state of the class and its instances.
 There are two types of fields, instance variables and static variables.
@@ -164,23 +135,20 @@ with the <code>static</code> keyword it is a static variable. You will learn abo
 variables later in this chapter.</p>
 </li>
 <li>
-<p><strong>Functions</strong>
-A function is a block of code. It defines <em>a behavior</em> of the class and its
+<p>Functions
+A function is a block of code. It defines a behavior of the class and its
 instances.</p>
 </li>
 </ul>
-<p>Do not worry if you do not understand these concepts. You will learn them
-in detail later in the following chapters.</p>
-<p>The order in which you write your class members does not matter, except for
-initializers. We recommend you to follow a uniform order. So you will know where
-to find your members.</p>
-<p>The fields and functions, that is, the entities that you declare
-inside your class are known as its <strong>members</strong>.</p>
-<h2 id="working-with-fields">Working with Fields</h2>
+<p>The order in which you write your class members does not matter. We recommend
+you to follow a uniform order. So you will know where to find your members.
+Further, the fields and functions, that is, the entities that you declare
+inside your class are known as its members.</p>
+<h3 id="working-with-fields">Working with Fields</h3>
 <p>The general form of a field is shown here.</p>
 <pre><code>modifiers var identifier
 </code></pre><p>You can declare fields like any other variable. You can optionally specify
-<em>modifiers</em>. The modifiers tell the compiler additional characteristics of the
+modifiers. The modifiers tell the compiler additional characteristics of the
 field such as visibility, mutability, etc.</p>
 <p>Basically, there are four modifiers you can use when you declare a field.</p>
 <ul>
@@ -208,20 +176,18 @@ class Superhero
 </code></pre><p>This class definition contains five variables. Given these variables are not
 defined inside a method without the <code>static</code> keyword, they are instance variables.</p>
 <p>In this example, the <code>name</code> field holds the name of the superhero.
-For example, <code>Batman</code>.</p>
-<p>The <code>gender</code> field holds the gender of the superhero. For example, it could be
-<code>'female'</code> for Wonder Woman.</p>
-<p>The <code>strength</code> field represents the muscular strength of the superhero, ranging
-from 1 to 10. For example, The Presence would have a perfect 10.</p>
-<p>The <code>speed</code> field represents the speed of the superhero, ranging from 1 to 10.
-For example, you guessed it, The Flash would have a perfect 10.</p>
-<p>The <code>intelligence</code> fields represents the intellect of the superhero. For example,
-Batman would be considered <code>very intelligent</code>, just behind Lex Luthor, a supervillan.</p>
+For example, <code>Batman</code>. The <code>gender</code> field holds the gender of the superhero.
+For example, it could be <code>'female'</code> for Wonder Woman. The <code>strength</code> field represents
+the muscular strength of the superhero, ranging from 1 to 10. For example, The
+Presence would have a perfect 10. The <code>speed</code> field represents the speed of the
+superhero, ranging from 1 to 10. For example, you guessed it, The Flash would
+have a perfect 10. The <code>intelligence</code> fields represents the intellect of the
+superhero. For example, Batman would be considered <code>very intelligent</code>, just
+behind Lex Luthor, a supervillan.</p>
 <p>It is important to remember that a class declaration only creates a blueprint.
 It does not create an actual object. Thus, the previous example does not create
-any object.</p>
-<p>To actually create a <code>Superhero</code> object, you should use the <code>new</code> keyword, which is
-an operator.</p>
+any object. To actually create a <code>Superhero</code> object, you should use the <code>new</code>
+keyword, which is an operator.</p>
 <h2 id="working-with-the-new-operator">Working with the New Operator</h2>
 <p>The general form of the <code>new</code> operator to create an instance of a class is
 shown here.</p>
@@ -229,9 +195,7 @@ shown here.</p>
 </code></pre><p>Here the <code>Class</code> represents the name of the class whose instance you want to
 create. You will learn the significance of the parenthesis when you learn
 about constructors.</p>
-<p>You can use the <code>new</code> operator to create other kinds of objects, such as arrays.
-You will learn the other forms of the <code>new</code> operator later in the course.</p>
-<p>To create an instance of the Superhero class, you would write something like this.</p>
+<p>To create an instance of the <code>Superhero</code> class, you would write something like this.</p>
 <pre><code>var superman = new Superhero()
 </code></pre><p>In this example, we created a variable called <code>superman</code>. Then we created an
 instance of <code>Superhero</code> and assigned its reference to the variable <code>superman</code>.
@@ -249,9 +213,9 @@ the values stored in the <code>batman</code> object, because each <code>Superher
 its own copies of the <code>Superhero</code> fields.</p>
 <p>To access an instance variable, you can use the member access operator (<code>.</code>).
 The dot operator (synonym for the member access operator) links the reference
-of the object with the instance variable.</p>
-<p>For example, to assign <code>'Batman'</code> to the <code>name</code> instance variable contained in
-the <code>batman</code> object, you can write the following statement.</p>
+of the object with the instance variable. For example, to assign <code>'Batman'</code> to
+the <code>name</code> instance variable contained in the <code>batman</code> object, you can write the
+following statement.</p>
 <pre><code>batman.name = 'Batman'
 </code></pre><p>Here, the <code>batman</code> variable contains the reference to a <code>Superhero</code> object.
 <code>name</code> indicates the instance variable to modify.</p>
@@ -276,7 +240,7 @@ class Superhero
     var intelligence
 
     static function main(...arguments)
-        /* Create the Superhero objects. */
+        // Create the Superhero objects.
 
         var superman = new Superhero()
         superman.name = 'Superman'
@@ -292,7 +256,7 @@ class Superhero
         batman.speed = 6
         batman.intelligence = 'Very Intelligent'
 
-        /* Print the values contained in the instance variables. */
+        // Print the values contained in the instance variables.
         print(serialize(batman, 'json'))
         print(serialize(superman, 'json'))
 }
@@ -311,7 +275,7 @@ class Superhero
     &quot;speed&quot; : 6,
     &quot;intelligence&quot; : &quot;Very Intelligent&quot;
 }
-</code></pre><h2 id="understanding-object-references">Understanding Object References</h2>
+</code></pre><h3 id="understanding-object-references">Understanding Object References</h3>
 <p>When you declare a variable, you are basically creating a reference variable.</p>
 <p>For example, what do you think the following code segment performs?</p>
 <pre><code>var shazamKid = new Superhero()
@@ -323,13 +287,10 @@ However, this is not true.</p>
 <p>If you ran this code, <code>shazamKid</code> and <code>darlaDudley</code> will both refer to the same
 object. The assignment of <code>shazamKid</code> to <code>darlaDudley</code> did not create any new
 copy of the original object. It simply makes <code>darlaDudley</code> refer to the same
-object that <code>shazamKid</code> references.</p>
-<p>Thus, any changes made to the object through <code>darlaDudley</code> will affect the
-original object and the changes will reflect through <code>shazamKid</code>.</p>
-<p>+++
-title = &ldquo;Conventions for Class Names&rdquo;
-weight = 2
-+++</p>
+object that <code>shazamKid</code> references. Thus, any changes made to the object through
+<code>darlaDudley</code> will affect the original object and the changes will reflect through
+<code>shazamKid</code>.</p>
+<h3 id="conventions-for-class-names">Conventions for Class Names</h3>
 <p>Your class name is an identifier. You can use any identifier you want. But we
 suggest you to follow these guidelines.</p>
 <ul>
@@ -341,10 +302,7 @@ For example, <code>BikeRace</code>, <code>CarGame</code>, <code>CollegeLibrary</
 life objects. In the real word, you identify objects with nouns. Hence,
 we recommend you to use nouns for naming your classes.</li>
 </ul>
-<p>+++
-title = &ldquo;Understanding Visibility&rdquo;
-weight = 3
-+++</p>
+<h3 id="understanding-visibility">Understanding Visibility</h3>
 <p>You can control whether the world outside your class can access its members.
 This is known as visibility of the member. In other words, you can expose only
 certain members to public, that is the world outside your class, while keep other
@@ -360,7 +318,7 @@ in Zen.</p>
 <p>The visibility modifiers determine which members of your class are visible
 to other classes. With access control, you can tell the compiler how your class
 can be used by other classes. You can use only one visibility modifier at a time.</p>
-<h2 id="private-access">Private Access</h2>
+<h4 id="private-access">Private Access</h4>
 <p>You can use the private modifier to hide a class member from all the other classes.
 In other words, a private member is accessible only within its class.</p>
 <p>Some members of a class are useful only within the class. There is no point in
@@ -368,12 +326,12 @@ such members being accessed from other classes. In such cases, you should always
 use the private modifier.</p>
 <p>In fact, fields are marked as private by default. You will learn more about this
 later in this chapter.</p>
-<h2 id="secret-access">Secret Access</h2>
+<h4 id="secret-access">Secret Access</h4>
 <p>A secret member is accessible to the following two groups.
 * Subclasses of a class
 * Other classes in the same package</p>
 <p>You will learn more about subclasses and packages later in this manual.</p>
-<h2 id="public-access">Public Access</h2>
+<h4 id="public-access">Public Access</h4>
 <p>In some cases, you want your class members to be completely visible to the
 outside world. In other words, any class can access the member.</p>
 <p>You can use the public modifier to make a member completely visible to all
@@ -382,16 +340,13 @@ the classes. Unlike fields, functions are <code>public</code> by default.</p>
 course implicitly.</p>
 <p>The <code>main()</code> function of an application has to be public. Otherwise, it cannot
 not be invoked by the Zen Virtual Machine (ZVM).</p>
-<p>+++
-title = &ldquo;Understanding Instance and Static Members&rdquo;
-weight = 4
-+++</p>
-<h2 id="instance-members">Instance Members</h2>
+<h2 id="understanding-instance-and-static-members">Understanding Instance and Static Members</h2>
+<h4 id="instance-members">Instance Members</h4>
 <p>Instance variables are variables that you declare inside a class body and
 without the <code>static</code> keyword. They are declared outside functions, constructors,
 and initializers. These variables are initialized when you create an instance
-of the class. Further, each instance of the class gets a copy of these variables.</p>
-<p>In fact, when any member of a class, except constructors, is declared
+of the class. Further, each instance of the class gets a copy of these variables.
+In fact, when any member of a class, except constructors, is declared
 without the <code>static</code> keyword you are essentially declaring an instance member.
 An instance member can be accessed only with a reference to an instance.</p>
 <p>When you create an instance of a class, the instance gets its own copy of the
@@ -402,12 +357,12 @@ such members will exhaust the memory. Instead Zen keeps only one copy of
 such instance members and simulates as if each instance gets its own copy.
 Actually, if memory were not a concern, each instance would get its own copy
 of such members to improve performance.</p>
-<h2 id="static-members">Static Members</h2>
+<h4 id="static-members">Static Members</h4>
 <p>Class variables are variables that you declare within a class with the <code>static</code>
 keyword. They are outside functions, constructors, and initializers. Remember,
-you declare class variables with the <code>static</code> keyword.</p>
-<p>Unlike instance variables, each instance of a class does not get a copy of class
-variables. A class member can be accessed without a reference to an instance.</p>
+you declare class variables with the <code>static</code> keyword. Unlike instance variables,
+each instance of a class does not get a copy of class variables. A class member
+can be accessed without a reference to an instance.</p>
 <p>Static members belong to the class instead of a specific instance. Which means
 if you make a member static, you can access it without an instance.
 You should always remember that whenever you create an instance of a class,
@@ -422,7 +377,7 @@ function. This is why you should always declare the main function as static.</p>
 <pre><code>// Circle.zen
 
 class Circle
-    static var PI = 3.14159265f
+    static final PI = 3.14159265
 </code></pre><p>You can access a class member without a reference to an instance. You
 can access a class member using the class name followed by the member access
 operator (<code>.</code>) and the name of the member.</p>
@@ -443,61 +398,9 @@ choice was made to improve code clarity.</p>
   </section>
 
 
-
-<section class="section section-on-footer" data-background="https://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<footer class="bg-dark">
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+    <p class="mb-0 text-light">Copyright © 2017—2020 <a href="https://itssamuelrowe.github.io">Samuel Rowe</a></p>
   </div>
 </footer>
 
@@ -518,5 +421,16 @@ choice was made to improve code clarity.</p>
 <script src="https://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
 
 <!-- google analytics -->
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-149427149-5', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>

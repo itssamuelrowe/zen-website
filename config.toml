@@ -52,15 +52,9 @@ theme_color = "#41228e"
 author = "Samuel Rowe"
 description = "Zen is a general-purpose programming language designed to build simple, reliable and efficient programs."
 # google analytics
-google_analytics_id = "" # Your ID
+google_analytics_id = "UA-149427149-5" # Your ID
 # copyright
 copyright = "Copyright &copy; 2017&mdash;2020 [Samuel Rowe](https://itssamuelrowe.github.io)"
-
-
-# contact
-[params.contact]
-enable = true
-form_action = "#" # contact form works with : https://formspree.io
 
 # preloader
 [params.preloader]

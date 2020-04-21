@@ -12,21 +12,21 @@
     
     
     <item>
-      <title></title>
+      <title>Introduction: Yet Another Programming Language</title>
       <link>https://itssamuelrowe.github.io/zen-website/docs/introduction-to-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/introduction-to-zen/</guid>
-      <description>Chapter 1 Introduction to Zen This chapter is a gentle introduction to the world of Zen.</description>
+      <description>This module is a gentle introduction to the world of Zen.</description>
     </item>
     
     <item>
-      <title>Basics of Zen</title>
+      <title>Basics of Zen: The Tradition of Hello World!</title>
       <link>https://itssamuelrowe.github.io/zen-website/docs/basics-of-zen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/basics-of-zen/</guid>
-      <description>Chapter 3 Basics of Zen In this chapter, you will learn the basics of writing simple Zen programs.</description>
+      <description>In this module, you will learn the basics of writing simple Zen programs.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/variables-values-and-data-types/</guid>
-      <description>Chapter 4 Variables, Values, and Data Types In this chapter, you will learn the basics of working with variables in Java.</description>
+      <description>You will learn the basics of working with variables, values, and data types in Zen.</description>
     </item>
     
     <item>
@@ -44,35 +44,25 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/operators-operands-and-expressions/</guid>
-      <description>Chapter 4 +++ title = &amp;ldquo;Understanding Operators&amp;rdquo; +++
-In this lecture, you will learn about operators.</description>
+      <description>In this module, you will learn about operators, operands, and expressions.</description>
     </item>
     
     <item>
-      <title>Conditional Statements</title>
+      <title>Conditional Statements: How Your Programs Make Choices</title>
       <link>https://itssamuelrowe.github.io/zen-website/docs/conditional-statements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/conditional-statements/</guid>
-      <description>Chapter 6 Conditional Statements: How Your Programs Make Choices So far in this book, all the programs have run in a linear fashion.</description>
+      <description>In this module, you will learn about the if statement.</description>
     </item>
     
     <item>
-      <title>Loop Statements</title>
+      <title>Iterative Statements: How Your Programs Repeat Things</title>
       <link>https://itssamuelrowe.github.io/zen-website/docs/iterative-statements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/iterative-statements/</guid>
-      <description>Chapter 7 Loop Statements: How Your Programs Repeat Things One thing computers enjoy doing more than anything else is repeating themselves.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Object Oriented Programming</title>
-      <link>https://itssamuelrowe.github.io/zen-website/docs/introduction-to-object-oriented-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/docs/introduction-to-object-oriented-programming/</guid>
-      <description>Chapter 8 Introduction to Object Oriented Programming Zen is a pure object-oriented programming language.</description>
+      <description>In this module, you will learn the two iterative statements in Zen.</description>
     </item>
     
     <item>
@@ -81,7 +71,7 @@ In this lecture, you will learn about operators.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/classes-and-objects/</guid>
-      <description>Chapter 9 Classes and Objects You have been using classes since the beginning of this manual.</description>
+      <description>In this chapter, you discover the basics of creating classes in Zen.</description>
     </item>
     
     <item>
@@ -90,25 +80,16 @@ In this lecture, you will learn about operators.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/functions/</guid>
-      <description>Chapter 10 Functions In Zen all programs are built with classes, which means there is at least one class.</description>
+      <description>You will learn how to create your own functions, invoking functions, accepting parameters, and returning values.</description>
     </item>
     
     <item>
-      <title>Constructors</title>
+      <title>Constructors: How Your Objects are Initialized</title>
       <link>https://itssamuelrowe.github.io/zen-website/docs/constructors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/constructors/</guid>
-      <description>Chapter 11 Constructors: How Your Objects are Initialized When you create an object using the new operator, Zen does several things for you.</description>
-    </item>
-    
-    <item>
-      <title>Superclasses and Subclasses</title>
-      <link>https://itssamuelrowe.github.io/zen-website/docs/superclasses-and-subclasses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/docs/superclasses-and-subclasses/</guid>
-      <description>Chapter 11 Superclasses and Subclasses Inheritance is a very important feature of object-oriented programming, a mechanism which allows one class to inherit the behaviors and attributes from another class.</description>
+      <description>You will learn about constructors, including their declaration and invocation.</description>
     </item>
     
     <item>
@@ -117,16 +98,16 @@ In this lecture, you will learn about operators.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/exceptions/</guid>
-      <description>Chapter 14 Exceptions No matter how carefully you design and test your program, errors are bound to happen one or the other.</description>
+      <description>In this module, you will see what happens when programs encounter unexpected situations.</description>
     </item>
     
     <item>
-      <title>Packages</title>
+      <title>Packages: How Your Source Code is Organized</title>
       <link>https://itssamuelrowe.github.io/zen-website/docs/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://itssamuelrowe.github.io/zen-website/docs/packages/</guid>
-      <description>Chapter 15 Packages: How Your Source Code is Organized Imagine you have two classes, one of which represents a component that reads data from the console.</description>
+      <description>In this module, you will learn about creating packages and importing packages.</description>
     </item>
     
     <item>
@@ -148,57 +129,12 @@ In this lecture, you will learn about operators.</description>
     </item>
     
     <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.1/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <title>Why I Created Zen: Yet Another Programming Language</title>
+      <link>https://itssamuelrowe.github.io/zen-website/blog/why-i-created-zen-yet-another-programming-language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.2/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.3/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.4/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.5/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.5/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+      <guid>https://itssamuelrowe.github.io/zen-website/blog/why-i-created-zen-yet-another-programming-language/</guid>
+      <description>Zen is a general-purpose programming language designed to build simple, reliable and efficient programs.</description>
     </item>
     
   </channel>

@@ -27,10 +27,6 @@
   </url>
   
   <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/docs/introduction-to-object-oriented-programming/</loc>
-  </url>
-  
-  <url>
     <loc>https://itssamuelrowe.github.io/zen-website/docs/classes-and-objects/</loc>
   </url>
   
@@ -40,10 +36,6 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/docs/constructors/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/docs/superclasses-and-subclasses/</loc>
   </url>
   
   <url>
@@ -60,41 +52,6 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/docs/strings/</loc>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/about/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.1/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.2/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.3/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.4/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income.5/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://itssamuelrowe.github.io/zen-website/blog/amazon-increase-income/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
@@ -127,6 +84,10 @@
   
   <url>
     <loc>https://itssamuelrowe.github.io/zen-website/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://itssamuelrowe.github.io/zen-website/blog/why-i-created-zen-yet-another-programming-language/</loc>
   </url>
   
 </urlset>

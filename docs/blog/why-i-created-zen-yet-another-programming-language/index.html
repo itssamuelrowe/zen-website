@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Why I Created Zen: Yet Another Programming Language</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Zen is a general-purpose programming language designed to build simple, reliable and efficient programs.">
+  <meta name="author" content="Samuel Rowe">
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  <style>
+    :root{
+      --primary-color:#41228e;
+    }
+  </style>
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="/zen-website/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="/zen-website/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="/zen-website/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/zen-website/css/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/zen-website/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/zen-website/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img style="height: 48px; width: auto" src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://itssamuelrowe.github.io/zen-website"> Home </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://itssamuelrowe.github.io/zen-website/docs">Docs</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://itssamuelrowe.github.io/zen-website/blog">Blog</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://github.com/itssamuelrowe/Zen/releases">Download</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <div class="bg-primary" style="height: 140px">
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="font-tertiary mb-5">Why I Created Zen: Yet Another Programming Language</h3>
+          
+          <p class="font-secondary">Published by <a href="https://itssamuelrowe.github.io"><span class="text-primary">Samuel Rowe</span></a></p>
+          <div class="content">
+            <img src="https://itssamuelrowe.github.io/zen-website/images/blog/why-i-created-zen.jpg" alt="Why I Created Zen: Yet Another Programming Language" class="img-fluid rounded float-left mr-5 mb-4">
+            <p>Zen is a general-purpose programming language designed to build simple, reliable and efficient programs. When I say simple, reliable, and efficient I mean it. The syntax of Zen is designed to be clear, which means the code you write speaks for itself. Further, the architecture of the runtime is designed to run your programs reliably, regardless of the platform, with efficiency. You can develop Zen applications in nearly any environment and deploy with little to no performance loss irrespective of the platform.</p>
+<p>As of this writing, Zen is currently under development. The alpha version of the compiler and virtual machine will be available shortly. Meanwhile, you can browse the source code at <a href="https://github.com/itssamuelrowe/zen">https://github.com/itssamuelrowe/zen</a>.</p>
+<p>I decided to create my own programming language because of my interest in compiler design since 9th grade. Also, I did not find any existing language that met all of my needs. In this article, I will explain the concepts that I feel are necessary for a dynamically typed programming language that is both enjoyable and efficient. My goal is not to build a toy language but to create a full-blown programming language. Why? Because I think it is really cool to create a programming language that everybody loves.</p>
+<h2 id="simple">Simple</h2>
+<p>The syntax of Zen was intentionally designed to restrict the number of ways a certain task can be achieved. For example, unlike other dynamically typed programming languages methods and attributes cannot be introduced to an object at runtime. As a Zen programmer, you will focus more on the logic of your program rather than dealing with the convoluted state of your objects.
+The tokens required to write your code are minimal. With this in mind, tokens such as semicolons to terminate simple statements, braces to enclose blocks, etc. which are common in C-like programming languages were removed.</p>
+<p>Zen offers good readability and clear syntax with an emphasis on natural language. At first glance, code written in Zen looks almost like pseudo-code. You can write code and execute it quickly to test your ideas.</p>
+<p>For newcomers and beginners, Zen is incredibly easy to learn and use. Given the learning curve is simple, you do not have to be an expert to apply Zen in your everyday life. Zen automatically takes care of things like garbage collection, releasing resources, etc. for you.</p>
+<p>Are you still not convinced Zen is simple? In that case, here is an example of the binary search algorithm written in Zen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">values</span>, <span style="color:#a6e22e">key</span>)
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">start</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">end</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">size</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+    <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">end</span>)
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">middle</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">end</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">start</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">values</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">==</span> <span style="color:#a6e22e">key</span>
+             <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span>
+             <span style="color:#66d9ef">break</span>
+        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">values</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">key</span>
+            <span style="color:#a6e22e">end</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">middle</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">else</span>
+            <span style="color:#a6e22e">end</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">middle</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">main</span>(...<span style="color:#a6e22e">arguments</span>)
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">values</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">array</span>(<span style="color:#ae81ff">53</span>, <span style="color:#ae81ff">118</span>, <span style="color:#ae81ff">519</span>, <span style="color:#ae81ff">1216</span>)
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">values</span>, <span style="color:#ae81ff">27</span>)
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>
+        <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#39;Found key 27 at index &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.\n&#39;</span>)
+    <span style="color:#66d9ef">else</span>
+        <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#39;Could not find key 27.&#39;</span>)
+</code></pre></div><h2 id="dynamically-typed">Dynamically Typed</h2>
+<p>Zen is dynamically typed, which helps you avoid writing support code. However, it was designed to detect many programming errors at compile-time, where other dynamically typed languages report these errors at runtime. This provides the compiler with opportunities for optimizations. Thus, you can enjoy both the increased runtime efficiency and the developer experience.</p>
+<p>In fact, the premise on which I started Zen was to create a programming language that was inspired by both Python and Java. The simple and clear syntax from Python was adopted to improve the developer experience. Similarly, the runtime architecture was inspired by Java to increase the runtime efficiency.</p>
+<p>The hypothesis is that with certain restrictions on the language, both productivity and efficiency can be achieved. The restrictions imposed by the language allows the compiler to take advantage of static information available in the source code. For example, in Zen attributes and methods cannot be introduced dynamically to objects. Further, if static methods cannot be invoked via objects (like C#), the compiler can emit a single instruction to invoke static functions. Similarly, when methods invoke other methods in the same class, the compiler can simply emit an instruction to invoke the target method via the virtual method table. The same technique can be applied to attributes. Do you see what I am trying to say?</p>
+<h2 id="portable-write-once-run-anywhere">Portable: Write Once, Run Anywhere</h2>
+<p>The programs you write in Zen are compiled to bytecodes that are encoded in a special binary format known as Binary Entity Format (FEB). When you run your program, the virtual machine interprets these bytecodes. For each platform, a specific implementation of the virtual machine is required. However, once the implementation is done, your programs can run on the virtual machine seamlessly.</p>
+<h2 id="lack-of-implicit-idioms">Lack of Implicit Idioms</h2>
+<p>Undefined values, truthy/falsy values, and many other implicit idioms are unavailable in Zen. The idea is to limit the number of ways you can express something. For example, Boolean values are always derived from relational and equality expressions. There is no implicit conversion of objects to Boolean values. This design choice, inspired by Java and C#, allows you to write readable and safe code.
+Personally, I believe that more bugs arise from implicit idioms than other types of errors. Additionally, such bugs are hard to track down. For example, when a programming language treats dissimilar objects as if they were the same, it leads to unexpected behaviors when the programmer attempts to use them.</p>
+<p>Here is an example from JavaScript. Given, JavaScript did not allow default parameters before ES6 was released, it was a common pattern to simulate default parameters as shown below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">example</span>(<span style="color:#a6e22e">value</span>) {
+    <span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">1</span>;
+}
+</code></pre></div><p>In this example, the function updates <code>value</code> to 1 when no argument is passed. However, if you tried to pass 0 as an argument, the truthy test in JavaScript would fail causing your variable to hold 1 instead of 0. Obviously, there is a better way of writing this. But we would not have this problem, to begin with, if the language did not have truthy/falsy values.</p>
+<h2 id="concurrency">Concurrency</h2>
+<p>In CPython and MRuby, the reference implementations of Python and Ruby, respectively, a global interpreter lock (GIL) exists. The GIL protects the internals of the interpreters from race conditions that could corrupt data. In a multithreaded context, this lock allows only one thread to execute code at any given time. For example, if you have 4 threads working on a 4-core machine, only one thread and one core will be active at any given time.</p>
+<p>In Zen, the virtual machine implements threads as first-class citizens. The various internal components (including garbage collector, JIT compiler, class loader) are thread-safe. Therefore, the global interpreter lock does not exist. This means your programs can take complete advantage of multicore systems.</p>
+<h2 id="fast-compile-time">Fast Compile Time</h2>
+<p>The simplistic design of Zen, both in terms of syntax and semantics, allows you to compile your source codes quickly. This stands true even though the compiler makes multiple passes.
+Further, the dependency management in Zen is elegant. The compiler processes only classes that are directly imported. The programs you write in Zen are compiled to a compact binary format known as Binary Entity Format (FEB). When the compiled classes are imported from your source code, the compiler makes use of a simple symbol loader which discards unnecessary information and loads only the required symbols.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I understand that this post was rather long. However, it presents a broad overview of some of the most important features of the Zen programming language. Many of the features discussed here are not available in Zen right now. However, this article describes the overall vision for Zen.</p>
+<p>I believe creating Zen was worth giving a shot. At worst, I would have enjoyed three years learning to write a compiler and a virtual machine. On the other end, I would have created a programming language others appreciate. Finally, my deepest hope is that after reading this article, you will be motivated to explore Zen and find out how it might help with your own projects.</p>
+<p>It should be noted that I am not a compiler design expert. I understand that the arguments I put forward in this post are easily beatable. In fact, I may be wrong about a few things that I mentioned. If you feel like getting in touch or would like to contribute, here is my email address: <a href="mailto:samuelrowe1999@gmail.com">samuelrowe1999@gmail.com</a>.</p>
+<p>Thank you for reading.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<footer class="bg-dark">
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright © 2017—2020 <a href="https://itssamuelrowe.github.io">Samuel Rowe</a></p>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://itssamuelrowe.github.io/zen-website/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://itssamuelrowe.github.io/zen-website/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://itssamuelrowe.github.io/zen-website/plugins/slick/slick.min.js"></script>
+
+<script src="https://itssamuelrowe.github.io/zen-website/plugins/shuffle/shuffle.min.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
+
+<!-- google analytics -->
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-149427149-5', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

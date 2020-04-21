@@ -5,8 +5,8 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
-  <meta name="author" content="Johnathan Smith">
+  <meta name="description" content="Zen is a general-purpose programming language designed to build simple, reliable and efficient programs.">
+  <meta name="author" content="Samuel Rowe">
   <meta name="generator" content="Hugo 0.69.0" />
 
   <style>
@@ -40,7 +40,7 @@
 <!-- preloader end -->
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img style="height: 48px; width: auto" src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,7 @@
         
         
         <li class="nav-item ">
-          <a class="nav-link" href="https://itssamuelrowe.github.io/zen-website/download">Download</a>
+          <a class="nav-link" href="https://github.com/itssamuelrowe/Zen/releases">Download</a>
         </li>
         
         
@@ -82,56 +82,35 @@
   </nav>
 </header>
 
-  
-<section class="page-title bg-primary position-relative overflow-hidden">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">Variables, Values, and Data Types</h1>
-      </div>
-    </div>
+  <div class="bg-primary" style="height: 140px">
   </div>
-  
-  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
-  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
-  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
-  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
-  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
-  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
-</section>
-
-
 
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h3 class="font-tertiary mb-5">Variables, Values, and Data Types</h3>
-          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          
+          <p class="font-secondary">Published by <a href="https://itssamuelrowe.github.io"><span class="text-primary">Samuel Rowe</span></a></p>
           <div class="content">
-            <img src="https://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-            <h3 id="chapter-4">Chapter 4</h3>
-<h1 id="variables-values-and-data-types">Variables, Values, and Data Types</h1>
-<p>In this chapter, you will learn the basics of working with variables in Java.
-Variables are fundamental in making general purpose programs.
-In the Hello World program that we studied in the previous chapter
-always prints &ldquo;Hello, world!&quot;. With a variable, you can
-make it more general. For example, you could personalize the greeting to wish
-the user with their name.</p>
-<p>+++
-title = &ldquo;Understanding Data Types&rdquo;
-+++</p>
-<p>Zen is a <em>dynamically typed</em> programming language. What this means is, the
+            <img src="https://itssamuelrowe.github.io/zen-website" alt="Variables, Values, and Data Types" class="img-fluid rounded float-left mr-5 mb-4">
+            <p>You will learn the basics of working with variables, values,
+and data types in Zen.</p>
+<p>Variables are fundamental in making general purpose programs. The Hello World
+program that we studied in the previous module always prints <code>&quot;Hello, world!&quot;</code>.
+With a variable, you can make it more general. For example, you could personalize
+the greeting to wish the user with their name.</p>
+<h2 id="understanding-data-types">Understanding Data Types</h2>
+<p>Zen is a dynamically typed programming language. What this means is, the
 compiler does not know the type of every variable. Once you declare a variable,
 it can hold values of any type. For example, a variable referencing an integer
-may be updated to reference a string without making the compiler complain.</p>
-<p>The advantage of dynamically typed languages is that programs can be written
+may be updated to reference a string without making the compiler complain.
+The advantage of dynamically typed languages is that programs can be written
 quickly. On the other hand, the primary disadvantage of a dynamically typed
 language is that many bugs cannot be caught during compilation.</p>
 <p>As a Zen programmer, you are not required to specify the type of each variable.
-The compiler does not check if you assigned the wrong type of data to variables.</p>
-<p>Here&rsquo;s an example where a string value is assigned to a variable holding an
+The compiler does not check if you assigned the wrong type of data to variables.
+Here&rsquo;s an example where a string value is assigned to a variable holding an
 integer value. Do you think it will compile?</p>
 <pre><code>function main(...arguments)
     var age = 20
@@ -141,84 +120,73 @@ integer value. Do you think it will compile?</p>
 a variable and can hold any type of value.</p>
 <h3 id="different-categories-of-data-types">Different Categories of Data Types</h3>
 <p>In Zen, a data type is always a reference type, which is divided into two
-categories.
-* Primitive Reference Types
-* Non-Primitive Reference Types</p>
-<p>The <em>primitive reference types</em> are the most basic data types available. They are
-<strong>defined by Zen</strong> and receive special treatment from the compiler.</p>
-<p>The <em>non-primitive reference types</em> are the data types that are <strong>defined by classes and
-enumerations</strong>. They do not receive any special treatment from the compiler.</p>
-<p>+++
-title = &ldquo;Understanding Variables&rdquo;
-+++</p>
-<p>In this section, you will learn about variables.</p>
-<p>A variable is a place holder. A variable&rsquo;s value can change when your program
-is running.</p>
-<p>For exampe, you can store a value like 100 in a variable. After you store a value,
-you can store a different value in the variable whenever you want. When you store
-a new value in a variable, the old value is no longer there. In other words, the
-old value is replaced by the new value.</p>
+categories.</p>
+<ul>
+<li>Primitive Reference Types</li>
+<li>Non-Primitive Reference Types</li>
+</ul>
+<p>The primitive reference types are the most basic data types available. They are
+defined by Zen and receive special treatment from the compiler.</p>
+<p>The non-primitive reference types are the data types that are defined by classes.
+They do not receive any special treatment from the compiler.</p>
+<h2 id="understanding-variables">Understanding Variables</h2>
+<p>A variable is a place holder. You can refer the value stored in a variable using
+a its name. A variable&rsquo;s value can change when your program is running. For example,
+you can store a value like 100 in a variable. After you store a value, you can
+store a different value in the variable whenever you want. When you store a new
+value in a variable, the old value is no longer there. In other words, the old
+value is replaced by the new value.</p>
 <p>The value you can store in a variable is not necessarily a number. In fact, Zen
 is dynamically typed. What this means is, you can store any type of value in a
 variable. For example, consider a variable called <code>i</code> which currently holds a
-string. You can later store an integer in <code>i</code>.</p>
-<p>You can refer the value stored in a variable using a variable&rsquo;s name.</p>
-<p>+++
-title = &ldquo;Declaring Variables&rdquo;
-+++</p>
-<p>In this lecture, you will learn how to declare variables.</p>
+string. You can later store an integer in it.</p>
+<h2 id="declaring-variables">Declaring Variables</h2>
 <p>You must <em>declare</em> a variable before using it. The compiler will display
 errors otherwise.</p>
 <p>The basic form of a variable declaration statement is shown below.</p>
 <pre><code>var name
 </code></pre><p>A variable name is an identifier. You can refer the value stored in the
-variable with its name.</p>
-<p>Unlike other statically typed programming languages, you don&rsquo;t have to write
-the type of values that can be stored in a variable.</p>
-<p>A variable declaration is a simple statement. It must end with a newline.</p>
-<p>Here&rsquo;s an example where two variables are declared.</p>
+variable with its name. Further, you do not have to write the type of values
+that can be stored in a variable. Finally, a variable declaration is a simple
+statement. It must end with a newline.</p>
+<p>Here is an example where two variables are declared.</p>
 <pre><code>var name
 var age
-</code></pre><p>In this example, you <em>declared</em> variables named <code>name</code> and <code>age</code>. The variable
-<code>name</code> can hold any types of values.</p>
-<h3 id="declaring-two-or-more-variables-in-one-statement">Declaring Two or More Variables in One Statement</h3>
-<p>You can declare two or more variables in a single statement. You must separate
-the variable names with commas.</p>
-<p>Here&rsquo;s an example where four variables are declared.</p>
-<pre><code class="language-.." data-lang="..">var a, b, c, d
-</code></pre><p>Although this is easier, we suggest you to avoid this. Because it makes your
-code less easier to read.</p>
-<h3 id="understanding-local-variables">Understanding Local Variables</h3>
+</code></pre><p>In this example, you declared variables named <code>name</code> and <code>age</code>. Both these variables
+can hold any type of value.</p>
+<p>Further, you can declare two or more variables in a single statement. You must separate
+the variable names with commas. Although this is easier, we suggest you to avoid this
+because it makes your code less easier to read.</p>
+<p>Here is an example where four variables are declared.</p>
+<pre><code>var a, b, c, d
+</code></pre><h2 id="understanding-local-variables">Understanding Local Variables</h2>
 <p>A local variable is a variable that you declare within the body of a function.
-You can use a local variable only within that function. You can&rsquo;t use it outside
+You can use a local variable only within that function. You cannot use it outside
 the function.</p>
-<p>For example, the variable <code>k</code> exists only with the body of the <code>main</code> function.</p>
+<p>In the following example, the variable <code>k</code> exists only with the body of the
+<code>main</code> function.</p>
 <pre><code>function main(...arguments)
     var k
-    /* You can refer 'k' only within the body of this function. */
-</code></pre><p>The region in which your variable exists is known as <em>scope</em>. You will learn
-more about scopes later in the manual.</p>
-<p>The place where you declare a local variable is important. You must declare
-a variable before you use it.</p>
+    // You can refer 'k' only within the body of this function.
+</code></pre><p>The region in which your variable exists is known as scope. Further, the place
+where you declare a local variable is important. You must declare a variable
+before you use it.</p>
 <p>For example, the compiler generates an error if you try to compile this example
-<strong>because the program declares the variable after using it.</strong></p>
+because the program declares the variable after using it.</p>
 <pre><code>function main(...arguments)
     i = 10
     var i
-</code></pre><p>Don&rsquo;t worry if you don&rsquo;t understand what <code>i = 10</code> means. You&rsquo;ll learn about it
-in the next section.</p>
-<h3 id="initializing-variables">Initializing Variables</h3>
-<p>When you refer the value <em>stored in a local variable</em>, the compiler checks if
+</code></pre><h2 id="initializing-variables">Initializing Variables</h2>
+<p>When you refer the value stored in a local variable, the compiler checks if
 you assigned a value previously.</p>
 <p>For example, the compiler generates an error if you try to compile this
-example <strong>because the program uses a variable without assigning a value.</strong></p>
+example because the program uses a variable without assigning a value.</p>
 <pre><code>function main(...arguments)
     var name
     print(name)
 </code></pre><p>To avoid such errors, you must initialize local variables before you use them.
 You can assign a variable with an <em>expression statement</em>. In particular, you use
-the <em>assignment expression</em> to assign a variable. You will learn more about
-expressions later in the manual.</p>
+the assignment expression to assign a variable.</p>
 <p>The basic form of an assignment expression is shown here.</p>
 <pre><code>variable = expression
 </code></pre><p>Here, <code>expression</code> can be any expression that evaluates to a value.</p>
@@ -228,47 +196,42 @@ expressions later in the manual.</p>
     name = 'Samuel Rowe'
     print(name)
 </code></pre><p>In this example, the variable is assigned a value of &lsquo;Samuel Rowe&rsquo; before
-printing it.</p>
-<h3 id="initializing-variables-with-initializers">Initializing Variables with Initializers</h3>
-<p>You can initialize a variable when you declare it. You use an <em>initializer</em> to
-do this. The general form of an initializer is shown here.</p>
-<pre><code>type name = expression
-</code></pre><p>The initializer allows you to combine declaration and initialization.</p>
-<p>Take a look at some examples given below.</p>
+printing it. You can initialize a variable when you declare it. You use an
+initializer to do this. The initializer allows you to combine declaration and
+initialization.</p>
+<p>The general form of an initializer is shown here.</p>
+<pre><code>var name = expression
+</code></pre><p>Take a look at some variable declarations given below where variables
+are both declared and initialized.</p>
 <pre><code>var name = 'Samuel Rowe'
-var age = 19
-var gravity = 9.8f
+var age = 20
+var gravity = 9.8
 var pi = 3.142857142857143
-</code></pre><p>In each of these statements, a variable is declared and initialized.</p>
-<p>+++
-title = &lsquo;Working with Primitive Reference Types&rsquo;
-+++</p>
-<p>The <em>primitive types</em> are the most basic data types available in the Zen Virtual
-Machine.</p>
-<p>There are eight primitive data types defined by the Zen Virtual Machine.</p>
+</code></pre><h3 id="working-with-primitive-reference-types">Working with Primitive Reference Types</h3>
+<p>The primitive types are the most basic data types available in the Zen Virtual
+Machine. There are eight primitive data types defined by the Zen Virtual Machine.</p>
 <ul>
 <li><code>boolean</code></li>
 <li><code>char</code></li>
-<li><code>integer8</code></li>
-<li><code>integer16</code></li>
-<li><code>integer32</code></li>
-<li><code>integer64</code></li>
-<li><code>decimal32</code></li>
-<li><code>decimal64</code></li>
+<li><code>byte</code></li>
+<li><code>short</code></li>
+<li><code>integer</code></li>
+<li><code>long</code></li>
+<li><code>float</code></li>
+<li><code>double</code></li>
 </ul>
 <p>The primitive types are not reference types. Since the Zen programming language
 supports only primitive types, it adds wrappers around these primitive types
-through <em>wrapper classes</em>.</p>
-<p>There are eight wrapper classes defined by the Zen programming language.</p>
+through wrapper classes. There are eight wrapper classes.</p>
 <ul>
 <li><code>Boolean</code></li>
 <li><code>Character</code></li>
-<li><code>Integer8</code></li>
-<li><code>Integer16</code></li>
-<li><code>Integer32</code></li>
-<li><code>Integer64</code></li>
-<li><code>Decimal32</code></li>
-<li><code>Decimal64</code></li>
+<li><code>Byte</code></li>
+<li><code>Short</code></li>
+<li><code>Integer</code></li>
+<li><code>Long</code></li>
+<li><code>Float</code></li>
+<li><code>Double</code></li>
 </ul>
 <table>
 <thead>
@@ -339,145 +302,74 @@ through <em>wrapper classes</em>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="working-with-boolean">Working with Boolean</h3>
-<p>The <code>boolean</code> type has two values: <code>true</code> or <code>false</code>. You can perform <em>logical
-operations</em> with boolean values. You will learn more about logical operations later
-in the manual.</p>
+<h4 id="working-with-boolean">Working with Boolean</h4>
+<p>The <code>boolean</code> type has two values: <code>true</code> or <code>false</code>. You can perform logical
+operations with boolean values. In C and C++, integer values can be used as boolean
+values, with <code>0</code> as <code>false</code> and any other value as <code>true</code>. Remember that in Zen
+integers cannot be used as boolean values without explicitly converting.</p>
 <p>Here is an example of the <code>boolean</code> type.</p>
 <pre><code>var initialized = true
 var valid = false
 </code></pre><p>In the above example, we declared a variable named <code>initialized</code> and
 assigned it <code>true</code>. We declared another variable named <code>valid</code> and assigned
 it <code>false</code>.</p>
-<p>In C and C++, integer values can be used as boolean values, with <code>0</code> as <code>false</code>
-and any other value as <code>true</code>. Remember that in Zen integers cannot be used as
-boolean values without explicitly converting.</p>
-<h3 id="working-with-integer-types">Working with Integer Types</h3>
-<p>An <em>integer</em> is a number without any fractional or decimal portion.</p>
-<p>There are four integer types you can use.</p>
-<ul>
-<li><code>Integer8</code></li>
-<li><code>Integer16</code></li>
-<li><code>Integer32</code></li>
-<li><code>Integer64</code></li>
-</ul>
-<p>You can store different <em>range</em> of integer values in each of these types because
-they differ in size.</p>
-<p>The most commonly used integer type is <code>Integer32</code>. It uses four bytes (32 bits) to
-store an integer value.</p>
-<p>If you have read the previous chapters, you have already seen <code>Integer32</code> in some
-examples. Let&rsquo;s take a look at another example.</p>
-<pre><code>function main(...arguments)
-    var cars = 100
-    print(cars)
-</code></pre><p>If you want to store numbers greater than 2 billion, you can use <code>Integer64</code>.
-It uses eight bytes (64 bits) to store an integer value.</p>
-<p>All integer literals are of type <code>Integer32</code> by default. What would you do if you
-wanted to assign a huge number like this <code>1234567890987</code> to a variable? You must
-add the integer suffix <code>L</code> like this <code>1234567890987L</code>.</p>
-<p>Here&rsquo;s an example.</p>
-<pre><code>function main(...arguments)
-    var number = 2720001951999
-    print(number)
-</code></pre><p>If you try to compile it, the compiler will generate errors.</p>
-<pre><code>[error] HugeNumber.zen:2-2:18-31: 32-bit integer number too large
-</code></pre><p>This is the correct version of the previous example. This program will compile
-without any errors.</p>
-<pre><code>function main(...arguments)
-    var number = 2720001951999L
-    print(number)
-</code></pre><p>You can either use uppercase<code>L</code> or lowercase <code>l</code>. We suggest you to use uppercase
-<code>L</code> because lowercase <code>l</code> is usually confused with <code>1</code>.</p>
-<p>The <code>Integer16</code> and <code>Integer8</code> types use less memory than <code>Integer32</code> and
-<code>Integer64</code> types. They are not used commonly, because saving a few bytes here
-and there does not make any difference in performance. You will learn more about
-saving memory with <code>Integer8</code> and <code>Integer16</code> when you learn about arrays.</p>
+<h4 id="working-with-integers">Working with Integers</h4>
+<p>An integer is a number without any fractional or decimal portion. As of this writing,
+Zen implements the <code>Integer</code> class which represents a 64-bit signed integer.
+You can store numbers greater than 2 billion.</p>
 <p>In C and C++, the size of an integer data type depends on your compiler and
 environment. For example, the size of <code>int</code> may be four bytes in your computer.
 But it may be two bytes in your friends computer. This causes many problems.</p>
 <p>This problem is solved in Zen because the virtual machine specification decides
 the sizes of the integer data types. They do not depend on your compiler or
 environment. This way, the sizes remain same on all computers.</p>
-<h3 id="working-with-decimal-types">Working with Decimal Types</h3>
-<p>Decimal numbers are numbers that have fractional parts.</p>
-<p>A decimal number is stored in <em>exponential notation</em>, also known as
+<h4 id="working-with-decimal-types">Working with Decimal Types</h4>
+<p>Decimal numbers are numbers that have fractional parts. As of this writing,
+Zen implements the <code>Decimal</code> class which implements the IEEE 754 double-precision
+format. The exponent ranges from -1023 to +1024.</p>
+<p>A decimal number is stored in exponential notation, also known as
 scientific notation. It has two parts: a base value and an exponent. The base
-value is also known as mantissa.</p>
-<p>The actual value of a decimal number is calculated by multiplying its mantissa
-by two raised to its exponent. Here&rsquo;s the mathematical formula.</p>
+value is also known as mantissa. The actual value of a decimal number is
+calculated by multiplying its mantissa by two raised to its exponent. Here&rsquo;s
+the mathematical formula.</p>
 <pre><code>mantissa × (2 ^ exponent)
-</code></pre><p>There are two decimal types you can use.</p>
-<ul>
-<li><code>Decimal32</code></li>
-<li><code>Decimal64</code></li>
-</ul>
-<p>The most commonly used decimal type is <code>Decimal64</code>. It uses eight bytes (64 bits)
-to store decimal values. <em>It implements the IEEE 754 double-precision format.</em>
-For <code>Decimal64</code>, the exponent ranges from -1023 to +1024.</p>
-<p>The <code>Decimal32</code> type uses four bytes (32 bits) to store decimal values. <em>It implements
-the IEEE 754 single-precision format.</em> For <code>Decimal32</code>, the exponent ranges from
-–127 to +128.</p>
-<p>You must add a suffix <code>D</code> or <code>d</code> to indicate that the literal is of <code>Decimal64</code> type.
-It is optional, because all decimal literals are of type <code>Decimal64</code> by default.</p>
-<p>What would you do if you wanted to treat the literal <code>2.7</code> as <code>Decimal32</code>? You must add
-a suffix <code>F</code> or <code>f</code> to indicate that the literal is of <code>Decimal32</code> type.</p>
-<p>Here&rsquo;s an example.</p>
+</code></pre><p>Here&rsquo;s an example.</p>
 <pre><code>// AreaOfCircle.zen
 function main(...arguments)
-    var r = 2.7f
+    var r = 2.7
     var pi = 22.0 / 7.0
     print(pi * r * r)
-</code></pre><p>We suggest you to never use <code>Decimal32</code> and <code>Decimal64</code> for precise values, such
-as currency.</p>
-<h3 id="exponents-in-decimal-numbers">Exponents in Decimal Numbers</h3>
-<p>You can write decimal numbers in scientific notation. Here&rsquo;s a small example.</p>
+</code></pre><p>You can write decimal numbers in scientific notation. Here&rsquo;s a small example.</p>
 <pre><code>function main(...arguments)
     var n1 = 2.10e+6
-    var n2 = 2100000D
-    print(&quot;n1 = &quot; + n1)
-    print(&quot;n2 = &quot; + n2)
-</code></pre><p>In the above example, both <code>n1</code> and <code>n2</code> store the same value.</p>
-<p>The exponent part either begins with <code>E</code> or <code>e</code>. You can skip the sign if the
-exponent is positive.</p>
-<p>You could have written <code>2.10e6</code> instead of <code>2.10e+6</code> in the previous example.</p>
-<p>+++
-title = &ldquo;Working with Non-Primitive Reference Types&rdquo;
-+++</p>
-<p>In this section, you will learn about the basics of non-primitive reference types.
-You learn to create variables that work with objects.</p>
-<p>The rules that apply to these types also apply to primitive reference types.</p>
-<blockquote>
-<p>You will learn more about classes and objects later in the course.</p>
-</blockquote>
-<p>Zen programs are built with classes. You can use classes to create objects.
-A class can either be a part of the Zen standard API or a class that you create.</p>
-<p>When you create an object, you allocate memory to store the object. Here&rsquo;s an
+    var n2 = 2100000.0
+    print('n1 = ' + n1)
+    print('n2 = ' + n2)
+</code></pre><p>In the above example, both <code>n1</code> and <code>n2</code> store the same value.
+The exponent part either begins with <code>E</code> or <code>e</code>. You can skip the sign if the
+exponent is positive. You could have written <code>2.10e6</code> instead of <code>2.10e+6</code>.</p>
+<h3 id="working-with-non-primitive-reference-types">Working with Non-Primitive Reference Types</h3>
+<p>The rules that apply to these types also apply to primitive reference types.
+Zen programs are built with classes. You can use classes to create objects.
+A class can either be a part of the Zen standard API or a class that you create.
+When you create an object, you allocate memory to store the object. Here&rsquo;s an
 example of how you can create an object.</p>
 <pre><code>new Object()
-</code></pre><p>When you store the object in a variable, you assign a <em>reference</em> to the object.
-You don&rsquo;t store the object itself.</p>
-<p>A reference is the location of an object in memory. References are similar to
-pointers in C or C++. Unlike pointers, references are simple and easy to use.</p>
+</code></pre><p>When you store the object in a variable, you assign a reference to the object.
+You do not store the object itself. A reference is the location of an object in
+memory. References are similar to pointers in C or C++. Unlike pointers, references
+are simple and easy to use.</p>
 <p>For example, think that you are writing a program which involves cars.
 You have a class named <code>Car</code> which defines the behavior of a car.
 You can declare a variable that stores a reference to a <code>Car</code> object like
 this.</p>
 <pre><code>var car
 </code></pre><p>Here, the variable <code>car</code> can hold any type of object, including <code>Car</code> objects.</p>
-<p>To create a new <em>instance</em> of a class, you can use the <code>new</code> keyword. You have
+<p>To create a new instance of a class, you can use the <code>new</code> keyword. You have
 to provide <code>new</code> keyword the name of the class, whose instance you want to create.
-When you create an instance of a class, you actually call a <em>constructor</em>.
+When you create an instance of a class, you actually call a constructor.
 The constructor initializes the new object.</p>
-<blockquote>
-<p>You do not have to understand these concepts right away. You will understand
-them when you learn about them in detail.</p>
-</blockquote>
 <p>Here&rsquo;s an example where we create an instance of the class <code>Car</code>.</p>
-<pre><code>new Car()
-</code></pre><p>You can assign a reference to the new object as shown below.</p>
-<pre><code>var car
-car = new Car()
-</code></pre><p>You can combine both these statements like this.</p>
 <pre><code>var car = new Car()
 </code></pre><p>Remember that a reference variable does not actually store an object.
 It stores only the reference to an object in memory. As a result, two or more
@@ -486,46 +378,36 @@ variables can refer to the same object.</p>
 <pre><code>var carX = new Car()
 var carY = carX
 </code></pre><p>Here, we have declared two variables, named <code>carX</code> and <code>carY</code>. But we have
-created only one <code>Car</code> object.</p>
-<p>We first created a <code>Car</code> object and assigned its reference to <code>carX</code>. Then
-the same reference is assigned to <code>carY</code>. This way, both <code>carX</code> and <code>carY</code>
-refer to the same object.</p>
-<p>+++
-title = &lsquo;Declaring Final Variables or Constants&rsquo;
-+++</p>
-<p>In this section, you will learn how to declare final variables or constants.</p>
+created only one <code>Car</code> object. We first created a <code>Car</code> object and assigned
+its reference to <code>carX</code>. Then the same reference is assigned to <code>carY</code>. This way,
+both <code>carX</code> and <code>carY</code> refer to the same object.</p>
+<h2 id="declaring-final-variables-or-constants">Declaring Final Variables or Constants</h2>
 <p>A final variable is variable that you cannot change after initializing.
 The compiler will generate errors if you try to change it. It is also
-called as a <em>constant</em>.</p>
+called as a constant.</p>
 <p>The basic form of a constant declaration statement is shown here.</p>
 <pre><code>final name = expression
 </code></pre><p>The primary difference between declaring a variable and a constant is the
 use of <code>final</code> keyword. Further, you must provide the value of the constant
-when you declare it.</p>
+when you declare it. We suggest you to use only capital letters for naming
+constants. It helps you easily spot constants in your programs.</p>
 <p>Take a look at this example where two constants are declared.</p>
 <pre><code>final NUMBER_OF_MONTHS = 12
 final PI = 3.142857142857143
-</code></pre><p>We suggest you to use only capital letters for naming constants. It helps you
-easily spot constants in your programs.</p>
-<h3 id="declaring-two-or-more-constants-in-one-statement">Declaring Two or More Constants in One Statement</h3>
-<p>You can declare two or more constants in a single statement, just like variables.
-You must separate the constant names with commas.</p>
+</code></pre><p>You can declare two or more constants in a single statement, just like variables.
+You must separate the constant names with commas. Although declaring two or more
+costants in a single statement is easier, we suggest you to avoid this because
+it makes your code less easier to read.</p>
 <p>Here&rsquo;s an example where three constants are declared.</p>
 <pre><code>final NUMBER_OF_DAYS = 7, FIRST_DAY = 'Sunday', LAST_DAY = 'Saturday'
-</code></pre><p>Although declaring two or more costants in a single statement is easier, we
-suggest you to avoid this because it makes your code less easier to read.</p>
-<h3 id="advantages-of-using-constants">Advantages of Using Constants</h3>
-<p>Using constants has the following advantages:</p>
+</code></pre><p>Using constants has the following advantages:</p>
 <ul>
 <li>If you later decide to change its value, you must change in just one place,
 that is, the initializer. In case of using a literal, you would have to change
 everywhere, which is error prone.</li>
 <li>Constants make your programs easier to read.</li>
 </ul>
-<p>+++
-title = &ldquo;Working with Strings&rdquo;
-+++</p>
-<p>In this section, you will learn the basics of strings.</p>
+<h2 id="working-with-strings">Working with Strings</h2>
 <p>A string is a sequence of characters. String literals are enclosed in single
 quotes (<code>'</code>).</p>
 <p>Here&rsquo;s an example of a string.</p>
@@ -533,9 +415,8 @@ quotes (<code>'</code>).</p>
 </code></pre><p>The Zen Virtual Machine does not define string as a primitive type. Further,
 the Zen programming language treats strings specially and classifies a string
 as primitive reference type. It is implemented by the <code>zen.core.String</code> class.</p>
-<p>We take an entire chapter to explain strings. Here, we teach you the
+<p>We take an entire module to explain strings. Here, we teach you the
 basics. It will help you understand the upcoming examples.</p>
-<h3 id="initializing-strings">Initializing Strings</h3>
 <p>Here&rsquo;s an example of initializing a <code>String</code> variable.</p>
 <pre><code>var message
 message = 'How are you?'
@@ -547,9 +428,8 @@ quotes.</p>
 </code></pre><p>To initialize a local string variable to an empty string, use a statement like
 this.</p>
 <pre><code>var string = ''
-</code></pre><h3 id="joining-strings">Joining Strings</h3>
-<p>You can join two strings by using the <em>concatenation operator</em> (<code>+</code>).
-<em>Concatenation</em> means joining two strings.</p>
+</code></pre><h4 id="joining-strings">Joining Strings</h4>
+<p>You can join two strings by using the concatenation operator (<code>+</code>).</p>
 <p>Here&rsquo;s an example where two strings are joined.</p>
 <pre><code>// JoiningStrings.zen
 
@@ -574,7 +454,7 @@ function main(...arguments)
 
     print(message1)
     print(message2)
-</code></pre><p>You can join a string with any object, such as <code>Integer32</code> and <code>Decimal32</code>.
+</code></pre><p>You can join a string with any object, such as <code>Integer</code> and <code>Decimal</code>.
 Zen converts the primitive value to a string and then joins it.</p>
 <p>Here&rsquo;s an example where a string is joined with a Boolean value.</p>
 <pre><code>// JoiningStringsWithPrimitiveValues.zen
@@ -607,115 +487,22 @@ value.</p>
 <tbody>
 <tr>
 <td>Boolean</td>
-<td>parse</td>
+<td>parseBoolean()</td>
 </tr>
 <tr>
-<td>Character</td>
-<td>&ndash;</td>
+<td>Integer</td>
+<td>parseInteger()</td>
 </tr>
 <tr>
-<td>Integer8</td>
-<td>parse</td>
-</tr>
-<tr>
-<td>Integer16</td>
-<td>parse</td>
-</tr>
-<tr>
-<td>Integer32</td>
-<td>parse</td>
-</tr>
-<tr>
-<td>Integer64</td>
-<td>parse</td>
-</tr>
-<tr>
-<td>Decimal32</td>
-<td>parse</td>
-</tr>
-<tr>
-<td>Decimal64</td>
-<td>parse</td>
+<td>Decimal</td>
+<td>parseDecimal()</td>
 </tr>
 </tbody>
 </table>
 <p>Here&rsquo;s an example of converting strings to primitive values.</p>
-<pre><code>var value1 = Boolean.parse('true')
-var value2 = Integer8.parse('27')
-var value3 = Integer16.parse('519')
-var value4 = Integer32.parse('2000')
-var value5 = Integer64.parse('1999')
-var value6 = Decimal32.parse('5.19')
-var value7 = Decimal64.parse('9.21')
-</code></pre><p>+++
-title = &ldquo;Understanding Unicode&rdquo;
-+++</p>
-<blockquote>
-<p>This section describes Unicode and how Zen deals with it. It is a difficult
-concept to grasp. You can safely skip this section for now. You can come back
-when you are comfortable with Zen.</p>
-</blockquote>
-<p>To work with characters in a computer, you need the following:</p>
-<ul>
-<li>Character Repertoire</li>
-<li>Character Set</li>
-<li>Character Encoding</li>
-</ul>
-<h3 id="understanding-characters-repertoire">Understanding Characters Repertoire</h3>
-<p>A <em>character repertoire</em> is a collection of characters your computer can
-work with. For example, a character repertoire may include letters, digits,
-and symbols from Kannada, English, Tamil, Hindi, and Telugu.</p>
-<h3 id="understanding-character-set">Understanding Character Set</h3>
-<p>Computers understand only numbers. So they store letters and other characters
-by assigning a number for each one. These numbers are known as <em>codepoints</em>.</p>
-<p>When a computer stores a character, it doesn&rsquo;t really know the difference
-between <code>A</code> and <code>B</code>. However, it knows the difference between <code>65</code> and <code>66</code>.
-Internally, computers use the number <code>65</code> as the <em>codepoint</em> to represent <code>A</code>
-and <code>66</code> for <code>B</code>.</p>
-<p>In fact, all letters, digits, and symbols have codepoints. The codepoints given
-to characters are collectively known as <em>character set</em> or <em>charset</em>.</p>
-<p>When you store <code>'A'</code> in a <code>char</code> variable, you actually store the value <code>65</code> in
-it. Which means, the <code>char</code> type is really an integer type.</p>
-<p>Here&rsquo;s an example which prints the codepoints of A, B, C, D, E, and F.</p>
-<pre><code>// CodePointsExample.zen
-
-function main(...arguments)
-    print('A'.getCodepoint(0))
-    print('B'.getCodepoint(0))
-    print('C'.getCodepoint(0))
-    print('D'.getCodepoint(0))
-    print('E'.getCodepoint(0))
-    print('F'.getCodepoint(0))
-</code></pre><h3 id="understanding-character-encoding">Understanding Character Encoding</h3>
-<p>Finally, your computer stores your codepoints in a sequence of 1s and 0s.
-This binary representation is called as <em>character encoding</em>.</p>
-<h2 id="history-of-unicode">History of Unicode</h2>
-<p>There were hundreds of different character encodings before Unicode was
-invented. The other character encodings were limited. They did not cover
-all the languages of the world.</p>
-<p>The <em>Unicode Standard</em> provides a codepoint for every character, no matter
-what platform, device, application or language. It is used in all modern
-software.</p>
-<p>Unicode is a very popular character encoding standard. Many well known companies
-such as Microsoft, Google and Oracle use Unicode. In fact, you are using Unicode
-already.</p>
-<p>Unicode was actually designed to <em>encode</em> characters in 2 bytes. This is why
-<code>char</code> defined by the Zen Virtual Machine uses 2 bytes.</p>
-<p>Only 65,536 characters can be encoded with 16 bits. You cannot represent all
-the characters in the world with just 16 bits. So Unicode was extended to use
-21 bits. Now over one million characters can be encoded (1,114,111 to be exact).
-You can use the characters outside U+FFFF with <em>supplementary characters</em>.</p>
-<h2 id="using-unicode-in-zen">Using Unicode in Zen</h2>
-<p>A supplementary character is any character within the range U+10000 and U+10FFFF.
-You need to use a pair of character values to represent them. The pair of codepoints
-which represent a supplementary character are known as surrogates.</p>
-<p>The first codepoint is known as the high surrogate. It is in the range of U+D800
-to U+DBFF.</p>
-<p>The second codepoint is known as the low surrogate. It is in the range of U+DC00
-to U+DFFF.</p>
-<p>For example, the <strong>DESERET CAPITAL LETTER LONG I</strong> (U+10400), is represented with
-U+D801 and U+DC00 surrogate pair.</p>
-<pre><code>var letter = '\uD801\uDC00'
+<pre><code>var a = parseBoolean('true')
+var b = parseInteger('2000')
+var c = parseDecimal('5.19')
 </code></pre>
           </div>
         </div>
@@ -724,61 +511,9 @@ U+D801 and U+DC00 surrogate pair.</p>
   </section>
 
 
-
-<section class="section section-on-footer" data-background="https://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<footer class="bg-dark">
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+    <p class="mb-0 text-light">Copyright © 2017—2020 <a href="https://itssamuelrowe.github.io">Samuel Rowe</a></p>
   </div>
 </footer>
 
@@ -799,5 +534,16 @@ U+D801 and U+DC00 surrogate pair.</p>
 <script src="https://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
 
 <!-- google analytics -->
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-149427149-5', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>

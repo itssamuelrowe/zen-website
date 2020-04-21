@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8">
-  <title>Basics of Zen</title>
+  <title>Basics of Zen: The Tradition of Hello World!</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
-  <meta name="author" content="Johnathan Smith">
+  <meta name="description" content="Zen is a general-purpose programming language designed to build simple, reliable and efficient programs.">
+  <meta name="author" content="Samuel Rowe">
   <meta name="generator" content="Hugo 0.69.0" />
 
   <style>
@@ -40,7 +40,7 @@
 <!-- preloader end -->
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
+    <a class="navbar-brand" href="https://itssamuelrowe.github.io/zen-website"><img style="height: 48px; width: auto" src="https://itssamuelrowe.github.io/zen-website/images/logo.png" alt="The Zen Programming Language"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,7 @@
         
         
         <li class="nav-item ">
-          <a class="nav-link" href="https://itssamuelrowe.github.io/zen-website/download">Download</a>
+          <a class="nav-link" href="https://github.com/itssamuelrowe/Zen/releases">Download</a>
         </li>
         
         
@@ -82,53 +82,38 @@
   </nav>
 </header>
 
-  
-<section class="page-title bg-primary position-relative overflow-hidden">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">Basics of Zen</h1>
-      </div>
-    </div>
+  <div class="bg-primary" style="height: 140px">
   </div>
-  
-  <img src="/zen-website/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="/zen-website/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
-  <img src="/zen-website/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
-  <img src="/zen-website/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
-  <img src="/zen-website/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
-  <img src="/zen-website/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
-  <img src="/zen-website/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
-</section>
-
-
 
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h3 class="font-tertiary mb-5">Basics of Zen</h3>
-          <p class="font-secondary">Published on Jan 01, 0001 by <span class="text-primary">Johnathan Smith</span></p>
+          <h3 class="font-tertiary mb-5">Basics of Zen: The Tradition of Hello World!</h3>
+          
+          <p class="font-secondary">Published by <a href="https://itssamuelrowe.github.io"><span class="text-primary">Samuel Rowe</span></a></p>
           <div class="content">
-            <img src="https://itssamuelrowe.github.io/zen-website" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-            <h3 id="chapter-3">Chapter 3</h3>
-<h1 id="basics-of-zen">Basics of Zen</h1>
-<p>In this chapter, you will learn the basics of writing simple Zen programs. The
+            <img src="https://itssamuelrowe.github.io/zen-website" alt="Basics of Zen: The Tradition of Hello World!" class="img-fluid rounded float-left mr-5 mb-4">
+            <p>In this module, you will learn the basics of writing simple Zen programs. The
 programs in this chapter are simple and are capable of only printing messages on
 the console. These examples will help you to understand the basic structure of Zen
 programs.</p>
-<p>+++
-title = &ldquo;The Hello World Program&rdquo;
-+++</p>
-<p>In this section, you will learn to write the <em>Hello World</em> program.</p>
+<blockquote>
+<p>You can download all the examples shown throughout the manual from the following
+link.
+<a href="https://github.com/itssamuelrowe/zen-examples">https://github.com/itssamuelrowe/zen-examples</a></p>
+</blockquote>
+<h2 id="the-hello-world-program">The Hello World Program</h2>
 <p>Many programming courses begin with a simple example program that prints the text,
-&ldquo;Hello, world!&rdquo; on the console.</p>
+&ldquo;Hello, world!&rdquo; on the console. Without breaking the programming tradition, we
+will learn to do the same in this section.</p>
 <pre><code>function main(...arguments)
     print('Hello, world!')
 </code></pre><ul>
 <li>Copy the source code from here.</li>
-<li>Paste the source code into a text editor, such as Notepad or Notepad++.</li>
-<li>Save it in a file named <em>Hello.zen</em>.</li>
+<li>Paste the source code into a text editor, such as Visual Studio Code, Notepad
+or Notepad++.</li>
+<li>Save it in a file named <em>HelloWorld.zen</em>.</li>
 <li>You need to remember where you save your file. For the sake of demonstration,
 let us assume the path <code>C:\examples\hello-world</code>.</li>
 <li>Open a console window.</li>
@@ -138,18 +123,19 @@ saved. In our example, it is <code>C:\examples\hello-world</code>.</li>
 </ul>
 <pre><code>cd C:\examples\hello-world
 </code></pre><ul>
-<li>Compile it with <code>zen Hello.zen</code> in the console window.</li>
+<li>Compile it with <code>zc HelloWorld.zen</code> in the console window. The compiler will
+generate the output in <code>HelloWorld.feb</code>.</li>
 <li>Run your program with <code>zvm Hello</code> in the console window.</li>
 </ul>
-<h2 id="opening-console-window-on-windows">Opening Console Window on Windows</h2>
-<h3 id="method-1">Method 1</h3>
+<h4 id="opening-console-window-on-windows">Opening Console Window on Windows</h4>
+<h5 id="method-1">Method 1</h5>
 <ol>
 <li>Press the <code>Windows + R</code> keys.</li>
 <li>A dialog with the title <code>Run</code> will appear on the screen.</li>
 <li>Type <code>cmd</code> in the text field.</li>
 <li>Press enter.</li>
 </ol>
-<h3 id="method-2">Method 2</h3>
+<h5 id="method-2">Method 2</h5>
 <ol>
 <li>Click on the Windows logo in the bottom left corner of your screen.</li>
 <li>Search <code>cmd.exe</code> in the search field.</li>
@@ -160,38 +146,30 @@ explicitly declare one. When you do not explicitly declare a class, the compiler
 automatically generates a class for you. The name for this class is derived from
 the name of the source file. Therefore, you must always save your source code
 inside a file whose name adheres to the rules of identifiers. In our first
-example, the compiler automatically generated a class named <code>Hello</code> because our
-source code was saved in the file <code>Hello.zen</code></p>
-<blockquote>
-<p>You will learn more about classes in a later chapter.</p>
-</blockquote>
+example, the compiler automatically generated a class named <code>HelloWorld</code> because our
+source code was saved in the file <code>HelloWorld.zen</code></p>
 <p>Unlike other programming languages, Zen does not require braces to indicate
 the body of a function. A block is indicated by indentation. Whatever you <em>declare</em>
 within a block belongs to the function below which the block appears.</p>
 <pre><code>function main(...arguments)
-</code></pre><p>Here you created a <em>function</em> called <code>main</code>. You do not have to know what this
-means for now, so do not worry. You will learn more about functions later in
-the manual.</p>
-<p>The <code>main</code> function is the <strong>entry point</strong> of your program. In other words,
-your program always starts at <code>main</code>.</p>
+</code></pre><p>Here you created a <em>function</em> called <code>main</code>.  It is the entry point of your
+program. In other words, your program always starts at <code>main</code>.</p>
 <p><code>(...arguments)</code> is too advanced to explain just yet. It is called a
-<em>parameter list</em>. You can use it to pass data to a function.</p>
-<p>When the <code>main</code> function is invoked by the virtual machine, it receives a single
-parameter: an <em>array</em> of string objects. If you do not know what a parameter, a
-string, or an array is, do not worry. You will learn more about these concepts
-later in the manual.</p>
+<em>parameter list</em>. You can use it to pass data to a function.
+However, remember that when the <code>main</code> function is invoked by the virtual machine,
+it receives a single parameter: an array of string objects. These objects can
+be referenced by <code>arguments</code>. If you do not know what a parameter, a string, or
+an array is, do not worry. You will learn more about these concepts later in the
+manual.</p>
 <pre><code>    print('Hello, world!')
-</code></pre><p>The <code>print</code> function allows you to write data to the console window.</p>
-<p>+++
-title = &ldquo;Understanding Identifiers&rdquo;
-+++</p>
-<p>Identifiers are the names you give to variables, methods, classes, annotations
-and enumerations. Unlike literals, identifiers only help you reference to something.</p>
+</code></pre><p>The <code>print</code> function allows you to write data to the console window. It is
+defined in the <code>ZenKernel</code> class. The compiler automatically imports all the
+symbols defined in this class.</p>
+<h2 id="understanding-identifiers">Understanding Identifiers</h2>
+<p>Identifiers are the names you give to variables, functions, classes, and
+annotations. Unlike literals, identifiers only help you reference to something.</p>
 <p>The program shown in the hello world example shown in the previous section
-uses three identifiers.
-* <code>main</code>
-* <code>arguments</code>
-* <code>print</code></p>
+uses three identifiers: <code>main</code>, <code>arguments</code>, and <code>print</code>.</p>
 <ul>
 <li>Identifiers are case sensitive. For example, <code>ArrayList</code> with uppercase <code>A</code>
 and <code>arrayList</code> with lowercase <code>a</code> are two different identifiers.</li>
@@ -214,19 +192,19 @@ $person
 i
 x1010
 </code></pre><p>Here are a few examples of invalid identifiers.</p>
-<pre><code>function /* function is a keyword. You cannot use a keyword as an identifier. */
-hello world /* An identifier cannot have spaces. */
-3dCube /* An identifier cannot begin with a numeral. */
-a*a /* An identifier cannot have symbols. */
-</code></pre><p>+++
-title = &ldquo;Working with Statements&rdquo;
-+++</p>
+<pre><code>function // function is a keyword. You cannot use a keyword as an identifier.
+hello world // An identifier cannot have spaces.
+3dCube // An identifier cannot begin with a numeral.
+a*a // An identifier cannot have symbols.
+</code></pre><h2 id="working-with-statements">Working with Statements</h2>
 <p>Statements are similar to sentences in the English language. A statement tells
-Zen to perform an action. It can include one or more <em>expressions</em>.</p>
-<p>There are two types of statements in Zen:
-* Simple Statement
-* Compound Statement</p>
-<h2 id="understanding-simple-statements">Understanding Simple Statements</h2>
+Zen to perform an action. It can include one or more expressions.</p>
+<p>There are two types of statements in Zen:</p>
+<ul>
+<li>Simple Statement</li>
+<li>Compound Statement</li>
+</ul>
+<h3 id="understanding-simple-statements">Understanding Simple Statements</h3>
 <p>Simple statements are the actions your program performs.</p>
 <ul>
 <li>Assertion Statement</li>
@@ -240,32 +218,27 @@ Zen to perform an action. It can include one or more <em>expressions</em>.</p>
 <p>A simple statement always ends with a newline. Most programming languages
 such as C, C++, and Java expect a simple statement to be terminated with a
 semicolon. In languages such as JavaScript and Python, the semicolon is
-optional.</p>
+optional. However, In Zen, a simple statement is always terminated by newline.
+Yes, we got rid of the beloved semicolon.</p>
 <p>The example shown here is an expression statement. Therefore, it is
-<em>terminated</em> with a newline.</p>
+terminated with a newline.</p>
 <pre><code>print('Hello, world!')
-</code></pre><h2 id="understanding-compound-statements">Understanding Compound Statements</h2>
+</code></pre><h3 id="understanding-compound-statements">Understanding Compound Statements</h3>
 <p>Compound statements help you group simple statements and control them. They
 are always associated with blocks.</p>
 <ul>
-<li>Block Statement</li>
 <li>For Statement</li>
 <li>If Statement</li>
 <li>Synchronize Statement</li>
 <li>Try Statement</li>
 <li>While Statement</li>
 </ul>
-<p>+++
-title = &ldquo;Understanding Keywords&rdquo;
-+++</p>
-<p>A <em>keyword</em> is a special word whose meaning is defined by the Zen programming
-language specification. <strong>You cannot use these words as identifiers</strong>.
-All keywords are in lowercase.</p>
-<p>Like everything else in Zen, keywords are case sensitive. For example, if you
+<h2 id="understanding-keywords">Understanding Keywords</h2>
+<p>A keyword is a special word whose meaning is defined by the Zen programming
+language specification. You cannot use these words as identifiers.
+In Zen, there are 36 keywords. Further, all keywords are in lowercase and like
+everything else, keywords are case sensitive. For example, if you
 use <code>For</code> with uppercase <code>F</code> instead of <code>for</code> with lowercase <code>f</code> it is an error.</p>
-<p>The hello world program shown in the beginning of this chapter use one keyword:
-<code>function</code>.</p>
-<p>In Zen there are 36 keywords. They are listed below in alphabetical order.</p>
 <table>
 <thead>
 <tr>
@@ -335,15 +308,13 @@ use <code>For</code> with uppercase <code>F</code> instead of <code>for</code> w
 </tr>
 </tbody>
 </table>
-<p>+++
-title = &ldquo;Working with Blocks&rdquo;
-+++</p>
+<p>The hello world program shown in the beginning of this chapter use one keyword:
+<code>function</code>.</p>
+<h2 id="working-with-blocks">Working with Blocks</h2>
 <p>A block is a group of one or more statements. It is also known as a statement suite.
-It is a type of statement, a compound statement to be specific. It begins when
-the indentation of the first statement of the block is greater than the indentation
-of its containing block. Subsequent statements with the same indentation as that
-of the first statement are grouped together in the block.</p>
-<p>You can write any number of statements, including block statements, in a block.</p>
+It begins when the indentation of the first statement of the block is greater
+than the indentation of its containing block. Subsequent statements with the same
+indentation as that of the first statement are grouped together in the block.</p>
 <p>You cannot write an empty block in Zen. However, you can make use of the empty
 statement to represent a dummy block like this.</p>
 <pre><code>function main()
@@ -359,21 +330,19 @@ statement to represent a dummy block like this.</p>
     if true
         print('This is the inner block.')
         print('This statement belongs to the inner block as well.')
-</code></pre><p>+++
-title = &ldquo;Working with Comments&rdquo;
-+++</p>
+</code></pre><h2 id="working-with-comments">Working with Comments</h2>
 <p>Comments are texts that are ignored by the compiler. They help you write
 information or explanation about your code. You can use comments to hide a part
 of your code.</p>
 <p>We recommend you to use plenty of comments in your source code.</p>
-<h2 id="types-of-comments">Types of Comments</h2>
+<h3 id="types-of-comments">Types of Comments</h3>
 <p>There are 3 types of comments in Zen.</p>
 <ul>
 <li>Single Line Comment</li>
 <li>Multi-Line Comment</li>
 <li>Documentation Comment</li>
 </ul>
-<h3 id="single-line-comments">Single Line Comments</h3>
+<h4 id="single-line-comments">Single Line Comments</h4>
 <p>A single line comment begins with <code>//</code> and ends at the end of the line.
 Everything you type after <code>//</code> is ignored by the compiler.</p>
 <p>Here&rsquo;s an example.</p>
@@ -381,7 +350,7 @@ Everything you type after <code>//</code> is ignored by the compiler.</p>
 </code></pre><p>If you want, you can move the comment on a separate line.</p>
 <pre><code>// Calculate the perimeter of the rectangle.
 perimeter = 2 * (width + breadth)
-</code></pre><h3 id="multi-line-comments">Multi-Line Comments</h3>
+</code></pre><h4 id="multi-line-comments">Multi-Line Comments</h4>
 <p>A multi-line comment begins with <code>/*</code> and ends with <code>*/</code>. It can span
 over multiple lines.</p>
 <p>Here is an example.</p>
@@ -397,16 +366,19 @@ perimeter = 2 * (width + breadth) - 100
 </code></pre><p>A multi-line comment can begin and end anywhere on a line.</p>
 <p>Here is an example where the comment is placed in the expression.</p>
 <pre><code>perimeter = 2 * (width + breadth) /* Calculate the perimeter of the rectangle.*/ - 100 /* Then subtract 100 from it. */
-</code></pre><p>Usually, multi-line comments appear on separate lines.</p>
-<p>Multi-line comments cannot be nested. Here is an example which results in error
-when you try to compile.</p>
+</code></pre><p>Usually, multi-line comments appear on separate lines. Further, they cannot be
+nested. Here is an example which results in error when you try to compile.</p>
 <pre><code>/*
  This is a comment.
  /* This is a nested comment. */
  */
-</code></pre><h3 id="documentation-comments">Documentation Comments</h3>
+</code></pre><h4 id="documentation-comments">Documentation Comments</h4>
 <p>A documentation comment begins with <code>/**</code> and ends with <code>*/</code>. It can span
 over multiple lines. It is similar to multi-line comments.</p>
+<blockquote>
+<p>As of this writing, the multiline comment and documentation comment cannot
+be used.</p>
+</blockquote>
 
           </div>
         </div>
@@ -415,61 +387,9 @@ over multiple lines. It is similar to multi-line comments.</p>
   </section>
 
 
-
-<section class="section section-on-footer" data-background="https://itssamuelrowe.github.io/zen-website/images/backgrounds/bg-dots.png">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<footer class="bg-dark">
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
+    <p class="mb-0 text-light">Copyright © 2017—2020 <a href="https://itssamuelrowe.github.io">Samuel Rowe</a></p>
   </div>
 </footer>
 
@@ -490,5 +410,16 @@ over multiple lines. It is similar to multi-line comments.</p>
 <script src="https://itssamuelrowe.github.io/zen-website/js/script.min.js"></script>
 
 <!-- google analytics -->
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-149427149-5', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
