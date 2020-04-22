@@ -7,16 +7,17 @@ author: "Samuel Rowe"
 
 Zen is a general-purpose programming language designed to build simple, reliable and efficient programs. When I say simple, reliable, and efficient I mean it. The syntax of Zen is designed to be clear, which means the code you write speaks for itself. Further, the architecture of the runtime is designed to run your programs reliably, regardless of the platform, with efficiency. You can develop Zen applications in nearly any environment and deploy with little to no performance loss irrespective of the platform.
 
-As of this writing, Zen is currently under development. The alpha version of the compiler and virtual machine will be available shortly. Meanwhile, you can browse the source code at https://github.com/itssamuelrowe/zen.
+> As of this writing, Zen is currently under development. The alpha version of the compiler and virtual machine will be available shortly.
+> Meanwhile, you can browse the source code at https://github.com/itssamuelrowe/zen.
 
 I decided to create my own programming language because of my interest in compiler design since 9th grade. Also, I did not find any existing language that met all of my needs. In this article, I will explain the concepts that I feel are necessary for a dynamically typed programming language that is both enjoyable and efficient. My goal is not to build a toy language but to create a full-blown programming language. Why? Because I think it is really cool to create a programming language that everybody loves.
 
 ## Simple
 
-The syntax of Zen was intentionally designed to restrict the number of ways a certain task can be achieved. For example, unlike other dynamically typed programming languages methods and attributes cannot be introduced to an object at runtime. As a Zen programmer, you will focus more on the logic of your program rather than dealing with the convoluted state of your objects.
+**The syntax of Zen was intentionally designed to restrict the number of ways a certain task can be achieved.** For example, unlike other dynamically typed programming languages methods and attributes cannot be introduced to an object at runtime. As a Zen programmer, you will focus more on the logic of your program rather than dealing with the convoluted state of your objects.
 The tokens required to write your code are minimal. With this in mind, tokens such as semicolons to terminate simple statements, braces to enclose blocks, etc. which are common in C-like programming languages were removed.
 
-Zen offers good readability and clear syntax with an emphasis on natural language. At first glance, code written in Zen looks almost like pseudo-code. You can write code and execute it quickly to test your ideas.
+**Zen offers good readability and clear syntax with an emphasis on natural language.** At first glance, code written in Zen looks almost like pseudo-code. You can write code and execute it quickly to test your ideas.
 
 For newcomers and beginners, Zen is incredibly easy to learn and use. Given the learning curve is simple, you do not have to be an expert to apply Zen in your everyday life. Zen automatically takes care of things like garbage collection, releasing resources, etc. for you.
 
