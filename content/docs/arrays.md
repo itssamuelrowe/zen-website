@@ -1,51 +1,40 @@
 +++
 title = "Arrays"
-chapter = true
 weight = 16
 +++
 
-### Chapter 16
-# Arrays
+In this module, you will learn about arrays and multdimensional arrays.
 
-So far in this manual, you have written programs which work with few variables.
-For example, consider a program which stores the details of a student and prints
-it out. You would create a class to represent the student. Each instance of this
-class stores the details of a student, therefore, you would create a variable which
-references a student object. What if there were four students? You would create
+So far in this documentation, you have written programs which work with few
+variables. For example, consider a program which stores the details of a student
+and prints it out. You would create a class to represent the student. Each instance
+of this class stores the details of a student, therefore, you would create a variable
+which references a student object. What if there were four students? You would create
 four variables which reference four student objects. What if there were a hundred
 students, or even thousand? In such cases creating hundreds of variables is
 absurd.
 
-A better solution would be to use a list which keeps track of the students.
-Zen provides a class known as an array which is similar to lists. Arrays are not
-a fundamental type is Zen. In this chapter you will learn about arrays, their
-declaration and initialization. Finally, we will learn a variation of arrays
-known as multdimensional arrays.
-
-Interestingly, Zen actually includes classes which implement the full fledged
-behavior of lists. A particular list known as array list, which internally stores
-the values using arrays, is a fundamental type. It is treated specially by Zen.
-
-
-+++
-title = "Understanding Arrays"
-weight = 1
-+++
+A better solution would be to use an array which keeps track of the students.
+Arrays in Zen are implemented by the `Array` class. As of this writing, arrays
+are not a fundamental type is Zen.
 
 An array is an object which stores a fixed number of values of the same type.
 It is a linear data structure, which means the values are stored in a sequence.
 Each value stored in an array is known as an element, item, or value.
-
 You can store any type of value that you can store in a variable. However, you
 can store only one type of value once you create it. For example, if you
 have an array of integers, you cannot store strings in it. The type of values
 an array can store is known as its component type.
 
+> Zen actually includes classes which implement the full fledged
+> behavior of lists, which can grow dynamically. A particular list known as
+> array list, which internally stores the values using arrays, is a fundamental
+> type, i.e., it is treated specially.
+
 You can store a list of items of the same reference type in an array. Each
 element in an array is stored in a slot. Each slot in an array is assigned a
 number known as index. You can access an element with its index. An index is
 always positive and lesser than the size of the array.
-
 Assume your array can store ten elements. The index number begins at 0 and ends
 at 9. The first element is at index 0, the second at index 1, and so on. In any
 given array, the minimum valid index is always 0 and the maximum valid index
@@ -67,34 +56,24 @@ from 0. With enough practice, counting from 0 becomes a habit.
 
 When it comes to class types, an array can hold instances of the class or any
 of its subclasses. Which goes to say, if you have an array of the `Object` class,
-you can store any object in Zen.
+you can store any object in Zen. Further, an array itself is an object, which
+means you can store an array inside another array. You will learn more about this
+later in this module.
 
-Further, an array itself is an object, which means you can store an array inside
-another array. You will learn more about this later in this chapter.
-
-
-
-+++
-title = "Working with Arrays"
-weight = 2
-+++
+## Working with Arrays
 
 In order to work with arrays you need follow these steps.
 
  * Declare a variable to reference the array object.
  * Create a new array object.
- * Assign the reference of the array object to the array variable.
+ * Assign the reference of the array object to the variable.
  * Store information in the newly created array.
-
-## Declaring Array Variables
 
 Before you start working with an array, you need to create a variable that
 can store a reference to the array object. You have already learnt how to create
 variables. Therefore, we will not waste any time revisiting the topic. You just
 need to know that arrays are objects, which means their reference can be stored
 in variables like any other object.
-
-## Creating Array Objects
 
 After you declare the array variable, you need to create an array object and
 assign its reference to the variable. You can create arrays in two different ways.
@@ -105,24 +84,20 @@ An array has a fixed size that is set when your create it. You cannot change
 the size of an array after you create it. You can determine the size of an
 array by using the `size` property of an array object.
 
-### Using the array() Function
-
 The `array()` function accepts a list of expressions separated by commas. The
 list of expressions is enclosed within parentheses. The commas separate the values
 of the array elements. The array will large enough to hold the number of elements
 you specify in the array initializer. With this technique, you do not have to use
-the new operator.
-
-The main advantage of this technique is, when you know the initial values
-of your array you do not have to write multiple statements for allocating and
-initializing your array.
+the new operator. The main advantage of this technique is, when you know the
+initial values of your array you do not have to write multiple statements for
+allocating and initializing your array.
 
 For example, to store the days of the week you would create an array like this.
 ```
-// DaysOfWeek.zen
+// Days.zen
 
 function main(... arguments)
-    var daysOfWeek = array(
+    var days = array(
         'Sunday',
         'Monday',
         'Tuesday',
@@ -130,56 +105,41 @@ function main(... arguments)
         'Thursday',
         'Friday',
         'Saturday')
-    printf('The second day of the week is %s.\n', daysOfWeek[1])
+    print('The second day of the week is ' + days[1])
 ```
 
-In this example, you create an array . It consists of the days in a
+In this example, you create an array that consists of the days in a
 week. A print statement prints the second day of the week. Notice that we used
 `1` as the index to access `'Monday'`. This is because array indexes start from
 zero.
 
-### Using the New Operator to Allocate Array Objects
+You can use the `makeArray()` function to create an array without specifying
+the initial values.
 
-Arrays are objects in Zen. Therefore, you can use the new operator to create a
-new instance of the `Array` class.
-
-Here is the general syntax of the new operator when allocating an array.
+Here is the general syntax of the `makeArray()` function.
 ```
-new Array(size)
+makeArray(size)
 ```
 
-Here, the `size` indicates the capacity of the array, that is, the number of
+Here, `size` indicates the capacity of the array, that is, the number of
 elements it can store.
 
 Here is an example of allocating an array capable of storing 7 object references.
 ```
-var objects = new Array(7)
+var objects = makeArray(7)
 ```
 
 In this example, the declaration and allocation is combined in the same statement.
 It allocates an array with 7 slots, where you can store seven references.
 
-When you create an array object using the new operator, you are basically
+When you create an array object using `makeArray()`, you are basically
 creating empty slots where you can store references to objects. You should
 remember that allocating an array does not allocate objects in the slots. You
 must manually allocate objects and store their references in the array later.
-
 In fact, when you create an array, Zen automatically initializes the slots to
 null reference. The keyword `null` refers to a null object and can be used
 stored in any reference variable. Unlike C and C++, the null reference is not
 equivalent to 0 or the null character (`\0`).
-
-You can create arrays with specific components like this:
-```
-new Array(type, size)
-```
-
-Here, the type indicates the component type of the array.
-
-Take a look at this example where the allocated array can store only integers.
-```
-var marks = new Array(Integer, 10)
-```
 
 An array size can be zero or more. If you specify a negative size, Zen throws
 the `NegativeArraySizeException`.
@@ -188,32 +148,18 @@ Here is an example of allocating a negative sized array.
 ```
 // NegativeArraySizeExample.zen
 
-function main(... arguments)
-    var daysOfWeek = new Array(-1)
+function main(...arguments)
+    var daysOfWeek = makeArray(-1)
 ```
 
-When you run this example, Zen throws an exception like this.
-```
-Exception in thread 'main' zen.core.NegativeArraySizeException: -1
-    at NegativeArraySizeExample.main(NegativeArraySizeExample.zen:4)
-```
+When you run this example, Zen throws an exception.
 
+## Initializing Arrays
 
-
-
-
-
-
-+++
-title = "Initializing Array Objects"
-weight = 3
-+++
-
-When you create an array using the `Array` class, each slot in an array contains
+When you create an array using `makeArray()`, each slot in an array contains
 a default value, which is `null`. Therefore, you must assign a value to each slot
 before using it. There are two ways in which you can accomplish this, that is,
-manually initialize each slot or specify a default value to the `makeArray` function.
-You will learn these techniques in this section.
+manually initialize each slot or specify a default value to `makeArray()` function.
 
 Once you have allocated an array, you can access a specific element in the array
 using the index enclosed in square brackets, known as the subscript operator.
@@ -230,9 +176,8 @@ the element slot which you want to access.
 
 Here is an example which creates an array of three integers and assigns their
 respective slots.
-
 ```
-var marks = new Array(3)
+var marks = makeArray(3)
 marks[0] = 40
 marks[1] = 63
 marks[2] = 55
@@ -244,7 +189,7 @@ section.
 // DaysOfWeekManual.zen
 
 function main(...arguments)
-    var daysOfWeek = new Array(String, 7)
+    var daysOfWeek = makeArray(7)
     daysOfWeek[0] = 'Sunday'
     daysOfWeek[1] = 'Monday'
     daysOfWeek[2] = 'Tuesday'
@@ -255,29 +200,27 @@ function main(...arguments)
     printf('The fourth day of the week is %s.\n', daysOfWeek[3])
 ```
 
-In this example, you create an array of String. It consists of the days in a
+In this example, you create an array that consists of the days in a
 week. The array is manually initialized by assigning each slot. A print statement
 prints the fourth day of the week. Notice that we used `3` as the index to access
 `'Wednesday'`. This is because array indexes start from zero.
 
-In some situations, when you create an array using the `Array` class, you may
+In some situations, when you create an array using `makeArray`, you may
 want each slot in the array to contain a default value other than `null`.
-In such cases, you can use the `makeArray()` function
-which accepts a default value.
+In such cases, you can use the overloaded version of `makeArray()`
+that accepts a default value.
 
-Here is an example an integer array whose slots are initialized to `0`.
+Here is an example an array whose slots are initialized to `0`.
 ```
 // DefaultArrayValue.zen
 
 function main(...arguments)
-    var marks = makeArray(Integer, 10, 0)
-    serialize(marks, System.out)
+    var marks = makeArray(10, 0)
+    for var i in range(0, marks.size)
+        print(marks[i])
 ```
 
-+++
-title = "Accessing Array Elements"
-weight = 4
-+++
+## Accessing Array Elements
 
 After you have an array with initial values, you can read, modify, and test the
 values in each slot. The value in a slot is accessed using the subscript operator.
@@ -298,7 +241,7 @@ Here is an example which triggers an `InvalidArrayIndexException`.
 // InvalidDayOfWeek.zen
 
 function main(...arguments)
-    var daysOfWeek = new Array(String, 7)
+    var daysOfWeek = makeArray(7)
     daysOfWeek[0] = 'Sunday'
     daysOfWeek[1] = 'Monday'
     daysOfWeek[2] = 'Tuesday'
@@ -306,14 +249,7 @@ function main(...arguments)
     daysOfWeek[4] = 'Thursday'
     daysOfWeek[5] = 'Friday'
     daysOfWeek[6] = 'Saturday'
-    printf('The seventh day of the week is %s.\n', daysOfWeek[7])
-```
-
-This example produces the following output.
-
-```
-Exception in thread 'main' zen.core.InvalidArrayIndexException: The specified index 7 is invalid for an array of size 7.
-    at InvalidDayOfWeek.main(InvalidDayOfWeek.zen:12)
+    printf('The seventh day of the week is ' + daysOfWeek[7])
 ```
 
 Since the size of the array is `7`, the last valid index is `6`. In this example,
@@ -324,11 +260,7 @@ Every array object exposes a property called `size`. You can use this to determi
 the size of an array. Note that this property is immutable, which means the runtime
 will throw an exception if you try to modify it.
 
-
-+++
-title = "Understanding Multidimensional Arrays"
-weight = 5
-+++
+## Understanding Multidimensional Arrays
 
 In Zen all arrays are objects, which means you can store an array inside another
 array. Such an arrangment of arrays allows you to create multidimensional
