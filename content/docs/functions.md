@@ -209,7 +209,7 @@ function add(x, y)
     return x + y
 ```
 
-In 'main`, we declared three variables named `x`, `y` and `result`. We call
+In `main`, we declared three variables named `x`, `y` and `result`. We call
 `add()` to compute the sum of `x` and `y`. The `add()` function accepts two
 parameters named `x` and `y`.
 
@@ -444,7 +444,7 @@ class Rocket
         return acceleration
 ```
 
-In the above example, `mass`, `velocity, and `acceleration` are private fields.
+In the above example, `mass`, `velocity`, and `acceleration` are private fields.
 You cannot access them directly outside the class. You need to use their accessors
 instead.
 
